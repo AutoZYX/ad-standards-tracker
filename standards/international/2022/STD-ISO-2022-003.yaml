@@ -1,0 +1,32 @@
+id: STD-ISO-2022-003
+date: '2022-06-15'
+org: ISO
+org_full: International Organization for Standardization TC22/SC33
+jurisdiction: international
+type: standard
+status: published
+title_en: ISO 21448:2022 — Road vehicles — Safety of the Intended Functionality (SOTIF)
+title_cn: ISO 21448:2022 道路车辆 — 预期功能安全（SOTIF）
+url: https://www.iso.org/standard/77490.html
+automation_level:
+- L1
+- L2
+- L3
+- L4
+topics:
+- sotif
+- functional_safety
+- testing
+- perception
+summary_en: Final published version of SOTIF standard. Replaces the 2019 PAS. Addresses
+  hazards from functional insufficiencies and reasonably foreseeable misuse that do
+  not originate from E/E system failures — complementary to ISO 26262.
+summary_cn: SOTIF 标准正式版，替代 2019 版 PAS。针对功能不足和可合理预见的误用导致的危害——这些危害并非源自 E/E 系统失效，与 ISO
+  26262 互补。
+impact_note: This is the globally referenced SOTIF standard. Required reading for
+  any L3+ functional safety engineer.
+related_standards:
+- ISO 26262
+- ISO 34502
+- ISO/SAE 21434
+last_updated: '2026-04-16'

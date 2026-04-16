@@ -1,0 +1,28 @@
+id: STD-EC-2024-002
+date: '2024-07-12'
+org: European Commission
+jurisdiction: eu
+type: regulation
+status: in_force
+title_en: Regulation (EU) 2024/1689 — Artificial Intelligence Act (AI Act)
+title_cn: 欧盟法规 (EU) 2024/1689 — 人工智能法案
+url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+automation_level:
+- L2
+- L3
+- L4
+topics:
+- ai_governance
+- cybersecurity
+- privacy
+summary_en: EU AI Act establishes risk-based regulatory framework for AI systems.
+  Safety components of automated vehicles classified as high-risk AI systems subject
+  to conformity assessment, data governance, human oversight requirements.
+summary_cn: 欧盟 AI 法案建立基于风险的 AI 系统监管框架。自动驾驶车辆的安全组件被归类为高风险 AI 系统，须通过符合性评估、数据治理、人为监督等要求。
+impact_note: First comprehensive horizontal AI regulation globally. Phased implementation
+  through 2027. Significant compliance impact on AD perception and planning stacks.
+related_standards:
+- UN-R157
+- ISO/IEC 42001
+- GDPR
+last_updated: '2026-04-16'

@@ -1,0 +1,26 @@
+id: STD-NCAP-2023-001
+date: '2023-10-01'
+org: Euro NCAP
+org_full: European New Car Assessment Programme
+jurisdiction: eu
+type: standard
+status: in_force
+title_en: Euro NCAP Assisted Driving Test Protocol v1.2 — Consumer rating for L2 systems
+title_cn: Euro NCAP 辅助驾驶测评方案 v1.2：L2 系统的消费者评分
+url: https://www.euroncap.com/en/for-engineers/protocols/assisted-driving/
+effective_date: '2023-10-01'
+automation_level:
+- L2
+topics:
+- testing
+- hmi
+summary_en: Assessment protocol rating L2 ADAS systems on driver engagement, assistance competence, and safety backup. First
+  major scheme to publish consumer-facing ratings of partial automation. Tesla Autopilot, Mercedes ABC, BMW DAP all tested.
+summary_cn: 对 L2 辅助驾驶系统的消费者评分方案，从驾驶员参与、辅助能力、安全兜底三维度打分。首个主要公开 L2 评分的测评体系。特斯拉 Autopilot、奔驰 ABC、宝马 DAP 均已测评。
+impact_note: Strong market impact. Chinese OEMs entering EU must pass Euro NCAP. China's C-NCAP and i-VISTA use similar methodology.
+related_standards:
+- C-NCAP
+- i-VISTA
+- UN-R79
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

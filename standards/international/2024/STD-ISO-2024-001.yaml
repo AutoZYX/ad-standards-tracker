@@ -1,0 +1,28 @@
+id: STD-ISO-2024-001
+date: '2024-11-07'
+org: ISO
+org_full: International Organization for Standardization
+jurisdiction: international
+type: standard
+status: published
+title_en: ISO 34503:2024 — Road vehicles — Test scenarios for automated driving systems — Specification for operational design
+  domain (ODD)
+title_cn: ISO 34503:2024 道路车辆 自动驾驶系统测试场景 运行设计域（ODD）规范
+url: https://www.iso.org/standard/78952.html
+effective_date: '2024-11-07'
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- sotif
+summary_en: Defines a hierarchical vocabulary and format for specifying ODD of an ADS. Addresses lack of standardized ODD
+  description that had hampered cross-OEM scenario libraries.
+summary_cn: 定义自动驾驶系统 ODD（运行设计域）的层级词汇和格式，解决此前 OEM 间场景库缺乏统一 ODD 描述的问题。
+impact_note: Required reading for L3/L4 validation. Enables cross-OEM scenario library sharing. BSI PAS 1883 preceded this
+  with similar structure.
+related_standards:
+- ISO 34502
+- BSI PAS 1883
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

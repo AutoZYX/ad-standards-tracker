@@ -1,0 +1,27 @@
+id: STD-NHTSA-2024-001
+date: '2024-04-17'
+org: NHTSA
+org_full: National Highway Traffic Safety Administration
+jurisdiction: us
+type: regulation
+status: in_force
+title_en: FMVSS 127 — Automatic Emergency Braking Systems for Light Vehicles
+title_cn: FMVSS 127 轻型车自动紧急制动系统
+url: https://www.federalregister.gov/documents/2024/05/09/2024-09379/federal-motor-vehicle-safety-standards-automatic-emergency-braking
+effective_date: '2029-09-01'
+automation_level:
+- L0
+- L1
+- L2
+topics:
+- functional_safety
+- perception
+summary_en: Final rule mandating AEB with pedestrian detection on all new light vehicles in the US, with aggressive performance
+  requirements (up to 62 mph in vehicle-to-vehicle, 45 mph pedestrian detection at night). Effective September 2029.
+summary_cn: 强制所有在美销售的新轻型车配备含行人检测功能的 AEB，性能要求严格（车对车最高 62 mph，夜间行人检测 45 mph）。2029 年 9 月生效。
+impact_note: Most aggressive AEB mandate globally. Affects all OEMs selling in US, including Chinese brands entering US market.
+related_standards:
+- Euro NCAP AEB
+- ISO 22733
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

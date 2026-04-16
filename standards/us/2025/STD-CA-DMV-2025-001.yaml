@@ -1,0 +1,22 @@
+id: STD-CA-DMV-2025-001
+date: '2025-03-01'
+org: California DMV
+org_full: California Department of Motor Vehicles — Autonomous Vehicles Branch
+jurisdiction: us
+type: policy
+status: in_force
+title_en: Updated Disengagement Reporting Requirements — Annual filings FY2024-2025
+title_cn: 加州自动驾驶脱离报告要求更新 FY2024-2025 年度申报
+url: https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/disengagement-reports/
+automation_level:
+- L3
+- L4
+topics:
+- data_recording
+- operations
+summary_en: Annual disengagement report covering Dec 2024 - Nov 2025. Waymo, Cruise (partial), Zoox, Apollo, Pony.ai, WeRide,
+  AutoX all reported miles driven, disengagement counts, and categorized causes.
+summary_cn: 覆盖 2024 年 12 月至 2025 年 11 月的年度脱离报告。Waymo、Cruise（部分）、Zoox、Apollo、小马智行、文远知行、AutoX 均提交了里程数、脱离次数和分类原因。
+impact_note: Only publicly available global dataset comparing ADS performance across operators. Heavily cited in academia.
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

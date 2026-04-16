@@ -1,0 +1,28 @@
+id: STD-SHENZHEN-2022-001
+date: '2022-08-01'
+org: Shenzhen SPC
+org_full: Shenzhen Municipal People's Congress Standing Committee
+jurisdiction: china
+type: regulation
+status: in_force
+title_en: Shenzhen Special Economic Zone Regulations on Intelligent Connected Vehicles
+  Management
+title_cn: 深圳经济特区智能网联汽车管理条例
+url: https://www.sz.gov.cn/
+automation_level:
+- L3
+- L4
+topics:
+- operations
+- type_approval
+- data_recording
+summary_en: First municipal-level comprehensive ICV regulation in China, enabling
+  L3/L4 operation on designated roads in Shenzhen SEZ. Establishes liability framework,
+  data recording requirements, and commercial operation approval process.
+summary_cn: 中国首部综合性地方智能网联汽车条例，支持 L3/L4 车辆在深圳经济特区指定道路运营。建立责任框架、数据记录要求和商业化运营审批流程。
+impact_note: Landmark local legislation. Triggered similar frameworks in Beijing,
+  Shanghai, Wuhan, Chongqing.
+related_standards:
+- GB/T 40429
+- GB 44497
+last_updated: '2026-04-16'

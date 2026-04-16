@@ -1,0 +1,25 @@
+id: STD-METI-2025-001
+date: '2025-06-13'
+org: METI Japan
+org_full: Ministry of Economy, Trade and Industry of Japan
+jurisdiction: japan
+type: policy
+status: in_force
+title_en: Mobility Roadmap 2025 — Updated Targets and Level 4 Deployment Priorities
+title_cn: 日本 2025 年交通出行路线图：更新的目标与 Level 4 部署优先领域
+url: https://www.meti.go.jp/english/press/2025/0613_001.html
+effective_date: '2025-06-13'
+automation_level:
+- L4
+topics:
+- operations
+- type_approval
+summary_en: 2025 update of Japan's mobility roadmap. Maintains 100-location target for 2027, clarifies funding mechanisms,
+  introduces a collaboration framework with local municipalities.
+summary_cn: 日本交通出行路线图 2025 更新版，维持 2027 年 100 个地点部署目标，明确资助机制，引入与地方政府的协作框架。
+impact_note: Signals Japan's commitment to L4 beyond Tokyo-Nagoya corridor. Attracts Chinese and US technology providers (Tier
+  Ⅳ, Waymo, Pony.ai).
+related_standards:
+- Japan MLIT 2024 Safety Guidelines
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

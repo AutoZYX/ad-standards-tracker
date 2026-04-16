@@ -1,0 +1,23 @@
+id: STD-METI-2024-001
+date: '2024-06-13'
+org: METI Japan
+org_full: Ministry of Economy, Trade and Industry of Japan
+jurisdiction: japan
+type: policy
+status: in_force
+title_en: Mobility Roadmap 2024 — Japan's National Strategy for L4 Automated Driving Services
+title_cn: 日本 2024 年交通出行路线图：Level 4 自动驾驶服务国家战略
+url: https://www.meti.go.jp/english/press/2024/0613_002.html
+effective_date: '2024-06-13'
+automation_level:
+- L4
+topics:
+- operations
+- type_approval
+summary_en: Japan's inter-ministerial mobility strategy targeting 50 locations with L4 services by 2025 and 100 by 2027. Specifies
+  funding, type approval pathways, operational coordination between METI and MLIT.
+summary_cn: 日本多部委联合交通出行战略，目标 2025 年 50 个地点、2027 年 100 个地点部署 L4 服务。明确资金、型式认证路径、METI 与 MLIT 协作方式。
+impact_note: Frames Japan's national commitment to L4 commercialization. Triggered 2024 infrastructure deployments (Tokyo-Nagoya
+  AV lanes).
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

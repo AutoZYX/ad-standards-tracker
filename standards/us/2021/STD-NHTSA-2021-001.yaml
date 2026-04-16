@@ -1,0 +1,27 @@
+id: STD-NHTSA-2021-001
+date: '2021-06-29'
+org: NHTSA
+org_full: National Highway Traffic Safety Administration
+jurisdiction: us
+type: policy
+status: in_force
+title_en: Standing General Order 2021-01 — Crash Reporting for Level 2 ADAS and ADS Vehicles
+title_cn: NHTSA Standing General Order 2021-01 对 L2 辅助驾驶和自动驾驶系统车辆的碰撞强制报告令
+url: https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting
+effective_date: '2021-06-29'
+automation_level:
+- L2
+- L3
+- L4
+topics:
+- data_recording
+- operations
+summary_en: Requires manufacturers and operators to report crashes within 1-10 days when an ADS or Level 2 ADAS was engaged
+  within 30 seconds of the crash. Source of NHTSA's public crash data on Tesla Autopilot and Robotaxi incidents.
+summary_cn: 要求制造商和运营商在事故发生前 30 秒内有 ADS 或 L2 辅助驾驶介入的情况下，于 1-10 日内报告碰撞。是 NHTSA 关于特斯拉 Autopilot 和 Robotaxi 事故的公开数据来源。
+impact_note: Feeds much of ROAM's Tier 2 data. First systematic US federal reporting requirement for ADS incidents.
+related_standards:
+- FMVSS 127
+- 49 CFR 579
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

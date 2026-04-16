@@ -1,0 +1,19 @@
+id: "STD-ISO-2022-001"
+date: "2022-06-01"
+org: "ISO"
+org_full: "International Organization for Standardization"
+jurisdiction: "international"
+type: "standard"
+status: "published"
+title_en: "ISO 21448:2022 — Road vehicles — Safety of the intended functionality (SOTIF)"
+title_cn: "ISO 21448:2022 道路车辆 预期功能安全"
+url: "https://www.iso.org/standard/77490.html"
+effective_date: "2022-06-01"
+automation_level: ["L1", "L2", "L3", "L4"]
+topics: ["sotif", "functional_safety", "perception"]
+summary_en: "Successor to ISO/PAS 21448:2019. The definitive international standard addressing safety issues arising from functional insufficiencies of the intended functionality or from reasonably foreseeable misuse — particularly ADAS and automated driving. Complements ISO 26262."
+summary_cn: "ISO/PAS 21448:2019 的正式版，国际公认处理自动驾驶功能不足与合理可预见误用所引发安全问题的权威标准，尤其针对 ADAS 和自动驾驶。与 ISO 26262 互补。"
+impact_note: "Core reference for any L2+ validation argument. Required reading for any OEM safety case. Zhang Yuxin's SOTIF consulting and ROAM incident taxonomy both reference this directly."
+related_standards: ["ISO 26262", "ISO 34502", "ISO 21434", "UL 4600"]
+contributor: "ROAM Core Team"
+last_updated: "2026-04-16"

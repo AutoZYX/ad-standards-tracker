@@ -1,0 +1,25 @@
+id: STD-UK-2025-001
+date: '2025-07-10'
+org: UK DfT
+org_full: UK Department for Transport
+jurisdiction: uk
+type: consultation
+status: consultation
+title_en: Draft Secondary Legislation — UK Automated Vehicles Act 2024 Implementation
+title_cn: 英国 2024 年自动驾驶汽车法案实施的附属立法草案
+url: https://www.gov.uk/government/consultations/
+automation_level:
+- L3
+- L4
+topics:
+- type_approval
+- operations
+summary_en: DfT consultation on secondary legislation implementing the 2024 AV Act. Defines ASDE application procedures, insurance
+  requirements, in-use enforcement, Automated Passenger Service (APS) framework.
+summary_cn: 交通部对实施 2024 年《自动驾驶汽车法案》附属立法的征求意见。明确 ASDE 申请程序、保险要求、使用期监管、APS（自动载客服务）框架。
+impact_note: Determines when UK Robotaxi services can launch. Expected to open market to Waymo, Wayve, Oxbotica (now Oxa)
+  post 2026.
+related_standards:
+- UK AV Act 2024
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

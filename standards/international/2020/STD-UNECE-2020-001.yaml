@@ -1,0 +1,31 @@
+id: STD-UNECE-2020-001
+date: '2020-06-25'
+org: UNECE WP.29
+org_full: UN Economic Commission for Europe - World Forum for Harmonization of Vehicle
+  Regulations
+jurisdiction: international
+type: regulation
+status: in_force
+title_en: UN Regulation No. 156 — Software Update and Software Update Management System
+title_cn: UN-R156 软件更新与软件更新管理系统
+url: https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update
+effective_date: '2022-07-01'
+automation_level:
+- L2
+- L3
+- L4
+topics:
+- ota
+- cybersecurity
+- type_approval
+summary_en: Establishes SUMS (Software Update Management System) requirements for
+  type approval. OEMs must maintain integrity and authenticity of updates throughout
+  vehicle lifecycle and keep update records for authorities.
+summary_cn: 对缔约方市场销售车辆强制要求建立软件更新管理系统（SUMS）。车企须在整车生命周期内保证更新的完整性与真实性，并向监管机构保留更新记录。
+impact_note: Paired with UN-R155. Mandatory in EU since July 2022 (new types) and
+  July 2024 (all new vehicles). Core to enabling OTA-heavy business models.
+related_standards:
+- UN-R155
+- ISO/SAE 21434
+- ISO 24089
+last_updated: '2026-04-16'

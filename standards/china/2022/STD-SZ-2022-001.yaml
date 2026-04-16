@@ -1,0 +1,27 @@
+id: STD-SZ-2022-001
+date: '2022-06-23'
+org: Shenzhen SPC
+org_full: 深圳市人民代表大会常务委员会
+jurisdiction: china
+type: regulation
+status: in_force
+title_en: Shenzhen Special Economic Zone Intelligent Connected Vehicle Management Regulation
+title_cn: 深圳经济特区智能网联汽车管理条例
+url: http://www.szrd.gov.cn/
+effective_date: '2022-08-01'
+automation_level:
+- L3
+- L4
+topics:
+- type_approval
+- operations
+summary_en: China's first local ICV legislation with statutory force. Explicitly permits fully driverless operation in designated
+  zones, clarifies liability (vehicle owner for L3 with safety driver, enterprise for L4 driverless), establishes data reporting
+  obligations.
+summary_cn: 中国首个具有法定效力的智能网联汽车地方立法。明确允许特定区域全无人运营，划分责任（L3 有安全员时车主责任，L4 全无人时企业责任），规定数据上报义务。
+impact_note: Served as template for other Chinese cities. Influenced 2023 MIIT national pilot policy.
+related_standards:
+- Beijing HAD Zone Rules
+- Shanghai Lingang ICV Rules
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

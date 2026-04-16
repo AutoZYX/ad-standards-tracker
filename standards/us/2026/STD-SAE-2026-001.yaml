@@ -1,0 +1,27 @@
+id: STD-SAE-2026-001
+date: '2026-01-20'
+org: SAE International
+jurisdiction: us
+type: standard
+status: published
+title_en: SAE J3237 — Taxonomy and Definitions for Testing and Validation of Automated
+  Driving Systems
+title_cn: SAE J3237 自动驾驶系统测试与验证的分类与定义
+url: https://www.sae.org/standards/content/j3237/
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- sotif
+- functional_safety
+summary_en: Establishes taxonomy for ADS test and validation activities. Aligns with
+  ISO 34502 scenario framework and provides common language for test case exchange
+  across OEMs and regulators.
+summary_cn: 建立 ADS 测试与验证活动的分类体系。与 ISO 34502 场景框架对齐，为 OEM 与监管方之间的测试用例交换提供通用语言。
+impact_note: ⚠️[请核实：J3237 具体发布日期和标准号后缀]
+related_standards:
+- ISO 34502
+- SAE J3018
+- SAE J3018A
+last_updated: '2026-04-16'

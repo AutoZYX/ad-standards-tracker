@@ -1,0 +1,27 @@
+id: STD-NHTSA-2022-002
+date: '2022-03-10'
+org: NHTSA
+jurisdiction: us
+type: regulation
+status: in_force
+title_en: FMVSS 500-Series Update — Occupant Protection for Vehicles with Automated
+  Driving Systems (No Manual Controls)
+title_cn: FMVSS 500 系列更新 — 无人工控制装置的自动驾驶车辆乘员保护
+url: https://www.federalregister.gov/documents/2022/03/30/2022-05426/occupant-protection-for-vehicles-with-automated-driving-systems
+automation_level:
+- L4
+- L5
+topics:
+- type_approval
+- functional_safety
+summary_en: Removes the requirement for traditional manual controls (steering wheel,
+  pedals) to be present for vehicles designed exclusively for ADS operation. Clarifies
+  occupant protection test methods for novel seating arrangements.
+summary_cn: 对设计上仅供 ADS 操作的车辆，取消了必须配备传统人工控制装置（方向盘、踏板）的要求。厘清了新型座椅布局下的乘员保护测试方法。
+impact_note: Unlocks purpose-built Robotaxi designs (Zoox, Cruise Origin-style). A
+  foundational regulatory enabler.
+related_standards:
+- FMVSS 111
+- FMVSS 208
+- UN-R157
+last_updated: '2026-04-16'

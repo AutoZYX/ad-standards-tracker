@@ -1,0 +1,25 @@
+id: STD-NCAP-2025-001
+date: '2025-01-10'
+org: Euro NCAP
+org_full: European New Car Assessment Programme
+jurisdiction: eu
+type: white_paper
+status: published
+title_en: Euro NCAP Roadmap 2026-2030 — Adding Automated Driving assessment
+title_cn: Euro NCAP 2026-2030 路线图：纳入自动驾驶评估
+url: https://www.euroncap.com/en/press-media/press-releases/
+effective_date: '2026-01-01'
+automation_level:
+- L2
+- L3
+topics:
+- testing
+summary_en: Roadmap expanding from ADAS-focused L2 assessment to Automated Driving Assessment (ADA) for L3 systems. New test
+  scenarios for minimum risk maneuver, fallback behavior, driver takeover.
+summary_cn: 从专注 L2 辅助驾驶测评扩展到针对 L3 系统的自动驾驶评估。新增最小风险策略、失效回退、驾驶员接管等测试场景。
+impact_note: Will shape the next wave of consumer-facing AD metrics globally. C-NCAP and i-VISTA expected to follow.
+related_standards:
+- UN-R157
+- ISO 34502
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

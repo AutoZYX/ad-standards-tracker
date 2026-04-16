@@ -1,0 +1,26 @@
+id: STD-KATS-2023-001
+date: '2023-06-30'
+org: Korea KATS
+org_full: Korea Agency for Technology and Standards
+jurisdiction: korea
+type: standard
+status: in_force
+title_en: KS R ISO 21448 — Adoption of ISO 21448 SOTIF as Korean National Standard
+title_cn: KS R ISO 21448 — 将 ISO 21448 SOTIF 采纳为韩国国家标准
+url: https://standard.go.kr/KSCI/portalindex.do
+automation_level:
+- L2
+- L3
+- L4
+topics:
+- sotif
+- functional_safety
+summary_en: Korean adoption of ISO 21448:2022 as a KS national standard (equivalent-adoption
+  method). Signals regulatory alignment with global SOTIF framework.
+summary_cn: 将 ISO 21448:2022 采纳为韩国 KS 国家标准（等同采用）。标志着韩国与全球 SOTIF 框架的监管对齐。
+impact_note: ⚠️[请核实：KS R ISO 21448 具体编号与发布日期]。对 Hyundai Motor Group、Samsung Harman
+  的合规影响直接。
+related_standards:
+- ISO 21448:2022
+- KS R ISO 26262
+last_updated: '2026-04-16'

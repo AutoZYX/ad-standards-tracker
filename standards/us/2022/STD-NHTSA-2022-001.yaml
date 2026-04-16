@@ -1,0 +1,28 @@
+id: STD-NHTSA-2022-001
+date: '2022-06-29'
+org: NHTSA
+org_full: National Highway Traffic Safety Administration
+jurisdiction: us
+type: policy
+status: in_force
+title_en: Standing General Order 2021-01 — Incident Reporting for Automated Driving
+  Systems and SAE Level 2 ADAS
+title_cn: 常设一般性命令 2021-01 — 自动驾驶系统与 L2 ADAS 事件报告
+url: https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting
+automation_level:
+- L2
+- L3
+- L4
+topics:
+- data_recording
+- operations
+summary_en: Mandates reporting of crashes involving ADS and SAE Level 2 ADAS within
+  one day (for serious incidents) or 15 days. Produces publicly available crash datasets
+  used for safety benchmarking.
+summary_cn: 要求在 1 天内（严重事故）或 15 天内上报涉及 ADS 和 L2 ADAS 的事故。生成公开的事故数据集，供安全对标使用。
+impact_note: The single largest U.S. data source on real-world AD/ADAS incidents.
+  Amended multiple times since 2021.
+related_standards:
+- UN-R160
+- SAE J3016
+last_updated: '2026-04-16'

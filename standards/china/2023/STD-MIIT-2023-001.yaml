@@ -1,0 +1,27 @@
+id: STD-MIIT-2023-001
+date: '2023-11-17'
+org: MIIT
+org_full: 中华人民共和国工业和信息化部
+jurisdiction: china
+type: policy
+status: in_force
+title_en: Notice on Launching Pilot of Access and On-Road Traffic for Intelligent Connected Vehicles (L3/L4)
+title_cn: 关于开展智能网联汽车准入和上路通行试点工作的通知（工信部联装〔2023〕217 号）
+url: https://www.miit.gov.cn/
+effective_date: '2023-11-17'
+automation_level:
+- L3
+- L4
+topics:
+- type_approval
+- operations
+summary_en: 'Joint MIIT/MoT/MPS/MOHURD notice launching the national L3/L4 ICV access and on-road operation pilot. Defines
+  five stages: application, access, pilot operation, assessment, confirmation.'
+summary_cn: 工信部、交通运输部、公安部、住建部联合发布，启动 L3/L4 智能网联汽车准入和上路通行试点。定义五阶段：申请、准入、试点、评估、确认。
+impact_note: Opened regulatory pathway for mass production L3 in China. Enabled BMW-Brilliance L3 in Shanghai 2023-12 and
+  broader OEM applications in 2024.
+related_standards:
+- GB 44497
+- UN-R157
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

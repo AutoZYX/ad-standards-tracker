@@ -1,0 +1,28 @@
+id: STD-SAE-2022-001
+date: '2022-04-30'
+org: SAE International
+jurisdiction: us
+type: standard
+status: published
+title_en: SAE J3016_202104 — Taxonomy and Definitions for Terms Related to Driving
+  Automation Systems for On-Road Motor Vehicles
+title_cn: SAE J3016_202104 道路机动车辆驾驶自动化系统相关术语的分类与定义
+url: https://www.sae.org/standards/content/j3016_202104/
+automation_level:
+- L0
+- L1
+- L2
+- L3
+- L4
+- L5
+topics:
+- functional_safety
+- operations
+summary_en: The canonical SAE Levels of Driving Automation (L0-L5) standard. The April
+  2021 revision clarifies the distinction between L2 and L3 and refines ODD terminology.
+summary_cn: SAE 驾驶自动化分级（L0-L5）权威标准。2021 年 4 月修订版厘清了 L2 与 L3 的分野，并细化了 ODD 相关术语。
+impact_note: Universal reference for AD levels. Next revision under discussion at
+  SAE ORAD.
+related_standards:
+- ISO 22736
+last_updated: '2026-04-16'

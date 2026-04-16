@@ -1,0 +1,23 @@
+id: STD-CA-DMV-2026-001
+date: '2026-02-15'
+org: California DMV
+jurisdiction: us
+type: consultation
+status: consultation
+title_en: Proposed Amendment — Permit Requirements for Heavy-Duty Autonomous Trucks
+title_cn: 提议修订 — 重型自动驾驶卡车许可要求
+url: https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/
+automation_level:
+- L4
+topics:
+- testing
+- operations
+summary_en: Proposed regulatory amendment to extend California's AV permit regime
+  to heavy-duty autonomous trucks (GVWR > 10,001 lbs). Consultation period open through
+  Q2 2026.
+summary_cn: 提议将加州 AV 许可制度扩展至重型自动驾驶卡车（GVWR > 10,001 磅）的修订案。2026 年二季度开放意见征集。
+impact_note: ⚠️[请核实：具体修订发布日期与意见征集截止时间]。对 Aurora、Kodiak、TuSimple 等物流 AV 方产生直接影响。
+related_standards:
+- CA Title 13 Article 3.7
+- NHTSA SGO 2021-01
+last_updated: '2026-04-16'

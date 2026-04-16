@@ -1,0 +1,32 @@
+id: STD-SC34-2026-001
+date: '2026-04-13'
+org: SAC/TC114/SC34
+org_full: 全国汽车标准化技术委员会智能网联汽车分技术委员会
+jurisdiction: china
+type: meeting_notice
+status: consultation
+title_en: Standards Project Meeting Notice — Intelligent Connected Vehicles Safety Events Data Interaction and Management
+  System Technical Specification
+title_cn: 《智能网联汽车 安全事件数据交互与管理系统技术规范》标准项目组会议通知（汽标智联字〔2026〕66 号）
+url: http://www.catarc.org.cn/
+effective_date: '2026-04-17'
+automation_level:
+- L2
+- L3
+- L4
+topics:
+- data_recording
+- operations
+- functional_safety
+summary_en: Notice of April 17, 2026 Beijing meeting to discuss the draft GB/T Technical Specification on ICV Safety Events
+  Data Interaction and Management System. Draft defines 14 event type codes (0x01-0x0E), enterprise-to-national platform reporting
+  architecture, SM2/SM4 cryptographic requirements.
+summary_cn: 2026 年 4 月 17 日北京会议通知，讨论《智能网联汽车 安全事件数据交互与管理系统技术规范》国标草案。草案定义 14 种事件编码（0x01-0x0E）、企业平台→国家平台上报架构、SM2/SM4 国密加密要求。
+impact_note: Direct trigger for ROAM's GB/T alignment analysis. Zhang Yuxin (Jilin University) submitted a comparative analysis
+  to the secretariat on 2026-04-16. See roam.autozyx.com.
+related_standards:
+- GB 44497
+- GB 39732
+- UN-R155
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

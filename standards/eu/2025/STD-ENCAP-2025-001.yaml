@@ -1,0 +1,29 @@
+id: STD-ENCAP-2025-001
+date: '2025-11-10'
+org: Euro NCAP
+org_full: European New Car Assessment Programme
+jurisdiction: eu
+type: policy
+status: published
+title_en: Euro NCAP Roadmap 2030 — Vision Zero through Active & Automated Safety
+title_cn: Euro NCAP 2030 路线图 — 通过主动与自动化安全实现零伤亡
+url: https://www.euroncap.com/en/press-media/press-releases/
+automation_level:
+- L1
+- L2
+- L3
+topics:
+- testing
+- hmi
+- perception
+- sotif
+summary_en: Euro NCAP's five-year roadmap (2026-2030) expanding consumer-facing test
+  protocols to cover driver monitoring, L3 readiness, automated emergency steering,
+  Vulnerable Road User (VRU) protection at night, and end-of-lane protection.
+summary_cn: Euro NCAP 五年路线图（2026-2030），将消费者测评扩展至驾驶员监控、L3 就绪性、自动紧急转向、夜间弱势道路使用者保护、车道终点保护等。
+impact_note: ⚠️[请核实：Roadmap 2030 正式发布时间]。对 OEM 产品规划直接影响 — NCAP 5 星已成为事实上的市场准入。
+related_standards:
+- ISO 11270
+- ISO 22179
+- UN-R152
+last_updated: '2026-04-16'

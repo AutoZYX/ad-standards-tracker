@@ -1,0 +1,26 @@
+id: STD-SHANGHAI-2024-001
+date: '2024-02-23'
+org: Shanghai-ICV
+org_full: Shanghai Intelligent Connected Vehicle Pilot Zone (Lingang / Jiading)
+jurisdiction: china
+type: policy
+status: in_force
+title_en: Shanghai Regulations on the Promotion of Pudong New Area for Intelligent
+  Connected Vehicle Innovation Applications
+title_cn: 上海市浦东新区促进无驾驶人智能网联汽车创新应用规定
+url: https://www.shpcpd.gov.cn/
+automation_level:
+- L4
+topics:
+- operations
+- type_approval
+summary_en: Pudong-specific regulation enabling driverless ICV operation. Establishes
+  safety officer responsibilities, mandatory insurance requirements, operational domain
+  specifications.
+summary_cn: 浦东新区针对无驾驶人智能网联汽车的专项规定。明确安全员职责、强制保险要求、运营设计域规范。
+impact_note: First provincial-level regulation with explicit 'driverless' language.
+  Enabled AutoX and WeRide driverless pilots in Lingang.
+related_standards:
+- Shenzhen ICV Regulations
+- GB 44497
+last_updated: '2026-04-16'

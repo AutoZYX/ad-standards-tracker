@@ -1,0 +1,72 @@
+name: Daily crawl
+
+on:
+  schedule:
+    # 02:00 UTC = 10:00 Beijing = 03:00 London (winter) / 02:00 BST (summer)
+    - cron: "0 2 * * *"
+  workflow_dispatch: {}  # allow manual trigger from GitHub UI
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install crawler deps
+        working-directory: tools/crawler
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+      - name: Run crawler
+        working-directory: tools/crawler
+        env:
+          CRAWLER_USER_AGENT: "AD-Standards-Tracker-Bot/1.0 (+https://github.com/AutoZYX/ad-standards-tracker; contact: zhangyuxin@jlu.edu.cn)"
+          CRAWLER_REQUEST_DELAY_SEC: "2"
+        run: |
+          if [ -f run.py ]; then
+            python run.py --out ../../standards --snapshot ./snapshots
+          else
+            echo "crawler not yet implemented — skipping"
+          fi
+
+      - name: Detect new/changed records
+        id: diff
+        run: |
+          git add standards/
+          if git diff --cached --quiet; then
+            echo "changes=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changes=true" >> "$GITHUB_OUTPUT"
+            git diff --cached --stat
+          fi
+
+      - name: Create Pull Request
+        if: steps.diff.outputs.changes == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: crawler/auto-update-${{ github.run_number }}
+          base: main
+          title: "chore(data): auto-crawled updates on ${{ github.event.repository.updated_at }}"
+          commit-message: "chore(data): auto-crawled updates"
+          body: |
+            Automated crawl discovered new or changed standards/consultations.
+            Please review the YAML diffs before merging.
+
+            - Workflow run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+            - Crawler User-Agent: `AD-Standards-Tracker-Bot/1.0`
+          labels: |
+            automated
+            data-update

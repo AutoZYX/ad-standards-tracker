@@ -1,0 +1,26 @@
+id: STD-UNECE-2022-002
+date: '2022-03-10'
+org: UNECE WP.29
+jurisdiction: international
+type: regulation
+status: in_force
+title_en: UN Regulation No. 157 Amendment 01 — Extension of ALKS to 130 km/h and lane
+  change
+title_cn: UN-R157 修订 01 — ALKS 时速延伸至 130 km/h 并支持变道
+url: https://unece.org/transport/documents/2022/02/standards/un-regulation-no-157-automated-lane-keeping-systems-alks
+automation_level:
+- L3
+topics:
+- sotif
+- functional_safety
+- type_approval
+summary_en: Extends the original UN-R157 scope from 60 km/h to 130 km/h and adds automated
+  lane-change capability. Strengthens Minimum Risk Manoeuvre (MRM) and Driver Availability
+  Recognition System (DARS) requirements.
+summary_cn: 将原 UN-R157 从 60 km/h 扩展到 130 km/h，并新增自动变道能力。加强了最小风险策略（MRM）和驾驶员可用性识别系统（DARS）要求。
+impact_note: ⚠️[请核实：修订编号 Amendment 01 及生效日期]。这是 L3 系统走向主干道的关键一步。
+related_standards:
+- ISO 21448
+- ISO 22737
+- UN-R155
+last_updated: '2026-04-16'

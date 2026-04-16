@@ -1,0 +1,28 @@
+id: STD-EC-2024-001
+date: '2024-08-01'
+org: European Commission
+org_full: European Commission
+jurisdiction: eu
+type: regulation
+status: in_force
+title_en: EU AI Act (Regulation 2024/1689) — Implications for automotive AI components
+title_cn: 欧盟人工智能法案（2024/1689）对汽车 AI 组件的影响
+url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=OJ:L_202401689
+effective_date: '2024-08-01'
+automation_level:
+- L2
+- L3
+- L4
+topics:
+- ai_governance
+- cybersecurity
+summary_en: Horizontal AI regulation. AI systems in vehicles (L2+ ADAS, ADS) fall under 'high-risk AI' and must comply with
+  conformity assessment, data governance, human oversight, robustness, cybersecurity requirements.
+summary_cn: 欧盟横向 AI 监管法规。车载 AI 系统（L2+ ADAS、ADS）属于'高风险 AI'，需满足合规评估、数据治理、人工监督、稳健性、网络安全要求。
+impact_note: Supplements sector-specific regulations (UN-R155, 2022/1426). Imposes transparency and documentation burdens.
+  Compliance required by Aug 2026 for high-risk systems.
+related_standards:
+- UN-R155
+- ISO/IEC 42001
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

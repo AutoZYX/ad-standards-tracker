@@ -1,0 +1,27 @@
+id: STD-IEEE-2022-001
+date: '2022-04-22'
+org: IEEE SA
+org_full: IEEE Standards Association
+jurisdiction: us
+type: standard
+status: in_force
+title_en: IEEE 2846-2022 — Standard for Assumptions in Safety-Related Models for Automated Driving Systems
+title_cn: IEEE 2846-2022 自动驾驶系统安全相关模型假设标准
+url: https://ieeexplore.ieee.org/document/9761121/
+effective_date: '2022-04-22'
+automation_level:
+- L3
+- L4
+topics:
+- sotif
+- testing
+summary_en: Defines minimum set of reasonable assumptions and foreseeable scenarios that safety-related models in ADS shall
+  consider. Framework for car-following, adjacent vehicles, intersections, occlusion scenarios with pedestrians and bicyclists.
+summary_cn: 规定自动驾驶系统的安全相关模型应考虑的最小合理假设与可预见场景集。框架覆盖跟车、邻车、交叉口、行人与骑行者的遮挡场景。
+impact_note: Developed by Intel/Mobileye (RSS model) and others. Widely referenced in ADS safety argumentation.
+related_standards:
+- ISO 34502
+- RSS
+- SAE J3237
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

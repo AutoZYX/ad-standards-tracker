@@ -1,0 +1,27 @@
+id: STD-EC-2022-001
+date: '2022-08-05'
+org: European Commission
+org_full: European Commission - DG MOVE
+jurisdiction: eu
+type: regulation
+status: in_force
+title_en: Commission Implementing Regulation (EU) 2022/1426 — Uniform procedures for EU type-approval of ADS
+title_cn: 欧盟委员会 2022/1426 实施条例：自动驾驶系统欧盟型式认证统一程序
+url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R1426
+effective_date: '2022-09-06'
+automation_level:
+- L3
+- L4
+topics:
+- type_approval
+- data_recording
+summary_en: First EU-level framework allowing type approval of L3/L4 ADS through 'innovative vehicle' pathway. Defines required
+  documentation, testing, and reporting obligations.
+summary_cn: 欧盟首个允许 L3/L4 自动驾驶系统通过'创新车辆'路径进行型式认证的法规，定义所需文档、测试与报告义务。
+impact_note: Enabled Mercedes DRIVE PILOT (Germany) and upcoming EU L3 approvals for BMW, Volvo, NIO.
+related_standards:
+- UN-R157
+- UN-R155
+- UN-R156
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

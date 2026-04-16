@@ -1,0 +1,21 @@
+id: STD-CA-DMV-2024-001
+date: '2024-10-15'
+org: California DMV
+org_full: California Department of Motor Vehicles — Autonomous Vehicles Branch
+jurisdiction: us
+type: regulation
+status: consultation
+title_en: Proposed Amendments to Deployment Regulations for Autonomous Heavy-Duty Vehicles
+title_cn: 加州自动驾驶重型车部署规则修订草案（征求意见）
+url: https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/
+automation_level:
+- L4
+topics:
+- operations
+- type_approval
+summary_en: California's proposed framework for permitting autonomous trucks (Class 8) on public roads. Defines testing requirements,
+  insurance thresholds, operational design domain restrictions.
+summary_cn: 加州对 8 级自动驾驶卡车在公开道路测试部署的提议框架，定义测试要求、保险门槛、运行设计域限制。
+impact_note: Opens California to autonomous trucking (previously excluded). Affects Kodiak, Waymo Via, Aurora, TuSimple.
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

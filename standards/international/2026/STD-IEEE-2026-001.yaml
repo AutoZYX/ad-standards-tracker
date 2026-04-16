@@ -1,0 +1,25 @@
+id: STD-IEEE-2026-001
+date: '2026-03-15'
+org: IEEE SA
+jurisdiction: international
+type: consultation
+status: draft
+title_en: IEEE P3128 — Draft Standard for Teleoperation of On-Road Automated Driving
+  Vehicles
+title_cn: IEEE P3128 道路自动驾驶车辆远程操控标准草案
+url: https://standards.ieee.org/ieee/3128/11200/
+automation_level:
+- L4
+topics:
+- teleoperation
+- cybersecurity
+- operations
+summary_en: Draft standard for teleoperation of on-road automated driving vehicles.
+  Covers latency, video quality, operator-vehicle authentication, fallback behavior,
+  operator training.
+summary_cn: 道路自动驾驶车辆远程操控标准草案。涵盖延迟、视频质量、操作员-车辆认证、降级行为、操作员培训。
+impact_note: ⚠️[请核实：P3128 草案发布日期]。与中国 SAC/TC114 的远程操控国标草案并行推进，全球首批远程操控专项标准。
+related_standards:
+- UN-R157
+- GB/T 远程操控
+last_updated: '2026-04-16'

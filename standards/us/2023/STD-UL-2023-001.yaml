@@ -1,0 +1,30 @@
+id: STD-UL-2023-001
+date: '2023-03-17'
+org: UL
+org_full: UL Standards & Engagement
+jurisdiction: us
+type: standard
+status: published
+title_en: UL 4600 Edition 3 — Standard for Safety for the Evaluation of Autonomous Products
+title_cn: UL 4600 第三版 自动驾驶产品安全评估标准
+url: https://ulse.org/focus-areas/travel-safety/autonomous-vehicles/
+effective_date: '2023-03-17'
+automation_level:
+- L3
+- L4
+- L5
+topics:
+- functional_safety
+- sotif
+- testing
+summary_en: 'Edition 3 updates: autonomous trucking coverage, refined Safety Performance Indicators (SPIs), new requirements
+  for post-incident behavior. Goal-based and technology-agnostic standard by Prof. Phil Koopman (CMU) and colleagues.'
+summary_cn: 第三版更新：增加自动驾驶卡车覆盖范围、细化安全性能指标（SPI）、新增事故后行为要求。由 CMU 的 Philip Koopman 教授团队牵头制定，目标导向、技术无关。
+impact_note: Industry gold standard for autonomous product safety case. Heavily influenced ROAM's 3-layer architecture and
+  KPI framework.
+related_standards:
+- ISO 21448
+- ISO 26262
+- SAE J3237
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

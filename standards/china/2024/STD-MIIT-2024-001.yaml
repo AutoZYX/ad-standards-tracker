@@ -1,0 +1,26 @@
+id: STD-MIIT-2024-001
+date: '2024-07-31'
+org: MIIT
+org_full: 中华人民共和国工业和信息化部
+jurisdiction: china
+type: policy
+status: in_force
+title_en: Notice on Approving First Batch of L3/L4 Pilot Entities (9 Consortia)
+title_cn: 关于公布首批智能网联汽车准入和上路通行试点联合体名单的通知
+url: https://www.miit.gov.cn/
+effective_date: '2024-07-31'
+automation_level:
+- L3
+- L4
+topics:
+- operations
+- type_approval
+summary_en: Approves first 9 consortia (OEM + city + operator) for the L3/L4 pilot program. Includes BYD-Shenzhen-Pony.ai,
+  NIO-Shanghai-NIO, Changan-Chongqing, BAIC-Beijing, SAIC-Shanghai, Dongfeng-Wuhan, GAC-Guangzhou, Yutong-Zhengzhou, Beijing-Yutong.
+summary_cn: 公布 L3/L4 首批 9 个试点联合体（车企+城市+运营方）名单，涵盖比亚迪-深圳-小马智行、蔚来-上海-蔚来、长安-重庆、北汽-北京、上汽-上海、东风-武汉、广汽-广州、宇通-郑州、北京-宇通。
+impact_note: Marks transition from testing to commercial deployment. Chinese L3/L4 market access now has clear regulatory
+  anchor.
+related_standards:
+- MIIT 2023-217
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

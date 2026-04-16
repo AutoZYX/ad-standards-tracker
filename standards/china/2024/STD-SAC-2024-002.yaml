@@ -1,0 +1,28 @@
+id: STD-SAC-2024-002
+date: '2024-05-15'
+org: SAC/TC114
+org_full: 全国汽车标准化技术委员会
+jurisdiction: china
+type: standard
+status: in_force
+title_en: GB 44497-2024 — Intelligent Connected Vehicles — Automated Driving Data Recording System
+title_cn: GB 44497-2024 智能网联汽车 自动驾驶数据记录系统
+url: https://openstd.samr.gov.cn/bzgk/gb/
+effective_date: '2025-01-01'
+automation_level:
+- L3
+- L4
+topics:
+- data_recording
+- functional_safety
+summary_en: Mandatory standard for automated driving data recording systems (DSSAD equivalent). Defines data elements, recording
+  conditions, storage, and retrieval. Prerequisite for L3/L4 type approval in China.
+summary_cn: 强制性国家标准，规定自动驾驶数据记录系统（类似 DSSAD）的数据元素、记录条件、存储与读取。是中国 L3/L4 型式认证的前置条件。
+impact_note: Referenced by the April 2026 draft GB/T Safety Events Data Interaction Technical Specification (the standard
+  you analyzed in our April 17 CATARC meeting document).
+related_standards:
+- GB 39732
+- ISO 21434
+- UN-R157
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

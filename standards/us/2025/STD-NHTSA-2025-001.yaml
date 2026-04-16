@@ -1,0 +1,23 @@
+id: STD-NHTSA-2025-001
+date: '2025-07-01'
+org: NHTSA
+org_full: National Highway Traffic Safety Administration
+jurisdiction: us
+type: research
+status: published
+title_en: Report to Congress — NHTSA Research and Rulemaking on Automated Driving Systems (July 2025)
+title_cn: NHTSA 提交国会报告：自动驾驶系统研究与规则制定（2025 年 7 月）
+url: https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-07/report-congress-research-rulemaking-automated-driving-systems-july-2025-tag.pdf
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- type_approval
+- operations
+summary_en: 'Congressional report outlining NHTSA''s ongoing research and regulatory roadmap for ADS: third-generation exemption
+  program for non-traditional ADS-only vehicles, automated driving framework, operational design domain regulations.'
+summary_cn: NHTSA 向美国国会的报告，概述自动驾驶系统研究与监管路线图：无传统驾驶位的第三代 ADS 车辆豁免计划、自动驾驶监管框架、运行设计域规则。
+impact_note: Signals direction of US federal ADS regulation through 2027-2028.
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

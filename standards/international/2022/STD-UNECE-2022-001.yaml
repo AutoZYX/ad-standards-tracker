@@ -1,0 +1,19 @@
+id: "STD-UNECE-2022-001"
+date: "2022-06-24"
+org: "UNECE WP.29"
+org_full: "UN Economic Commission for Europe - World Forum for Harmonization of Vehicle Regulations"
+jurisdiction: "international"
+type: "regulation"
+status: "in_force"
+title_en: "UN Regulation No. 157 — Automated Lane Keeping Systems (ALKS), Amendment 01 (speed increase to 130 km/h)"
+title_cn: "UN-R157 自动车道保持系统 第 01 次修订（速度上限提高至 130 km/h）"
+url: "https://unece.org/transport/documents/2022/06/standards/un-regulation-no-157-uniform-provisions-concerning-approval"
+effective_date: "2023-01-01"
+automation_level: ["L3"]
+topics: ["type_approval", "data_recording", "hmi"]
+summary_en: "First amendment to UN-R157 expanded ALKS scope from 60 km/h to 130 km/h and added provisions for lane changes. Original R157 (2021) was the first international regulation approving a Level 3 feature for mass production. Germany's Mercedes DRIVE PILOT was first approved under R157."
+summary_cn: "UN-R157 首次修订将自动车道保持系统速度上限从 60 km/h 提升到 130 km/h 并增加变道条款。原版 R157（2021）是首个批准 L3 功能量产的国际法规。奔驰 DRIVE PILOT 是首个在 R157 框架下获批的产品。"
+impact_note: "Defines the baseline for any Level 3 highway autonomy globally. Chinese OEMs seeking European market entry for L3 features (e.g., Geely/NIO/HIMA) must comply."
+related_standards: ["UN-R155", "ISO 34502", "UN-R79"]
+contributor: "ROAM Core Team"
+last_updated: "2026-04-16"

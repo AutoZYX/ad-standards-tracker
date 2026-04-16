@@ -1,0 +1,26 @@
+id: STD-BJHAD-2023-001
+date: '2023-07-07'
+org: Beijing-HAD
+org_full: Beijing High-Level Automated Driving Demonstration Zone
+jurisdiction: china
+type: policy
+status: in_force
+title_en: Beijing ICV Policy Pilot Zone 3.0 — Expansion to 600 km² and Commercial
+  Robotaxi Charging
+title_cn: 北京市高级别自动驾驶示范区政策试点 3.0 — 扩展至 600 平方公里并允许 Robotaxi 商业收费
+url: https://www.bjcapedz.cn/
+automation_level:
+- L4
+topics:
+- operations
+- teleoperation
+- v2x
+summary_en: Third-phase expansion of Beijing's HAD zone to 600 km² including Beijing
+  Daxing Airport access. Permits commercial fare-charging Robotaxi operations for
+  Baidu Apollo, Pony.ai, others.
+summary_cn: 北京高级别自动驾驶示范区三期扩展至 600 平方公里，含大兴机场接入。允许百度 Apollo、小马智行等开展商业化收费 Robotaxi 运营。
+impact_note: Single largest urban AV pilot zone globally by area. Directly enables
+  commercial Robotaxi revenue.
+related_standards:
+- Beijing ICV Policy 2.0
+last_updated: '2026-04-16'

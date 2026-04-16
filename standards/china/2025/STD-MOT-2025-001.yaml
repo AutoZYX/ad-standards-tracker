@@ -1,0 +1,24 @@
+id: STD-MOT-2025-001
+date: '2025-05-20'
+org: MoT
+org_full: Ministry of Transport of China
+jurisdiction: china
+type: policy
+status: in_force
+title_en: Notice on Standardized Management of Autonomous Driving Taxi Operations
+title_cn: 关于规范自动驾驶出租汽车运营管理的通知
+url: https://www.mot.gov.cn/
+automation_level:
+- L4
+topics:
+- operations
+- teleoperation
+summary_en: MoT directive standardizing Robotaxi operations nationwide. Requires operator
+  licensing, safety officer/teleoperator ratios, incident reporting to MoT Emergency
+  Management Platform.
+summary_cn: 交通运输部规范全国 Robotaxi 运营的通知。要求运营资质、安全员/远程操控员配比、向交通运输部应急管理平台上报事件。
+impact_note: ⚠️[请核实：通知文号与发布日期]。结束了各地 Robotaxi 运营标准各自为政的局面。
+related_standards:
+- Shenzhen ICV Regulations
+- Shanghai Pudong Regulations
+last_updated: '2026-04-16'

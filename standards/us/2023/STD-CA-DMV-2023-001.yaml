@@ -1,0 +1,26 @@
+id: STD-CA-DMV-2023-001
+date: '2023-02-02'
+org: California DMV
+jurisdiction: us
+type: policy
+status: in_force
+title_en: California Autonomous Vehicle Testing and Deployment Regulations (Title
+  13, Division 1, Chapter 1, Article 3.7)
+title_cn: 加州自动驾驶车辆测试与部署法规（第 13 编第 1 类第 1 章第 3.7 条）
+url: https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- operations
+- type_approval
+summary_en: California's primary AV regulatory framework covering Driverless Testing
+  Permits, Driverless Deployment Permits, and mandatory disengagement/collision reporting.
+  Companies publishing annual disengagement reports.
+summary_cn: 加州 AV 监管核心框架，涵盖无驾驶员测试许可、无驾驶员部署许可及强制的脱离/碰撞报告。各公司每年公开脱离报告。
+impact_note: The de-facto regulatory benchmark for U.S. states. Waymo, Cruise, Zoox
+  all operate under this framework.
+related_standards:
+- NHTSA SGO 2021-01
+last_updated: '2026-04-16'

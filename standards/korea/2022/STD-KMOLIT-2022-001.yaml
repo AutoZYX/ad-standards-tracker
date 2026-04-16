@@ -1,0 +1,24 @@
+id: STD-KMOLIT-2022-001
+date: '2022-09-15'
+org: Korea MOLIT
+jurisdiction: korea
+type: policy
+status: in_force
+title_en: K-City Autonomous Driving Test Bed — Operation Guidelines
+title_cn: K-City 自动驾驶测试场运营指南
+url: https://www.molit.go.kr/english/
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- operations
+summary_en: Operational guidelines for K-City, Korea's flagship autonomous driving
+  test bed near Hwaseong. Covers scenario catalog, test-bed access, data sharing,
+  certification of testing activities.
+summary_cn: 韩国旗舰自动驾驶测试场 K-City（位于华城附近）的运营指南。涵盖场景清单、测试场准入、数据共享、测试活动认证。
+impact_note: ⚠️[请核实：K-City 运营指南版本与发布日期]。Hyundai-Kia、KATRI、LG 等韩国产业方的主要验证场。
+related_standards:
+- ISO 34502
+- ISO 22737
+last_updated: '2026-04-16'

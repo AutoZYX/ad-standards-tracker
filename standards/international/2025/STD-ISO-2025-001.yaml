@@ -1,0 +1,28 @@
+id: STD-ISO-2025-001
+date: '2025-06-15'
+org: ISO
+org_full: International Organization for Standardization
+jurisdiction: international
+type: consultation
+status: consultation
+title_en: ISO/DIS 21448:2025 — SOTIF Revision (DIS stage)
+title_cn: ISO/DIS 21448:2025 预期功能安全修订（DIS 阶段）
+url: https://www.iso.org/standard/91001.html
+automation_level:
+- L1
+- L2
+- L3
+- L4
+topics:
+- sotif
+- functional_safety
+summary_en: Draft International Standard for revised SOTIF. Strengthens requirements for AI/ML component validation, runtime
+  monitoring, and integration with cybersecurity (ISO/SAE 21434).
+summary_cn: ISO 21448 修订的 DIS 阶段草案，加强对 AI/ML 组件验证、运行时监测、与网络安全（ISO/SAE 21434）集成的要求。
+impact_note: Expected publication 2026. Major update for modern ADS using deep learning perception/planning.
+related_standards:
+- ISO 21448:2022
+- ISO/SAE 21434
+- ISO/IEC 42001
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'

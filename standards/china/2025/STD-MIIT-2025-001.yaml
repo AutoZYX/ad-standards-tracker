@@ -1,0 +1,26 @@
+id: STD-MIIT-2025-001
+date: '2025-02-26'
+org: MIIT
+jurisdiction: china
+type: consultation
+status: consultation
+title_en: Draft GB — Intelligent Connected Vehicles — Combined Driving Automation
+  Safety Requirements
+title_cn: 《智能网联汽车组合驾驶辅助系统安全要求》强制性国家标准（征求意见稿）
+url: https://www.miit.gov.cn/
+automation_level:
+- L2
+topics:
+- functional_safety
+- hmi
+- sotif
+summary_en: Mandatory GB standard draft covering L2 combined driving automation (NOA,
+  pilot assist). Addresses driver monitoring, lane-change safety envelope, HMI warning
+  sequences, over-the-air update control.
+summary_cn: 针对 L2 组合驾驶辅助（NOA、领航辅助）的强制性国标征求意见稿。涵盖驾驶员监控、变道安全包线、HMI 警示序列、OTA 更新控制。
+impact_note: ⚠️[请核实：GB 标准号与意见征集截止日期]。对比亚迪、小鹏、蔚来、理想的 NOA 产品有直接合规影响。
+related_standards:
+- GB 44497
+- UN-R152
+- Euro NCAP ALKS
+last_updated: '2026-04-16'

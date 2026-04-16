@@ -1,0 +1,24 @@
+id: STD-KMOLIT-2020-001
+date: '2020-05-01'
+org: Korea MOLIT
+org_full: Ministry of Land, Infrastructure and Transport (Republic of Korea)
+jurisdiction: korea
+type: regulation
+status: in_force
+title_en: Act on the Promotion and Support for Commercialization of Autonomous Vehicles
+title_cn: 自动驾驶汽车商业化促进及支援法
+url: https://www.molit.go.kr/english/USR/BORD0201/m_28286/BRD.jsp
+automation_level:
+- L3
+- L4
+topics:
+- operations
+- type_approval
+summary_en: Korea's primary legislation promoting commercialization of autonomous
+  vehicles. Establishes Autonomous Driving Pilot Cities, special districts for L4
+  testing, and MOLIT-led approval for pilot services.
+summary_cn: 韩国推进自动驾驶车辆商业化的基础性立法。确立自动驾驶试点城市、L4 测试特区，以及 MOLIT 主导的试点服务审批。
+impact_note: ⚠️[请核实：韩文法律名称翻译与发布日期]。韩国第一部 AV 专项法律，与日本类似，后续由 MOLIT 通过行政令细化。
+related_standards:
+- UN-R157
+last_updated: '2026-04-16'

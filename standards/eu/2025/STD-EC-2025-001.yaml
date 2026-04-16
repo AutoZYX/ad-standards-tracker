@@ -1,0 +1,23 @@
+id: STD-EC-2025-001
+date: '2025-03-01'
+org: European Commission
+org_full: European Commission - DG MOVE
+jurisdiction: eu
+type: consultation
+status: consultation
+title_en: Call for Evidence — Revised EU General Safety Regulation (GSR-II) 2028+
+title_cn: 欧盟第二代通用安全法规（GSR-II）2028+ 证据征集
+url: https://transport.ec.europa.eu/
+effective_date: '2025-03-01'
+automation_level:
+- L2
+- L3
+topics:
+- type_approval
+- functional_safety
+summary_en: Consultation on next-generation EU General Safety Regulation, scheduled post-2028. Considers mandatory L3 safety
+  features, enhanced AEB, pedestrian/cyclist protection refinements, integration with AI Act requirements.
+summary_cn: 欧盟第二代通用安全法规（2028 后）征求意见。考虑强制 L3 安全功能、加强 AEB、细化行人/骑行者保护、与 AI Act 要求整合。
+impact_note: Will shape EU vehicle regulation through 2030s. Critical for OEM product planning cycle.
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'
