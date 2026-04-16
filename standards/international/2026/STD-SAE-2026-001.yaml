@@ -1,0 +1,28 @@
+id: STD-SAE-2026-001
+date: '2025-12-15'
+org: SAE International
+jurisdiction: international
+type: standard
+status: draft
+title_en: SAE J3237 (WIP) — Driving Assessment Metrics for Automated Driving Systems
+title_cn: SAE J3237（在研）自动驾驶系统驾驶评价指标
+url: https://standardsworks.sae.org/standards-committees/road-automated-driving-orad-committee/j3237
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- sotif
+- functional_safety
+summary_en: Recommended practice under development by SAE ORAD committee. Defines
+  a set of safety-related driving assessment (DA) metrics that quantify the driving
+  performance of ADS-operated vehicles. Intended for V&V activities and test methodology
+  documentation.
+summary_cn: SAE ORAD 委员会在研的推荐性实践。定义一组安全相关驾驶评价（DA）指标，量化 ADS 车辆驾驶性能，用于验证与确认（V&V）活动及测试方法论。
+impact_note: ⚠️[请核实：J3237 具体发布时间表]。与 ISO 5083（安全架构）、SAE J3131（参考架构）配套，构成 ADS 安全设计-架构-度量三件套。
+related_standards:
+- SAE J3131
+- ISO 5083
+- ISO 34502
+- SAE J3018
+last_updated: '2026-04-16'

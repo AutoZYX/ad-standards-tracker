@@ -1,0 +1,24 @@
+id: STD-METI-2026-001
+date: '2026-02-10'
+org: METI Japan
+jurisdiction: japan
+type: policy
+status: published
+title_en: Digital Lifeline National Plan — AD Service Deployment 2030 Vision
+title_cn: 数字生命线国家计划 — 2030 自动驾驶服务部署愿景
+url: https://www.meti.go.jp/english/press/2026/
+automation_level:
+- L4
+topics:
+- operations
+- v2x
+- teleoperation
+summary_en: METI's post-RoAD-to-L4 national framework. Targets L4 services in 100+
+  locations by 2030. Integrates with 'Digital Lifeline' infrastructure (V2X, edge
+  compute, smart poles). Public-private co-investment model.
+summary_cn: METI 在 RoAD to L4 后的国家框架。目标 2030 年在 100+ 地点部署 L4 服务。与"数字生命线"基础设施（V2X、边缘计算、智慧杆塔）融合。公私合营投资模式。
+impact_note: ⚠️[请核实：2026-02 发布日期与 100+ 地点目标数据]。日本政府定义的 2030 路线图。
+related_standards:
+- Japan Road Transport Vehicle Act (L4)
+- UN-R157
+last_updated: '2026-04-16'

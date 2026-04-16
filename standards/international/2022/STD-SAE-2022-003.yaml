@@ -1,0 +1,31 @@
+id: STD-SAE-2022-003
+date: '2022-03-01'
+org: SAE International
+jurisdiction: international
+type: standard
+status: published
+title_en: SAE J3131_202203 — Definitions for Terms Related to Automated Driving Systems
+  Reference Architecture
+title_cn: SAE J3131_202203 自动驾驶系统参考架构相关术语的定义
+url: https://www.sae.org/standards/content/j3131_202203/
+automation_level:
+- L4
+- L5
+topics:
+- functional_safety
+- teleoperation
+- operations
+summary_en: Recommended practice providing a reference functional architecture for
+  on-road ADS. Defines concepts including Remote Assistance (RA), where a remote human
+  operator provides guidance to an ADS-DV without direct vehicle control. Foundation
+  for industry-wide ADS architecture discussion.
+summary_cn: 为道路 ADS 提供参考功能架构的推荐性实践。定义了包括远程辅助（RA）在内的概念 — 远程操作员为 ADS-DV 提供指引但不直接控车。是行业级
+  ADS 架构讨论的基础文件。
+impact_note: Remote Assistance 概念的权威定义，与 Robotaxi 行业的远程操控实践（Waymo、Cruise、Zoox、百度 Apollo
+  等）直接相关。与 ROAM 事故数据库中"remote ops causal factor"分类高度契合。
+related_standards:
+- ISO 5083
+- SAE J3237
+- SAE J3016
+- UN-R157
+last_updated: '2026-04-16'

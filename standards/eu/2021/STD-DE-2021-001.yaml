@@ -1,0 +1,29 @@
+id: STD-DE-2021-001
+date: '2021-07-28'
+org: BMVI Germany
+org_full: Bundesministerium für Digitales und Verkehr (German Federal Ministry)
+jurisdiction: eu
+type: regulation
+status: in_force
+title_en: German Road Traffic Act (StVG) Amendment — Act on Autonomous Driving (Level
+  4)
+title_cn: 德国道路交通法（StVG）修订 — 自动驾驶法案（L4）
+url: https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl121s3108.pdf
+effective_date: '2022-07-01'
+automation_level:
+- L4
+topics:
+- operations
+- type_approval
+- teleoperation
+summary_en: World's first national-level L4 regulation. Defines Technical Supervisor
+  role (not a driver but remote oversight), authorization for driverless operation
+  in Operational Design Areas (ODA), liability framework. Enables services like MOIA,
+  HOLON, Continental.
+summary_cn: 全球首部国家级 L4 法规。定义技术监督员（非驾驶员但承担远程监督）角色、运行设计区域（ODA）内无人驾驶授权、责任框架。支持 MOIA、HOLON、Continental
+  等服务。
+impact_note: UK Automated Vehicles Act 2024 和中国地方立法的参考对象。技术监督员概念是远程运营合规的原型。
+related_standards:
+- EU Regulation 2022/1426
+- UN-R157
+last_updated: '2026-04-16'

@@ -1,0 +1,33 @@
+id: STD-ISO-2018-001
+date: '2018-12-01'
+org: ISO
+org_full: ISO TC22/SC32 Functional Safety
+jurisdiction: international
+type: standard
+status: in_force
+title_en: ISO 26262:2018 — Road vehicles — Functional Safety (2nd Edition, 12 Parts)
+title_cn: ISO 26262:2018 道路车辆 功能安全（第二版，12 部分）
+url: https://www.iso.org/standard/68383.html
+automation_level:
+- L0
+- L1
+- L2
+- L3
+- L4
+- L5
+topics:
+- functional_safety
+summary_en: The foundational functional safety standard for automotive E/E systems.
+  2nd edition (2018) expanded scope to include trucks/buses/motorcycles and added
+  Part 11 (semiconductor) and Part 12 (motorcycles). Defines ASIL A/B/C/D safety integrity
+  levels via HARA.
+summary_cn: 汽车 E/E 系统功能安全的基础标准。第二版（2018）将范围扩展至卡车/客车/摩托车，新增第 11 部分（半导体）和第 12 部分（摩托车）。通过
+  HARA 定义 ASIL A/B/C/D 安全完整性等级。
+impact_note: Universally referenced; prerequisite reading for any automotive safety
+  engineer. Complements ISO 21448 (SOTIF) and ISO/SAE 21434 (cybersecurity). 3rd edition
+  in preparation at ISO TC22/SC32 WG8.
+related_standards:
+- ISO 21448
+- ISO/SAE 21434
+- ISO 5083
+last_updated: '2026-04-16'

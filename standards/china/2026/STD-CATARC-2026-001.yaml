@@ -1,0 +1,37 @@
+id: STD-CATARC-2026-001
+date: '2026-03-05'
+org: CATARC
+org_full: China Automotive Technology and Research Center (C-NCAP Management Center)
+jurisdiction: china
+type: consultation
+status: consultation
+title_en: C-NCAP 2027 (Draft for Comment) — Active Safety Assessment Paradigm Shift
+  to Scenario-Driven Evaluation
+title_cn: C-NCAP 2027 征求意见稿 — 主动安全测评范式向场景驱动转变
+url: https://www.c-ncap.org.cn/notice
+effective_date: '2027-01-01'
+automation_level:
+- L1
+- L2
+topics:
+- testing
+- perception
+- sotif
+- hmi
+summary_en: 'C-NCAP''s triennial revision (2024→2027). Shifts active safety evaluation
+  from function-list checklist to scenario-driven paradigm. Car-to-Car: 6 mandatory
+  + 9 extension scenarios (Appendix Q includes AEB false-activation as extension test).
+  Adds rain/fog simulation, extensive nighttime tests, world-first nighttime two-wheeler
+  scenarios, agricultural three-wheeler, shared bicycles, crouching/toddler pedestrian
+  targets. Explicitly de-duplicates with the upcoming GB AEB mandatory standard.'
+summary_cn: C-NCAP 三年一更（2024→2027）。主动安全测评从"功能清单打勾"范式转向"场景驱动"范式。车对车冲突含 6 项基础（必测）+ 9
+  项拓展（抽测）场景，附录 Q 将 AEB 误作用纳入拓展场景。引入雨雾模拟、大量夜间场景、国际首次引入夜间二轮车场景、农用三轮车、共享单车、蹲姿儿童/幼儿/绿化带干扰等目标物。明确与
+  GB AEB 强标去重，分清强标门槛与评测拔高。
+impact_note: ⚠️[请核实：C-NCAP 2027 征求意见稿具体发布日期]。场景驱动范式是中国测评体系与 ISO 34502/NATM 国际趋势的对齐。对
+  OEM 产品规划影响比强标更快、更重 — NCAP 5 星是事实上的市场门槛。与张玉新驭研科技的场景驱动测评业务高度契合。
+related_standards:
+- C-NCAP 2024
+- ISO 34502
+- MIIT GB AEB (upcoming)
+- MIIT 组合驾驶辅助强标
+last_updated: '2026-04-16'

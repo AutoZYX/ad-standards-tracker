@@ -1,0 +1,26 @@
+id: STD-CA-DMV-2026-002
+date: '2026-03-20'
+org: California DMV
+jurisdiction: us
+type: policy
+status: in_force
+title_en: California DMV Updated Driverless Deployment Permit Guidance — Post-Cruise
+  Incident Safety Requirements
+title_cn: 加州 DMV 更新版无驾驶员部署许可指南 — Cruise 事件后的安全要求
+url: https://www.dmv.ca.gov/portal/vehicle-industry-services/autonomous-vehicles/deployment-permit/
+automation_level:
+- L4
+topics:
+- operations
+- teleoperation
+- data_recording
+summary_en: Strengthened safety-case review process following the 2023 Cruise pedestrian
+  dragging incident. Requires real-time incident reporting, mandatory safety officer
+  teleoperation coverage ratios, and enhanced disengagement data format.
+summary_cn: 2023 Cruise 拖曳行人事件后强化的安全案例评审流程。要求实时事件上报、强制安全员/远程操控员配比、扩展的脱离数据格式。
+impact_note: ⚠️[请核实：2026-03 政策发布具体日期与细则]。Cruise 退出加州后监管收紧的延续，对 Waymo、Zoox、Motional
+  未来扩张有影响。
+related_standards:
+- NHTSA SGO 2021-01
+- CA Title 13 Article 3.7
+last_updated: '2026-04-16'

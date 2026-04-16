@@ -1,0 +1,31 @@
+id: STD-ISO-2023-002
+date: '2023-02-15'
+org: ISO
+jurisdiction: international
+type: standard
+status: in_force
+title_en: ISO 24089:2023 — Road vehicles — Software update engineering
+title_cn: ISO 24089:2023 道路车辆 软件更新工程
+url: https://www.iso.org/standard/77796.html
+automation_level:
+- L0
+- L1
+- L2
+- L3
+- L4
+- L5
+topics:
+- ota
+- cybersecurity
+- functional_safety
+summary_en: Defines engineering requirements for vehicle software update systems throughout
+  the product lifecycle. Complements UN-R156 (SUMS). Covers update campaign design,
+  integrity/authenticity verification, rollback, user interaction.
+summary_cn: 规定车辆软件更新系统在产品生命周期内的工程要求。与 UN-R156（SUMS）配套。涵盖更新活动设计、完整性/真实性校验、回滚、用户交互。
+impact_note: Technical backbone enabling UN-R156 / China MIIT OTA rules compliance.
+  Foundational for Robotaxi fleet software management.
+related_standards:
+- UN-R156
+- ISO/SAE 21434
+- MIIT OTA Regulation
+last_updated: '2026-04-16'

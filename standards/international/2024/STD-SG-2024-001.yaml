@@ -1,0 +1,26 @@
+id: STD-SG-2024-001
+date: '2024-11-15'
+org: Singapore LTA
+org_full: Land Transport Authority of Singapore
+jurisdiction: international
+type: policy
+status: in_force
+title_en: Singapore Milestone Testing Framework for Autonomous Vehicles (TR 68)
+title_cn: 新加坡自动驾驶车辆里程碑测试框架（TR 68）
+url: https://www.lta.gov.sg/content/ltagov/en/industry_innovations/technologies/autonomous_vehicles.html
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- operations
+summary_en: Singapore's Technical Reference 68 (TR 68) — a phased milestone-based
+  AV testing and deployment framework. Covers sensors, vehicle behavior, cybersecurity,
+  data. Reference for ASEAN countries.
+summary_cn: 新加坡 Technical Reference 68（TR 68）— 分阶段里程碑式 AV 测试部署框架。涵盖传感器、车辆行为、网络安全、数据。是东盟国家的参考。
+impact_note: ⚠️[请核实：TR 68 版本与发布日期]。亚洲第二套成熟 L4 测试框架（继日本后）。
+related_standards:
+- Japan L4 framework
+- UK CAV framework
+- UN-R157
+last_updated: '2026-04-16'

@@ -1,0 +1,29 @@
+id: STD-UNECE-2020-002
+date: '2020-02-04'
+org: UNECE WP.29
+jurisdiction: international
+type: regulation
+status: in_force
+title_en: UN Regulation No. 152 — Advanced Emergency Braking Systems (AEBS) for M1
+  and N1 Vehicles
+title_cn: UN-R152 乘用车与轻型商用车的先进紧急制动系统（AEBS）
+url: https://unece.org/transport/documents/2020/02/standards/un-regulation-no-152-advanced-emergency-braking-systems
+effective_date: '2022-07-01'
+automation_level:
+- L0
+- L1
+- L2
+topics:
+- functional_safety
+- perception
+summary_en: Mandates AEB for passenger cars (M1) and light commercial vehicles (N1)
+  in UNECE contracting parties. Covers car-to-car (C2C), car-to-pedestrian (C2P),
+  car-to-cyclist (C2C) scenarios. Speed range expanded through amendments.
+summary_cn: 强制 UNECE 缔约方的乘用车（M1）和轻型商用车（N1）装备 AEB。覆盖车对车（C2C）、车对行人（C2P）、车对自行车（C2C）场景。通过多轮修订扩展了速度范围。
+impact_note: Foundational active safety regulation. Basis for C-NCAP AEB scenarios
+  and forthcoming China GB AEB mandatory standard.
+related_standards:
+- Euro NCAP AEB
+- C-NCAP 2024
+- China GB AEB (upcoming)
+last_updated: '2026-04-16'

@@ -1,0 +1,34 @@
+id: STD-MIIT-2026-001
+date: '2026-04-16'
+org: MIIT
+org_full: Ministry of Industry and Information Technology (China)
+jurisdiction: china
+type: consultation
+status: consultation
+title_en: Draft GB (Report-for-Approval) — Intelligent Connected Vehicles — Combined
+  Driving Assistance System Safety Requirements
+title_cn: 《智能网联汽车 组合驾驶辅助系统安全要求》强制性国家标准（报批稿征求意见）
+url: https://www.miit.gov.cn/jgsj/zbes/gzdt/art/2026/art_04c2d4f1.html
+effective_date: '2027-01-01'
+automation_level:
+- L2
+topics:
+- functional_safety
+- hmi
+- sotif
+- type_approval
+summary_en: 'Report-for-Approval draft published 2026-04-16 for 7-day consultation
+  (through 2026-04-22). Covers basic single-lane, basic multi-lane, and navigation
+  combined driving assistance systems. Specifies usage instructions, driver training,
+  driver state monitoring, system disabling after repeated hand/eye disengagement
+  events. Proposed enforcement: 2027-01-01 for all new type approvals.'
+summary_cn: 2026 年 4 月 16 日起公开征求报批稿意见，截止 4 月 22 日（仅 7 天）。覆盖基础单车道、基础多车道、导航组合驾驶辅助三类系统，规定使用说明、驾驶员培训、驾驶员状态监测、脱手脱眼多次后系统禁用等要求。拟
+  2027-01-01 对所有新申请准入的车型强制实施。
+impact_note: ⚠️[请核实：报批稿文号与实施日期细节]。是继 2025-02 征求意见稿后的第二轮征询。对比亚迪、小鹏、蔚来、理想、华为鸿蒙智行、小米等所有
+  L2 NOA 产品有直接合规影响 —— 系统自动禁用机制将显著改变现有产品体验。
+related_standards:
+- GB 44497-2024
+- UN-R152
+- Euro NCAP ALKS
+- MIIT 2025-02 征求意见稿
+last_updated: '2026-04-16'

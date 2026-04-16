@@ -1,0 +1,30 @@
+id: STD-ISO-2023-003
+date: '2023-07-06'
+org: ISO
+jurisdiction: international
+type: standard
+status: in_force
+title_en: ISO 34503:2023 — Road vehicles — Test scenarios for automated driving systems
+  — Taxonomy for operational design domain
+title_cn: ISO 34503:2023 道路车辆 自动驾驶系统测试场景 — 运行设计域（ODD）分类
+url: https://www.iso.org/standard/78952.html
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- sotif
+- operations
+summary_en: Defines a hierarchical taxonomy for Operational Design Domain (ODD) description.
+  Provides common vocabulary for OEM-regulator-supplier ODD exchange. Pairs with ISO
+  34502 (evaluation framework) and ISO 34504 (scenario categorization).
+summary_cn: 定义运行设计域（ODD）描述的分层分类体系。为 OEM、监管方、供应商之间的 ODD 交换提供通用词汇。与 ISO 34502（评估框架）和
+  ISO 34504（场景分类）配套。
+impact_note: SOTIF validation 的核心依赖 — ODD 是 SOTIF 分析的起点。ISO 34503 + 34502 + 34504
+  构成 ISO 场景驱动测试三件套。
+related_standards:
+- ISO 34502
+- ISO 34504
+- ISO 21448
+- SAE J3164
+last_updated: '2026-04-16'

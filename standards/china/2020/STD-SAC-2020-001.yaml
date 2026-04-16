@@ -1,0 +1,28 @@
+id: STD-SAC-2020-001
+date: '2020-10-11'
+org: SAC/TC114
+jurisdiction: china
+type: standard
+status: in_force
+title_en: GB 39732-2020 — Motor vehicle event data recorder
+title_cn: GB 39732-2020 汽车事件数据记录系统
+url: https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=5FE8B010074DB95C5AE51A5A796C9F12
+effective_date: '2022-01-01'
+automation_level:
+- L0
+- L1
+- L2
+- L3
+topics:
+- data_recording
+- type_approval
+summary_en: Mandatory China EDR standard. Defines minimum data elements, trigger conditions,
+  15-second pre-crash + 5-second post-crash retention. Mandatory for all M1-class
+  passenger cars since 2022-01-01.
+summary_cn: 中国 EDR 强制性国标。规定最小数据元素、触发条件、碰撞前 15 秒 + 碰撞后 5 秒数据保存。2022-01-01 起对所有 M1 类乘用车强制。
+impact_note: Precursor to GB 44497 (DSSAD). EDR data becoming key evidence in AD-related
+  accident investigations.
+related_standards:
+- UN-R160
+- GB 44497-2024
+last_updated: '2026-04-16'
