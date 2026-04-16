@@ -54,10 +54,10 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
 
   const categoryCounts = useMemo(() => {
     const c: Record<Category, number> = {
-      published: 0,
-      drafts: 0,
-      notices: 0,
-      interpretations: 0,
+      standards: 0,
+      regulations: 0,
+      assessments: 0,
+      updates: 0,
     };
     withCategory.forEach(({ cat }) => {
       c[cat] += 1;

@@ -51,13 +51,19 @@ export type Topic =
 
 /**
  * Top-level category for Standards Library UI navigation.
- * Derived from `type` + `status` via categorize() in lib/categories.ts.
+ * Derived from `type` + `org` + title keywords via categorize() in lib/categories.ts.
+ *
+ * Categories model the real-world distinction between:
+ * - "standards"     : technical standards with org+number (ISO/IEEE/SAE/UL/GB/KS)
+ * - "regulations"   : legal instruments (UN-R/EU Reg/national Acts)
+ * - "assessments"   : NCAP-family consumer assessment protocols (Euro NCAP/C-NCAP/i-VISTA)
+ * - "updates"       : drafts, meeting notices, policy roadmaps, interpretations, recalls
  */
 export type Category =
-  | "published"      // 真正的标准库 — regulation/standard already in_force/published
-  | "drafts"         // 标准征求意见稿 — consultation or draft
-  | "notices"        // 相关通知 — meeting_notice, policy announcements
-  | "interpretations"; // 标准解读 — white_paper/research/interpretation
+  | "standards"
+  | "regulations"
+  | "assessments"
+  | "updates";
 
 export interface StandardRecord {
   id: string;
@@ -95,14 +101,19 @@ export interface DashboardStats {
 
 /**
  * Categorization of data sources for the Sources page.
- * Separates government regulators, national SDOs, industry orgs, and assessment bodies.
+ * Per 2026-04-16 user review:
+ * - sdo: national & international **official** SDOs — ISO, UNECE, SAC/TC114, KATS, JASIC, JSAE, DIN/VDA, ANSI
+ * - industry_org: **industry-led** consortia/associations — IEEE, SAE, UL, ASAM, AUTOSAR, 3GPP, 5GAA
+ * - government: regulatory authorities (ministries, DMVs)
+ * - assessment: NCAP-family consumer assessment bodies
+ * - demonstration: pilot/demonstration zones
  */
 export type SourceCategory =
-  | "government"       // 政府监管 (MIIT, NHTSA, EC, UK DfT, MLIT/METI, MOLIT, etc.)
-  | "sdo"              // 国家/国际标准组织 (ISO, UNECE, SAC/TC114, SAE, IEEE, KATS)
-  | "industry_org"     // 行业标准组织 (VDA, ASAM, AUTOSAR, 5GAA, TISAX)
-  | "assessment"       // 测评机构 (Euro NCAP, C-NCAP/CATARC, CAERI, IIHS)
-  | "demonstration";   // 示范区 (Beijing HAD, Shanghai ICV, Shenzhen)
+  | "government"
+  | "sdo"
+  | "industry_org"
+  | "assessment"
+  | "demonstration";
 
 export interface SourceInfo {
   id: string;

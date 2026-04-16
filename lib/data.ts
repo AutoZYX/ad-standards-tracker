@@ -47,10 +47,10 @@ export function getStandardById(id: string): StandardRecord | null {
 export function getDashboardStats(): DashboardStats {
   const standards = getAllStandards();
   const byCategory: Record<Category, number> = {
-    published: 0,
-    drafts: 0,
-    notices: 0,
-    interpretations: 0,
+    standards: 0,
+    regulations: 0,
+    assessments: 0,
+    updates: 0,
   };
   const byJurisdiction: Record<string, number> = {};
   const byType: Record<string, number> = {};

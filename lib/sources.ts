@@ -35,18 +35,99 @@ export const SOURCES: SourceInfo[] = [
     crawl_difficulty: "hard",
   },
   {
-    id: "sae",
-    name_en: "SAE International",
-    name_cn: "SAE 国际（美国汽车工程师学会）",
-    short: "SAE",
-    url: "https://www.sae.org/standards/",
-    jurisdiction: "international",
+    id: "sac-tc114",
+    name_en: "SAC/TC114 National Technical Committee of Auto Standardization",
+    name_cn: "全国汽车标准化技术委员会（汽标委）",
+    short: "SAC/TC114",
+    url: "http://www.catarc.org.cn/",
+    jurisdiction: "china",
+    category: "sdo",
+    language: "CN",
+    description_en:
+      "National Technical Committee on Auto Standardization (汽标委). Drafts and manages all automotive national standards (GB, GB/T) in China. Secretariat at CATARC. Includes SC34 ICV Subcommittee (智能网联汽车分委会).",
+    description_cn:
+      "全国汽车标准化技术委员会（汽标委），负责起草和管理中国所有汽车相关国家标准（GB、GB/T）。秘书处设在中汽中心。下辖 SC34 智能网联汽车分技术委员会（智能网联汽车分委会）。",
+    crawl_difficulty: "medium",
+  },
+  {
+    id: "samr",
+    name_en: "SAMR Standards Technical Management",
+    name_cn: "国家市场监督管理总局标准技术管理司",
+    short: "SAMR",
+    url: "https://std.samr.gov.cn/",
+    jurisdiction: "china",
+    category: "sdo",
+    language: "CN",
+    description_en:
+      "State Administration for Market Regulation, Standards Management Department. Approves and issues GB national standards. Operates 全国标准信息公共服务平台 (std.samr.gov.cn) — the authoritative standard archive.",
+    description_cn:
+      "国家市场监督管理总局标准技术管理司。批准发布 GB 国家标准，运营全国标准信息公共服务平台（std.samr.gov.cn），权威标准档案。",
+    crawl_difficulty: "easy",
+  },
+  {
+    id: "kats-kr",
+    name_en: "Korea Agency for Technology and Standards",
+    name_cn: "韩国技术标准院",
+    short: "KATS",
+    url: "https://www.kats.go.kr/eng/",
+    jurisdiction: "korea",
     category: "sdo",
     language: "EN",
     description_en:
-      "Though US-headquartered, SAE publishes globally-referenced standards: J3016 (driving automation levels), J3018 (on-road test safety), J3131 (ADS reference architecture, includes Remote Assistance), J3237 (driving assessment metrics, WIP).",
+      "Korea's national standards body. Adopts ISO/IEC standards as KS national standards (e.g., KS R ISO 21448 for SOTIF).",
     description_cn:
-      "虽然总部在美国，但 SAE 发布全球性标准：J3016（驾驶自动化分级）、J3018（路测安全）、J3131（ADS 参考架构，含远程辅助定义）、J3237（驾驶评价指标，在研）。",
+      "韩国国家标准主管机构。将 ISO/IEC 标准采纳为 KS 国家标准（如 KS R ISO 21448 SOTIF）。",
+    crawl_difficulty: "medium",
+  },
+  {
+    id: "jasic",
+    name_en: "JASIC — Japan Automobile Standards Internationalization Center",
+    name_cn: "日本汽车标准国际化中心",
+    short: "JASIC",
+    url: "https://www.jasic.org/e/",
+    jurisdiction: "japan",
+    category: "sdo",
+    language: "EN/JP",
+    description_en:
+      "Japan's coordinating body for automobile standardization and international harmonization (especially UN WP.29). Central reference for JIS automotive standards and Japan's positions at GRVA/GRPE.",
+    description_cn:
+      "日本汽车标准化及国际协调（尤其是 UN WP.29）的协调机构。负责 JIS 汽车标准和日本在 GRVA/GRPE 的立场协调。",
+    crawl_difficulty: "medium",
+  },
+  {
+    id: "din-vda",
+    name_en: "DIN (via VDA) — German automotive national standards",
+    name_cn: "德国标准化协会（DIN，通过 VDA 协调汽车领域）",
+    short: "DIN/VDA",
+    url: "https://www.din.de/en",
+    jurisdiction: "germany",
+    category: "sdo",
+    language: "EN/DE",
+    description_en:
+      "DIN is Germany's official national standards body; automotive standardization is coordinated with VDA. Publishes national DIN standards and drives Germany's positions into ISO TC22 and UNECE WP.29.",
+    description_cn:
+      "DIN 是德国官方国家标准组织，汽车领域标准化与 VDA 联合推进。发布 DIN 国家标准，并主导德国在 ISO TC22 和 UNECE WP.29 的立场。",
+    crawl_difficulty: "medium",
+  },
+
+  // ===================================================================
+  // 行业标准组织 / Industry Standard Organizations
+  // Per user feedback 2026-04-16: SAE/IEEE/UL are industry-led consortia,
+  // not official national SDOs — reclassified here.
+  // ===================================================================
+  {
+    id: "sae",
+    name_en: "SAE International",
+    name_cn: "SAE 国际（国际汽车工程师学会）",
+    short: "SAE",
+    url: "https://www.sae.org/standards/",
+    jurisdiction: "international",
+    category: "industry_org",
+    language: "EN",
+    description_en:
+      "SAE International — industry-led SDO (originally Society of Automotive Engineers, now global). Publishes globally-referenced standards: J3016 (driving automation levels), J3018 (on-road test safety), J3131 (ADS reference architecture incl. Remote Assistance), J3237 (driving assessment metrics, WIP).",
+    description_cn:
+      "SAE 国际（原美国汽车工程师学会，已改名为国际汽车工程师学会）— 行业主导的标准组织。发布全球性标准：J3016（驾驶自动化分级）、J3018（路测安全）、J3131（ADS 参考架构，含远程辅助定义）、J3237（驾驶评价指标，在研）。",
     crawl_difficulty: "medium",
   },
   {
@@ -56,12 +137,12 @@ export const SOURCES: SourceInfo[] = [
     short: "IEEE",
     url: "https://standards.ieee.org/",
     jurisdiction: "international",
-    category: "sdo",
+    category: "industry_org",
     language: "EN",
     description_en:
-      "Publishes IEEE 2846-2022 (Safety-related Model Assumptions for ADS, origin: Intel/Mobileye RSS), IEEE 2848 (V&V for ADS). Also develops communication standards (IEEE 802.11bd, IEEE 1609 for DSRC/V2X).",
+      "IEEE Standards Association — industry-led SDO focused on electrotechnology. Publishes IEEE 2846-2022 (Safety-related Model Assumptions for ADS), IEEE 2848 (V&V for ADS). Also develops communication standards (IEEE 802.11bd, IEEE 1609 for DSRC/V2X).",
     description_cn:
-      "发布 IEEE 2846-2022（ADS 安全相关模型假设，源自 Intel/Mobileye RSS）、IEEE 2848（ADS 验证确认）等标准，同时推进 IEEE 802.11bd 和 IEEE 1609（DSRC/V2X）等通信标准。",
+      "IEEE 标准协会 — 以电工技术为主的行业标准组织。发布 IEEE 2846-2022（ADS 安全相关模型假设）、IEEE 2848（ADS 验证确认），以及 IEEE 802.11bd、IEEE 1609（DSRC/V2X）通信标准。",
     crawl_difficulty: "medium",
   },
   {
@@ -71,47 +152,28 @@ export const SOURCES: SourceInfo[] = [
     short: "UL",
     url: "https://ulse.org/focus-areas/travel-safety/autonomous-vehicles/",
     jurisdiction: "international",
-    category: "sdo",
+    category: "industry_org",
     language: "EN",
     description_en:
-      "Publishes UL 4600 — Standard for Safety for the Evaluation of Autonomous Products. First goal-based safety case standard designed for fully autonomous operation.",
+      "Industry-led safety science organization. Publishes UL 4600 — Standard for Safety for the Evaluation of Autonomous Products. First goal-based safety case standard designed for fully autonomous operation.",
     description_cn:
-      "发布 UL 4600《自动驾驶产品安全评估标准》，首个面向完全无人驾驶场景的目标导向式安全案例标准。",
+      "行业主导的安全科学组织。发布 UL 4600《自动驾驶产品安全评估标准》，首个面向完全无人驾驶场景的目标导向式安全案例标准。",
     crawl_difficulty: "easy",
   },
-
-  // ===================================================================
-  // 行业标准组织 / Industry Standard Organizations
-  // ===================================================================
   {
     id: "asam",
     name_en: "ASAM e.V.",
     name_cn: "ASAM 自动化与测量系统标准协会",
     short: "ASAM",
     url: "https://www.asam.net/standards/",
-    jurisdiction: "industry_org",
+    jurisdiction: "international",
     category: "industry_org",
     language: "EN/DE",
     description_en:
-      "German-headquartered, globally active. Publishes OpenSCENARIO (scenario description), OpenDRIVE (road network), OpenCRG (road surface), OSI (Open Simulation Interface), OpenLABEL (data annotation) — the de-facto foundation for AD simulation and scenario-based testing.",
+      "German-headquartered, globally active industry association. Publishes OpenSCENARIO (scenario description), OpenDRIVE (road network), OpenCRG (road surface), OSI (Open Simulation Interface), OpenLABEL (data annotation) — the de-facto foundation for AD simulation and scenario-based testing.",
     description_cn:
       "总部德国、全球活跃的行业标准组织。发布 OpenSCENARIO（场景描述）、OpenDRIVE（道路网络）、OpenCRG（路面）、OSI（开放仿真接口）、OpenLABEL（数据标注）等标准 — 自动驾驶仿真与场景化测试的事实基础。",
     crawl_difficulty: "easy",
-  },
-  {
-    id: "vda",
-    name_en: "VDA (Verband der Automobilindustrie)",
-    name_cn: "德国汽车工业协会",
-    short: "VDA",
-    url: "https://www.vda.de/en",
-    jurisdiction: "industry_org",
-    category: "industry_org",
-    language: "EN/DE",
-    description_en:
-      "German Association of the Automotive Industry. Publishes VDA volumes (quality management, QMS for automotive) and TISAX (Trusted Information Security Assessment Exchange) — de-facto info security standard for automotive supply chain.",
-    description_cn:
-      "德国汽车工业协会。发布 VDA 系列（汽车质量管理体系 QMS）和 TISAX（可信信息安全评估交换）— 汽车供应链信息安全事实标准。",
-    crawl_difficulty: "medium",
   },
   {
     id: "autosar",
@@ -119,13 +181,28 @@ export const SOURCES: SourceInfo[] = [
     name_cn: "AUTOSAR 开发合作组织",
     short: "AUTOSAR",
     url: "https://www.autosar.org/standards",
-    jurisdiction: "industry_org",
+    jurisdiction: "international",
     category: "industry_org",
     language: "EN",
     description_en:
-      "AUTomotive Open System ARchitecture. Founded 2003 by OEMs + Tier 1s + semiconductor companies. Defines Classic Platform (for ECUs with tight real-time constraints) and Adaptive Platform (POSIX-based, for L3+ high-performance computing, SOA architecture).",
+      "AUTomotive Open System ARchitecture. Founded 2003 by OEMs + Tier 1s + semiconductor companies. Defines Classic Platform (real-time ECUs) and Adaptive Platform (POSIX-based, for L3+ high-performance computing, SOA architecture).",
     description_cn:
       "汽车开放系统架构，2003 年由 OEM、Tier 1、半导体公司联合成立。定义 Classic Platform（实时性 ECU）和 Adaptive Platform（基于 POSIX，面向 L3+ 高性能计算，SOA 架构）。",
+    crawl_difficulty: "medium",
+  },
+  {
+    id: "3gpp",
+    name_en: "3GPP — 3rd Generation Partnership Project",
+    name_cn: "3GPP 国际移动通信标准化组织",
+    short: "3GPP",
+    url: "https://www.3gpp.org/specifications-technologies",
+    jurisdiction: "international",
+    category: "industry_org",
+    language: "EN",
+    description_en:
+      "Global partnership of seven telecom SDOs (ATIS, ARIB, CCSA, ETSI, TSDSI, TTA, TTC). Develops C-V2X specifications (TS 22.186 service requirements, TS 23.285 architecture, TR 36.885 LTE-V2X, TR 37.885 5G NR V2X) foundational to connected autonomous driving.",
+    description_cn:
+      "由 7 个电信标准组织（ATIS、ARIB、CCSA、ETSI、TSDSI、TTA、TTC）组成的全球合作项目。制定 C-V2X 规范（TS 22.186、TS 23.285、TR 36.885、TR 37.885 等），网联自动驾驶的基础标准。",
     crawl_difficulty: "medium",
   },
   {
@@ -134,13 +211,13 @@ export const SOURCES: SourceInfo[] = [
     name_cn: "5G 汽车联盟",
     short: "5GAA",
     url: "https://5gaa.org/",
-    jurisdiction: "industry_org",
+    jurisdiction: "international",
     category: "industry_org",
     language: "EN",
     description_en:
-      "Cross-industry organization (auto + telecom) founded 2016. Develops specifications and white papers for C-V2X (cellular V2X), connected AD, teleoperation, and integration with 5G networks. 3GPP C-V2X reference body.",
+      "Cross-industry association (auto + telecom) founded 2016. Develops specifications and white papers for C-V2X use cases, connected AD, teleoperation. Primary industry body feeding requirements to 3GPP.",
     description_cn:
-      "跨行业（汽车 + 电信）联盟，2016 年成立。制定 C-V2X（蜂窝 V2X）、网联自动驾驶、远程操控及与 5G 网络融合的技术规范和白皮书。3GPP C-V2X 参考机构。",
+      "跨行业（汽车 + 电信）联盟，2016 年成立。制定 C-V2X 用例、网联自动驾驶、远程操控的技术规范和白皮书，是向 3GPP 输送需求的主要行业机构。",
     crawl_difficulty: "easy",
   },
   {
@@ -149,11 +226,11 @@ export const SOURCES: SourceInfo[] = [
     name_cn: "PEGASUS / SAKURA / SET Level 项目联盟",
     short: "PEGASUS",
     url: "https://www.pegasusprojekt.de/en/home",
-    jurisdiction: "industry_org",
+    jurisdiction: "international",
     category: "industry_org",
     language: "EN/DE/JP",
     description_en:
-      "Government-funded research projects establishing scenario-based testing methodology: PEGASUS (Germany, 2016-2019) → SET Level (2019-2023) → SAKURA (Japan). Methods from these projects underpin ISO 34502 scenario framework and Euro NCAP protocols.",
+      "Government-funded research consortia establishing scenario-based testing methodology: PEGASUS (Germany, 2016-2019) → SET Level (2019-2023) → SAKURA (Japan). Methods from these projects underpin ISO 34502 scenario framework and Euro NCAP protocols.",
     description_cn:
       "政府资助的场景驱动测试研究项目：PEGASUS（德国，2016-2019）→ SET Level（2019-2023）→ SAKURA（日本）。这些项目的方法论是 ISO 34502 场景框架和 Euro NCAP 测试规程的基础。",
     crawl_difficulty: "medium",
@@ -224,51 +301,6 @@ export const SOURCES: SourceInfo[] = [
       "Ministry of Industry and Information Technology, Equipment Industry Department I. Primary regulator for automotive industry policy and ICV market access. Issues mandatory GB standards with SAMR.",
     description_cn:
       "工业和信息化部装备工业一司。汽车产业政策和智能网联汽车市场准入的主管部门，与国家市场监管总局联合发布 GB 强制性国标。",
-    crawl_difficulty: "easy",
-  },
-  {
-    id: "sac-tc114",
-    name_en: "SAC/TC114 National Technical Committee of Auto Standardization",
-    name_cn: "全国汽车标准化技术委员会",
-    short: "SAC/TC114",
-    url: "http://www.catarc.org.cn/",
-    jurisdiction: "china",
-    category: "sdo",
-    language: "CN",
-    description_en:
-      "National Technical Committee on Auto Standardization. Drafts and manages all automotive national standards (GB, GB/T) in China. Secretariat at CATARC.",
-    description_cn:
-      "全国汽车标准化技术委员会，负责起草和管理中国所有汽车相关国标（GB、GB/T）。秘书处设在中汽中心。",
-    crawl_difficulty: "medium",
-  },
-  {
-    id: "sac-tc114-sc34",
-    name_en: "SAC/TC114/SC34 ICV Subcommittee",
-    name_cn: "全国汽标委智能网联汽车分技术委员会",
-    short: "SC34",
-    url: "http://www.catarc.org.cn/",
-    jurisdiction: "china",
-    category: "sdo",
-    language: "CN",
-    description_en:
-      "Intelligent Connected Vehicle subcommittee under SAC/TC114. Leading body for ADS/ICV national standards.",
-    description_cn:
-      "全国汽标委下属智能网联汽车分技术委员会。主导自动驾驶与智能网联汽车国家标准起草。",
-    crawl_difficulty: "medium",
-  },
-  {
-    id: "samr",
-    name_en: "SAMR Standards Technical Management",
-    name_cn: "国家市场监督管理总局标准技术管理司",
-    short: "SAMR",
-    url: "https://std.samr.gov.cn/",
-    jurisdiction: "china",
-    category: "government",
-    language: "CN",
-    description_en:
-      "State Administration for Market Regulation, Standards Management Department. Approves and issues GB national standards. Operates 全国标准信息公共服务平台 (std.samr.gov.cn) — the authoritative standard archive.",
-    description_cn:
-      "国家市场监督管理总局标准技术管理司。批准发布 GB 国家标准，运营全国标准信息公共服务平台（std.samr.gov.cn），权威标准档案。",
     crawl_difficulty: "easy",
   },
   {
@@ -465,21 +497,6 @@ export const SOURCES: SourceInfo[] = [
       "Ministry of Land, Infrastructure and Transport. Established Act on AV Commercialization (2020) — Korea's first AV-specific law. Oversees K-City test bed and L4 pilot permits.",
     description_cn:
       "韩国国土交通部。2020 年制定《自动驾驶汽车商业化促进及支援法》— 韩国首部 AV 专项立法。监管 K-City 测试场和 L4 试点许可。",
-    crawl_difficulty: "medium",
-  },
-  {
-    id: "kats-kr",
-    name_en: "Korea Agency for Technology and Standards",
-    name_cn: "韩国技术标准院",
-    short: "KATS",
-    url: "https://www.kats.go.kr/eng/",
-    jurisdiction: "korea",
-    category: "sdo",
-    language: "EN",
-    description_en:
-      "Korea's national standards body. Adopts ISO/IEC standards as KS national standards (e.g., KS R ISO 21448 for SOTIF).",
-    description_cn:
-      "韩国国家标准主管机构。将 ISO/IEC 标准采纳为 KS 国家标准（如 KS R ISO 21448 SOTIF）。",
     crawl_difficulty: "medium",
   },
   {

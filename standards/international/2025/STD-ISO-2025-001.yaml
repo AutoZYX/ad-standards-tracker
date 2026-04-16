@@ -1,28 +1,28 @@
 id: STD-ISO-2025-001
-date: '2025-06-15'
+date: '2025-03-24'
 org: ISO
-org_full: International Organization for Standardization
+org_full: ISO TC22/SC33 Road Vehicles
 jurisdiction: international
-type: consultation
-status: consultation
-title_en: ISO/DIS 21448:2025 — SOTIF Revision (DIS stage)
-title_cn: ISO/DIS 21448:2025 预期功能安全修订（DIS 阶段）
-url: https://www.iso.org/standard/91001.html
+type: standard
+status: published
+title_en: ISO 34505:2025 — Road vehicles — Test scenarios for automated driving systems
+  — Scenario evaluation and test case generation
+title_cn: ISO 34505:2025 道路车辆 自动驾驶系统测试场景 — 场景评估与测试用例生成
+url: https://www.iso.org/standard/78954.html
 automation_level:
-- L1
-- L2
 - L3
 - L4
 topics:
+- testing
 - sotif
-- functional_safety
-summary_en: Draft International Standard for revised SOTIF. Strengthens requirements for AI/ML component validation, runtime
-  monitoring, and integration with cybersecurity (ISO/SAE 21434).
-summary_cn: ISO 21448 修订的 DIS 阶段草案，加强对 AI/ML 组件验证、运行时监测、与网络安全（ISO/SAE 21434）集成的要求。
-impact_note: Expected publication 2026. Major update for modern ADS using deep learning perception/planning.
+summary_en: Latest addition to the ISO 34502/34503/34504 scenario series. Specifies
+  methodology for evaluating scenarios and generating concrete test cases from logical
+  scenarios. Enables test case derivation from ODD taxonomy (34503) and scenario categorization
+  (34504).
+summary_cn: ISO 34502/34503/34504 场景系列最新成员。规定场景评估方法论与从逻辑场景生成具体测试用例的方法。支持从 ODD 分类（34503）和场景分类（34504）派生测试用例。
+impact_note: ⚠️[请核实：34505:2025 具体发布日期]。补齐 ISO 场景驱动测试工具箱的最后一块拼图。与驭研科技航测数据的场景提取工作流对接。
 related_standards:
-- ISO 21448:2022
-- ISO/SAE 21434
-- ISO/IEC 42001
-contributor: AD Standards Tracker Seed / Zhang Yuxin
+- ISO 34502
+- ISO 34503
+- ISO 34504
 last_updated: '2026-04-16'

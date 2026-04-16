@@ -1,67 +1,129 @@
 import type { StandardRecord, Category } from "./types";
 
 /**
- * Derive the top-level Category for a record from its type + status.
+ * Derive the top-level Category for a record from (type + org + title + status).
  *
- * Rules (in order):
- * 1. interpretation type → "interpretations"
- * 2. white_paper or research → "interpretations"
- * 3. consultation status OR draft status OR consultation type → "drafts"
- * 4. meeting_notice type OR policy type → "notices"
- * 5. regulation/standard with in_force/published/revised → "published"
- * 6. recall → "notices"
- * 7. fallback → "notices"
+ * Priority order (first matching wins):
+ * 1. Draft / consultation / meeting_notice / recall / interpretation / white_paper / research / policy → "updates"
+ * 2. UN-R regulations / national legal acts / EU regulations → "regulations"
+ * 3. NCAP family + i-VISTA + assessment protocols → "assessments"
+ * 4. Everything else of type "standard" or type "regulation" that isn't UN-R/Act → "standards"
+ * 5. Fallback → "updates"
  */
 export function categorize(r: StandardRecord): Category {
-  if (r.type === "interpretation") return "interpretations";
-  if (r.type === "white_paper" || r.type === "research") return "interpretations";
-  if (r.status === "consultation" || r.status === "draft" || r.type === "consultation") return "drafts";
-  if (r.type === "meeting_notice") return "notices";
-  if (r.type === "recall") return "notices";
-  if (r.type === "regulation" || r.type === "standard") {
-    if (r.status === "in_force" || r.status === "published" || r.status === "revised") return "published";
-    return "drafts";
+  const title = `${r.title_en} ${r.title_cn ?? ""}`.toLowerCase();
+  const org = r.org.toLowerCase();
+
+  // ---- 1. Assessment protocols (NCAP-family etc.) — check FIRST ----
+  // These are "测评规程" — consumer-facing assessment protocols. They may be typed as
+  // standard / white_paper / policy, but belong here regardless.
+  const isAssessment =
+    /\bncap\b|i-vista|ivista|\biihs\b|assessment protocol|测评规程|测评体系/.test(title) ||
+    org.includes("c-ncap") ||
+    org.includes("euro ncap") ||
+    org.includes("i-vista") ||
+    org.includes("caeri");
+
+  if (isAssessment) {
+    // But if it's in draft/consultation phase, treat as an update
+    if (r.status === "draft" || r.status === "consultation" || r.type === "consultation" || r.type === "meeting_notice") {
+      return "updates";
+    }
+    if (r.type === "interpretation" || r.type === "research") {
+      return "updates";
+    }
+    return "assessments";
   }
+
+  // ---- 2. Updates bucket: drafts, consultations, notices, interpretations ----
+  if (
+    r.type === "consultation" ||
+    r.type === "meeting_notice" ||
+    r.type === "recall" ||
+    r.type === "interpretation" ||
+    r.type === "white_paper" ||
+    r.type === "research" ||
+    r.status === "draft" ||
+    r.status === "consultation" ||
+    r.status === "withdrawn" ||
+    r.status === "pending"
+  ) {
+    return "updates";
+  }
+
+  // ---- 3. Regulations bucket: legal instruments ----
+  const isStrictRegulation =
+    r.type === "regulation" ||
+    /\bun[-\s]?r\s*\d/i.test(title) ||
+    /un regulation/i.test(title) ||
+    /automated vehicles act/i.test(title) ||
+    /regulation \(eu\)/i.test(title) ||
+    /\bact\b.*automat/i.test(title) ||
+    /商业化促进.*法|管理条例|管理办法|presidential decree|stvg|fmvss/i.test(title) ||
+    /federal motor vehicle safety/i.test(title);
+
+  if (isStrictRegulation) {
+    return "regulations";
+  }
+
+  // Policy docs: roadmaps/strategies/reports/notices → updates; binding ordinances → regulations
   if (r.type === "policy") {
-    // A policy that's in_force is closer to "published" regulation; otherwise notice
-    if (r.status === "in_force" || r.status === "published") return "published";
-    return "notices";
+    if (
+      /roadmap|strategy|report to congress|vision \d{4}|white paper|guidelines|plan|路线图|规划|战略|指南|年报|年度|通知|公告/i.test(
+        title
+      )
+    ) {
+      return "updates";
+    }
+    return "regulations";
   }
-  return "notices";
+
+  // ---- 4. Pure technical standards ----
+  if (r.type === "standard") {
+    return "standards";
+  }
+
+  // Fallback
+  return "updates";
 }
 
-export const CATEGORY_ORDER: Category[] = ["published", "drafts", "notices", "interpretations"];
+export const CATEGORY_ORDER: Category[] = [
+  "standards",
+  "regulations",
+  "assessments",
+  "updates",
+];
 
 export const CATEGORY_META: Record<
   Category,
   { emoji: string; key_en: string; key_cn: string; desc_en: string; desc_cn: string }
 > = {
-  published: {
-    emoji: "📖",
-    key_en: "Standards Library",
-    key_cn: "标准库",
-    desc_en: "Published regulations, standards, and policies currently in force.",
-    desc_cn: "已发布、现行有效的法规、标准与政策文件。",
+  standards: {
+    emoji: "📘",
+    key_en: "Standards",
+    key_cn: "标准",
+    desc_en: "Technical standards with formal numbering (ISO, IEEE, SAE, UL, GB/GB-T, KS, JIS, DIN).",
+    desc_cn: "带有正式编号的技术标准 — ISO、IEEE、SAE、UL、中国 GB/GB-T、韩国 KS、日本 JIS、德国 DIN 等。",
   },
-  drafts: {
-    emoji: "📝",
-    key_en: "Drafts & Consultations",
-    key_cn: "征求意见稿",
-    desc_en: "Draft standards and regulations in public consultation.",
-    desc_cn: "处于公开征求意见阶段的标准和法规草案。",
+  regulations: {
+    emoji: "⚖️",
+    key_en: "Regulations",
+    key_cn: "法规",
+    desc_en: "Legal instruments: UN ECE regulations (UN-R series), national Acts, EU Regulations, local ICV ordinances.",
+    desc_cn: "法律性文件：UN ECE 法规（UN-R 系列）、各国法案、欧盟法规、地方智能网联车条例等。",
   },
-  notices: {
-    emoji: "📢",
-    key_en: "Announcements & Notices",
-    key_cn: "相关通知",
-    desc_en: "Meeting notices, consultation announcements, and official bulletins.",
-    desc_cn: "会议通知、征求意见通知、官方公告等信息。",
+  assessments: {
+    emoji: "⭐",
+    key_en: "Assessment Protocols",
+    key_cn: "测评规程",
+    desc_en: "Consumer assessment programs: Euro NCAP, C-NCAP, JNCAP, KNCAP, i-VISTA, etc.",
+    desc_cn: "消费者测评项目：Euro NCAP、C-NCAP、JNCAP、KNCAP、i-VISTA 等测评规程。",
   },
-  interpretations: {
-    emoji: "🔍",
-    key_en: "Interpretations & Research",
-    key_cn: "标准解读",
-    desc_en: "White papers, research studies, and expert interpretations of standards.",
-    desc_cn: "白皮书、研究报告、专家对标准的深度解读。",
+  updates: {
+    emoji: "📰",
+    key_en: "Latest Updates",
+    key_cn: "最新动态",
+    desc_en: "Drafts, consultations, meeting notices, recalls, policy white papers, and standard interpretations.",
+    desc_cn: "征求意见稿、会议通知、召回公告、政策白皮书、标准解读等动态信息。",
   },
 };

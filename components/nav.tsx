@@ -13,9 +13,9 @@ export default function Nav() {
   const LINKS = [
     { href: "/", label: t("nav.dashboard") },
     { href: "/standards", label: t("nav.standards") },
-    { href: "/ask", label: t("nav.ask") },
     { href: "/sources", label: t("nav.sources") },
     { href: "/about", label: t("nav.about") },
+    { href: "/ask", label: t("nav.ask") },
     { href: "/subscribe", label: t("nav.subscribe") },
   ];
 

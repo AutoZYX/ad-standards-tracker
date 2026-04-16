@@ -29,6 +29,31 @@ export default function DashboardContent({ stats, recent }: Props) {
         <p className="text-[var(--muted)]">{t("brand.tagline")}</p>
       </div>
 
+      {/* Ask AD Standards hero CTA */}
+      <Link
+        href="/ask"
+        className="block rounded-xl border-2 border-[var(--accent)] bg-gradient-to-r from-[var(--accent)]/10 to-[var(--accent)]/5 p-5 mb-8 hover:from-[var(--accent)]/15 hover:to-[var(--accent)]/10 transition-all no-underline group"
+      >
+        <div className="flex items-center justify-between gap-4">
+          <div className="flex items-start gap-3">
+            <span className="text-2xl">✨</span>
+            <div>
+              <p className="font-semibold text-[var(--text)] mb-1">
+                {lang === "zh" ? "试试 Ask AD Standards — AI 智能问答" : "Try Ask AD Standards — AI Assistant"}
+              </p>
+              <p className="text-sm text-[var(--muted)]">
+                {lang === "zh"
+                  ? `以自然语言检索 ${stats.total} 条标准/法规/测评规程/动态与 ${SOURCES.length} 个权威数据源。中英文均可。`
+                  : `Query ${stats.total} standards/regulations/protocols/updates and ${SOURCES.length} authoritative sources in plain English or Chinese.`}
+              </p>
+            </div>
+          </div>
+          <span className="text-[var(--accent)] font-medium text-sm whitespace-nowrap group-hover:translate-x-1 transition-transform">
+            {lang === "zh" ? "开始提问 →" : "Start asking →"}
+          </span>
+        </div>
+      </Link>
+
       {/* Quick stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <StatCard label={t("dash.total")} value={stats.total} />
