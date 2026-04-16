@@ -5,6 +5,7 @@ import { useI18n } from "@/lib/i18n";
 import type { StandardRecord, DashboardStats } from "@/lib/types";
 import StandardCard from "./standard-card";
 import StatCard from "./stat-card";
+import { SOURCES } from "@/lib/sources";
 
 interface Props {
   stats: DashboardStats;
@@ -31,7 +32,7 @@ export default function DashboardContent({ stats, recent }: Props) {
       {/* Quick stats */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <StatCard label={t("dash.total")} value={stats.total} />
-        <StatCard label={t("dash.sources_count")} value={25} />
+        <StatCard label={t("dash.sources_count")} value={SOURCES.length} />
         <StatCard label={t("dash.this_month")} value={thisMonth} />
         <StatCard label={t("dash.latest_update")} value={latestDate} />
       </div>
