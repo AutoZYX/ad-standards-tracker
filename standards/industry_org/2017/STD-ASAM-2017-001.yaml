@@ -1,0 +1,28 @@
+id: STD-ASAM-2017-001
+date: '2017-06-01'
+org: ASAM
+jurisdiction: industry_org
+type: standard
+status: in_force
+title_en: ASAM OSI (Open Simulation Interface) — Sensor Model Interface Standard
+title_cn: ASAM OSI（开放仿真接口）— 传感器模型接口标准
+url: https://www.asam.net/standards/detail/osi/
+automation_level:
+- L2
+- L3
+- L4
+topics:
+- testing
+- perception
+- scenario_description
+summary_en: Protobuf-based interface between sensor models, environment models, and
+  HAD functions in simulation. Enables plug-and-play integration of perception simulators
+  from different vendors. Originated as BMW OSI, transferred to ASAM in 2019.
+summary_cn: 基于 Protobuf 的仿真内接口标准，连接传感器模型、环境模型和高度自动驾驶功能。支持不同厂商感知仿真器的即插即用集成。起源于宝马 OSI，2019
+  年移交 ASAM。
+impact_note: PEGASUS 项目的关键基础设施之一。与 OpenSCENARIO/OpenDRIVE 形成开放仿真生态。
+related_standards:
+- ASAM OpenSCENARIO
+- ASAM OpenDRIVE
+- PEGASUS
+last_updated: '2026-04-16'

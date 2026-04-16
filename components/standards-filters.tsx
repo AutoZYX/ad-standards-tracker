@@ -1,13 +1,42 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import type { StandardRecord } from "@/lib/types";
+import type { StandardRecord, Category, Jurisdiction, StandardType } from "@/lib/types";
 import { useI18n } from "@/lib/i18n";
 import StandardCard from "./standard-card";
 import { filterStandards } from "@/lib/filter";
+import { categorize, CATEGORY_ORDER, CATEGORY_META } from "@/lib/categories";
+
+const ALL_JURISDICTIONS: Jurisdiction[] = [
+  "international",
+  "industry_org",
+  "china",
+  "us",
+  "eu",
+  "uk",
+  "germany",
+  "japan",
+  "korea",
+  "singapore",
+];
+
+const ALL_TYPES: StandardType[] = [
+  "regulation",
+  "standard",
+  "consultation",
+  "meeting_notice",
+  "recall",
+  "white_paper",
+  "policy",
+  "research",
+  "interpretation",
+];
+
+type CategoryTab = Category | "all";
 
 export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
+  const [activeCategory, setActiveCategory] = useState<CategoryTab>("all");
   const [search, setSearch] = useState("");
   const [jurisdiction, setJurisdiction] = useState("");
   const [org, setOrg] = useState("");
@@ -17,16 +46,52 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
   const [topic, setTopic] = useState("");
   const [level, setLevel] = useState("");
 
-  const orgs = useMemo(() => [...new Set(all.map((s) => s.org))].sort(), [all]);
-  const years = useMemo(() => [...new Set(all.map((s) => s.date.substring(0, 4)))].sort().reverse(), [all]);
-  const allTopics = useMemo(
-    () => [...new Set(all.flatMap((s) => s.topics || []))].sort(),
+  // Precompute category for each record
+  const withCategory = useMemo(
+    () => all.map((r) => ({ r, cat: categorize(r) })),
     [all]
+  );
+
+  const categoryCounts = useMemo(() => {
+    const c: Record<Category, number> = {
+      published: 0,
+      drafts: 0,
+      notices: 0,
+      interpretations: 0,
+    };
+    withCategory.forEach(({ cat }) => {
+      c[cat] += 1;
+    });
+    return c;
+  }, [withCategory]);
+
+  const byCategoryRecords = useMemo(
+    () =>
+      activeCategory === "all"
+        ? all
+        : withCategory.filter(({ cat }) => cat === activeCategory).map(({ r }) => r),
+    [all, withCategory, activeCategory]
+  );
+
+  const orgs = useMemo(
+    () => [...new Set(byCategoryRecords.map((s) => s.org))].sort(),
+    [byCategoryRecords]
+  );
+  const years = useMemo(
+    () =>
+      [...new Set(byCategoryRecords.map((s) => s.date.substring(0, 4)))]
+        .sort()
+        .reverse(),
+    [byCategoryRecords]
+  );
+  const allTopics = useMemo(
+    () => [...new Set(byCategoryRecords.flatMap((s) => s.topics || []))].sort(),
+    [byCategoryRecords]
   );
 
   const filtered = useMemo(
     () =>
-      filterStandards(all, {
+      filterStandards(byCategoryRecords, {
         search,
         jurisdiction: jurisdiction as never,
         org,
@@ -36,7 +101,7 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
         topic,
         level,
       }),
-    [all, search, jurisdiction, org, type, status, year, topic, level]
+    [byCategoryRecords, search, jurisdiction, org, type, status, year, topic, level]
   );
 
   const selClass =
@@ -44,6 +109,40 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
 
   return (
     <div>
+      {/* Category tabs */}
+      <div className="flex flex-wrap gap-2 mb-6 border-b border-[var(--border)] pb-3">
+        <CategoryTabButton
+          active={activeCategory === "all"}
+          onClick={() => setActiveCategory("all")}
+          count={all.length}
+          label={t("std.cat.all")}
+        />
+        {CATEGORY_ORDER.map((cat) => {
+          const meta = CATEGORY_META[cat];
+          const label = lang === "zh" ? meta.key_cn : meta.key_en;
+          return (
+            <CategoryTabButton
+              key={cat}
+              active={activeCategory === cat}
+              onClick={() => setActiveCategory(cat)}
+              count={categoryCounts[cat]}
+              emoji={meta.emoji}
+              label={label}
+            />
+          );
+        })}
+      </div>
+
+      {/* Category description */}
+      {activeCategory !== "all" && (
+        <p className="text-sm text-[var(--muted)] mb-4 italic">
+          {lang === "zh"
+            ? CATEGORY_META[activeCategory].desc_cn
+            : CATEGORY_META[activeCategory].desc_en}
+        </p>
+      )}
+
+      {/* Filters */}
       <div className="flex flex-wrap gap-3 mb-6">
         <input
           type="text"
@@ -54,7 +153,7 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
         />
         <select value={jurisdiction} onChange={(e) => setJurisdiction(e.target.value)} className={selClass}>
           <option value="">{t("std.all_juris")}</option>
-          {["international", "china", "us", "eu", "uk", "japan", "korea"].map((j) => (
+          {ALL_JURISDICTIONS.map((j) => (
             <option key={j} value={j}>
               {t(`juris.${j}` as never)}
             </option>
@@ -62,7 +161,7 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
         </select>
         <select value={type} onChange={(e) => setType(e.target.value)} className={selClass}>
           <option value="">{t("std.all_types")}</option>
-          {["regulation", "standard", "consultation", "meeting_notice", "recall", "white_paper", "policy", "research"].map((ty) => (
+          {ALL_TYPES.map((ty) => (
             <option key={ty} value={ty}>
               {t(`type.${ty}` as never)}
             </option>
@@ -124,5 +223,36 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
         <p className="text-center text-[var(--muted)] py-12">{t("std.no_match")}</p>
       )}
     </div>
+  );
+}
+
+function CategoryTabButton({
+  active,
+  onClick,
+  count,
+  label,
+  emoji,
+}: {
+  active: boolean;
+  onClick: () => void;
+  count: number;
+  label: string;
+  emoji?: string;
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors cursor-pointer ${
+        active
+          ? "bg-[var(--accent)] text-white"
+          : "bg-[var(--card-bg)] text-[var(--text)] border border-[var(--border)] hover:border-[var(--accent)]"
+      }`}
+    >
+      {emoji && <span className="mr-1.5">{emoji}</span>}
+      {label}
+      <span className={`ml-2 text-xs ${active ? "opacity-90" : "opacity-60"}`}>
+        {count}
+      </span>
+    </button>
   );
 }

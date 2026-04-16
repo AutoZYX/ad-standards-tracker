@@ -1,0 +1,27 @@
+id: INT-ENCAP-2023-001
+date: '2023-09-07'
+org: Euro NCAP
+jurisdiction: eu
+type: interpretation
+status: published
+title_en: Euro NCAP Vision 2030 Roadmap — Assisted & Automated Driving
+title_cn: Euro NCAP Vision 2030 路线图 — 辅助与自动驾驶
+url: https://www.euroncap.com/en/press-media/press-releases/new-euro-ncap-safety-requirements-launched-today/
+automation_level:
+- L0
+- L1
+- L2
+- L3
+topics:
+- testing
+- hmi
+- sotif
+summary_en: Euro NCAP's long-term roadmap document explaining the progression from
+  2026 to 2030 protocols. Covers how assisted driving grading, cabin monitoring, and
+  L3 readiness evaluations will evolve.
+summary_cn: Euro NCAP 的长期路线图文件，解释 2026 到 2030 测评规程的演进。涵盖辅助驾驶测评、座舱监控、L3 就绪评估的演变方向。
+impact_note: Vision 2030 是 OEM 平台规划的关键参考，每年更新年度测评规程都据此推进。
+related_standards:
+- Euro NCAP Assisted Driving Grading
+- C-NCAP 2027
+last_updated: '2026-04-16'

@@ -9,6 +9,7 @@ const translations = {
   "nav.dashboard": { en: "Dashboard", zh: "仪表盘" },
   "nav.standards": { en: "Standards", zh: "标准库" },
   "nav.sources": { en: "Sources", zh: "数据源" },
+  "nav.ask": { en: "Ask AD Standards", zh: "智能问答" },
   "nav.about": { en: "About", zh: "关于" },
   "nav.subscribe": { en: "Subscribe", zh: "订阅" },
 
@@ -43,6 +44,11 @@ const translations = {
     zh: "法规、标准、征求意见、会议通知、召回与政策文件的完整数据库。",
   },
   "std.search": { en: "Search standards...", zh: "搜索标准..." },
+  "std.cat.published": { en: "Published Standards", zh: "标准库（已发布）" },
+  "std.cat.drafts": { en: "Drafts & Consultations", zh: "征求意见稿" },
+  "std.cat.notices": { en: "Notices & Announcements", zh: "相关通知" },
+  "std.cat.interpretations": { en: "Interpretations & Research", zh: "标准解读" },
+  "std.cat.all": { en: "All Categories", zh: "全部分类" },
   "std.all_juris": { en: "All Jurisdictions", zh: "全部管辖区" },
   "std.all_types": { en: "All Types", zh: "全部类型" },
   "std.all_status": { en: "All Status", zh: "全部状态" },
@@ -109,6 +115,7 @@ const translations = {
   "type.white_paper": { en: "White Paper", zh: "白皮书" },
   "type.policy": { en: "Policy", zh: "政策" },
   "type.research": { en: "Research", zh: "研究报告" },
+  "type.interpretation": { en: "Interpretation", zh: "标准解读" },
 
   // Status labels
   "status.draft": { en: "Draft", zh: "草案" },
@@ -121,12 +128,15 @@ const translations = {
 
   // Jurisdiction labels
   "juris.international": { en: "International / UN", zh: "国际/联合国" },
+  "juris.industry_org": { en: "Industry Org", zh: "行业组织" },
   "juris.china": { en: "China", zh: "中国" },
   "juris.us": { en: "United States", zh: "美国" },
   "juris.eu": { en: "European Union", zh: "欧盟" },
   "juris.uk": { en: "United Kingdom", zh: "英国" },
+  "juris.germany": { en: "Germany", zh: "德国" },
   "juris.japan": { en: "Japan", zh: "日本" },
   "juris.korea": { en: "Korea", zh: "韩国" },
+  "juris.singapore": { en: "Singapore", zh: "新加坡" },
 
   // Topic labels
   "topic.functional_safety": { en: "Functional Safety", zh: "功能安全" },
@@ -143,6 +153,37 @@ const translations = {
   "topic.ai_governance": { en: "AI Governance", zh: "AI 治理" },
   "topic.type_approval": { en: "Type Approval", zh: "型式认证" },
   "topic.operations": { en: "Operations", zh: "运营" },
+  "topic.scenario_description": { en: "Scenario Description", zh: "场景描述" },
+
+  // Source-category labels (sources page)
+  "srccat.government": { en: "Government Regulators", zh: "政府监管机构" },
+  "srccat.sdo": { en: "Standards Development Organizations", zh: "标准制定组织" },
+  "srccat.industry_org": { en: "Industry Standard Organizations", zh: "行业标准组织" },
+  "srccat.assessment": { en: "Assessment & Rating Bodies", zh: "测评与评级机构" },
+  "srccat.demonstration": { en: "Pilot & Demonstration Zones", zh: "试点与示范区" },
+
+  // About page
+  "about.ai_disclaimer_title": { en: "AI-Assisted Tool Notice", zh: "AI 辅助工具声明" },
+  "about.ai_disclaimer": {
+    en: "This tool is developed with AI assistance and may contain inaccuracies. Always verify critical information against the official source URL before acting on it.",
+    zh: "本工具在 AI 协助下开发，可能存在不准确的内容。关键信息请以原始链接为准，并自行辨别真伪。",
+  },
+  "about.author": { en: "Author", zh: "作者" },
+  "about.author_name": { en: "Zhang Yuxin (张玉新)", zh: "张玉新 (Zhang Yuxin)" },
+  "about.author_research": { en: "Research: SOTIF, ISO 21448, ISO 26262, scenario-driven safety assessment for autonomous driving.", zh: "研究方向：SOTIF、ISO 21448、ISO 26262、自动驾驶场景驱动安全评估。" },
+  "about.author_homepage": { en: "Homepage", zh: "个人主页" },
+
+  // Ask AD Standards
+  "ask.title": { en: "Ask AD Standards", zh: "智能问答" },
+  "ask.desc": {
+    en: "Ask questions about standards, regulations, consultation drafts, and interpretations. Powered by Claude with the full AD Standards Tracker database as context.",
+    zh: "针对已收录的标准、法规、征求意见稿与解读提问。基于 Claude，以完整数据库为上下文。",
+  },
+  "ask.try": { en: "Try one of these questions:", zh: "试试这些问题：" },
+  "ask.placeholder": { en: "Ask about AD standards...", zh: "输入你的问题..." },
+  "ask.button": { en: "Ask", zh: "提问" },
+  "ask.thinking": { en: "Thinking...", zh: "思考中..." },
+  "ask.error": { en: "Error: please try again later.", zh: "出错了，请稍后重试。" },
 
   // Footer
   "footer.desc": { en: "Open-source AD standards tracker by Zhang Yuxin", zh: "开源自动驾驶标准追踪工具，张玉新出品" },

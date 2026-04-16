@@ -1,0 +1,32 @@
+id: STD-ASAM-2019-001
+date: '2019-03-01'
+org: ASAM
+org_full: ASAM e.V. (Association for Standardisation of Automation and Measuring Systems)
+jurisdiction: industry_org
+type: standard
+status: in_force
+title_en: ASAM OpenSCENARIO 1.0 — Dynamic Content Description for Driving Scenarios
+title_cn: ASAM OpenSCENARIO 1.0 — 驾驶场景动态内容描述标准
+url: https://www.asam.net/standards/detail/openscenario/
+automation_level:
+- L1
+- L2
+- L3
+- L4
+- L5
+topics:
+- testing
+- sotif
+- scenario_description
+summary_en: First industry standard for dynamic content description in driving scenarios.
+  Works together with ASAM OpenDRIVE (static road network) to enable scenario-based
+  ADAS/AD simulation. De-facto global standard for scenario exchange.
+summary_cn: 首个行业级驾驶场景动态内容描述标准。与 OpenDRIVE（静态路网）配合，支撑基于场景的 ADAS/AD 仿真。事实上的全球场景交换标准。
+impact_note: 用于 CARLA、VTD、Prescan、LGSVL 等主流仿真器。OpenSCENARIO 2.0 已进入 DSL 架构，更适合大规模逻辑场景生成。与
+  ISO 34503 ODD 分类和 ISO 34502 场景框架协同。
+related_standards:
+- ASAM OpenDRIVE
+- ASAM OpenCRG
+- ISO 34502
+- ISO 34503
+last_updated: '2026-04-16'

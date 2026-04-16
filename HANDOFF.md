@@ -1,22 +1,24 @@
-# AD Standards Tracker — 会话交接
+# AD Standards Tracker — 技术交接（项目内）
 
-**最后更新**: 2026-04-16
-**上下文恢复命令**: 新会话中粘贴本文件全文 + `cat CLAUDE.md`（如有）
+**最后更新**: 2026-04-16（MVP 上线后）
+**配套文档**: `/Users/zyx/Desktop/WorkToDo/session_handoff_standards_tracker.md`（面向用户的状态/待办清单）
 
 ## 项目概况
 
 全球自动驾驶/SOTIF 标准追踪站（Next.js 16 + Turbopack + Tailwind 4 + i18n）。
 脚手架复制自 `../roam-explorer`，复用 shared 组件（nav/footer/subscribe/i18n/register-gate）。
 
-**路径**: `/Users/zyx/Desktop/WorkToDo/ad-standards-tracker/`
-**端口**: 3003（见 `WorkToDo/.claude/launch.json` 的 `ad-standards-tracker` 配置）
-**启动**: `pnpm dev --port 3003`（或 `preview_start name="ad-standards-tracker"`）
+- **仓库**: https://github.com/AutoZYX/ad-standards-tracker （public, Apache 2.0）
+- **生产**: https://ad-standards-tracker.vercel.app （等 DNS → standards.autozyx.com）
+- **本地**: `/Users/zyx/Desktop/WorkToDo/ad-standards-tracker/`
+- **端口**: 3003（见 `WorkToDo/.claude/launch.json`）
+- **启动**: `pnpm dev --port 3003`（或 `preview_start name="ad-standards-tracker"`）
 
-## 当前状态（已跑通）
+## 当前状态（已跑通 + 已部署）
 
-- ✅ 50 条种子数据（`standards/{jurisdiction}/{year}/*.yaml`）覆盖 international/china/us/eu/uk/japan/korea 六个司法辖区
-- ✅ 所有页面返回 200：`/`、`/standards`、`/standards/[id]`、`/sources`、`/about`、`/subscribe`
-- ✅ 客户端过滤器 `StandardsFilters`（含搜索、7 个维度下拉）工作正常
+- ✅ **79 条种子数据** 覆盖 7 辖区（international 17 / china 21 / us 22 / eu 8 / uk 3 / japan 4 / korea 4）
+- ✅ `pnpm build` 通过、Vercel 生产部署返回 200（/, /standards, /sources, /about, /subscribe, /standards/[id]）
+- ✅ 客户端过滤器 `StandardsFilters`（搜索 + 7 维度下拉）正常
 - ✅ 无 console error、无 server error
 
 ## 架构（关键文件）

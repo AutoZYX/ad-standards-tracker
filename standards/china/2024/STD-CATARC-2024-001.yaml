@@ -1,25 +1,30 @@
 id: STD-CATARC-2024-001
-date: '2024-07-01'
+date: '2024-01-01'
 org: CATARC
-org_full: 中国汽车技术研究中心有限公司 / China Automotive Technology and Research Center
+org_full: China Automotive Technology and Research Center (C-NCAP Management Center)
 jurisdiction: china
-type: white_paper
-status: published
-title_en: C-NCAP 2024 — Assisted Driving Protocol (AD Protocol v1.0)
-title_cn: C-NCAP 2024 辅助驾驶测评规程 v1.0
-url: https://www.catarc.com/
+type: standard
+status: in_force
+title_en: C-NCAP Management Rules (2024 Edition)
+title_cn: C-NCAP 管理规则（2024 年版）
+url: https://www.c-ncap.org.cn/article-detail/1706952133057822722?type=2
 effective_date: '2024-07-01'
 automation_level:
+- L0
+- L1
 - L2
 topics:
 - testing
-summary_en: C-NCAP expands beyond passive/active safety into L2 assisted driving assessment. Protocol tests lane keeping,
-  adaptive cruise, AEB at different speeds, NoA (Navigate on Autopilot) handover behavior.
-summary_cn: C-NCAP 从被动/主动安全扩展到 L2 辅助驾驶测评。方案测试车道保持、自适应巡航、不同速度下的 AEB、NoA 接管行为。
-impact_note: Chinese counterpart to Euro NCAP Assisted Driving protocol. Affects marketing of L2+ systems by Chinese OEMs
-  (BYD, NIO, XPeng, Li Auto, Huawei HIMA).
+- perception
+- hmi
+summary_en: Current C-NCAP edition (in force). Triennial revision from 2021. Expanded
+  active safety (AEB C2C/VRU, ELK curve, LSS), added cabin monitoring (DMS, OMS).
+  Foundation replaced by C-NCAP 2027 which shifts to scenario-driven paradigm.
+summary_cn: C-NCAP 现行版（2021 版三年更新）。扩展主动安全（车车/VRU AEB、弯道 ELK、车道支持系统），新增座舱监控（DMS、OMS）。被
+  C-NCAP 2027 迭代，2027 版转向场景驱动范式。
+impact_note: 中国所有新车上市前的事实门槛之一。连接 GB 强标与更高阶场景测评的中间层。
 related_standards:
-- Euro NCAP
-- i-VISTA
-contributor: AD Standards Tracker Seed / Zhang Yuxin
+- C-NCAP 2027 (draft)
+- GB AEB (upcoming mandatory)
+- Euro NCAP Protocol
 last_updated: '2026-04-16'

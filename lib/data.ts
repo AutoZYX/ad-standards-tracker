@@ -1,7 +1,8 @@
 import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";
-import type { StandardRecord, DashboardStats } from "./types";
+import type { StandardRecord, DashboardStats, Category } from "./types";
+import { categorize, CATEGORY_ORDER } from "./categories";
 export type { DashboardStats } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "standards");
@@ -45,6 +46,12 @@ export function getStandardById(id: string): StandardRecord | null {
 
 export function getDashboardStats(): DashboardStats {
   const standards = getAllStandards();
+  const byCategory: Record<Category, number> = {
+    published: 0,
+    drafts: 0,
+    notices: 0,
+    interpretations: 0,
+  };
   const byJurisdiction: Record<string, number> = {};
   const byType: Record<string, number> = {};
   const byStatus: Record<string, number> = {};
@@ -53,6 +60,7 @@ export function getDashboardStats(): DashboardStats {
   const topicCounts: Record<string, number> = {};
 
   for (const s of standards) {
+    byCategory[categorize(s)] += 1;
     byJurisdiction[s.jurisdiction] = (byJurisdiction[s.jurisdiction] || 0) + 1;
     byType[s.type] = (byType[s.type] || 0) + 1;
     byStatus[s.status] = (byStatus[s.status] || 0) + 1;
@@ -71,6 +79,7 @@ export function getDashboardStats(): DashboardStats {
 
   return {
     total: standards.length,
+    byCategory,
     byJurisdiction,
     byType,
     byStatus,
