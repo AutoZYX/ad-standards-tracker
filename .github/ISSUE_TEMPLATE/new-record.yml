@@ -1,0 +1,38 @@
+name: New record
+description: Suggest a standard, regulation, assessment protocol, or best-practice record.
+title: "New record: "
+labels: ["data", "new-record"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Formal title of the document or standard.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official URL
+      description: Link to official source, official catalog, or trusted secondary source.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Technical standard
+        - Regulation/type approval
+        - Assessment protocol
+        - Best practice/guidance
+        - Draft/consultation/latest update
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+      description: Explain why this record should be tracked.
+    validations:
+      required: true

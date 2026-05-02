@@ -9,6 +9,9 @@ export default function StandardDetail({ standard }: { standard: StandardRecord 
   const title = lang === "zh" && standard.title_cn ? standard.title_cn : standard.title_en;
   const altTitle = lang === "zh" ? standard.title_en : standard.title_cn;
   const summary = lang === "zh" && standard.summary_cn ? standard.summary_cn : standard.summary_en;
+  const correctionUrl = `https://github.com/AutoZYX-Labs/ad-standards-tracker/issues/new?template=data-correction.yml&title=${encodeURIComponent(
+    `Data correction: ${standard.id}`
+  )}`;
 
   const section = "mb-6";
   const sectionTitle =
@@ -217,6 +220,14 @@ export default function StandardDetail({ standard }: { standard: StandardRecord 
         <div className="pt-4 border-t border-[var(--border)] text-xs text-[var(--muted)] flex flex-wrap gap-4">
           {standard.contributor && <span>Contributor: {standard.contributor}</span>}
           {standard.last_updated && <span>Updated: {standard.last_updated}</span>}
+          <a
+            href={correctionUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[var(--accent)] hover:underline"
+          >
+            {t("detail.report_correction")}
+          </a>
         </div>
       </div>
     </div>

@@ -1,0 +1,32 @@
+id: STD-JNCAP-2026-001
+date: '2026-04-01'
+org: MLIT / NASVA
+org_full: Ministry of Land, Infrastructure, Transport and Tourism and National Agency for Automotive Safety & Victims' Aid
+jurisdiction: japan
+type: standard
+status: published
+title_en: JNCAP FY2025 Automobile Assessment — Active Safety and Preventive Safety Evaluation Releases
+title_cn: JNCAP 2025 年度汽车安全性能评价 — 主动安全与预防安全结果发布
+url: https://www.mlit.go.jp/report/press/jidosha07_hh_000559.html
+document_stage: published
+legal_force: rating_protocol
+source_type: official_news
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+source_note: Official MLIT FY2025 assessment result release. Use the MLIT JNCAP assessment portal and roadmap for protocol follow-up.
+automation_level:
+- L1
+- L2
+topics:
+- testing
+- perception
+- hmi
+summary_en: MLIT and NASVA publish FY2025 JNCAP assessment results, including preventive safety evaluations such as autonomous emergency braking, intersection scenarios, lane support, emergency assist, and pedal misapplication mitigation depending on vehicle equipment.
+summary_cn: 国土交通省和 NASVA 发布 2025 年度 JNCAP 评价结果，预防安全评价覆盖自动紧急制动、交叉路口场景、车道辅助、紧急时停车辅助和误踩踏板碰撞减轻等项目，具体取决于车型配置。
+impact_note: JNCAP is not a binding type-approval regulation, but it strongly shapes Japanese OEM active-safety roadmaps and provides useful NCAP comparison against Euro NCAP, C-NCAP, KNCAP, and US NCAP.
+related_standards:
+- ISO 34502
+- STD-CATARC-2026-001
+- STD-ENCAP-2026-001
+last_updated: '2026-05-02'

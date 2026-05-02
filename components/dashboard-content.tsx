@@ -74,7 +74,6 @@ export default function DashboardContent({ stats, recent }: Props) {
       >
         <div className="flex items-center justify-between gap-4">
           <div className="flex items-start gap-3">
-            <span className="text-2xl">✨</span>
             <div>
               <p className="font-semibold text-[var(--text)] mb-1">
                 {lang === "zh" ? "试试 Ask AD Standards — AI 智能问答" : "Try Ask AD Standards — AI Assistant"}
@@ -88,6 +87,27 @@ export default function DashboardContent({ stats, recent }: Props) {
           </div>
           <span className="text-[var(--accent)] font-medium text-sm whitespace-nowrap group-hover:translate-x-1 transition-transform">
             {lang === "zh" ? "开始提问 →" : "Start asking →"}
+          </span>
+        </div>
+      </Link>
+
+      <Link
+        href="/maps"
+        className="block rounded-xl border border-[var(--border)] bg-[var(--card-bg)] p-5 mb-8 hover:border-[var(--accent)] transition-colors no-underline"
+      >
+        <div className="flex items-center justify-between gap-4">
+          <div>
+            <p className="font-semibold text-[var(--text)] mb-1">
+              {lang === "zh" ? "查看专题地图" : "Explore Evidence Maps"}
+            </p>
+            <p className="text-sm text-[var(--muted)]">
+              {lang === "zh"
+                ? "按 L2 误用控制、ADS 准入、场景测试、安全案例和远程协助组织证据链。"
+                : "Browse evidence chains for L2 misuse control, ADS authorization, scenario testing, safety cases, and remote assistance."}
+            </p>
+          </div>
+          <span className="text-[var(--accent)] font-medium text-sm whitespace-nowrap">
+            {lang === "zh" ? "打开 →" : "Open →"}
           </span>
         </div>
       </Link>

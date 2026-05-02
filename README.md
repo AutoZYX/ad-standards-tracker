@@ -25,6 +25,7 @@ AD compliance and safety intelligence is fragmented across national regulators, 
 
 - **Dashboard** — 最近更新、按辖区/类型/主题的分布统计
 - **Standards Library** — 全库筛选（辖区、组织、类型、状态、年份、主题、SAE 级别）
+- **Evidence Maps** — 按 L2 误用控制、ADS 准入、场景测试、安全案例、远程协助组织证据链
 - **Standard Detail** — 单条记录全部字段 + 外链到原文
 - **Source & Legal Effect** — 高优先级条目标注法律效力、来源类型、证据等级、核验日期、链接状态
 - **Sources** — 30+ 个数据源清单（UNECE, ISO, SAC/TC114, NHTSA, SAE, IEEE, ASAM, EC, Euro NCAP, METI 等）
@@ -73,6 +74,7 @@ summary_cn: "..."                  # 可选
 pnpm install
 pnpm dev                # http://localhost:3000
 pnpm validate:data      # YAML + schema validation
+pnpm check:urls         # URL health check; supports URL_CHECK_IDS=ID1,ID2
 pnpm build && pnpm start
 ```
 
@@ -87,6 +89,7 @@ ad-standards-tracker/
 ├── lib/
 │   ├── types.ts            # All TS types (client-safe)
 │   ├── data.ts             # YAML loader (server-only, uses fs)
+│   ├── evidence-map.ts     # decision-oriented record maps
 │   ├── filter.ts           # Pure filter fn (client-safe)
 │   ├── sources.ts          # source registry
 │   └── i18n.tsx            # i18n provider
@@ -95,6 +98,7 @@ ad-standards-tracker/
 │   ├── international/
 │   ├── us/ eu/ uk/ japan/ korea/
 ├── tools/crawler/          # Python crawlers (TODO)
+├── tools/check-urls.mjs    # link checker, supports focused ID checks
 ├── DATA_SCHEMA.md          # Data schema and trust fields
 ├── SOURCE_POLICY.md        # Source and evidence policy
 ├── scripts/                # Data seeding utilities

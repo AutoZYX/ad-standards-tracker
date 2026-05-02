@@ -1,8 +1,13 @@
 import { NextRequest, NextResponse } from "next/server";
 
-// TODO (productize): replace console logging with Vercel KV / Upstash Redis
-// for persistent subscriber storage. For now, logs are searchable in Vercel
-// dashboard and serve as the initial subscriber list.
+// TODO (productize): replace metadata-only logging with Vercel KV / Upstash Redis
+// or a newsletter provider. Do not log full email addresses in runtime logs.
+
+function maskEmail(email: string): string {
+  const [name, domain] = email.split("@");
+  if (!name || !domain) return "invalid";
+  return `${name.slice(0, 2)}***@${domain}`;
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -16,7 +21,7 @@ export async function POST(request: NextRequest) {
     }
 
     console.log(
-      `[ROAM_SUBSCRIBE] ${email} | role=${role} | interests=${interests.join(",")} | ${new Date().toISOString()}`
+      `[AD_STANDARDS_SUBSCRIBE] ${maskEmail(email)} | role=${role} | interests=${interests.join(",")} | ${new Date().toISOString()}`
     );
 
     return NextResponse.json({

@@ -1,0 +1,32 @@
+id: INT-UK-2025-002
+date: '2025-06-10'
+org: UK DfT / CCAV
+org_full: UK Department for Transport and Centre for Connected and Autonomous Vehicles
+jurisdiction: uk
+type: consultation
+status: consultation
+title_en: Automated Vehicles Statement of Safety Principles — Call for Evidence
+title_cn: 英国自动驾驶车辆安全原则声明征求证据
+url: https://www.gov.uk/government/calls-for-evidence/automated-vehicles-statement-of-safety-principles
+document_stage: consultation
+legal_force: informational
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+source_note: GOV.UK official call for evidence. The call ran from 2025-06-10 to 2025-09-01 and is part of the Automated Vehicles Act 2024 implementation.
+automation_level:
+- L3
+- L4
+topics:
+- type_approval
+- operations
+- sotif
+summary_en: UK government call for evidence on safety standards for automated vehicles. Section 2 of the Automated Vehicles Act 2024 requires the Secretary of State to prepare a Statement of Safety Principles that will support authorization, in-use regulation, and annual safety assessment.
+summary_cn: 英国政府围绕自动驾驶车辆安全标准开展征求证据。《2024 年自动驾驶汽车法》第 2 条要求交通大臣制定安全原则声明，该声明将用于授权、在用监管和年度安全评估。
+impact_note: The consultation is not itself binding, but it is a high-value signal for how the UK will translate the statutory “careful and competent human driver” threshold into authorization and in-use monitoring.
+related_standards:
+- STD-UK-2024-001
+- INT-UK-2025-001
+- BSI PAS 1881
+last_updated: '2026-05-02'

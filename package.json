@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "validate:data": "node tools/validate-data.mjs"
+    "validate:data": "node tools/validate-data.mjs",
+    "check:urls": "node tools/check-urls.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.89.0",

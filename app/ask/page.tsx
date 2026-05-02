@@ -9,6 +9,18 @@ import RegisterGate from "@/components/register-gate";
 interface Message {
   role: "user" | "assistant";
   content: string;
+  citations?: Citation[];
+}
+
+interface Citation {
+  id: string;
+  title_en: string;
+  title_cn?: string;
+  url: string;
+  status: string;
+  legal_force?: string;
+  evidence_level?: string;
+  source_status?: string;
 }
 
 export default function AskPage() {
@@ -21,16 +33,16 @@ export default function AskPage() {
   const EXAMPLES =
     lang === "zh"
       ? [
-          "MIIT 组合驾驶辅助强标报批稿最关键的变化是什么？",
-          "C-NCAP 2027 对 OEM 的产品规划有什么影响？",
-          "ASAM OpenSCENARIO 和 ISO 34502 有什么关系？",
-          "欧盟 AI Act 对自动驾驶的影响有哪些？",
+          "L2 组合驾驶辅助强标和 C-NCAP 2027 有什么关系？",
+          "EU 2022/1426 和 2026/481 对 L4 有什么影响？",
+          "做 L4 safety case 应该优先看哪些记录？",
+          "哪些记录是强制性法规，哪些只是最佳实践？",
         ]
       : [
-          "What is the latest MIIT combined driving assistance standard?",
-          "Compare ISO 21448 SOTIF with ISO 26262 functional safety",
-          "Which records relate to teleoperation?",
-          "What standards are currently in consultation?",
+          "How do the China L2 combined driving assistance draft and C-NCAP 2027 relate?",
+          "What do EU 2022/1426 and 2026/481 mean for L4 ADS?",
+          "Which records should I read first for an L4 safety case?",
+          "Which records are binding regulations versus best practices?",
         ];
 
   async function handleSubmit(question?: string) {
@@ -52,6 +64,7 @@ export default function AskPage() {
       const assistantMsg: Message = {
         role: "assistant",
         content: data.error || data.answer,
+        citations: Array.isArray(data.citations) ? data.citations : undefined,
       };
       setMessages((prev) => [...prev, assistantMsg]);
     } catch {
@@ -76,6 +89,11 @@ export default function AskPage() {
             {t("ask.title")}
           </h1>
           <p className="text-[var(--muted)] text-sm">{t("ask.desc")}</p>
+          <p className="mt-2 text-xs text-[var(--muted)] leading-relaxed">
+            {lang === "zh"
+              ? "请勿输入客户项目、未公开事故、商业秘密或个人信息。问题会发送给 Claude 处理，回答仅基于本站数据库。"
+              : "Do not submit client projects, non-public incidents, trade secrets, or personal data. Questions are sent to Claude and answers are grounded only in this database."}
+          </p>
         </div>
 
         {/* Messages */}
@@ -112,32 +130,67 @@ export default function AskPage() {
                 }`}
               >
                 {msg.role === "assistant" ? (
-                  <Markdown
-                    components={{
-                      p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
-                      strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
-                      ul: ({ children }) => <ul className="list-disc list-inside mb-2 space-y-1">{children}</ul>,
-                      ol: ({ children }) => <ol className="list-decimal list-inside mb-2 space-y-1">{children}</ol>,
-                      li: ({ children }) => <li>{children}</li>,
-                      code: ({ children }) => (
-                        <code className="px-1.5 py-0.5 rounded bg-[var(--bg)] text-xs font-mono">
-                          {children}
-                        </code>
-                      ),
-                      a: ({ href, children }) => (
-                        <Link
-                          href={href || "#"}
-                          target={href?.startsWith("http") ? "_blank" : undefined}
-                          rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className="text-[var(--accent)] underline hover:opacity-80"
-                        >
-                          {children}
-                        </Link>
-                      ),
-                    }}
-                  >
-                    {msg.content}
-                  </Markdown>
+                  <>
+                    <Markdown
+                      components={{
+                        p: ({ children }) => <p className="mb-2 last:mb-0">{children}</p>,
+                        strong: ({ children }) => <strong className="font-semibold">{children}</strong>,
+                        ul: ({ children }) => <ul className="list-disc list-inside mb-2 space-y-1">{children}</ul>,
+                        ol: ({ children }) => <ol className="list-decimal list-inside mb-2 space-y-1">{children}</ol>,
+                        li: ({ children }) => <li>{children}</li>,
+                        code: ({ children }) => (
+                          <code className="px-1.5 py-0.5 rounded bg-[var(--bg)] text-xs font-mono">
+                            {children}
+                          </code>
+                        ),
+                        a: ({ href, children }) => (
+                          <Link
+                            href={href || "#"}
+                            target={href?.startsWith("http") ? "_blank" : undefined}
+                            rel={href?.startsWith("http") ? "noopener noreferrer" : undefined}
+                            className="text-[var(--accent)] underline hover:opacity-80"
+                          >
+                            {children}
+                          </Link>
+                        ),
+                      }}
+                    >
+                      {msg.content}
+                    </Markdown>
+                    {msg.citations && msg.citations.length > 0 && (
+                      <div className="mt-3 border-t border-[var(--border)] pt-3">
+                        <p className="text-xs font-semibold text-[var(--muted)] mb-2">
+                          {lang === "zh" ? "服务端引用校验" : "Server-checked citations"}
+                        </p>
+                        <ul className="space-y-2">
+                          {msg.citations.map((citation) => (
+                            <li key={citation.id} className="text-xs">
+                              <Link
+                                href={`/standards/${citation.id}`}
+                                className="text-[var(--accent)] hover:underline no-underline font-mono"
+                              >
+                                {citation.id}
+                              </Link>
+                              <span className="text-[var(--muted)]">
+                                {" "}
+                                {lang === "zh" && citation.title_cn
+                                  ? citation.title_cn
+                                  : citation.title_en}
+                              </span>
+                              <a
+                                href={citation.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="block text-[var(--accent)] hover:underline break-all"
+                              >
+                                {citation.url}
+                              </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </>
                 ) : (
                   msg.content
                 )}

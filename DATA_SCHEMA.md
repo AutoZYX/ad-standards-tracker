@@ -30,6 +30,15 @@ Run:
 
 ```bash
 pnpm validate:data
+pnpm check:urls
 ```
 
 The validator fails on malformed YAML, duplicate IDs, bad dates, invalid enums, URL format problems, and path/date/jurisdiction mismatch. It warns when trust fields are still missing.
+
+For focused URL checks on newly edited records:
+
+```bash
+URL_CHECK_IDS=STD-NHTSA-2025-003,STD-IEEE-2025-001 pnpm check:urls
+```
+
+Records marked `source_status: blocked` are skipped by default because some official government portals block automated checks while remaining browser-accessible.

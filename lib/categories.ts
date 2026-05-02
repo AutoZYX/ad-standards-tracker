@@ -31,7 +31,13 @@ export function categorize(r: StandardRecord): Category {
 
   if (isAssessment) {
     // But if it's in draft/consultation phase, treat as an update
-    if (r.status === "draft" || r.status === "consultation" || r.type === "consultation" || r.type === "meeting_notice") {
+    if (
+      r.status === "draft" ||
+      r.status === "consultation" ||
+      r.status === "pending" ||
+      r.type === "consultation" ||
+      r.type === "meeting_notice"
+    ) {
       return "updates";
     }
     if (r.type === "interpretation" || r.type === "research") {

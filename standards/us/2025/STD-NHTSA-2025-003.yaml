@@ -1,0 +1,35 @@
+id: STD-NHTSA-2025-003
+date: '2025-04-24'
+org: NHTSA
+org_full: National Highway Traffic Safety Administration
+jurisdiction: us
+type: policy
+status: in_force
+title_en: Third Amended Standing General Order 2021-01 — Incident Reporting for ADS and Level 2 ADAS
+title_cn: NHTSA 第三次修订 Standing General Order 2021-01 — ADS 与 L2 ADAS 事故强制报告
+url: https://www.nhtsa.gov/sites/nhtsa.gov/files/2025-04/third-amended-SGO-2021-01_2025.pdf?pubDate=20250505
+effective_date: '2025-06-16'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+source_note: Official NHTSA PDF. NHTSA's SGO web page states the third amendment was issued on 2025-04-24 and became effective on 2025-06-16.
+automation_level:
+- L2
+- L3
+- L4
+- L5
+topics:
+- data_recording
+- operations
+- type_approval
+summary_en: NHTSA's third amended SGO 2021-01 updates mandatory crash reporting for identified manufacturers and operators of ADS and SAE Level 2 ADAS vehicles. The amendment changes reporting fields and public data releases from 2025-06-16 onward.
+summary_cn: NHTSA 第三次修订 SGO 2021-01，对指定 ADS 和 SAE L2 ADAS 制造商、运营方的事故报告义务进行更新。2025-06-16 起，公开数据文件和字段按第三次修订要求执行。
+impact_note: This is the main US federal data-collection lever for real-world ADS/L2 ADAS safety events. It is directly relevant to crash transparency, defect investigation, and ROAM-style incident analytics.
+related_standards:
+- STD-NHTSA-2021-001
+- SAE J3016
+- 49 CFR Part 512
+last_updated: '2026-05-02'

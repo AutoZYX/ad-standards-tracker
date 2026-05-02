@@ -1,0 +1,34 @@
+id: STD-IEEE-2025-001
+date: '2025-04-28'
+org: IEEE SA
+org_full: IEEE Standards Association
+jurisdiction: international
+type: standard
+status: published
+title_en: IEEE 3321-2024 — Recommended Practice for Applying Assumptions on Reasonably Foreseeable Behavior of Other Road Users in ADS Safety-Related Models
+title_cn: IEEE 3321-2024 自动驾驶安全相关模型中其他道路使用者可合理预见行为假设应用推荐实践
+url: https://standards.ieee.org/ieee/3321/11616/
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-02'
+source_status: paywalled
+source_note: Official IEEE SA catalog page is accessible; full standard text requires purchase or subscription. IEEE page lists it as an active standard and describes its relationship to IEEE 2846-2022.
+automation_level:
+- L3
+- L4
+- L5
+topics:
+- sotif
+- testing
+- scenario_description
+summary_en: IEEE 3321-2024 provides recommended practice for applying the assumptions defined in IEEE 2846-2022 in safety-related models during ADS development, testing, and deployment.
+summary_cn: IEEE 3321-2024 针对 ADS 开发、测试和部署阶段的安全相关模型，给出如何应用 IEEE 2846-2022 中“其他道路使用者可合理预见行为”假设的推荐实践。
+impact_note: This is the missing companion to IEEE 2846 for safety-model application. It should be tracked with SOTIF, RSS-style safety models, scenario-based testing, and safety case evidence.
+related_standards:
+- STD-IEEE-2022-001
+- ISO 21448
+- ISO 34502
+- UL 4600
+last_updated: '2026-05-02'

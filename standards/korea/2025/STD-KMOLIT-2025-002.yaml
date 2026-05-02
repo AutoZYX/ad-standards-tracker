@@ -1,0 +1,32 @@
+id: STD-KMOLIT-2025-002
+date: '2025-06-02'
+org: MOLIT
+org_full: Ministry of Land, Infrastructure and Transport, Republic of Korea
+jurisdiction: korea
+type: regulation
+status: in_force
+title_en: Korea L4 Autonomous Vehicle Performance Certification and Conformity Approval Framework
+title_cn: 韩国 L4 自动驾驶汽车性能认证与适合性批准制度
+url: https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=271493
+effective_date: '2025-06-02'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: blocked
+source_note: Official Korean law portal page for the enforcement rule. It is accessible in browser-based verification but times out in automated URL checks from this environment. Related law entered into force on 2025-03-20; MOLIT administrative notice for the detailed regulation was published on 2025-02-26.
+automation_level:
+- L4
+topics:
+- type_approval
+- operations
+- testing
+summary_en: Korea amended its autonomous vehicle commercialization framework to support performance certification and conformity approval for Level 4 autonomous vehicles. The enforcement rule became effective on 2025-06-02.
+summary_cn: 韩国修订自动驾驶汽车商业化促进与支持制度，引入面向 L4 自动驾驶汽车的性能认证与适合性批准框架。相关实施规则于 2025-06-02 生效。
+impact_note: Korea is creating a regulatory path for L4 services before a single global L4 type-approval standard exists. This makes it an important comparison point against China, the UK, Germany, and the US.
+related_standards:
+- STD-KMOLIT-2025-001
+- STD-DE-2022-001
+- STD-UK-2024-001
+last_updated: '2026-05-02'

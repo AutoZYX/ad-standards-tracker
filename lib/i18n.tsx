@@ -8,6 +8,7 @@ const translations = {
   // Nav
   "nav.dashboard": { en: "Dashboard", zh: "仪表盘" },
   "nav.standards": { en: "Standards", zh: "标准库" },
+  "nav.maps": { en: "Maps", zh: "专题地图" },
   "nav.sources": { en: "Sources", zh: "数据源" },
   "nav.ask": { en: "Ask AD Standards", zh: "智能问答" },
   "nav.about": { en: "About", zh: "关于" },
@@ -64,6 +65,13 @@ const translations = {
   "std.no_match": { en: "No standards match the filters.", zh: "没有符合筛选条件的标准。" },
   "std.back": { en: "Back to Standards", zh: "返回标准库" },
 
+  // Evidence maps
+  "maps.title": { en: "Evidence Maps", zh: "专题地图" },
+  "maps.desc": {
+    en: "Decision-oriented views that connect records across standards, regulations, assessment protocols, and latest updates. Use them to see which evidence matters for a concrete AD safety question.",
+    zh: "面向工程决策的专题视图，把标准、法规、测评规程和最新动态串起来，帮助判断一个具体自动驾驶安全问题到底需要看哪些证据。",
+  },
+
   // Standard detail
   "detail.url": { en: "OFFICIAL URL", zh: "原文链接" },
   "detail.status": { en: "STATUS", zh: "状态" },
@@ -86,6 +94,7 @@ const translations = {
   "detail.version": { en: "VERSION", zh: "版本" },
   "detail.supersedes": { en: "SUPERSEDES", zh: "替代" },
   "detail.superseded_by": { en: "SUPERSEDED BY", zh: "被替代" },
+  "detail.report_correction": { en: "Report correction", zh: "报告纠错" },
 
   // Sources page
   "src.title": { en: "Data Sources", zh: "数据源" },

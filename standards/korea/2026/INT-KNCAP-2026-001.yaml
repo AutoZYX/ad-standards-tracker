@@ -1,0 +1,31 @@
+id: INT-KNCAP-2026-001
+date: '2026-01-25'
+org: KNCAP / TS
+org_full: Korea New Car Assessment Program and Korea Transportation Safety Authority
+jurisdiction: korea
+type: policy
+status: pending
+title_en: KNCAP 2026 Vehicle Selection and Program Update — Formal Protocol Evidence Pending
+title_cn: KNCAP 2026 年度评价车型选择与项目动态 — 正式规程证据待补
+url: https://www.yna.co.kr/view/AKR20260125013200003
+document_stage: proposal
+legal_force: informational
+source_type: secondary
+evidence_level: C
+verified_at: '2026-05-02'
+source_status: verified
+source_note: Secondary Yonhap report citing TS; official final KNCAP 2026 protocol PDF was not found during verification. Do not treat this record as a final KNCAP protocol.
+automation_level:
+- L1
+- L2
+topics:
+- testing
+- perception
+summary_en: Korean media, citing Korea Transportation Safety Authority, reported public voting for selecting 2026 KNCAP assessment vehicles. The report confirms program activity but does not provide a final technical protocol.
+summary_cn: 韩国媒体援引韩国交通安全公团信息，报道 2026 年 KNCAP 评价车型公众投票。该信息可证明项目动态，但不能替代正式技术规程。
+impact_note: Keep this as a latest-update watch item, not as a formal assessment protocol. The tracker needs a follow-up once an official KNCAP or MOLIT/KATRI protocol document is located.
+related_standards:
+- STD-JNCAP-2026-001
+- STD-CATARC-2026-001
+- STD-ENCAP-2026-001
+last_updated: '2026-05-02'

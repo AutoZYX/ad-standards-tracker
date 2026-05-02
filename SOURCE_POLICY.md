@@ -14,6 +14,7 @@ AD Standards Tracker treats source quality as part of the data.
 - Prefer original official links over media coverage.
 - If a standard text is paywalled, link to the official catalog/store page and mark `source_status: paywalled`.
 - If only a secondary source is available, mark `source_type: secondary`, `evidence_level: C`, and explain why in `source_note`.
+- If an official source is browser-accessible but blocks automated URL checks, use `source_status: blocked` rather than downgrading it to a secondary source.
 - Do not mark drafts or consultations as `legal_force: binding`.
 - Do not place news, roadmaps, meeting notices, or interpretations in the formal standards bucket by changing `type`; use `type` and `status` honestly.
 

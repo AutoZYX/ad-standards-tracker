@@ -1,0 +1,26 @@
+name: Data correction
+description: Report an incorrect record, source link, status, or classification.
+title: "Data correction: "
+labels: ["data", "correction"]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record ID
+      description: Example: STD-EC-2026-001
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is wrong?
+      description: Describe the incorrect field, link, date, status, or classification.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Correct source URL
+      description: Prefer an official source.
+    validations:
+      required: false

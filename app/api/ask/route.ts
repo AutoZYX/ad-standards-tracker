@@ -1,5 +1,7 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { buildSystemContext } from "@/lib/context";
+import { getAllStandards } from "@/lib/data";
+import type { StandardRecord } from "@/lib/types";
 import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
@@ -21,6 +23,40 @@ function checkRateLimit(ip: string): boolean {
 }
 
 let cachedContext: string | null = null;
+
+interface Citation {
+  id: string;
+  title_en: string;
+  title_cn?: string;
+  url: string;
+  status: StandardRecord["status"];
+  legal_force?: StandardRecord["legal_force"];
+  evidence_level?: StandardRecord["evidence_level"];
+  source_status?: StandardRecord["source_status"];
+}
+
+function extractCitations(answer: string): Citation[] {
+  const ids = Array.from(
+    new Set(answer.match(/\b(?:STD|INT)-[A-Za-z0-9-]+-\d{4}-\d{3}\b/g) ?? [])
+  );
+  if (ids.length === 0) return [];
+
+  const records = getAllStandards();
+  const byId = new Map(records.map((record) => [record.id, record]));
+  return ids
+    .map((id) => byId.get(id))
+    .filter((record): record is StandardRecord => Boolean(record))
+    .map((record) => ({
+      id: record.id,
+      title_en: record.title_en,
+      title_cn: record.title_cn,
+      url: record.url,
+      status: record.status,
+      legal_force: record.legal_force,
+      evidence_level: record.evidence_level,
+      source_status: record.source_status,
+    }));
+}
 
 export async function POST(request: NextRequest) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
@@ -65,12 +101,12 @@ export async function POST(request: NextRequest) {
 
     const text =
       message.content[0].type === "text" ? message.content[0].text : "";
-    return NextResponse.json({ answer: text });
+    return NextResponse.json({ answer: text, citations: extractCitations(text) });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
     console.error("Claude API error:", message);
     return NextResponse.json(
-      { error: `AI error: ${message}` },
+      { error: "AI service error. Please try again later." },
       { status: 500 }
     );
   }
