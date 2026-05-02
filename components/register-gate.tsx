@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, ReactNode } from "react";
+import { useEffect, useState, ReactNode } from "react";
 import { useI18n } from "@/lib/i18n";
 
 export default function RegisterGate({ children }: { children: ReactNode }) {
@@ -11,9 +11,10 @@ export default function RegisterGate({ children }: { children: ReactNode }) {
   const [checking, setChecking] = useState(true);
 
   useEffect(() => {
-    const saved = localStorage.getItem("ads-registered");
-    if (saved) setRegistered(true);
-    setChecking(false);
+    queueMicrotask(() => {
+      setRegistered(Boolean(localStorage.getItem("ads-registered")));
+      setChecking(false);
+    });
   }, []);
 
   async function handleSubmit(e: React.FormEvent) {

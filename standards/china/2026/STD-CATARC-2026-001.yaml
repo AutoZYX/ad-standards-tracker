@@ -1,13 +1,12 @@
 id: STD-CATARC-2026-001
-date: '2026-04-08'
+date: '2026-04-20'
 org: CATARC
 org_full: China Automotive Technology and Research Center (C-NCAP Management Center)
 jurisdiction: china
-type: consultation
-status: consultation
-title_en: C-NCAP 2027 Management Rules (Draft for Comment) — Scenario-Driven Active
-  Safety Paradigm Shift
-title_cn: 《C-NCAP 管理规则（2027年版）》征求意见稿 — 主动安全测评向场景驱动范式转变
+type: standard
+status: published
+title_en: C-NCAP Management Rules (2027 Edition) — Scenario-Driven Active Safety and EV Safety Upgrade
+title_cn: 《C-NCAP 管理规则（2027年版）》正式发布 — 主动安全场景驱动与新能源安全升级
 url: https://www.c-ncap.org.cn/article-detail/2021808409786982401?type=2
 effective_date: '2027-01-01'
 automation_level:
@@ -18,21 +17,12 @@ topics:
 - perception
 - sotif
 - hmi
-summary_en: 'C-NCAP''s triennial revision (2024→2027). Active safety paradigm shift
-  from isolated function checklists to scenario-driven evaluation. Car-to-Car conflict:
-  6 mandatory + 9 extension scenarios (Appendix Q covers AEB false-activation as extension
-  test). Adds rain/fog simulation, extensive nighttime tests, world-first nighttime
-  two-wheeler scenarios, agricultural three-wheeler, shared bicycles, crouching/toddler
-  pedestrian targets. Explicitly de-duplicates with the upcoming GB AEB mandatory
-  standard (delineates regulatory floor vs assessment ceiling).'
-summary_cn: C-NCAP 三年一更（2024→2027）。主动安全测评从"孤立功能清单打勾"范式转向"场景驱动"范式。车对车冲突含 6 项基础（必测）+
-  9 项拓展（抽测）场景，附录 Q 将 AEB 误作用纳入拓展场景。引入雨雾模拟、大量夜间场景、国际首次引入夜间二轮车场景、农用三轮车、共享单车、蹲姿儿童/幼儿/绿化带干扰等目标物。明确与
-  GB AEB 强标去重，分清强标准入门槛与评测拔高。
-impact_note: ⚠️[请核实：C-NCAP 2027 征求意见稿具体发布日期 — 约 2026-04 初，官方原文链接已 verified]。场景驱动范式是中国测评体系与
-  ISO 34502/NATM 国际趋势的对齐。对 OEM 产品规划影响比强标更快、更重 — NCAP 5 星是事实上的市场门槛。与张玉新驭研科技的场景驱动测评业务高度契合。
+summary_en: C-NCAP's seventh major revision since 2006, formally released in April 2026 for the 2027 edition. The protocol strengthens active safety, advanced driver-assistance, EV battery safety, nighttime/complex scenario testing, and Chinese anthropometric crash-dummy/tooling localization.
+summary_cn: C-NCAP 自 2006 年以来第七次重大升级，于 2026 年 4 月正式发布 2027 版。新版强化主动安全、高级辅助驾驶、新能源电安全、夜间/复杂场景测评，并引入中国体征假人和本土化碰撞工具链。
+impact_note: Compared with the 2024 protocol, CATARC expects vehicle scores to drop materially under the 2027 rules. This is a market-facing assessment ceiling rather than a regulatory floor, and it will strongly influence OEM ADAS/EV safety product planning.
 related_standards:
 - C-NCAP 2024
 - ISO 34502
 - MIIT GB AEB (upcoming)
 - MIIT 组合驾驶辅助强标
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

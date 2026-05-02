@@ -15,7 +15,7 @@ export default function Footer() {
         </p>
         <p className="mt-1">
           <a
-            href="https://github.com/AutoZYX/ad-standards-tracker"
+            href="https://github.com/AutoZYX-Labs/ad-standards-tracker"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--accent)] hover:underline"

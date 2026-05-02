@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import yaml from "js-yaml";
 import type { StandardRecord, DashboardStats, Category } from "./types";
-import { categorize, CATEGORY_ORDER } from "./categories";
+import { categorize } from "./categories";
 export type { DashboardStats } from "./types";
 
 const DATA_DIR = path.join(process.cwd(), "standards");
@@ -89,4 +89,3 @@ export function getDashboardStats(): DashboardStats {
     recentUpdates: standards.slice(0, 20),
   };
 }
-

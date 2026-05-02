@@ -1,0 +1,27 @@
+id: INT-SAE-2026-001
+date: '2026-04-13'
+org: SAE International
+org_full: SAE International Artificial Intelligence Committee
+jurisdiction: industry_org
+type: interpretation
+status: published
+title_en: 'SAE J3329_202604 — Artificial Intelligence in Ground Vehicles: Technical, Operational, and Regulatory Challenges'
+title_cn: 'SAE J3329_202604 地面车辆人工智能：技术、运营与监管挑战'
+url: https://saemobilus.sae.org/standards/j3329_202604-artificial-intelligence-ground-vehicles-technical-operational-regulatory-challenges
+automation_level:
+- L2
+- L3
+- L4
+- L5
+topics:
+- ai_governance
+- sotif
+- cybersecurity
+summary_en: SAE Information Report identifying technical, operational, and regulatory challenges for AI implementation in ground vehicles, including recognition, comprehension, decision-making, deployment constraints, safety, security, and infrastructure dependencies.
+summary_cn: SAE 信息报告，梳理地面车辆 AI 应用面临的技术、运营和监管挑战，包括识别、理解、决策、部署约束、安全、信息安全和基础设施依赖。
+impact_note: Not a prescriptive standard, but important as an industry consensus reference for AI governance in vehicles.
+related_standards:
+- ISO 21448
+- ISO/SAE 21434
+- IEEE 2846
+last_updated: '2026-05-02'

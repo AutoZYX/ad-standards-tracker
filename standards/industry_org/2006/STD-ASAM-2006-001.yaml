@@ -4,8 +4,8 @@ org: ASAM
 jurisdiction: industry_org
 type: standard
 status: in_force
-title_en: 'ASAM OpenDRIVE — Road Network Description Standard (latest: 1.8)'
-title_cn: ASAM OpenDRIVE — 道路网络描述标准（当前 1.8 版）
+title_en: 'ASAM OpenDRIVE — Road Network Description Standard (latest: 1.8.1)'
+title_cn: ASAM OpenDRIVE — 道路网络描述标准（当前 1.8.1 版）
 url: https://www.asam.net/standards/detail/opendrive/
 automation_level:
 - L1
@@ -20,9 +20,9 @@ summary_en: XML-based format for logical description of road networks. Includes 
   geometry, lane topology, signals, objects. Underpins virtually all AD simulation
   tools and HD map conversion pipelines. Originally released 2006, continuously evolving.
 summary_cn: 基于 XML 的逻辑路网描述格式。涵盖道路几何、车道拓扑、信号、对象等。几乎所有 AD 仿真工具和 HD 地图转换流水线的基础。2006 年首发，持续演进。
-impact_note: 与 OpenSCENARIO 配合构成场景仿真的静态 + 动态两大支柱。OpenDRIVE 1.8（2023）扩展了驾驶员辅助相关元素（如限制区域、车道类型）。
+impact_note: 与 OpenSCENARIO 配合构成场景仿真的静态 + 动态两大支柱。ASAM 官网显示当前版本为 1.8.1，发布日期 2024-11-21。
 related_standards:
 - ASAM OpenSCENARIO
 - ASAM OpenCRG
 - NDS (Navigation Data Standard)
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

@@ -1,0 +1,28 @@
+id: STD-ISO-2026-001
+date: '2026-01-27'
+org: ISO
+org_full: International Organization for Standardization TC22/SC33
+jurisdiction: international
+type: standard
+status: published
+title_en: ISO 22133:2026 — Road vehicles — Test object monitoring and control for active safety and automated/autonomous vehicle testing
+title_cn: ISO 22133:2026 道路车辆 — 主动安全与自动/自主车辆测试用测试对象监测与控制
+url: https://www.iso.org/standard/88112.html
+effective_date: '2026-01-27'
+automation_level:
+- L1
+- L2
+- L3
+- L4
+topics:
+- testing
+- scenario_description
+summary_en: Published ISO standard defining functional requirements, specifications, and communication protocol for monitoring and controlling test objects used in active safety and automated/autonomous vehicle testing. Replaces ISO/TS 22133:2023.
+summary_cn: 已发布 ISO 标准，规定主动安全与自动/自主车辆测试中测试对象的监测、控制功能要求、规范和通信协议。替代 ISO/TS 22133:2023。
+impact_note: Important for proving-ground and scenario-based testing because it enables interoperable control of test targets from multiple vendors.
+related_standards:
+- ISO 34502
+- ISO 34503
+- ISO 34505
+last_updated: '2026-05-02'
+

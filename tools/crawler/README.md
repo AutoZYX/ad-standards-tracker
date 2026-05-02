@@ -42,7 +42,7 @@ tools/crawler/
 
 ## Conventions
 
-- **User-Agent**: `AD-Standards-Tracker-Bot/1.0 (+https://github.com/AutoZYX/ad-standards-tracker; contact: zhangyuxin@jlu.edu.cn)`
+- **User-Agent**: `AD-Standards-Tracker-Bot/1.0 (+https://github.com/AutoZYX-Labs/ad-standards-tracker; contact: zhangyuxin@jlu.edu.cn)`
 - **Request delay**: ≥ 2s between requests to the same host (configurable via `CRAWLER_REQUEST_DELAY_SEC`)
 - **Respect robots.txt** — use `urllib.robotparser`
 - **Snapshot before diff**: each source writes `snapshots/{source}_{date}.html` or `.json` so that next run can diff against the previous snapshot instead of re-parsing the whole page

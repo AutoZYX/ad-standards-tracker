@@ -73,7 +73,7 @@ export default function Nav() {
           })}
           <LangToggle />
           <a
-            href="https://github.com/AutoZYX/ad-standards-tracker"
+            href="https://github.com/AutoZYX-Labs/ad-standards-tracker"
             target="_blank"
             rel="noopener noreferrer"
             className="ml-1 text-[var(--muted)] hover:text-[var(--text)] text-sm no-underline"

@@ -1,0 +1,30 @@
+id: STD-UNECE-2026-001
+date: '2026-01-23'
+org: UNECE WP.29
+org_full: UNECE Working Party on Automated/Autonomous and Connected Vehicles (GRVA)
+jurisdiction: international
+type: consultation
+status: draft
+title_en: Draft Global Technical Regulation on Automated Driving Systems adopted by GRVA
+title_cn: GRVA 通过自动驾驶系统全球技术法规（ADS GTR）草案
+url: https://www.connectedautomateddriving.eu/blog/unece-grva-adopts-draft-global-regulation-on-automated-driving-systems/
+automation_level:
+- L3
+- L4
+- L5
+topics:
+- type_approval
+- functional_safety
+- sotif
+- data_recording
+summary_en: UNECE GRVA adopted a draft Global Technical Regulation for Automated Driving Systems during its January 2026 session. The draft introduces a safety-case-based framework for ADS approval, including safety management, validation evidence, in-service monitoring, and DSSAD-related provisions.
+summary_cn: UNECE GRVA 在 2026 年 1 月会议上通过自动驾驶系统全球技术法规草案。草案建立基于安全论证的 ADS 准入框架，覆盖安全管理、验证证据、在用监测和 DSSAD 等要求。
+impact_note: Potentially the most important international ADS regulatory milestone after UN-R157. Formal WP.29 adoption is expected to shape L3/L4 type approval discussions globally.
+related_standards:
+- UN-R157
+- UN-R155
+- UN-R156
+- ISO 21448
+- ISO 34502
+last_updated: '2026-05-02'
+

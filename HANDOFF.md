@@ -8,8 +8,8 @@
 全球自动驾驶/SOTIF 标准追踪站（Next.js 16 + Turbopack + Tailwind 4 + i18n）。
 脚手架复制自 `../roam-explorer`，复用 shared 组件（nav/footer/subscribe/i18n/register-gate）。
 
-- **仓库**: https://github.com/AutoZYX/ad-standards-tracker （public, Apache 2.0）
-- **生产**: https://ad-standards-tracker.vercel.app （等 DNS → standards.autozyx.com）
+- **仓库**: https://github.com/AutoZYX-Labs/ad-standards-tracker （public, Apache 2.0）
+- **生产**: https://standards.autozyx.com
 - **本地**: `/Users/zyx/Desktop/WorkToDo/ad-standards-tracker/`
 - **端口**: 3003（见 `WorkToDo/.claude/launch.json`）
 - **启动**: `pnpm dev --port 3003`（或 `preview_start name="ad-standards-tracker"`）

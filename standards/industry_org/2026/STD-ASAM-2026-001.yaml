@@ -1,0 +1,30 @@
+id: STD-ASAM-2026-001
+date: '2026-03-19'
+org: ASAM
+org_full: ASAM e.V. (Association for Standardisation of Automation and Measuring Systems)
+jurisdiction: industry_org
+type: standard
+status: published
+title_en: ASAM OpenSCENARIO DSL 2.2.0 — Scenario description language for ADAS/AD simulation
+title_cn: ASAM OpenSCENARIO DSL 2.2.0 — 面向 ADAS/AD 仿真的场景描述语言
+url: https://www.asam.net/standards/detail/openscenario-dsl/
+automation_level:
+- L1
+- L2
+- L3
+- L4
+- L5
+topics:
+- testing
+- scenario_description
+- sotif
+summary_en: Current ASAM OpenSCENARIO DSL release. Defines a domain-specific language and domain model for describing dynamic scenarios in simulation, X-in-the-loop, and proving-ground workflows.
+summary_cn: 当前 ASAM OpenSCENARIO DSL 版本，定义用于仿真、X-in-the-loop 和试验场工作流的动态场景描述领域专用语言和领域模型。
+impact_note: Important for large-scale logical scenario generation and aligns strongly with ISO 34502/34503/34505 scenario-driven safety assurance.
+related_standards:
+- ASAM OpenDRIVE
+- ASAM OSI
+- ISO 34502
+- ISO 34505
+last_updated: '2026-05-02'
+

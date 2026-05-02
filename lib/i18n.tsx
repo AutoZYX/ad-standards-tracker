@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useEffect, ReactNode } from "react";
+import { createContext, useContext, useEffect, useState, ReactNode } from "react";
 
 type Lang = "en" | "zh";
 
@@ -17,15 +17,15 @@ const translations = {
   "brand.name_short": { en: "AD Standards", zh: "自动驾驶标准" },
   "brand.name_full": { en: "AD Standards Tracker", zh: "自动驾驶标准追踪" },
   "brand.tagline": {
-    en: "Tracking automated driving standards across UN, China, US, EU, UK, Japan.",
-    zh: "追踪联合国、中国、美国、欧盟、英国、日本的自动驾驶标准、法规与测评动态。",
+    en: "Tracking automated driving standards, regulations, assessment protocols, and latest updates across global sources.",
+    zh: "追踪全球自动驾驶标准、法规、测评规程与最新动态。",
   },
 
   // Dashboard
   "dash.title": { en: "Dashboard", zh: "仪表盘" },
   "dash.desc": {
-    en: "Recent updates across 25 authoritative sources tracking AD/ICV regulations, standards, consultations, and assessments.",
-    zh: "25 个权威数据源的最新动态，覆盖自动驾驶与智能网联汽车的法规、标准、征求意见与测评。",
+    en: "Recent updates from authoritative sources tracking AD/ICV standards, regulations, assessment protocols, consultations, and industry interpretations.",
+    zh: "来自权威数据源的最新动态，覆盖自动驾驶与智能网联汽车标准、法规、测评规程、征求意见和行业解读。",
   },
   "dash.total": { en: "Total Records", zh: "记录总数" },
   "dash.sources_count": { en: "Data Sources", zh: "数据源" },
@@ -40,8 +40,8 @@ const translations = {
   // Standards list
   "std.title": { en: "Standards Library", zh: "标准库" },
   "std.desc": {
-    en: "Full database of regulations, standards, consultations, meeting notices, recalls, and policy documents.",
-    zh: "法规、标准、征求意见、会议通知、召回与政策文件的完整数据库。",
+    en: "A curated database separating formal standards, regulations, assessment protocols, and supplementary latest updates.",
+    zh: "按正式标准、法规、测评规程和补充类最新动态分层整理的数据库。",
   },
   "std.search": { en: "Search standards...", zh: "搜索标准..." },
   "std.cat.standards": { en: "Standards", zh: "标准" },
@@ -77,8 +77,8 @@ const translations = {
   // Sources page
   "src.title": { en: "Data Sources", zh: "数据源" },
   "src.desc": {
-    en: "25 P0 (priority zero) authoritative sources monitored continuously. Expandable roadmap for P1/P2 sources.",
-    zh: "持续监测 25 个 P0 优先级权威数据源。P1/P2 源在扩展路线图中。",
+    en: "Authoritative sources grouped by national/international standards bodies, industry standards organizations, regulators, assessment programs, and official interpretation channels.",
+    zh: "按国家/国际标准制定组织、行业标准组织、监管机构、测评规程发布方和官方解读渠道分组的数据源。",
   },
   "src.difficulty": { en: "Crawl Difficulty", zh: "抓取难度" },
   "src.language": { en: "Language", zh: "语言" },
@@ -214,8 +214,10 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Lang>("en");
 
   useEffect(() => {
-    const saved = localStorage.getItem("ads-lang") as Lang;
-    if (saved === "zh" || saved === "en") setLangState(saved);
+    queueMicrotask(() => {
+      const saved = localStorage.getItem("ads-lang");
+      if (saved === "zh" || saved === "en") setLangState(saved);
+    });
   }, []);
 
   const setLang = (l: Lang) => {

@@ -22,7 +22,7 @@ log = logging.getLogger(__name__)
 
 DEFAULT_UA = (
     "AD-Standards-Tracker-Bot/1.0 "
-    "(+https://github.com/AutoZYX/ad-standards-tracker; "
+    "(+https://github.com/AutoZYX-Labs/ad-standards-tracker; "
     "contact: zhangyuxin@jlu.edu.cn)"
 )
 DEFAULT_DELAY = float(os.environ.get("CRAWLER_REQUEST_DELAY_SEC", "2"))

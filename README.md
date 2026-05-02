@@ -4,11 +4,11 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6)](https://www.typescriptlang.org/)
 
-> An open, bilingual (EN/中文) tracker for autonomous-driving regulations, standards, consultations, and policy documents across UN, China, US, EU, UK, Japan, and Korea.
+> An open, bilingual (EN/中文) tracker for autonomous-driving standards, regulations, assessment protocols, and latest updates across UN, China, US, EU, UK, Japan, Korea, Singapore, Germany, and industry organizations.
 >
-> 面向全球自动驾驶监管、标准、征求意见稿与政策文件的开源双语追踪工具，覆盖联合国、中国、美国、欧盟、英国、日本、韩国。
+> 面向全球自动驾驶标准、法规、测评规程与最新动态的开源双语追踪工具，覆盖联合国、中国、美国、欧盟、英国、日本、韩国、新加坡、德国及行业组织。
 
-Live site / 在线访问: **standards.autozyx.com** *(pending DNS)*
+Live site / 在线访问: **https://standards.autozyx.com**
 Companion project / 姊妹项目: [ROAM — Robotaxi Operations & Accident Monitor](https://github.com/AutoZYX/ROAM)
 
 ---
@@ -26,7 +26,8 @@ AD compliance and safety intelligence is fragmented across national regulators, 
 - **Dashboard** — 最近更新、按辖区/类型/主题的分布统计
 - **Standards Library** — 全库筛选（辖区、组织、类型、状态、年份、主题、SAE 级别）
 - **Standard Detail** — 单条记录全部字段 + 外链到原文
-- **Sources** — 25 个 P0 数据源清单（UNECE, SAC/TC114, NHTSA, SAE, EC, Euro NCAP, METI 等）
+- **Sources** — 30+ 个数据源清单（UNECE, ISO, SAC/TC114, NHTSA, SAE, IEEE, ASAM, EC, Euro NCAP, METI 等）
+- **Ask AD Standards** — Claude-powered natural-language Q&A over the structured database
 - **Subscribe** — 邮件订阅（按角色分层：OEM / Tier 1 / 监管 / 学术 / 媒体）
 - **Bilingual** — EN/中文 双语界面和内容字段
 
@@ -38,7 +39,7 @@ AD compliance and safety intelligence is fragmented across national regulators, 
 id: "STD-UNECE-2025-001"
 date: "2025-09-22"
 org: "UNECE WP.29"
-jurisdiction: "international"      # international|china|us|eu|uk|japan|korea
+jurisdiction: "international"      # international|industry_org|china|us|eu|uk|germany|japan|korea|singapore
 type: "meeting_notice"             # regulation|standard|consultation|...
 status: "published"
 title_en: "..."
@@ -80,7 +81,7 @@ ad-standards-tracker/
 │   ├── types.ts            # All TS types (client-safe)
 │   ├── data.ts             # YAML loader (server-only, uses fs)
 │   ├── filter.ts           # Pure filter fn (client-safe)
-│   ├── sources.ts          # 25 P0 source registry
+│   ├── sources.ts          # source registry
 │   └── i18n.tsx            # i18n provider
 ├── standards/              # YAML data (organized by jurisdiction/year)
 │   ├── china/
@@ -108,7 +109,7 @@ For data corrections, edit the relevant YAML file and open a PR — no programmi
   author = {Zhang, Yuxin},
   title  = {AD Standards Tracker: An Open Bilingual Tracker for Autonomous-Driving Regulations and Standards},
   year   = {2026},
-  url    = {https://github.com/AutoZYX/ad-standards-tracker}
+  url    = {https://github.com/AutoZYX-Labs/ad-standards-tracker}
 }
 ```
 
