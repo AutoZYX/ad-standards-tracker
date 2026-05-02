@@ -35,6 +35,19 @@ interface Citation {
   source_status?: StandardRecord["source_status"];
 }
 
+function toCitation(record: StandardRecord): Citation {
+  return {
+    id: record.id,
+    title_en: record.title_en,
+    title_cn: record.title_cn,
+    url: record.url,
+    status: record.status,
+    legal_force: record.legal_force,
+    evidence_level: record.evidence_level,
+    source_status: record.source_status,
+  };
+}
+
 function extractCitations(answer: string): Citation[] {
   const ids = Array.from(
     new Set(answer.match(/\b(?:STD|INT)-[A-Za-z0-9-]+-\d{4}-\d{3}\b/g) ?? [])
@@ -46,16 +59,133 @@ function extractCitations(answer: string): Citation[] {
   return ids
     .map((id) => byId.get(id))
     .filter((record): record is StandardRecord => Boolean(record))
-    .map((record) => ({
-      id: record.id,
-      title_en: record.title_en,
-      title_cn: record.title_cn,
-      url: record.url,
-      status: record.status,
-      legal_force: record.legal_force,
-      evidence_level: record.evidence_level,
-      source_status: record.source_status,
-    }));
+    .map(toCitation);
+}
+
+function hasChinese(text: string): boolean {
+  return /[\u3400-\u9fff]/.test(text);
+}
+
+function questionHints(question: string): {
+  tokens: string[];
+  wantsBinding: boolean;
+  wantsBestPractice: boolean;
+  wantsAssessment: boolean;
+  wantsRegulation: boolean;
+  wantsSotif: boolean;
+  wantsTeleoperation: boolean;
+  wantsScenario: boolean;
+  wantsL2: boolean;
+  wantsL4: boolean;
+} {
+  const lower = question.toLowerCase();
+  return {
+    tokens: Array.from(
+      new Set(lower.match(/[a-z0-9]+|[\u3400-\u9fff]{2,}/g) ?? [])
+    ).filter((token) => token.length > 1 && !["什么", "哪些", "如何", "有什么"].includes(token)),
+    wantsBinding: /强制|法规|准入|binding|mandatory|regulation|type approval/.test(lower),
+    wantsBestPractice: /最佳实践|best practice|guidance|safety case|安全案例/.test(lower),
+    wantsAssessment: /测评|规程|ncap|assessment|rating/.test(lower),
+    wantsRegulation: /法规|准入|regulation|type approval/.test(lower),
+    wantsSotif: /sotif|21448|预期功能安全|安全案例|safety case/.test(lower),
+    wantsTeleoperation: /远程|遥控|remote|teleoperation/.test(lower),
+    wantsScenario: /场景|scenario|openscenario|opendrive|34502/.test(lower),
+    wantsL2: /\bl2\b|level 2|组合驾驶辅助|辅助驾驶/.test(lower),
+    wantsL4: /\bl4\b|level 4|无人驾驶|自动驾驶/.test(lower),
+  };
+}
+
+function localFallback(question: string, errorMessage: string): {
+  answer: string;
+  citations: Citation[];
+} {
+  const records = getAllStandards();
+  const hints = questionHints(question);
+
+  const scored = records
+    .map((record) => {
+      const haystack = [
+        record.id,
+        record.org,
+        record.org_full,
+        record.title_en,
+        record.title_cn,
+        record.summary_en,
+        record.summary_cn,
+        record.impact_note,
+        record.topics?.join(" "),
+        record.automation_level?.join(" "),
+        record.related_standards?.join(" "),
+      ]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+      const titleHaystack = [record.id, record.title_en, record.title_cn]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+
+      let score = 0;
+      for (const token of hints.tokens) {
+        if (titleHaystack.includes(token)) score += token.length >= 4 ? 10 : 4;
+        if (haystack.includes(token)) score += token.length >= 4 ? 2 : 1;
+      }
+      if (hints.wantsBinding && record.legal_force === "binding") score += 3;
+      if (hints.wantsBestPractice && (record.legal_force === "best_practice" || record.legal_force === "guidance")) score += 3;
+      if (hints.wantsAssessment && record.legal_force === "rating_protocol") score += 3;
+      if (hints.wantsRegulation && record.type === "regulation") score += 2;
+      if (hints.wantsSotif && record.topics?.includes("sotif")) score += 3;
+      if (hints.wantsTeleoperation && record.topics?.includes("teleoperation")) score += 3;
+      if (hints.wantsScenario && (record.topics?.includes("scenario_description") || record.topics?.includes("testing"))) score += 3;
+      if (hints.wantsL2 && record.automation_level?.includes("L2")) score += 2;
+      if (hints.wantsL4 && record.automation_level?.includes("L4")) score += 2;
+      if (/iso\s*21448/.test(question.toLowerCase()) && record.title_en.toLowerCase().startsWith("iso 21448")) {
+        score += 20;
+      }
+      if (/ieee\s*3321/.test(question.toLowerCase()) && record.title_en.toLowerCase().startsWith("ieee 3321")) {
+        score += 20;
+      }
+
+      return { record, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5);
+
+  const citations = scored.map(({ record }) => toCitation(record));
+  const zh = hasChinese(question);
+  const providerNote = zh
+    ? "Claude 服务暂时不可用，下面先返回本地数据库检索结果。"
+    : "Claude is temporarily unavailable, so this response falls back to deterministic database search.";
+  const cause = errorMessage.includes("credit balance")
+    ? zh
+      ? "原因：Anthropic API 余额不足。"
+      : "Reason: Anthropic API credit balance is too low."
+    : zh
+      ? "原因：上游 AI 服务暂时失败。"
+      : "Reason: upstream AI service failed.";
+
+  if (citations.length === 0) {
+    return {
+      answer: zh
+        ? `${providerNote}\n${cause}\n\n本地检索没有找到明确匹配记录。请换用标准号、组织名或主题词重试。`
+        : `${providerNote}\n${cause}\n\nNo clear local database match was found. Try a standard number, organization, or topic keyword.`,
+      citations,
+    };
+  }
+
+  const lines = citations.map((citation) => {
+    const title = zh && citation.title_cn ? citation.title_cn : citation.title_en;
+    const legal = citation.legal_force ? `/${citation.legal_force}` : "";
+    return `- ${citation.id}: ${title} (${citation.status}${legal}) ${citation.url}`;
+  });
+
+  return {
+    answer: zh
+      ? `${providerNote}\n${cause}\n\n可先查看这些最相关记录：\n${lines.join("\n")}\n\n依据记录：\n${lines.join("\n")}`
+      : `${providerNote}\n${cause}\n\nMost relevant records:\n${lines.join("\n")}\n\nCited records:\n${lines.join("\n")}`,
+    citations,
+  };
 }
 
 export async function POST(request: NextRequest) {
@@ -105,9 +235,7 @@ export async function POST(request: NextRequest) {
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
     console.error("Claude API error:", message);
-    return NextResponse.json(
-      { error: "AI service error. Please try again later." },
-      { status: 500 }
-    );
+    const fallback = localFallback(question, message);
+    return NextResponse.json({ ...fallback, fallback: true });
   }
 }
