@@ -1,0 +1,30 @@
+id: INT-UK-2025-001
+date: '2025-02-26'
+org: UK DfT / CCAV
+org_full: UK Department for Transport and Centre for Connected and Autonomous Vehicles
+jurisdiction: uk
+type: policy
+status: published
+title_en: Automated Vehicles Act 2024 Implementation Programme
+title_cn: 英国《2024 年自动驾驶汽车法》实施计划
+url: https://www.gov.uk/guidance/automated-vehicles-act-implementation-programme
+document_stage: published
+legal_force: guidance
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+automation_level:
+- L3
+- L4
+topics:
+- type_approval
+- operations
+- data_recording
+summary_en: UK government implementation programme for secondary legislation, authorization processes, in-use regulation, and capability building under the Automated Vehicles Act 2024.
+summary_cn: 英国政府围绕《2024 年自动驾驶汽车法》推进二级立法、授权流程、在用监管和监管能力建设的实施计划。
+impact_note: Critical for timing UK self-driving authorization and ASDE/NUIC operator obligations before the expected 2027 implementation window.
+related_standards:
+- UK Automated Vehicles Act 2024
+- BSI PAS 1881
+last_updated: '2026-05-02'

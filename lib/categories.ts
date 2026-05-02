@@ -4,7 +4,8 @@ import type { StandardRecord, Category } from "./types";
  * Derive the top-level Category for a record from (type + org + title + status).
  *
  * Priority order (first matching wins):
- * 1. Draft / consultation / meeting_notice / recall / interpretation / white_paper / research / policy → "updates"
+ * 1. Rating protocols and NCAP-family records → "assessments"
+ * 2. Draft / consultation / meeting_notice / recall / interpretation / white_paper / research / policy → "updates"
  * 2. UN-R regulations / national legal acts / EU regulations → "regulations"
  * 3. NCAP family + i-VISTA + assessment protocols → "assessments"
  * 4. Everything else of type "standard" or type "regulation" that isn't UN-R/Act → "standards"
@@ -18,8 +19,12 @@ export function categorize(r: StandardRecord): Category {
   // These are "测评规程" — consumer-facing assessment protocols. They may be typed as
   // standard / white_paper / policy, but belong here regardless.
   const isAssessment =
-    /\bncap\b|i-vista|ivista|\biihs\b|assessment protocol|测评规程|测评体系/.test(title) ||
+    r.legal_force === "rating_protocol" ||
+    /euro\s*ncap|c-?ncap|jncap|kncap|\bncap\b|c-icap|i-vista|ivista|\biihs\b|assessment protocol|测评规程|测评体系/.test(title) ||
     org.includes("c-ncap") ||
+    org.includes("c-icap") ||
+    org.includes("jncap") ||
+    org.includes("kncap") ||
     org.includes("euro ncap") ||
     org.includes("i-vista") ||
     org.includes("caeri");

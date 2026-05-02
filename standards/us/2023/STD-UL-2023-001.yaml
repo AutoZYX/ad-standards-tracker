@@ -9,6 +9,13 @@ title_en: UL 4600 Edition 3 — Standard for Safety for the Evaluation of Autono
 title_cn: UL 4600 第三版 自动驾驶产品安全评估标准
 url: https://ulse.org/focus-areas/travel-safety/autonomous-vehicles/
 effective_date: '2023-03-17'
+document_stage: published
+legal_force: best_practice
+source_type: official
+evidence_level: B
+verified_at: '2026-05-02'
+source_status: verified
+source_note: Official UL Standards & Engagement topic page and UL Solutions Edition 3 update are used as public metadata; full standard text is controlled by UL.
 automation_level:
 - L3
 - L4
@@ -27,4 +34,4 @@ related_standards:
 - ISO 26262
 - SAE J3237
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

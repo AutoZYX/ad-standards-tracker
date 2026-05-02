@@ -8,8 +8,15 @@ status: consultation
 title_en: Report-for-Approval Draft — Intelligent Connected Vehicles — Combined Driving
   Assistance System Safety Requirements (Mandatory GB, 2nd public consultation round)
 title_cn: 《智能网联汽车 组合驾驶辅助系统安全要求》强制性国家标准报批稿（第二轮公开征求意见）
-url: https://www.chinanews.com.cn/gn/2026/04-16/10604574.shtml
+url: https://www.news.cn/government/20260416/8486a18f5d6341eeac4d8a7d88f87489/c.html
 effective_date: '2027-01-01'
+document_stage: approval_draft
+legal_force: informational
+source_type: secondary
+evidence_level: C
+verified_at: '2026-05-02'
+source_status: verified
+source_note: Report-for-approval draft of a future mandatory GB. The stable MIIT public consultation URL was not available in search results at verification time; Xinhua/News.cn report is used as a high-confidence secondary source.
 automation_level:
 - L2
 topics:
@@ -26,12 +33,10 @@ summary_en: 'Report-for-Approval draft of the mandatory GB standard for L2 combi
   2025-09-17 to 2025-11-15.'
 summary_cn: L2 组合驾驶辅助强制性国标报批稿。第二轮公开征求意见期：2026-04-16 至 2026-04-22。覆盖基础单车道、基础多车道、导航组合驾驶辅助三类系统，规定使用说明、驾驶员培训、驾驶员状态监测、脱手脱眼多次后系统自动禁用等要求。拟
   2027-01-01 对所有新申请准入的车型强制实施。首轮征求意见稿于 2025-09-17 至 2025-11-15 期间公开。
-impact_note: ⚠️[MIIT 官方 URL 暂未公开检索到，暂用中新网 2026-04-16 报道链接。首轮征求意见稿 SAMR 项目编号
-  id=14366B6505BA7711E06397BE0A0A151B，见 related_standards 中的 SAMR 档案链接]。对比亚迪、小鹏、蔚来、理想、华为鸿蒙智行、小米等所有
-  L2 NOA 产品有直接合规影响 — 系统自动禁用机制将显著改变现有产品体验。
+impact_note: 报批稿阶段尚未成为正式强制性国家标准，但若按建议日期实施，将对所有 L2 组合驾驶辅助/NOA 产品产生直接准入影响，尤其是 DMS、误用防护和系统禁用机制。
 related_standards:
 - GB 44497-2024
 - UN-R152
 - UN-R157
 - MIIT 首轮征求意见稿 2025-09-17
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

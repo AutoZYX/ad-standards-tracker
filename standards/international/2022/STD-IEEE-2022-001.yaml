@@ -7,8 +7,15 @@ type: standard
 status: in_force
 title_en: IEEE 2846-2022 — Standard for Assumptions in Safety-Related Models for Automated Driving Systems
 title_cn: IEEE 2846-2022 自动驾驶系统安全相关模型假设标准
-url: https://ieeexplore.ieee.org/document/9761121/
+url: https://standards.ieee.org/ieee/2846/10831/
 effective_date: '2022-04-22'
+document_stage: in_force
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-02'
+source_status: paywalled
+source_note: Official IEEE SA catalog page is used for metadata; full text is available via IEEE channels.
 automation_level:
 - L3
 - L4
@@ -23,5 +30,6 @@ related_standards:
 - ISO 34502
 - RSS
 - SAE J3237
+- IEEE 3321-2024
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

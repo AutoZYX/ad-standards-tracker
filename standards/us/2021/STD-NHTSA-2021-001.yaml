@@ -9,6 +9,13 @@ title_en: Standing General Order 2021-01 — Crash Reporting for Level 2 ADAS an
 title_cn: NHTSA Standing General Order 2021-01 对 L2 辅助驾驶和自动驾驶系统车辆的碰撞强制报告令
 url: https://www.nhtsa.gov/laws-regulations/standing-general-order-crash-reporting
 effective_date: '2021-06-29'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+source_note: NHTSA has issued amendments to SGO 2021-01; the tracker should monitor the Third Amended SGO and public crash reporting page.
 automation_level:
 - L2
 - L3
@@ -24,4 +31,4 @@ related_standards:
 - FMVSS 127
 - 49 CFR 579
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

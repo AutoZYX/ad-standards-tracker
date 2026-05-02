@@ -9,6 +9,13 @@ title_en: C-NCAP Management Rules (2027 Edition) — Scenario-Driven Active Safe
 title_cn: 《C-NCAP 管理规则（2027年版）》正式发布 — 主动安全场景驱动与新能源安全升级
 url: https://www.c-ncap.org.cn/article-detail/2021808409786982401?type=2
 effective_date: '2027-01-01'
+document_stage: published
+legal_force: rating_protocol
+source_type: official_news
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+source_note: Official C-NCAP release page is used. The tracker should add the stable PDF/direct document URL when C-NCAP publishes or exposes it.
 automation_level:
 - L1
 - L2

@@ -8,6 +8,13 @@ status: draft
 title_en: Draft Global Technical Regulation on Automated Driving Systems adopted by GRVA
 title_cn: GRVA 通过自动驾驶系统全球技术法规（ADS GTR）草案
 url: https://www.connectedautomateddriving.eu/blog/unece-grva-adopts-draft-global-regulation-on-automated-driving-systems/
+document_stage: draft
+legal_force: informational
+source_type: secondary
+evidence_level: C
+verified_at: '2026-05-02'
+source_status: verified
+source_note: Secondary CAD Knowledge Base summary used until a stable UNECE official ADS GTR document URL is available.
 automation_level:
 - L3
 - L4
@@ -27,4 +34,3 @@ related_standards:
 - ISO 21448
 - ISO 34502
 last_updated: '2026-05-02'
-

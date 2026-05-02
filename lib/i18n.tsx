@@ -56,6 +56,10 @@ const translations = {
   "std.all_orgs": { en: "All Organizations", zh: "全部组织" },
   "std.all_topics": { en: "All Topics", zh: "全部主题" },
   "std.all_levels": { en: "All Levels", zh: "全部级别" },
+  "std.all_legal": { en: "All Legal Effects", zh: "全部效力" },
+  "std.all_sources": { en: "All Source Types", zh: "全部来源类型" },
+  "std.all_evidence": { en: "All Evidence Levels", zh: "全部证据等级" },
+  "std.all_source_status": { en: "All Source Status", zh: "全部链接状态" },
   "std.found": { en: "found", zh: "条" },
   "std.no_match": { en: "No standards match the filters.", zh: "没有符合筛选条件的标准。" },
   "std.back": { en: "Back to Standards", zh: "返回标准库" },
@@ -73,6 +77,15 @@ const translations = {
   "detail.summary": { en: "SUMMARY", zh: "摘要" },
   "detail.impact": { en: "IMPACT / ANALYSIS", zh: "影响 / 解读" },
   "detail.related": { en: "RELATED STANDARDS", zh: "关联标准" },
+  "detail.quality": { en: "SOURCE & LEGAL EFFECT", zh: "来源与效力" },
+  "detail.legal_force": { en: "LEGAL EFFECT", zh: "法律/行业效力" },
+  "detail.source_type": { en: "SOURCE TYPE", zh: "来源类型" },
+  "detail.evidence_level": { en: "EVIDENCE LEVEL", zh: "证据等级" },
+  "detail.verified_at": { en: "VERIFIED AT", zh: "核验日期" },
+  "detail.source_status": { en: "SOURCE STATUS", zh: "链接状态" },
+  "detail.version": { en: "VERSION", zh: "版本" },
+  "detail.supersedes": { en: "SUPERSEDES", zh: "替代" },
+  "detail.superseded_by": { en: "SUPERSEDED BY", zh: "被替代" },
 
   // Sources page
   "src.title": { en: "Data Sources", zh: "数据源" },
@@ -125,6 +138,29 @@ const translations = {
   "status.withdrawn": { en: "Withdrawn", zh: "撤回" },
   "status.pending": { en: "Pending", zh: "待定" },
   "status.in_force": { en: "In Force", zh: "已实施" },
+
+  // Legal force labels
+  "legal.binding": { en: "Binding regulation", zh: "强制性法规/准入要求" },
+  "legal.voluntary": { en: "Voluntary standard", zh: "自愿性标准" },
+  "legal.rating_protocol": { en: "Assessment protocol", zh: "测评规程" },
+  "legal.guidance": { en: "Guidance", zh: "指导性文件" },
+  "legal.best_practice": { en: "Best practice", zh: "最佳实践" },
+  "legal.informational": { en: "Informational", zh: "信息参考" },
+
+  // Source type labels
+  "source_type.official": { en: "Official source", zh: "官方原始来源" },
+  "source_type.official_news": { en: "Official notice/news", zh: "官方通知/新闻" },
+  "source_type.official_catalog": { en: "Official catalog", zh: "官方目录/项目页" },
+  "source_type.standards_store": { en: "Standards store", zh: "标准销售/目录页" },
+  "source_type.secondary": { en: "Secondary source", zh: "二级来源" },
+  "source_type.interpretation": { en: "Interpretation", zh: "解读来源" },
+
+  // Evidence/source status labels
+  "source_status.verified": { en: "Verified", zh: "已核验" },
+  "source_status.paywalled": { en: "Paywalled", zh: "需付费/登录" },
+  "source_status.blocked": { en: "Blocked", zh: "访问受限" },
+  "source_status.broken": { en: "Broken", zh: "链接失效" },
+  "source_status.unverified": { en: "Unverified", zh: "未核验" },
 
   // Jurisdiction labels
   "juris.international": { en: "International / UN", zh: "国际/联合国" },

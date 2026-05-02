@@ -8,6 +8,15 @@ status: published
 title_en: ISO 21448:2022 — Road vehicles — Safety of the Intended Functionality (SOTIF)
 title_cn: ISO 21448:2022 道路车辆 — 预期功能安全（SOTIF）
 url: https://www.iso.org/standard/77490.html
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-02'
+source_status: paywalled
+version: '2022'
+supersedes:
+- ISO/PAS 21448:2019
 automation_level:
 - L1
 - L2
@@ -29,4 +38,4 @@ related_standards:
 - ISO 26262
 - ISO 34502
 - ISO/SAE 21434
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

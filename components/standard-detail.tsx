@@ -13,6 +13,16 @@ export default function StandardDetail({ standard }: { standard: StandardRecord 
   const section = "mb-6";
   const sectionTitle =
     "text-xs font-semibold text-[var(--muted)] uppercase tracking-wider mb-2";
+  const hasQualityMeta =
+    standard.legal_force ||
+    standard.source_type ||
+    standard.evidence_level ||
+    standard.verified_at ||
+    standard.source_status ||
+    standard.source_note ||
+    standard.version ||
+    standard.supersedes?.length ||
+    standard.superseded_by?.length;
 
   return (
     <div>
@@ -67,7 +77,76 @@ export default function StandardDetail({ standard }: { standard: StandardRecord 
               <p>{standard.automation_level.join(", ")}</p>
             </div>
           )}
+          {standard.version && (
+            <div>
+              <p className={sectionTitle}>{t("detail.version")}</p>
+              <p>{standard.version}</p>
+            </div>
+          )}
         </div>
+
+        {hasQualityMeta && (
+          <div className={`${section} rounded-lg border border-[var(--border)] bg-[var(--badge-bg)]/60 p-4`}>
+            <p className={sectionTitle}>{t("detail.quality")}</p>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+              {standard.legal_force && (
+                <div>
+                  <p className="text-[10px] uppercase text-[var(--muted)] mb-1">
+                    {t("detail.legal_force")}
+                  </p>
+                  <p>{t(`legal.${standard.legal_force}` as never)}</p>
+                </div>
+              )}
+              {standard.source_type && (
+                <div>
+                  <p className="text-[10px] uppercase text-[var(--muted)] mb-1">
+                    {t("detail.source_type")}
+                  </p>
+                  <p>{t(`source_type.${standard.source_type}` as never)}</p>
+                </div>
+              )}
+              {standard.evidence_level && (
+                <div>
+                  <p className="text-[10px] uppercase text-[var(--muted)] mb-1">
+                    {t("detail.evidence_level")}
+                  </p>
+                  <p>{standard.evidence_level}</p>
+                </div>
+              )}
+              {standard.verified_at && (
+                <div>
+                  <p className="text-[10px] uppercase text-[var(--muted)] mb-1">
+                    {t("detail.verified_at")}
+                  </p>
+                  <p>{standard.verified_at}</p>
+                </div>
+              )}
+              {standard.source_status && (
+                <div>
+                  <p className="text-[10px] uppercase text-[var(--muted)] mb-1">
+                    {t("detail.source_status")}
+                  </p>
+                  <p>{t(`source_status.${standard.source_status}` as never)}</p>
+                </div>
+              )}
+            </div>
+            {standard.source_note && (
+              <p className="mt-3 text-xs leading-relaxed text-[var(--muted)]">
+                {standard.source_note}
+              </p>
+            )}
+            {standard.supersedes && standard.supersedes.length > 0 && (
+              <p className="mt-3 text-xs text-[var(--muted)]">
+                {t("detail.supersedes")}: {standard.supersedes.join(", ")}
+              </p>
+            )}
+            {standard.superseded_by && standard.superseded_by.length > 0 && (
+              <p className="mt-2 text-xs text-[var(--muted)]">
+                {t("detail.superseded_by")}: {standard.superseded_by.join(", ")}
+              </p>
+            )}
+          </div>
+        )}
 
         {/* URL */}
         <div className={section}>

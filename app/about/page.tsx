@@ -24,8 +24,8 @@ export default function AboutPage() {
       </h1>
       <p className="text-[var(--muted)] mb-8">
         {zh
-          ? "AD Standards Tracker（自动驾驶标准追踪）是一个开源工具，用于监测全球自动驾驶法规、标准、征求意见稿与测评动态。"
-          : "AD Standards Tracker is an open-source tool for monitoring automated driving regulations, standards, consultations, and assessments globally."}
+          ? "AD Standards Tracker（自动驾驶标准追踪）是一个开源的自动驾驶安全证据地图，用于结构化监测全球自动驾驶标准、法规、测评规程、草案动态与最佳实践。"
+          : "AD Standards Tracker is an open-source safety evidence map for automated driving standards, regulations, assessment protocols, drafts, and best practices."}
       </p>
 
       <section className="mb-10">
@@ -59,8 +59,13 @@ export default function AboutPage() {
           </li>
           <li>
             {zh
-              ? "四类内容分离：标准库（已发布）/ 征求意见稿 / 相关通知 / 标准解读"
-              : "Four content categories: Published / Drafts & Consultations / Notices / Interpretations & Research."}
+              ? "四类内容分离：技术标准 / 法规与准入规则 / 测评规程 / 最新动态与解读"
+              : "Four content layers: technical standards / regulations and type approval / assessment protocols / latest updates and interpretations."}
+          </li>
+          <li>
+            {zh
+              ? "高优先级条目标注法律效力、来源类型、证据等级、核验日期和链接状态"
+              : "High-priority records include legal effect, source type, evidence level, verification date, and source status."}
           </li>
           <li>
             {zh

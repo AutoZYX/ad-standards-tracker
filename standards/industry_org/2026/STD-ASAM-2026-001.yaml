@@ -8,6 +8,13 @@ status: published
 title_en: ASAM OpenSCENARIO DSL 2.2.0 — Scenario description language for ADAS/AD simulation
 title_cn: ASAM OpenSCENARIO DSL 2.2.0 — 面向 ADAS/AD 仿真的场景描述语言
 url: https://www.asam.net/standards/detail/openscenario-dsl/
+document_stage: published
+legal_force: voluntary
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+version: 2.2.0
 automation_level:
 - L1
 - L2
@@ -27,4 +34,3 @@ related_standards:
 - ISO 34502
 - ISO 34505
 last_updated: '2026-05-02'
-

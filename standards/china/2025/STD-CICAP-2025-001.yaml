@@ -1,0 +1,33 @@
+id: STD-CICAP-2025-001
+date: '2025-06-30'
+org: C-ICAP
+org_full: China Intelligent Connected Automobile Assessment Programme
+jurisdiction: china
+type: standard
+status: in_force
+title_en: C-ICAP Management Rules (2024 Revision) — Intelligent Connected Vehicle Assessment Protocol
+title_cn: C-ICAP 管理规则（2024 修订版）— 智能网联汽车测评规程
+url: https://www.c-ncap.org.cn/cncap-guicheng-detail?id=16
+effective_date: '2025-06-30'
+document_stage: in_force
+legal_force: rating_protocol
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+automation_level:
+- L2
+- L3
+topics:
+- testing
+- hmi
+- perception
+- operations
+summary_en: Chinese intelligent connected vehicle assessment protocol covering basic driving assistance, navigation assistance, parking assistance, and intelligent cockpit assessment dimensions.
+summary_cn: 中国智能网联汽车测评规程，覆盖基础行车辅助、领航行车辅助、泊车辅助和智慧座舱等评价维度。
+impact_note: Complements C-NCAP by focusing on intelligent connected vehicle functions and should be tracked separately from crash-safety NCAP protocols.
+related_standards:
+- C-NCAP 2027
+- GB/T 40429
+- MIIT L2 combined driving assistance mandatory GB
+last_updated: '2026-05-02'

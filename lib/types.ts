@@ -30,6 +30,41 @@ export type StandardStatus =
   | "pending"
   | "in_force";
 
+export type DocumentStage =
+  | "published"
+  | "in_force"
+  | "draft"
+  | "consultation"
+  | "approval_draft"
+  | "proposal"
+  | "superseded"
+  | "withdrawn";
+
+export type LegalForce =
+  | "binding"
+  | "voluntary"
+  | "rating_protocol"
+  | "guidance"
+  | "best_practice"
+  | "informational";
+
+export type SourceType =
+  | "official"
+  | "official_news"
+  | "official_catalog"
+  | "standards_store"
+  | "secondary"
+  | "interpretation";
+
+export type EvidenceLevel = "A" | "B" | "C" | "D";
+
+export type SourceStatus =
+  | "verified"
+  | "paywalled"
+  | "blocked"
+  | "broken"
+  | "unverified";
+
 export type AutomationLevel = "L0" | "L1" | "L2" | "L3" | "L4" | "L5";
 
 export type Topic =
@@ -77,6 +112,16 @@ export interface StandardRecord {
   title_cn?: string;
   url: string;
   effective_date?: string;
+  document_stage?: DocumentStage;
+  legal_force?: LegalForce;
+  source_type?: SourceType;
+  evidence_level?: EvidenceLevel;
+  verified_at?: string;
+  source_status?: SourceStatus;
+  source_note?: string;
+  version?: string;
+  supersedes?: string[];
+  superseded_by?: string[];
   automation_level?: AutomationLevel[];
   topics?: Topic[];
   summary_en?: string;

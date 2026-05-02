@@ -2,7 +2,7 @@ id: STD-DE-2021-001
 date: '2021-07-28'
 org: BMVI Germany
 org_full: Bundesministerium für Digitales und Verkehr (German Federal Ministry)
-jurisdiction: eu
+jurisdiction: germany
 type: regulation
 status: in_force
 title_en: German Road Traffic Act (StVG) Amendment — Act on Autonomous Driving (Level
@@ -10,6 +10,12 @@ title_en: German Road Traffic Act (StVG) Amendment — Act on Autonomous Driving
 title_cn: 德国道路交通法（StVG）修订 — 自动驾驶法案（L4）
 url: https://www.bgbl.de/xaver/bgbl/start.xav?startbk=Bundesanzeiger_BGBl&jumpTo=bgbl121s3108.pdf
 effective_date: '2022-07-01'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
 automation_level:
 - L4
 topics:
@@ -26,4 +32,4 @@ impact_note: UK Automated Vehicles Act 2024 和中国地方立法的参考对象
 related_standards:
 - EU Regulation 2022/1426
 - UN-R157
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

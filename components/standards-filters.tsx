@@ -1,7 +1,16 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import type { StandardRecord, Category, Jurisdiction, StandardType } from "@/lib/types";
+import type {
+  EvidenceLevel,
+  LegalForce,
+  SourceStatus,
+  SourceType,
+  StandardRecord,
+  Category,
+  Jurisdiction,
+  StandardType,
+} from "@/lib/types";
 import { useI18n } from "@/lib/i18n";
 import StandardCard from "./standard-card";
 import { filterStandards } from "@/lib/filter";
@@ -32,6 +41,34 @@ const ALL_TYPES: StandardType[] = [
   "interpretation",
 ];
 
+const ALL_LEGAL_FORCES: LegalForce[] = [
+  "binding",
+  "voluntary",
+  "rating_protocol",
+  "guidance",
+  "best_practice",
+  "informational",
+];
+
+const ALL_SOURCE_TYPES: SourceType[] = [
+  "official",
+  "official_news",
+  "official_catalog",
+  "standards_store",
+  "secondary",
+  "interpretation",
+];
+
+const ALL_EVIDENCE_LEVELS: EvidenceLevel[] = ["A", "B", "C", "D"];
+
+const ALL_SOURCE_STATUSES: SourceStatus[] = [
+  "verified",
+  "paywalled",
+  "blocked",
+  "broken",
+  "unverified",
+];
+
 type CategoryTab = Category | "all";
 
 export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
@@ -45,6 +82,10 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
   const [year, setYear] = useState("");
   const [topic, setTopic] = useState("");
   const [level, setLevel] = useState("");
+  const [legalForce, setLegalForce] = useState("");
+  const [sourceType, setSourceType] = useState("");
+  const [evidenceLevel, setEvidenceLevel] = useState("");
+  const [sourceStatus, setSourceStatus] = useState("");
 
   // Precompute category for each record
   const withCategory = useMemo(
@@ -100,8 +141,26 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
         year,
         topic,
         level,
+        legalForce: legalForce as never,
+        sourceType: sourceType as never,
+        evidenceLevel: evidenceLevel as never,
+        sourceStatus: sourceStatus as never,
       }),
-    [byCategoryRecords, search, jurisdiction, org, type, status, year, topic, level]
+    [
+      byCategoryRecords,
+      search,
+      jurisdiction,
+      org,
+      type,
+      status,
+      year,
+      topic,
+      level,
+      legalForce,
+      sourceType,
+      evidenceLevel,
+      sourceStatus,
+    ]
   );
 
   const selClass =
@@ -204,6 +263,38 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
           {["L0", "L1", "L2", "L3", "L4", "L5"].map((lv) => (
             <option key={lv} value={lv}>
               {lv}
+            </option>
+          ))}
+        </select>
+        <select value={legalForce} onChange={(e) => setLegalForce(e.target.value)} className={selClass}>
+          <option value="">{t("std.all_legal")}</option>
+          {ALL_LEGAL_FORCES.map((lf) => (
+            <option key={lf} value={lf}>
+              {t(`legal.${lf}` as never)}
+            </option>
+          ))}
+        </select>
+        <select value={sourceType} onChange={(e) => setSourceType(e.target.value)} className={selClass}>
+          <option value="">{t("std.all_sources")}</option>
+          {ALL_SOURCE_TYPES.map((st) => (
+            <option key={st} value={st}>
+              {t(`source_type.${st}` as never)}
+            </option>
+          ))}
+        </select>
+        <select value={evidenceLevel} onChange={(e) => setEvidenceLevel(e.target.value)} className={selClass}>
+          <option value="">{t("std.all_evidence")}</option>
+          {ALL_EVIDENCE_LEVELS.map((ev) => (
+            <option key={ev} value={ev}>
+              Evidence {ev}
+            </option>
+          ))}
+        </select>
+        <select value={sourceStatus} onChange={(e) => setSourceStatus(e.target.value)} className={selClass}>
+          <option value="">{t("std.all_source_status")}</option>
+          {ALL_SOURCE_STATUSES.map((ss) => (
+            <option key={ss} value={ss}>
+              {t(`source_status.${ss}` as never)}
             </option>
           ))}
         </select>

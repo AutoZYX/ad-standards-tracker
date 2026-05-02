@@ -1,0 +1,32 @@
+id: INT-JAMA-2025-001
+date: '2025-12-01'
+org: JAMA
+org_full: Japan Automobile Manufacturers Association
+jurisdiction: industry_org
+type: interpretation
+status: published
+title_en: Automated Driving Safety Evaluation Framework Ver. 4.0
+title_cn: 自动驾驶安全评价框架 Ver. 4.0（JAMA / SAKURA）
+url: https://www.jama.or.jp/english/reports/framework.html
+document_stage: published
+legal_force: best_practice
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+automation_level:
+- L3
+- L4
+topics:
+- testing
+- sotif
+- scenario_description
+- perception
+summary_en: Japanese industry safety evaluation framework for automated driving. Version 4.0 expands scenario-based safety evaluation, including VRU and general-road blind-spot scenarios.
+summary_cn: 日本产业界自动驾驶安全评价框架。Ver.4.0 扩展了场景驱动安全评价内容，包括 VRU 和一般道路盲区等场景。
+impact_note: A high-value best-practice bridge between ISO 34502 scenario taxonomy, SAKURA safety evaluation, and practical AD safety assurance.
+related_standards:
+- ISO 34502
+- ISO 21448
+- ASAM OpenSCENARIO
+last_updated: '2026-05-02'

@@ -1,0 +1,34 @@
+id: INT-UNECE-2024-001
+date: '2024-01-26'
+org: UNECE GRVA
+org_full: UNECE GRVA FRAV/VMAD informal working groups
+jurisdiction: international
+type: interpretation
+status: published
+title_en: FRAV/VMAD Guidelines and Recommendations for Automated Driving Systems
+title_cn: UNECE FRAV/VMAD 自动驾驶系统安全要求与验证方法建议
+url: https://unece.org/transport/road-transport/reference-documents
+document_stage: published
+legal_force: guidance
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+automation_level:
+- L3
+- L4
+- L5
+topics:
+- type_approval
+- testing
+- sotif
+- data_recording
+summary_en: UNECE reference material from FRAV and VMAD workstreams defining ADS safety requirements and validation methodology foundations, including scenario-based testing, audit/assessment, and in-use monitoring concepts.
+summary_cn: UNECE FRAV 与 VMAD 工作组形成的自动驾驶系统安全要求与验证方法参考文件，覆盖场景测试、审核评估和在用监测等思路。
+impact_note: Not a binding UN Regulation by itself, but it is the technical basis behind NATM and the emerging ADS GTR discussion.
+related_standards:
+- ADS GTR draft
+- UN-R157
+- ISO 34502
+- ISO 21448
+last_updated: '2026-05-02'

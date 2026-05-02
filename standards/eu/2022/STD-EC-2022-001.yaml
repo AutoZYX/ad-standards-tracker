@@ -9,6 +9,12 @@ title_en: Commission Implementing Regulation (EU) 2022/1426 — Uniform procedur
 title_cn: 欧盟委员会 2022/1426 实施条例：自动驾驶系统欧盟型式认证统一程序
 url: https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32022R1426
 effective_date: '2022-09-06'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
 automation_level:
 - L3
 - L4
@@ -23,5 +29,6 @@ related_standards:
 - UN-R157
 - UN-R155
 - UN-R156
+- EU Regulation 2026/481
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-04-16'
+last_updated: '2026-05-02'

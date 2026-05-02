@@ -7,6 +7,13 @@ status: in_force
 title_en: 'ASAM OpenDRIVE — Road Network Description Standard (latest: 1.8.1)'
 title_cn: ASAM OpenDRIVE — 道路网络描述标准（当前 1.8.1 版）
 url: https://www.asam.net/standards/detail/opendrive/
+document_stage: in_force
+legal_force: voluntary
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+version: 1.8.1
 automation_level:
 - L1
 - L2

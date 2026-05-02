@@ -1,6 +1,6 @@
 # AD Standards Tracker — 技术交接（项目内）
 
-**最后更新**: 2026-04-16（MVP 上线后）
+**最后更新**: 2026-05-02（数据可信度层与 P0 标准更新）
 **配套文档**: `/Users/zyx/Desktop/WorkToDo/session_handoff_standards_tracker.md`（面向用户的状态/待办清单）
 
 ## 项目概况
@@ -16,10 +16,12 @@
 
 ## 当前状态（已跑通 + 已部署）
 
-- ✅ **79 条种子数据** 覆盖 7 辖区（international 17 / china 21 / us 22 / eu 8 / uk 3 / japan 4 / korea 4）
-- ✅ `pnpm build` 通过、Vercel 生产部署返回 200（/, /standards, /sources, /about, /subscribe, /standards/[id]）
-- ✅ 客户端过滤器 `StandardsFilters`（搜索 + 7 维度下拉）正常
-- ✅ 无 console error、无 server error
+- ✅ **108 条记录** 覆盖 international / industry_org / china / us / eu / uk / germany / japan / korea / singapore
+- ✅ 新增数据可信度层：`legal_force`、`source_type`、`evidence_level`、`verified_at`、`source_status`
+- ✅ `pnpm validate:data` 通过：108 条记录、108 个唯一 ID；仍有 85 条旧记录缺少质量字段，作为渐进式修复债务
+- ✅ `pnpm lint` 通过
+- ✅ `pnpm build` 通过，生成 119 个静态页面
+- ✅ 详情页和卡片展示法律效力、证据等级、来源类型；标准库增加法律效力/来源类型/证据等级/链接状态筛选
 
 ## 架构（关键文件）
 
@@ -28,6 +30,7 @@
 | `lib/types.ts` | 所有 TS 类型（含 `DashboardStats`、`StandardRecord`、`SourceInfo`、`Jurisdiction` 等） | 共享 |
 | `lib/data.ts` | YAML 加载器（用 `fs`），导出 `getAllStandards`/`getStandardById`/`getDashboardStats` | **仅服务端** |
 | `lib/filter.ts` | 纯函数 `filterStandards`（运行时过滤） | **客户端安全** |
+| `tools/validate-data.mjs` | YAML/schema 校验，检查 ID、路径、日期、URL、枚举与重复项 | CLI |
 | `lib/sources.ts` | 数据源注册表 | 共享 |
 | `lib/i18n.tsx` | i18n Provider + `useI18n` hook | 客户端 |
 | `components/standards-filters.tsx` | 客户端过滤器组件 | `"use client"` |
@@ -49,7 +52,9 @@
 3. **YAML schema**
    - 字段见 `StandardRecord`（`lib/types.ts`）
    - 必填：`id`、`date`、`org`、`jurisdiction`、`type`、`status`、`title_en`、`url`
-   - 可选：`title_cn`、`automation_level[]`、`topics[]`、`summary_en/cn`、`impact_note`、`related_standards[]` 等
+   - 高优先级条目应补齐：`legal_force`、`source_type`、`evidence_level`、`verified_at`、`source_status`
+   - 可选：`title_cn`、`automation_level[]`、`topics[]`、`summary_en/cn`、`impact_note`、`related_standards[]`、`supersedes[]` 等
+   - 运行 `pnpm validate:data` 做基础校验；旧记录缺质量字段会 warning，但不会阻塞
 
 ## 未完成/待办
 
@@ -57,7 +62,9 @@
 - [x] Phase 1: 脚手架
 - [x] Phase 2: 50+ YAML 种子数据
 - [x] Phase 3: 页面构建
-- [ ] **数据扩充**：继续增加标准条目（重点补齐 2024 年之前的历史标准、美国/日本/韩国的覆盖）
+- [x] **P0 数据可信度层**：关键国际法规、EU/UK/Germany/US/China/ASAM/JAMA/TR68 已开始标注法律效力与证据等级
+- [ ] **旧记录质量字段补齐**：当前 85 条旧记录缺 `legal_force/source_type/evidence_level/verified_at/source_status`
+- [ ] **数据扩充**：继续增加标准条目（重点补齐 JNCAP/KNCAP、UK SoSP、NHTSA 第三修订 SGO、IEEE 3321、Korea L4 性能认证）
 - [ ] **`scripts/seed-data.py` 优化**：目前是一次性脚本，考虑改成可追加的 generator
 - [ ] **详情页增强**：related_standards 的双向链接、时间线视图
 - [ ] **Dashboard 图表**：按年份/辖区的堆叠柱图（已有 recharts 依赖）

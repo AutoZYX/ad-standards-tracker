@@ -1,0 +1,33 @@
+id: STD-NHTSA-2024-002
+date: '2024-12-20'
+org: NHTSA
+org_full: National Highway Traffic Safety Administration
+jurisdiction: us
+type: consultation
+status: draft
+title_en: AV STEP NPRM — ADS-equipped Vehicle Safety, Transparency, and Evaluation Program
+title_cn: NHTSA AV STEP 拟议规则 — 搭载 ADS 车辆的安全、透明度与评价计划
+url: https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-12/nprm-av-step-2024-web.pdf
+document_stage: proposal
+legal_force: informational
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+automation_level:
+- L3
+- L4
+- L5
+topics:
+- type_approval
+- testing
+- operations
+- data_recording
+summary_en: Proposed NHTSA national program for ADS-equipped vehicle safety, transparency, and evaluation, including voluntary participation, reporting, evaluation, and exemption pathways.
+summary_cn: NHTSA 拟议的搭载 ADS 车辆安全、透明度与评价国家计划，涉及自愿参与、报告、评价和豁免路径。
+impact_note: Not yet a final regulation, but a key signal of US federal ADS oversight beyond voluntary safety self-assessments.
+related_standards:
+- NHTSA SGO 2021-01
+- FMVSS Part 555 exemptions
+- UL 4600
+last_updated: '2026-05-02'

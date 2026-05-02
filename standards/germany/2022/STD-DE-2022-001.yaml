@@ -1,0 +1,32 @@
+id: STD-DE-2022-001
+date: '2022-06-24'
+org: BMDV Germany
+org_full: Bundesministerium für Digitales und Verkehr
+jurisdiction: germany
+type: regulation
+status: in_force
+title_en: AFGBV — Autonomous Vehicles Approval and Operation Ordinance
+title_cn: 德国 AFGBV 自动驾驶车辆批准与运营条例
+url: https://www.gesetze-im-internet.de/afgbv/AFGBV.pdf
+effective_date: '2022-07-01'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+automation_level:
+- L4
+topics:
+- type_approval
+- operations
+- cybersecurity
+- data_recording
+summary_en: German ordinance detailing approval and operation requirements for autonomous vehicles in defined operating areas, including KBA type approval, operating area approval, technical supervision, data storage, and IT security.
+summary_cn: 德国自动驾驶车辆批准与运营细则，规定限定运行区域内自动驾驶车辆的 KBA 批准、运行区域批准、技术监督、数据存储和 IT 安全要求。
+impact_note: Operationalizes Germany's 2021 L4 autonomous driving law and is a key reference for driverless operation governance in defined ODD/ODA areas.
+related_standards:
+- German Autonomous Driving Act 2021
+- EU Regulation 2022/1426
+- UN-R157
+last_updated: '2026-05-02'

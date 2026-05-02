@@ -1,0 +1,35 @@
+id: STD-ASAM-2026-002
+date: '2026-03-13'
+org: ASAM
+org_full: ASAM e.V. (Association for Standardisation of Automation and Measuring Systems)
+jurisdiction: industry_org
+type: standard
+status: published
+title_en: ASAM OpenSCENARIO XML 1.4.0 — Dynamic Scenario Description
+title_cn: ASAM OpenSCENARIO XML 1.4.0 — 动态场景描述标准
+url: https://publications.pages.asam.net/standards/ASAM_OpenSCENARIO/ASAM_OpenSCENARIO_XML/latest/index.html
+document_stage: published
+legal_force: voluntary
+source_type: official
+evidence_level: A
+verified_at: '2026-05-02'
+source_status: verified
+version: 1.4.0
+automation_level:
+- L1
+- L2
+- L3
+- L4
+- L5
+topics:
+- testing
+- scenario_description
+- sotif
+summary_en: Current ASAM OpenSCENARIO XML branch for concrete dynamic scenario description, used by simulation and test tools for ADAS/AD validation.
+summary_cn: 当前 ASAM OpenSCENARIO XML 分支，用于具体动态场景描述，是 ADAS/AD 仿真和测试工具链的重要格式。
+impact_note: Should be tracked separately from OpenSCENARIO DSL because ASAM now develops the XML and DSL branches in parallel for different scenario authoring needs.
+related_standards:
+- ASAM OpenSCENARIO DSL
+- ASAM OpenDRIVE
+- ISO 34502
+last_updated: '2026-05-02'

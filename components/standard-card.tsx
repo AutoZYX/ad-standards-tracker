@@ -6,12 +6,15 @@ import { useI18n } from "@/lib/i18n";
 
 const JURISDICTION_COLORS: Record<string, string> = {
   international: "#7c3aed",
+  industry_org: "#9333ea",
   china: "#dc2626",
   us: "#2563eb",
   eu: "#059669",
   uk: "#ea580c",
+  germany: "#374151",
   japan: "#d97706",
   korea: "#0891b2",
+  singapore: "#be123c",
 };
 
 const TYPE_COLORS: Record<string, string> = {
@@ -33,6 +36,15 @@ const STATUS_BG: Record<string, string> = {
   revised: "bg-purple-100 text-purple-800",
   withdrawn: "bg-red-100 text-red-800",
   pending: "bg-gray-100 text-gray-700",
+};
+
+const LEGAL_FORCE_BG: Record<string, string> = {
+  binding: "bg-red-50 text-red-700 border-red-200",
+  voluntary: "bg-blue-50 text-blue-700 border-blue-200",
+  rating_protocol: "bg-amber-50 text-amber-800 border-amber-200",
+  guidance: "bg-emerald-50 text-emerald-700 border-emerald-200",
+  best_practice: "bg-purple-50 text-purple-700 border-purple-200",
+  informational: "bg-gray-50 text-gray-700 border-gray-200",
 };
 
 export default function StandardCard({ standard }: { standard: StandardRecord }) {
@@ -66,6 +78,20 @@ export default function StandardCard({ standard }: { standard: StandardRecord })
           >
             {t(`status.${standard.status}` as never)}
           </span>
+          {standard.legal_force && (
+            <span
+              className={`text-[10px] px-2 py-0.5 rounded border font-medium ${
+                LEGAL_FORCE_BG[standard.legal_force] || "bg-gray-50 text-gray-700 border-gray-200"
+              }`}
+            >
+              {t(`legal.${standard.legal_force}` as never)}
+            </span>
+          )}
+          {standard.evidence_level && (
+            <span className="text-[10px] px-2 py-0.5 rounded bg-[var(--badge-bg)] text-[var(--muted)] font-medium">
+              {lang === "zh" ? "证据" : "Evidence"} {standard.evidence_level}
+            </span>
+          )}
         </div>
         <span className="text-xs text-[var(--muted)] whitespace-nowrap">{standard.date}</span>
       </div>

@@ -20,13 +20,51 @@ export default function DashboardContent({ stats, recent }: Props) {
   const thisMonth = recent.filter((r) => r.date.startsWith(thisMonthKey)).length;
   const latestDate = recent[0]?.date || "-";
 
-  const jurisOrder = ["international", "china", "us", "eu", "uk", "japan", "korea"];
+  const jurisOrder = [
+    "international",
+    "industry_org",
+    "china",
+    "us",
+    "eu",
+    "uk",
+    "germany",
+    "japan",
+    "korea",
+    "singapore",
+  ];
 
   return (
     <div>
       <div className="mb-8">
         <h1 className="text-3xl mb-2">{t("brand.name_full")}</h1>
         <p className="text-[var(--muted)]">{t("brand.tagline")}</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+        <ValuePillar
+          title={lang === "zh" ? "标准不是清单" : "Not a link list"}
+          body={
+            lang === "zh"
+              ? "把技术标准、法规准入、测评规程和最佳实践分层整理，避免把草案、新闻和正式标准混在一起。"
+              : "Separates standards, binding regulations, assessment protocols, and best practices instead of mixing drafts, notices, and final texts."
+          }
+        />
+        <ValuePillar
+          title={lang === "zh" ? "每条记录有证据链" : "Evidence-aware records"}
+          body={
+            lang === "zh"
+              ? "高优先级条目逐步标注法律效力、来源类型、证据等级、核验日期和链接状态。"
+              : "High-priority records are being annotated with legal effect, source type, evidence level, verification date, and link status."
+          }
+        />
+        <ValuePillar
+          title={lang === "zh" ? "面向安全决策" : "Built for safety decisions"}
+          body={
+            lang === "zh"
+              ? "围绕 SOTIF、功能安全、场景测试、DMS、数据记录、OTA 和准入合规组织信息。"
+              : "Organizes information around SOTIF, functional safety, scenario testing, DMS, data recording, OTA, and type approval."
+          }
+        />
       </div>
 
       {/* Ask AD Standards hero CTA */}
@@ -151,6 +189,15 @@ export default function DashboardContent({ stats, recent }: Props) {
           <StandardCard key={r.id} standard={r} />
         ))}
       </div>
+    </div>
+  );
+}
+
+function ValuePillar({ title, body }: { title: string; body: string }) {
+  return (
+    <div className="rounded-xl bg-[var(--card-bg)] border border-[var(--border)] p-5">
+      <h2 className="text-base mb-2">{title}</h2>
+      <p className="text-sm leading-relaxed text-[var(--muted)]">{body}</p>
     </div>
   );
 }
