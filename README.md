@@ -25,7 +25,7 @@ AD compliance and safety intelligence is fragmented across national regulators, 
 
 - **Dashboard** — 最近更新、按辖区/类型/主题的分布统计
 - **Standards Library** — 全库筛选（辖区、组织、类型、状态、年份、主题、SAE 级别）
-- **Evidence Maps** — 按 L2 误用控制、ADS 准入、场景测试、安全案例、远程协助组织证据链
+- **Evidence Maps** — 按 L2 及以下驾驶辅助、ADS 准入、场景测试、安全开发、安全论证、远程操作边界和 L4 运营治理组织证据链
 - **Standard Detail** — 单条记录全部字段 + 外链到原文
 - **Source & Legal Effect** — 高优先级条目标注法律效力、来源类型、证据等级、核验日期、链接状态
 - **Sources** — 30+ 个数据源清单（UNECE, ISO, SAC/TC114, NHTSA, SAE, IEEE, ASAM, EC, Euro NCAP, METI 等）

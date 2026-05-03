@@ -1,0 +1,47 @@
+id: STD-ISO-2024-003
+date: '2024-12-13'
+org: ISO
+org_full: International Organization for Standardization
+jurisdiction: international
+type: standard
+status: published
+title_en: ISO/PAS 8800:2024 — Road vehicles — Safety and artificial intelligence
+title_cn: ISO/PAS 8800:2024 道路车辆 — 安全与人工智能
+url: https://www.iso.org/standard/83303.html
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official ISO catalog page is used for metadata. The public catalog lists the document as ISO/PAS
+  8800:2024; the full text may require purchase or subscription.
+version: '2024'
+automation_level:
+  - L0
+  - L1
+  - L2
+  - L3
+  - L4
+  - L5
+topics:
+  - functional_safety
+  - sotif
+  - ai_governance
+  - testing
+summary_en: >-
+  Publicly available specification for road-vehicle safety and artificial intelligence. It provides
+  guidance for using AI in safety-related E/E systems and connects AI-specific development concerns
+  with established automotive safety engineering practices.
+summary_cn: >-
+  面向道路车辆“安全与人工智能”的公开可用规范，针对安全相关 E/E 系统中 AI 的使用给出开发和安全工程指导，并把 AI 特有问题与传统汽车安全开发流程衔接起来。
+impact_note: >-
+  Use this record as the AI-safety companion to ISO 26262 and ISO 21448. It should be cited as
+  ISO/PAS 8800:2024, not ISO/SAE 8800, based on the official ISO catalog.
+related_standards:
+  - ISO 26262
+  - ISO 21448
+  - ISO/SAE 21434
+  - ISO 34502
+last_updated: '2026-05-03'

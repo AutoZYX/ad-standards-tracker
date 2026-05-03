@@ -151,6 +151,23 @@ for (const file of files.sort()) {
   }
 }
 
+const evidenceMapFile = path.join(root, "lib", "evidence-map.ts");
+if (fs.existsSync(evidenceMapFile)) {
+  const evidenceMapSource = fs.readFileSync(evidenceMapFile, "utf8");
+  const referencedIds = Array.from(
+    new Set(
+      [...evidenceMapSource.matchAll(/"((?:STD|INT)-[A-Za-z0-9-]+-\d{4}-\d{3})"/g)].map(
+        (match) => match[1]
+      )
+    )
+  );
+  for (const id of referencedIds) {
+    if (!ids.has(id)) {
+      fail(`lib/evidence-map.ts: missing record_id "${id}"`);
+    }
+  }
+}
+
 if (warnings.length) {
   console.warn(`Data quality warnings (${warnings.length}):`);
   const grouped = warnings.reduce((acc, message) => {

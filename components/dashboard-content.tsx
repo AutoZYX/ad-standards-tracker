@@ -102,8 +102,8 @@ export default function DashboardContent({ stats, recent }: Props) {
             </p>
             <p className="text-sm text-[var(--muted)]">
               {lang === "zh"
-                ? "按 L2 误用控制、ADS 准入、场景测试、安全案例和远程协助组织证据链。"
-                : "Browse evidence chains for L2 misuse control, ADS authorization, scenario testing, safety cases, and remote assistance."}
+                ? "按 L2 及以下驾驶辅助、ADS 准入、场景测试、安全开发、安全论证和 L4 运营治理组织证据链。"
+                : "Browse evidence chains for L2-and-below ADAS, ADS authorization, scenario testing, safety development, safety cases, and L4 operational governance."}
             </p>
           </div>
           <span className="text-[var(--accent)] font-medium text-sm whitespace-nowrap">

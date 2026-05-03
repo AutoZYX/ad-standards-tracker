@@ -11,23 +11,30 @@ export interface EvidenceMap {
 
 export const EVIDENCE_MAPS: EvidenceMap[] = [
   {
-    slug: "l2-combined-driving-assistance",
-    title_en: "L2 Combined Driving Assistance and ADAS Misuse Control",
-    title_cn: "L2 组合驾驶辅助与误用控制",
+    slug: "l2-and-below-driver-assistance",
+    title_en: "L2-and-Below Driver Assistance and Misuse Control",
+    title_cn: "L2 及以下驾驶辅助与误用控制",
     desc_en:
-      "Mandatory GB drafts, NCAP protocols, and crash-reporting rules that shape L2/NOA product safety baselines.",
+      "Mandatory GB drafts, assisted-driving NCAP protocols, consumer assessment rules, and crash-reporting orders that shape ADAS/L2 safety baselines.",
     desc_cn:
-      "把 L2/NOA 产品安全基线相关的强制国标草案、NCAP 测评规程和事故报告规则放在一起看。",
+      "把 ADAS、L2/NOA、主动安全 NCAP 测评规程和事故报告规则放在一起看，避免把所有 NCAP 都硬归入 L2。",
     decision_en:
-      "Use this map for DMS, HMI, misuse prevention, ODD communication, L2 incident reporting, and product release gates.",
+      "Use this map for DMS, HMI, misuse prevention, ODD communication, assisted-driving assessment, and product release gates.",
     decision_cn:
-      "适用于 DMS、人机交互、误用防护、ODD 告知、L2 事故报告和产品放行门槛分析。",
+      "适用于 DMS、人机交互、误用防护、ODD 告知、辅助驾驶测评和产品放行门槛分析。",
     record_ids: [
+      "STD-SAE-2022-001",
+      "STD-SAC-2024-001",
       "STD-MIIT-2026-001",
       "STD-CATARC-2026-001",
       "STD-ENCAP-2026-001",
+      "STD-NCAP-2023-001",
+      "STD-JNCAP-2026-001",
+      "INT-KNCAP-2026-001",
+      "STD-CICAP-2025-001",
+      "STD-CAERI-2025-001",
+      "STD-CAERI-2024-001",
       "STD-NHTSA-2025-003",
-      "STD-NHTSA-2021-001",
     ],
   },
   {
@@ -69,7 +76,9 @@ export const EVIDENCE_MAPS: EvidenceMap[] = [
     record_ids: [
       "STD-ISO-2023-001",
       "STD-ISO-2023-003",
+      "STD-ISO-2024-002",
       "STD-ISO-2025-001",
+      "STD-ISO-2026-001",
       "STD-ASAM-2006-001",
       "STD-ASAM-2019-001",
       "STD-ASAM-2026-001",
@@ -79,46 +88,95 @@ export const EVIDENCE_MAPS: EvidenceMap[] = [
     ],
   },
   {
-    slug: "safety-case-best-practice",
-    title_en: "SOTIF, Safety Case, and Behavioral Safety Models",
-    title_cn: "SOTIF、安全案例与行为安全模型",
+    slug: "safety-development-standards",
+    title_en: "Safety Development Series Standards",
+    title_cn: "安全开发系列标准",
     desc_en:
-      "Core standards and best practices for arguing that an ADS is acceptably safe despite functional insufficiencies and foreseeable misuse.",
+      "Numbered standards for functional safety, SOTIF, AI safety, scenario-based evaluation, ODD taxonomy, and ADS test execution.",
     desc_cn:
-      "围绕功能不足、可预见误用和 ADS 可接受安全论证的核心标准与最佳实践。",
+      "以 ISO 26262、ISO 21448、ISO/PAS 8800 和 ISO 3450x 系列为主线，整理安全开发与测试验证的核心编号标准。",
     decision_en:
-      "Use this map for SOTIF process design, safety case structure, behavioral model assumptions, and validation argumentation.",
+      "Use this map to structure the safety lifecycle, AI-safety work products, SOTIF analysis, ODD definition, and scenario-test evidence.",
     decision_cn:
-      "适用于 SOTIF 流程设计、安全案例结构、行为模型假设和验证论证。",
+      "适用于搭建安全生命周期、AI 安全工作产品、SOTIF 分析、ODD 定义和场景测试证据链。",
     record_ids: [
       "STD-ISO-2018-001",
       "STD-ISO-2022-003",
+      "STD-ISO-2024-003",
+      "STD-ISO-2023-001",
+      "STD-ISO-2023-003",
+      "STD-ISO-2024-002",
+      "STD-ISO-2025-001",
+      "STD-ISO-2026-001",
+      "STD-SAE-2023-001",
+    ],
+  },
+  {
+    slug: "safety-case-and-behavior-models",
+    title_en: "Safety Case, Behavioral Safety Models, and Validation Evidence",
+    title_cn: "安全论证、行为安全模型与验证证据",
+    desc_en:
+      "Goal-based safety case standards, behavior-assumption standards, and official validation guidance used to argue that an ADS is acceptably safe.",
+    desc_cn:
+      "把目标导向安全案例、道路使用者行为假设模型和官方验证方法建议分开呈现，不再与安全开发流程标准混在一起。",
+    decision_en:
+      "Use this map when building a safety case, defining behavioral assumptions, choosing validation metrics, or explaining residual risk.",
+    decision_cn:
+      "适用于构建安全案例、定义行为假设、选择验证指标和解释剩余风险。",
+    record_ids: [
       "STD-UL-2023-001",
       "STD-IEEE-2022-001",
       "STD-IEEE-2025-001",
+      "STD-SAE-2025-001",
       "INT-JAMA-2025-001",
       "INT-UNECE-2024-001",
     ],
   },
   {
-    slug: "teleoperation-and-remote-assistance",
-    title_en: "Teleoperation and Remote Assistance",
-    title_cn: "远程操控与远程协助",
+    slug: "remote-assistance-and-operation-boundary",
+    title_en: "Remote Assistance and Remote Operation Boundary",
+    title_cn: "远程协助与远程操作边界",
     desc_en:
-      "Records that matter to remote assistance, remote operation concepts, operational control, and ROAM-style event analysis.",
+      "Definitions, draft technical requirements, and connectivity guidance that distinguish remote assistance, remote operation, and remote supervision.",
     desc_cn:
-      "聚焦远程协助、远程操作概念、运营控制和 ROAM 式事件分析相关记录。",
+      "聚焦远程协助、远程操作、远程监督的术语边界和技术要求，不再混入一般运营监管记录。",
     decision_en:
-      "Use this map to separate remote assistance, remote driving, operational fallback, incident reporting, and ADS operator obligations.",
+      "Use this map to decide whether a use case is remote guidance, remote driving, operational supervision, or connectivity support.",
     decision_cn:
-      "适用于区分远程协助、远程驾驶、运营降级、事故报告和 ADS 运营方义务。",
+      "适用于区分远程指导、远程驾驶、运营监督和通信支撑，尤其适合 ROAM 类事件分析。",
     record_ids: [
       "STD-SAE-2022-003",
-      "STD-SAE-2023-001",
+      "STD-SAC-2024-001",
+      "STD-SAC-2025-001",
+      "STD-UNECE-2024-001",
+      "STD-5GAA-2020-001",
+    ],
+  },
+  {
+    slug: "l4-operational-safety-and-incident-governance",
+    title_en: "L4 Operational Safety and Incident Governance",
+    title_cn: "L4 运营安全与事件治理",
+    desc_en:
+      "Operational permits, remote-supervision duties, disengagement reporting, incident reporting, and post-deployment safety controls for driverless services.",
+    desc_cn:
+      "面向无人化服务的运营许可、远程监督责任、脱离报告、事故报告和部署后安全治理。",
+    decision_en:
+      "Use this map for Robotaxi operations, post-incident governance, safety-driver removal, reporting duties, and operator responsibility models.",
+    decision_cn:
+      "适用于 Robotaxi 运营、事故后治理、去安全员、报告义务和运营方责任模型分析。",
+    record_ids: [
+      "STD-DE-2021-001",
+      "STD-DE-2022-001",
+      "STD-NPA-2022-001",
       "STD-UK-2024-001",
       "INT-UK-2025-001",
-      "STD-NHTSA-2025-003",
+      "STD-KMOLIT-2025-001",
       "STD-KMOLIT-2025-002",
+      "STD-CA-DMV-2025-001",
+      "STD-CA-DMV-2026-002",
+      "STD-BJHAD-2022-001",
+      "STD-MOT-2025-001",
+      "STD-NHTSA-2025-003",
     ],
   },
 ];
