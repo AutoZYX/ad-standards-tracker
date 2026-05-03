@@ -1,30 +1,30 @@
 # AD Standards Tracker — 技术交接
 
 最后更新: 2026-05-03
-状态: 已上线，已完成第一轮全库可信度字段补齐、URL 健康治理和数据源分类重整
+状态: 已上线，已完成第一轮全库可信度字段补齐、URL 健康治理、数据源分类重整和弱证据记录清理
 仓库: https://github.com/AutoZYX-Labs/ad-standards-tracker
 生产站: https://standards.autozyx.com
 本地路径: /Users/zyx/Desktop/WorkToDo/ad-standards-tracker/
 
 ## 当前生产状态
 
-- 最新提交: aed6f63 Refine source taxonomy
-- 最新生产部署: dpl_AX7yceXN58ZbUNpJB89nY98LgPao
-- Vercel 临时地址: https://ad-standards-tracker-r7eh6soua-auto-zyx.vercel.app
+- 最新提交: 13aa1ef Clean up weak evidence records
+- 最新生产部署: dpl_5Ne5BJuhMPt724bjPrX4XMqhcAYc
+- Vercel 临时地址: https://ad-standards-tracker-krkmc66ec-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 126 个页面
-- 线上冒烟: `/`、`/sources`、`/standards?sourceStatus=blocked`、`/standards/STD-NPA-2022-001` 均返回 200
+- 线上冒烟: `/`、`/sources`、`/standards?sourceStatus=blocked`、`/standards/INT-ENCAP-2024-001`、`/standards/INT-SAE-2026-001` 均返回 200
 - Ask API: 可用；Anthropic 余额不足时自动降级到本地数据库检索，并返回服务端 citation
 
 ## 数据状态
 
-- 总记录数: 114
-- 唯一 ID: 114
-- trust 字段完整度: 114/114
-- evidence_level 分布: A 58，B 45，C 11，D 0
-- source_status 分布: verified 72，paywalled 19，blocked 23，broken 0，unverified 0
-- legal_force 分布: guidance 21，voluntary 29，binding 25，rating_protocol 10，informational 22，best_practice 7
-- URL 检查: `URL_CHECK_TIMEOUT_MS=8000 pnpm check:urls` 通过 114 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
+- 总记录数: 112
+- 唯一 ID: 112
+- trust 字段完整度: 112/112
+- evidence_level 分布: A 58，B 47，C 7，D 0
+- source_status 分布: verified 70，paywalled 19，blocked 23，broken 0，unverified 0
+- legal_force 分布: guidance 20，voluntary 29，binding 25，rating_protocol 9，informational 22，best_practice 7
+- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 112 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
 
 ## 2026-05-03 已完成
 
@@ -38,6 +38,8 @@
 - 首页新增 Data Health 面板，展示 trust 完整度、证据等级结构和链接健康状态。
 - `/standards` 支持从 URL query 初始化筛选条件，例如 `/standards?sourceStatus=blocked`。
 - `/sources` 数据源页重整为国家/国际标准制定组织、行业标准组织、政府监管机构、测评与评级机构、试点与示范区；补充 CEN-CENELEC、ANSI、BSI、JISC/JSAE、VDA/DIN 等源头机构。
+- 清理 Euro NCAP 弱证据重复记录，将 2024 Vision 2030 合并为 `INT-ENCAP-2024-001`，删除两个基于泛化 press index 的 2025 重复记录。
+- 将 SAE J3329 和 CATARC C-NCAP 附录 Q 解读从 Evidence C 升为 Evidence B，并补充说明其证据边界。
 - 把本地残留的重复/冲突未跟踪文件移入 `.local-quarantine/2026-05-03-untracked/`，并通过 `.gitignore` 排除，避免污染 YAML 数据加载。
 - 更新 README、DATA_SCHEMA、CONTRIBUTING，补充 trust 字段治理和回填脚本说明。
 
@@ -52,10 +54,10 @@ pnpm build
 
 当前结果:
 
-- `pnpm validate:data`: 通过，114 records，114 unique ids
+- `pnpm validate:data`: 通过，112 records，112 unique ids
 - `pnpm lint`: 通过
-- `pnpm check:urls`: 通过，114 URLs
-- `pnpm build`: 通过，126 pages
+- `pnpm check:urls`: 通过，112 URLs
+- `pnpm build`: 通过，124 pages
 
 ## 关键架构
 
@@ -82,7 +84,7 @@ pnpm build
 ## 仍需推进
 
 1. Anthropic API 余额充值后，复测 `/api/ask` 的 Claude 智能回答路径。
-2. 对 Evidence C 的 11 条记录做专家复核，能升为 A/B 的补官方链接，不能确认的降级为“最新动态”或移出核心标准库。
+2. 对剩余 Evidence C 的 7 条记录做专家复核，能升为 A/B 的补官方链接，不能确认的降级为“最新动态”或移出核心标准库。
 3. 给 `/maps` 增加按证据等级和法律效力的可视化汇总。
 4. 实现第一批自动化源监测，优先级建议为 NHTSA、GOV.UK、Euro NCAP、EUR-Lex、ISO、UNECE、SAC。
 5. 发布前准备公众号和 Blog 深度文章，建议主题为“自动驾驶标准不是清单，而是安全证据地图”。
