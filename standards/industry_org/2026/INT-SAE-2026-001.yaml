@@ -35,10 +35,10 @@ related_standards:
 last_updated: '2026-05-02'
 document_stage: published
 legal_force: best_practice
-source_type: interpretation
-evidence_level: C
+source_type: official_catalog
+evidence_level: B
 verified_at: '2026-05-03'
 source_status: paywalled
 source_note: >-
-  Backfilled trust fields conservatively. Source should be manually reviewed before using this
-  record as primary evidence.
+  Official SAE Mobilus catalog page for SAE J3329. Full text is paywalled, so catalog metadata is
+  treated as Evidence B rather than full-text Evidence A.

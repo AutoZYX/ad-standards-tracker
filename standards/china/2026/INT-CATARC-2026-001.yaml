@@ -28,6 +28,7 @@ last_updated: '2026-04-16'
 document_stage: published
 legal_force: best_practice
 source_type: interpretation
-evidence_level: C
+evidence_level: B
 verified_at: '2026-05-03'
 source_status: verified
+source_note: Official CATARC Tech interpretation of C-NCAP 2027 Appendix Q; not a protocol text, but a primary interpretation from the C-NCAP ecosystem.

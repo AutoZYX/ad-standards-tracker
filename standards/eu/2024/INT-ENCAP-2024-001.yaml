@@ -1,0 +1,35 @@
+id: INT-ENCAP-2024-001
+date: '2024-03-26'
+org: Euro NCAP
+org_full: European New Car Assessment Programme
+jurisdiction: eu
+type: policy
+status: published
+title_en: Euro NCAP Vision 2030 — A Safer Future for Mobility
+title_cn: Euro NCAP Vision 2030 — 更安全的未来出行路线图
+url: https://www.euroncap.com/press-media/euro-ncap-vision-2030-a-safer-future-for-mobility/
+effective_date: '2026-01-01'
+automation_level:
+  - L1
+  - L2
+  - L3
+topics:
+  - testing
+summary_en: >-
+  Euro NCAP Vision 2030 sets the roadmap for the 2026-2030 rating framework and signals a stronger
+  focus on active safety, assisted driving, automated driving readiness, driver monitoring, and
+  vulnerable road user protection.
+summary_cn: >-
+  Euro NCAP Vision 2030 给出了 2026-2030 年评分体系路线图，强化主动安全、辅助驾驶、自动驾驶就绪性、驾驶员监控和弱势道路使用者保护等方向。
+impact_note: >-
+  This is a roadmap and policy signal, not a standalone test protocol. Use it to understand Euro
+  NCAP direction; use protocol pages for concrete test requirements.
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-05-03'
+document_stage: published
+legal_force: guidance
+source_type: official_news
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: verified
+source_note: Official Euro NCAP Vision 2030 page. Consolidates older duplicate roadmap records that were based on generic press-release indexes.
