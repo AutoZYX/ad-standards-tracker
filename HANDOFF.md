@@ -1,30 +1,30 @@
 # AD Standards Tracker — 技术交接
 
 最后更新: 2026-05-03
-状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据源分类重整和剩余弱证据记录核实
+状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据源分类重整、剩余弱证据记录核实和专题地图重整
 仓库: https://github.com/AutoZYX-Labs/ad-standards-tracker
 生产站: https://standards.autozyx.com
 本地路径: /Users/zyx/Desktop/WorkToDo/ad-standards-tracker/
 
 ## 当前生产状态
 
-- 最新应用提交: 9456115 Sanitize Ask API markdown output
-- 最新生产部署: dpl_7dvY1jnD6jZp8F6EqjXR6c4ST6dS
-- Vercel 临时地址: https://ad-standards-tracker-pnjj9afmo-auto-zyx.vercel.app
+- 最新应用提交: 7f32695 Refine evidence maps taxonomy
+- 最新生产部署: dpl_AgEtbhzdWhUdHEx2meRoB72BUQt8
+- Vercel 临时地址: https://ad-standards-tracker-f8pbf93ey-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
-- 本地生产构建: 通过，Next.js 生成 123 个页面
-- 线上冒烟: `/standards/STD-UNECE-2026-001`、`/standards/STD-BJHAD-2022-001`、`/standards/STD-SH-2022-001` 均返回 200；删除的旧记录返回 404；`/api/ask` 返回 DeepSeek 非兜底答案并带服务端 citation，回答不含 `**`
+- 本地生产构建: 通过，Next.js 生成 124 个页面
+- 线上冒烟: `/maps`、`/standards/STD-ISO-2024-003` 均返回 200；专题地图包含 L2 及以下驾驶辅助、安全开发、远程操作边界；`/api/ask` 返回 DeepSeek 非兜底答案并带服务端 citation，回答不含 `**`
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
 
-- 总记录数: 111
-- 唯一 ID: 111
-- trust 字段完整度: 111/111
-- evidence_level 分布: A 61，B 48，C 2，D 0
-- source_status 分布: verified 73，paywalled 19，blocked 19，broken 0，unverified 0
-- legal_force 分布: guidance 20，voluntary 29，binding 25，rating_protocol 9，informational 22，best_practice 6
-- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 111 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
+- 总记录数: 112
+- 唯一 ID: 112
+- trust 字段完整度: 112/112
+- evidence_level 分布: A 61，B 49，C 2，D 0
+- source_status 分布: verified 73，paywalled 20，blocked 19，broken 0，unverified 0
+- legal_force 分布: guidance 20，voluntary 30，binding 25，rating_protocol 9，informational 22，best_practice 6
+- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 112 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
 
 ## 2026-05-03 已完成
 
@@ -44,6 +44,9 @@
 - 当前仅保留 2 条 Evidence C：MIIT 组合驾驶辅助报批稿和 KNCAP 2026 动态。两者均经 2026-05-03 复核仍未找到稳定主管部门原文链接，已在 `source_note` 明确标注不可当作正式 GB 或正式 KNCAP 规程。
 - 把本地残留的重复/冲突未跟踪文件移入 `.local-quarantine/2026-05-03-untracked/`，并通过 `.gitignore` 排除，避免污染 YAML 数据加载。
 - 更新 README、DATA_SCHEMA、CONTRIBUTING，补充 trust 字段治理和回填脚本说明。
+- 新增 `STD-ISO-2024-003`，按 ISO 官方目录记录为 ISO/PAS 8800:2024，而不是 ISO/SAE 8800。
+- 重整 `/maps` 专题地图：将首个专题改为 L2 及以下驾驶辅助与误用控制；把安全开发系列标准从安全论证/行为模型中拆出；把远程协助与远程操作边界从 L4 运营安全与事件治理中拆出。
+- `pnpm validate:data` 现在会校验 `lib/evidence-map.ts` 中引用的记录 ID，避免专题地图出现悬空记录。
 
 ## 验证命令
 
@@ -56,10 +59,10 @@ pnpm build
 
 当前结果:
 
-- `pnpm validate:data`: 通过，111 records，111 unique ids
+- `pnpm validate:data`: 通过，112 records，112 unique ids
 - `pnpm lint`: 通过
-- `pnpm check:urls`: 通过，111 URLs
-- `pnpm build`: 通过，123 pages
+- `pnpm check:urls`: 通过，112 URLs
+- `pnpm build`: 通过，124 pages
 
 ## 关键架构
 
