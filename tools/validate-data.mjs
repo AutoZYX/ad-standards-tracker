@@ -62,6 +62,20 @@ const required = ["id", "date", "org", "jurisdiction", "type", "status", "title_
 const isoDate = /^\d{4}-\d{2}-\d{2}$/;
 const idFormat = /^(STD|INT)-[A-Za-z0-9-]+-\d{4}-\d{3}$/;
 const urlFormat = /^https?:\/\//;
+const genericSourceUrls = [
+  /^https?:\/\/www\.miit\.gov\.cn\/?$/,
+  /^https?:\/\/www\.mot\.gov\.cn\/?$/,
+  /^https?:\/\/www\.catarc\.org\.cn\/?$/,
+  /^https?:\/\/www\.caeri\.com\.cn\/?$/,
+  /^https?:\/\/www\.i-vista\.org\/?$/,
+  /^https?:\/\/www\.mlit\.go\.jp\/en\/?$/,
+  /^https?:\/\/www\.molit\.go\.kr\/english\/?$/,
+  /^https?:\/\/transport\.ec\.europa\.eu\/?$/,
+  /^https?:\/\/www\.gov\.uk\/government\/consultations\/?$/,
+  /^https?:\/\/openstd\.samr\.gov\.cn\/bzgk\/gb\/?$/,
+  /^https?:\/\/www\.federalregister\.gov\/agencies\/national-highway-traffic-safety-administration\/?$/,
+  /^https?:\/\/www\.dmv\.ca\.gov\/portal\/vehicle-industry-services\/autonomous-vehicles\/?$/,
+];
 
 const files = [];
 function walk(dir) {
@@ -126,6 +140,27 @@ for (const file of files.sort()) {
     fail(`${rel}: verified_at must be YYYY-MM-DD`);
   }
   if (doc.url && !urlFormat.test(doc.url)) fail(`${rel}: url must start with http:// or https://`);
+  if (
+    doc.url &&
+    ["A", "B"].includes(doc.evidence_level) &&
+    genericSourceUrls.some((pattern) => pattern.test(doc.url))
+  ) {
+    fail(`${rel}: evidence_level ${doc.evidence_level} cannot use generic source URL "${doc.url}"`);
+  }
+  if (
+    doc.title_en?.startsWith("GB ") &&
+    !doc.title_en.startsWith("GB/T ") &&
+    doc.legal_force === "voluntary"
+  ) {
+    fail(`${rel}: mandatory GB standard must not use legal_force=voluntary`);
+  }
+  if (
+    doc.title_cn?.startsWith("GB ") &&
+    !doc.title_cn.startsWith("GB/T ") &&
+    doc.legal_force === "voluntary"
+  ) {
+    fail(`${rel}: mandatory GB standard must not use legal_force=voluntary`);
+  }
 
   const parts = rel.split(path.sep);
   const jurisdictionDir = parts[1];

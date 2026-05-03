@@ -9,7 +9,7 @@ title_en: >-
   Draft for Comment (1st round) — Intelligent Connected Vehicles — Combined Driving Assistance
   System Safety Requirements (Mandatory GB)
 title_cn: 《智能网联汽车 组合驾驶辅助系统安全要求》强制性国家标准（征求意见稿，首轮）
-url: https://std.samr.gov.cn/gb/search/gbDetailed?id=14366B6505BA7711E06397BE0A0A151B
+url: https://www.miit.gov.cn/jgsj/zbys/qcgy/art/2025/art_b4c467db98344caaaed2ff97b56cc3dd.html
 effective_date: '2027-01-01'
 automation_level:
   - L2
@@ -37,7 +37,11 @@ contributor: AD Standards Tracker
 last_updated: '2026-04-16'
 document_stage: consultation
 legal_force: informational
-source_type: official_news
-evidence_level: B
+source_type: official
+evidence_level: A
 verified_at: '2026-05-03'
-source_status: verified
+source_status: blocked
+source_note: >-
+  MIIT original consultation page for the first-round draft. Automated checks receive a 403
+  anti-bot response from this MIIT path, so the record is marked blocked rather than broken.
+  Distinct from the 2026 report-for-approval draft.

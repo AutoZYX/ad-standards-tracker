@@ -5,9 +5,9 @@ org_full: 中华人民共和国工业和信息化部
 jurisdiction: china
 type: policy
 status: in_force
-title_en: Notice on Approving First Batch of L3/L4 Pilot Entities (9 Consortia)
-title_cn: 关于公布首批智能网联汽车准入和上路通行试点联合体名单的通知
-url: https://www.miit.gov.cn/
+title_en: Four Ministries Start the First Batch of ICV Access and On-Road Operation Pilots
+title_cn: 四部门有序开展智能网联汽车准入和上路通行试点
+url: https://wap.miit.gov.cn/xwdt/gxdt/sjdt/art/2024/art_53796f0c2b98445783b4dc5ae99ace8f.html
 effective_date: '2024-07-31'
 automation_level:
   - L3
@@ -31,7 +31,10 @@ contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
 document_stage: in_force
 legal_force: guidance
-source_type: official_news
+source_type: official
 evidence_level: B
 verified_at: '2026-05-03'
 source_status: verified
+source_note: >-
+  MIIT original news page. It identifies 9 consortia entering the pilot but does not itself grant
+  vehicle product access or road-operation approval.

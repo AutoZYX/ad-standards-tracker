@@ -7,7 +7,7 @@ type: policy
 status: in_force
 title_en: Notice on Launching Pilot of Access and On-Road Traffic for Intelligent Connected Vehicles (L3/L4)
 title_cn: 关于开展智能网联汽车准入和上路通行试点工作的通知（工信部联装〔2023〕217 号）
-url: https://www.miit.gov.cn/
+url: https://www.miit.gov.cn/zwgk/zcwj/wjfb/tz/art/2023/art_be04a39345354b1ba4624262f86e7cfb.html
 effective_date: '2023-11-17'
 automation_level:
   - L3
@@ -29,7 +29,10 @@ contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
 document_stage: in_force
 legal_force: guidance
-source_type: official_news
-evidence_level: B
+source_type: official
+evidence_level: A
 verified_at: '2026-05-03'
 source_status: verified
+source_note: >-
+  MIIT original notice page. The notice cites GB/T 40429-2021 and defines the pilot scope as L3/L4
+  automated driving functions.
