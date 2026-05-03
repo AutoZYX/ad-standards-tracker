@@ -14,9 +14,9 @@ document_stage: approval_draft
 legal_force: informational
 source_type: secondary
 evidence_level: C
-verified_at: '2026-05-02'
+verified_at: '2026-05-03'
 source_status: verified
-source_note: Report-for-approval draft of a future mandatory GB. The stable MIIT public consultation URL was not available in search results at verification time; Xinhua/News.cn report is used as a high-confidence secondary source.
+source_note: Report-for-approval draft of a future mandatory GB. Re-searched MIIT on 2026-05-03; no stable MIIT consultation article URL was located, so Xinhua/News.cn is retained as a high-confidence secondary source. Do not treat this as a formally published GB until SAMR/SAC publication is available.
 automation_level:
 - L2
 topics:
@@ -39,4 +39,4 @@ related_standards:
 - UN-R152
 - UN-R157
 - MIIT 首轮征求意见稿 2025-09-17
-last_updated: '2026-05-02'
+last_updated: '2026-05-03'

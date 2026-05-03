@@ -1,39 +1,36 @@
 id: STD-BJ-2024-001
-date: '2024-12-31'
+date: '2024-09-30'
 org: Beijing-HAD
 org_full: 北京市高级别自动驾驶示范区（亦庄）
 jurisdiction: china
 type: policy
 status: in_force
-title_en: Beijing HAD Zone 3.0 Plan — Expanding L4 Operations Coverage in 2025
-title_cn: 北京市高级别自动驾驶示范区 3.0 方案 — 2025 年 L4 运营覆盖扩展
-url: https://www.bjcapedz.cn/
-effective_date: '2025-01-01'
+title_en: Beijing 2024 Government Task List — Complete HAD Zone 3.0 and Start Zone 4.0
+title_cn: 北京市 2024 年政府重点任务清单 — 完成高级别自动驾驶示范区 3.0 并启动 4.0
+url: https://fgw.beijing.gov.cn/fgwzwgk/ghjh/gzjh/jxrw/202409/t20240930_3910470.htm
+effective_date: '2024-09-30'
 automation_level:
   - L4
 topics:
   - operations
 summary_en: >-
-  Beijing's Yizhuang HAD Zone 3.0 expands from the original 60 km² core area to 600+ km² city-wide
-  operation. Supports Apollo Go, Pony.ai, WeRide, AutoX commercial Robotaxi services plus autonomous
-  freight from Novauto, Xincheng, and others.
+  Beijing's official 2024 government work task list reports progress on completing the High-Level
+  Automated Driving Demonstration Zone 3.0 phase and starting the 4.0 phase. The entry is a policy
+  implementation update, not a technical standard.
 summary_cn: >-
-  北京亦庄高级别自动驾驶示范区 3.0 方案，从原 60 平方公里核心区扩展到全市 600+ 平方公里。支持萝卜快跑、小马智行、文远知行、AutoX 商业
-  Robotaxi，以及新石器、小马智行自动驾驶货运。
+  北京市官方 2024 年政府重点任务清单披露高级别自动驾驶示范区建设 3.0 阶段完成、4.0 阶段启动的进展。该条目属于政策实施动态，不是技术标准。
 impact_note: >-
-  Largest L4 operational domain in China by area. Shapes the regulatory model copied by Wuhan,
-  Shenzhen, Shanghai.
+  Keep as a Beijing policy-program signal for L4 operations and demonstration-zone governance. Do
+  not treat it as a binding technical requirement.
 related_standards:
-  - Shenzhen ICV Regulation
-  - Wuhan ICV Pilot
+  - STD-BJHAD-2022-001
+  - STD-SHENZHEN-2022-001
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-04-16'
+last_updated: '2026-05-03'
 document_stage: in_force
 legal_force: guidance
-source_type: secondary
-evidence_level: C
+source_type: official_news
+evidence_level: A
 verified_at: '2026-05-03'
-source_status: blocked
-source_note: >-
-  Automated URL checks are blocked or time out for this source; keep the record with a blocked
-  status until manual browser verification is refreshed.
+source_status: verified
+source_note: Official Beijing Municipal Development and Reform Commission progress report for the 2024 government work task list.

@@ -1,0 +1,37 @@
+id: STD-SH-2022-001
+date: '2022-12-05'
+org: Shanghai-ICV
+org_full: 上海市交通委员会等部门
+jurisdiction: china
+type: policy
+status: in_force
+title_en: Shanghai ICV Demonstration Operation Implementation Rules
+title_cn: 上海市智能网联汽车示范运营实施细则
+url: https://www.shanghai.gov.cn/gwk/search/content/3a3eec852b2c4b099d3b309264577ef0
+effective_date: '2022-12-05'
+automation_level:
+  - L3
+  - L4
+topics:
+  - operations
+  - type_approval
+summary_en: >-
+  Shanghai implementation rules for intelligent connected vehicle demonstration operation. The
+  rules define demonstration operation management, safety obligations, insurance, data, and
+  incident handling requirements for ICV pilots.
+summary_cn: 上海市智能网联汽车示范运营实施细则，规定智能网联汽车示范运营管理、安全义务、保险、数据和事故处置等要求。
+impact_note: >-
+  Official Shanghai policy source. Use this as the city-level operation-governance reference rather
+  than the previous unsupported L3 pilot summary.
+related_standards:
+  - MIIT 2023-217
+  - STD-SHANGHAI-2024-001
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-05-03'
+document_stage: in_force
+legal_force: guidance
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified
+source_note: Official Shanghai municipal government document database record.

@@ -1,0 +1,38 @@
+id: STD-BJHAD-2022-001
+date: '2022-07-20'
+org: Beijing-HAD
+org_full: Beijing High-Level Automated Driving Demonstration Zone
+jurisdiction: china
+type: policy
+status: in_force
+title_en: Beijing HAD Zone — First Driverless Mobility Commercial Pilot in China
+title_cn: 北京高级别自动驾驶示范区启动国内首个无人化出行服务商业化试点
+url: https://www.news.cn/local/2022-07/20/c_1128848793.htm
+automation_level:
+  - L4
+topics:
+  - operations
+  - teleoperation
+  - v2x
+summary_en: >-
+  Beijing launched China's first commercial pilot for driverless mobility services in the
+  high-level automated driving demonstration zone, allowing qualified Robotaxi operators to charge
+  fares in designated areas.
+summary_cn: >-
+  北京高级别自动驾驶示范区启动国内首个无人化出行服务商业化试点，允许符合条件的 Robotaxi 企业在指定区域开展收费运营。
+impact_note: >-
+  This is an operating-policy milestone, not a formal standard. It should remain in Latest Updates
+  and should not be used as a technical standard reference.
+related_standards:
+  - STD-BJ-2024-001
+last_updated: '2026-05-03'
+document_stage: in_force
+legal_force: guidance
+source_type: secondary
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: verified
+source_note: >-
+  Xinhua official state-media report is used because a stable Beijing HAD office source for this
+  2022 commercial-pilot announcement was not located. Evidence is sufficient for a policy update,
+  not for a formal standard entry.
