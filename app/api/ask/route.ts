@@ -79,6 +79,10 @@ function hasChinese(text: string): boolean {
   return /[\u3400-\u9fff]/.test(text);
 }
 
+function sanitizeAnswer(answer: string): string {
+  return answer.replace(/\*\*/g, "");
+}
+
 function questionHints(question: string): {
   tokens: string[];
   wantsBinding: boolean;
@@ -227,7 +231,11 @@ export async function POST(request: NextRequest) {
   const apiKey = process.env.DEEPSEEK_API_KEY;
   if (!apiKey) {
     const fallback = localFallback(question, "DEEPSEEK_API_KEY not configured");
-    return NextResponse.json({ ...fallback, fallback: true });
+    return NextResponse.json({
+      ...fallback,
+      answer: sanitizeAnswer(fallback.answer),
+      fallback: true,
+    });
   }
 
   if (!cachedContext) {
@@ -262,7 +270,7 @@ export async function POST(request: NextRequest) {
 
     const payload = JSON.parse(payloadText) as DeepSeekChatResponse;
     const choice = payload.choices?.[0];
-    const text = choice?.message?.content?.trim() ?? "";
+    const text = sanitizeAnswer(choice?.message?.content?.trim() ?? "");
     if (!text) {
       throw new Error("DeepSeek API returned an empty answer");
     }
@@ -272,6 +280,10 @@ export async function POST(request: NextRequest) {
     const message = err instanceof Error ? err.message : String(err);
     console.error("DeepSeek API error:", message);
     const fallback = localFallback(question, message);
-    return NextResponse.json({ ...fallback, fallback: true });
+    return NextResponse.json({
+      ...fallback,
+      answer: sanitizeAnswer(fallback.answer),
+      fallback: true,
+    });
   }
 }
