@@ -1,19 +1,19 @@
 # AD Standards Tracker — 技术交接
 
 最后更新: 2026-05-03
-状态: 已上线，已完成第一轮全库可信度字段补齐与 URL 健康治理
+状态: 已上线，已完成第一轮全库可信度字段补齐、URL 健康治理和数据源分类重整
 仓库: https://github.com/AutoZYX-Labs/ad-standards-tracker
 生产站: https://standards.autozyx.com
 本地路径: /Users/zyx/Desktop/WorkToDo/ad-standards-tracker/
 
 ## 当前生产状态
 
-- 最新提交: 906d4cb Backfill trust fields and add data health
-- 最新生产部署: dpl_8WLWPkBiPruBJBn3W1LMu7hQGupx
-- Vercel 临时地址: https://ad-standards-tracker-p89fhz766-auto-zyx.vercel.app
+- 最新提交: aed6f63 Refine source taxonomy
+- 最新生产部署: dpl_AX7yceXN58ZbUNpJB89nY98LgPao
+- Vercel 临时地址: https://ad-standards-tracker-r7eh6soua-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 126 个页面
-- 线上冒烟: `/`、`/standards?sourceStatus=blocked`、`/standards/STD-NPA-2022-001` 均返回 200
+- 线上冒烟: `/`、`/sources`、`/standards?sourceStatus=blocked`、`/standards/STD-NPA-2022-001` 均返回 200
 - Ask API: 可用；Anthropic 余额不足时自动降级到本地数据库检索，并返回服务端 citation
 
 ## 数据状态
@@ -37,6 +37,7 @@
   - Euro NCAP 2026 Roadmap、VDA TISAX、5GAA C-V2X PDF、深圳法规、上海浦东法规等链接已修正或标注自动化访问状态。
 - 首页新增 Data Health 面板，展示 trust 完整度、证据等级结构和链接健康状态。
 - `/standards` 支持从 URL query 初始化筛选条件，例如 `/standards?sourceStatus=blocked`。
+- `/sources` 数据源页重整为国家/国际标准制定组织、行业标准组织、政府监管机构、测评与评级机构、试点与示范区；补充 CEN-CENELEC、ANSI、BSI、JISC/JSAE、VDA/DIN 等源头机构。
 - 把本地残留的重复/冲突未跟踪文件移入 `.local-quarantine/2026-05-03-untracked/`，并通过 `.gitignore` 排除，避免污染 YAML 数据加载。
 - 更新 README、DATA_SCHEMA、CONTRIBUTING，补充 trust 字段治理和回填脚本说明。
 
