@@ -57,7 +57,12 @@ export default function SourcesPage() {
               className="text-lg font-semibold mb-1 pb-2 border-b-2 flex items-center gap-2"
               style={{ borderColor: color, color }}
             >
-              <span>{meta.emoji}</span>
+              <span
+                className="text-[10px] px-1.5 py-0.5 rounded border font-mono"
+                style={{ borderColor: color }}
+              >
+                {meta.code}
+              </span>
               <span>{zh ? meta.key_cn : meta.key_en}</span>
               <span className="text-[var(--muted)] font-normal text-sm">({items.length})</span>
             </h2>
@@ -73,7 +78,7 @@ export default function SourcesPage() {
                 return (
                   <div
                     key={s.id}
-                    className="rounded-xl bg-[var(--card-bg)] border border-[var(--border)] p-5"
+                    className="rounded-md bg-[var(--card-bg)] border border-[var(--border)] p-5"
                   >
                     <div className="flex items-start justify-between gap-2 mb-1">
                       <h3 className="font-semibold text-sm leading-tight">{name}</h3>

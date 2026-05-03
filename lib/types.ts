@@ -151,8 +151,8 @@ export interface DashboardStats {
 /**
  * Categorization of data sources for the Sources page.
  * Per 2026-04-16 user review:
- * - sdo: national & international **official** SDOs — ISO, UNECE, SAC/TC114, KATS, JASIC, JSAE, DIN/VDA, ANSI
- * - industry_org: **industry-led** consortia/associations — IEEE, SAE, UL, ASAM, AUTOSAR, 3GPP, 5GAA
+ * - sdo: national and international official SDOs — ISO, UNECE, SAC/TC114, KATS, JSAE/JISC, VDA/DIN, ANSI, BSI
+ * - industry_org: industry-led consortia and associations — IEEE, SAE, UL, ASAM, AUTOSAR, 3GPP, 5GAA
  * - government: regulatory authorities (ministries, DMVs)
  * - assessment: NCAP-family consumer assessment bodies
  * - demonstration: pilot/demonstration zones
@@ -172,7 +172,16 @@ export interface SourceInfo {
   url: string;
   jurisdiction: Jurisdiction;
   category: SourceCategory;
-  language: "EN" | "CN" | "JP" | "DE" | "EN/CN" | "EN/JP" | "EN/DE" | "EN/DE/JP";
+  language:
+    | "EN"
+    | "CN"
+    | "JP"
+    | "DE"
+    | "EN/CN"
+    | "EN/JP"
+    | "EN/DE"
+    | "EN/FR/DE"
+    | "EN/DE/JP";
   description_en: string;
   description_cn: string;
   crawl_difficulty: "easy" | "medium" | "hard";

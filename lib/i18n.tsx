@@ -210,7 +210,7 @@ const translations = {
 
   // Source-category labels (sources page)
   "srccat.government": { en: "Government Regulators", zh: "政府监管机构" },
-  "srccat.sdo": { en: "Standards Development Organizations", zh: "标准制定组织" },
+  "srccat.sdo": { en: "National / International Standards Bodies", zh: "国家/国际标准制定组织" },
   "srccat.industry_org": { en: "Industry Standard Organizations", zh: "行业标准组织" },
   "srccat.assessment": { en: "Assessment & Rating Bodies", zh: "测评与评级机构" },
   "srccat.demonstration": { en: "Pilot & Demonstration Zones", zh: "试点与示范区" },

@@ -2,7 +2,7 @@ import type { SourceInfo, SourceCategory } from "./types";
 
 export const SOURCES: SourceInfo[] = [
   // ===================================================================
-  // 国际标准组织 / International SDOs
+  // 国家/国际标准制定组织 / National & International SDOs
   // ===================================================================
   {
     id: "unece-grva",
@@ -35,6 +35,21 @@ export const SOURCES: SourceInfo[] = [
     crawl_difficulty: "hard",
   },
   {
+    id: "cen-cenelec",
+    name_en: "CEN-CENELEC",
+    name_cn: "欧洲标准化委员会 / 欧洲电工标准化委员会",
+    short: "CEN-CENELEC",
+    url: "https://www.cencenelec.eu/",
+    jurisdiction: "eu",
+    category: "sdo",
+    language: "EN/FR/DE",
+    description_en:
+      "European standards organizations recognized by the EU. Relevant for harmonized standards and European positions that interact with vehicle type approval, cybersecurity, AI, connectivity, and intelligent transport systems.",
+    description_cn:
+      "欧盟认可的欧洲标准化组织。与协调标准、欧洲型式认证、网络安全、AI、车联网和智能交通系统标准体系相关。",
+    crawl_difficulty: "medium",
+  },
+  {
     id: "sac-tc114",
     name_en: "SAC/TC114 National Technical Committee of Auto Standardization",
     name_cn: "全国汽车标准化技术委员会（汽标委）",
@@ -65,6 +80,36 @@ export const SOURCES: SourceInfo[] = [
     crawl_difficulty: "easy",
   },
   {
+    id: "ansi",
+    name_en: "ANSI — American National Standards Institute",
+    name_cn: "美国国家标准协会",
+    short: "ANSI",
+    url: "https://www.ansi.org/",
+    jurisdiction: "us",
+    category: "sdo",
+    language: "EN",
+    description_en:
+      "US national standards coordinator and ANSI-accredited standards system gateway. Relevant for American National Standards and cross-SDO coordination, even though many AD-specific technical standards are developed by SAE, IEEE, UL, and other industry-led bodies.",
+    description_cn:
+      "美国国家标准体系协调机构和 ANSI 认可标准体系入口。自动驾驶具体技术标准多由 SAE、IEEE、UL 等行业组织制定，但 ANSI 是美国国家标准体系的重要源头。",
+    crawl_difficulty: "medium",
+  },
+  {
+    id: "bsi",
+    name_en: "BSI — British Standards Institution",
+    name_cn: "英国标准协会",
+    short: "BSI",
+    url: "https://www.bsigroup.com/en-GB/products-and-services/standards/",
+    jurisdiction: "uk",
+    category: "sdo",
+    language: "EN",
+    description_en:
+      "UK national standards body. Publishes and maintains British Standards and PAS documents, including connected and automated mobility guidance that complements the UK's AV regulatory programme.",
+    description_cn:
+      "英国国家标准组织，发布英国标准和 PAS 文件。其互联与自动驾驶相关标准和指南是英国自动驾驶监管体系的重要补充。",
+    crawl_difficulty: "medium",
+  },
+  {
     id: "kats-kr",
     name_en: "Korea Agency for Technology and Standards",
     name_cn: "韩国技术标准院",
@@ -77,6 +122,21 @@ export const SOURCES: SourceInfo[] = [
       "Korea's national standards body. Adopts ISO/IEC standards as KS national standards (e.g., KS R ISO 21448 for SOTIF).",
     description_cn:
       "韩国国家标准主管机构。将 ISO/IEC 标准采纳为 KS 国家标准（如 KS R ISO 21448 SOTIF）。",
+    crawl_difficulty: "medium",
+  },
+  {
+    id: "jisc-jsae",
+    name_en: "JISC / JSAE Automotive Standardization",
+    name_cn: "日本工业标准调查会 / 日本汽车工程学会标准体系",
+    short: "JISC/JSAE",
+    url: "https://www.jisc.go.jp/eng/",
+    jurisdiction: "japan",
+    category: "sdo",
+    language: "EN/JP",
+    description_en:
+      "Japan's national industrial standards system and automotive engineering society interface. Relevant for JIS/JASO automotive standards and Japan's technical input to ISO TC22 work.",
+    description_cn:
+      "日本国家工业标准体系与汽车工程学会标准接口。与 JIS/JASO 汽车标准，以及日本向 ISO TC22 输入的汽车技术标准立场相关。",
     crawl_difficulty: "medium",
   },
   {
@@ -96,17 +156,17 @@ export const SOURCES: SourceInfo[] = [
   },
   {
     id: "din-vda",
-    name_en: "DIN (via VDA) — German automotive national standards",
-    name_cn: "德国标准化协会（DIN，通过 VDA 协调汽车领域）",
-    short: "DIN/VDA",
-    url: "https://www.din.de/en",
+    name_en: "VDA / DIN NAAutomobil",
+    name_cn: "德国汽车工业协会 VDA / DIN 汽车标准委员会",
+    short: "VDA/DIN",
+    url: "https://www.vda.de/en",
     jurisdiction: "germany",
     category: "sdo",
     language: "EN/DE",
     description_en:
-      "DIN is Germany's official national standards body; automotive standardization is coordinated with VDA. Publishes national DIN standards and drives Germany's positions into ISO TC22 and UNECE WP.29.",
+      "German automotive standardization source. VDA coordinates automotive industry positions and works with DIN's automotive standards committee, feeding German positions into ISO TC22, CEN, and UNECE WP.29 processes.",
     description_cn:
-      "DIN 是德国官方国家标准组织，汽车领域标准化与 VDA 联合推进。发布 DIN 国家标准，并主导德国在 ISO TC22 和 UNECE WP.29 的立场。",
+      "德国汽车标准化的重要源头。VDA 协调德国汽车工业立场，并与 DIN 汽车标准委员会协作，将德国汽车技术立场输入 ISO TC22、CEN 和 UNECE WP.29 等体系。",
     crawl_difficulty: "medium",
   },
 
@@ -522,38 +582,44 @@ export const SOURCE_BY_ID: Record<string, SourceInfo> = Object.fromEntries(
 
 export const SOURCE_CATEGORY_META: Record<
   SourceCategory,
-  { emoji: string; key_en: string; key_cn: string; desc_en: string; desc_cn: string }
+  { code: string; key_en: string; key_cn: string; desc_en: string; desc_cn: string }
 > = {
   sdo: {
-    emoji: "📚",
-    key_en: "Standards Development Organizations",
-    key_cn: "标准制定组织",
-    desc_en: "International and national SDOs that develop formal standards.",
-    desc_cn: "制定正式标准的国际与国家标准组织。",
+    code: "SDO",
+    key_en: "National / International Standards Bodies",
+    key_cn: "国家/国际标准制定组织",
+    desc_en:
+      "Official national, regional, and international standards bodies that develop or coordinate formal standards.",
+    desc_cn:
+      "制定或协调正式标准的国家级、区域级和国际标准组织，包括 ISO、UNECE、SAC、ANSI、BSI、JISC/JSAE、VDA/DIN 等。",
   },
   industry_org: {
-    emoji: "🏭",
+    code: "IND",
     key_en: "Industry Standard Organizations",
     key_cn: "行业标准组织",
-    desc_en: "Industry-led consortia defining de-facto technical standards for AD.",
-    desc_cn: "行业主导的联盟，定义自动驾驶事实性技术标准。",
+    desc_en:
+      "Industry-led consortia and professional associations defining technical standards, recommended practices, and de-facto engineering interfaces.",
+    desc_cn:
+      "行业主导的联盟、专业协会和工程组织，定义技术标准、推荐实践和事实工程接口，如 SAE、IEEE、UL、ASAM、AUTOSAR、3GPP、5GAA。",
   },
   government: {
-    emoji: "🏛️",
+    code: "REG",
     key_en: "Government Regulators",
     key_cn: "政府监管机构",
-    desc_en: "National or supranational regulatory authorities.",
-    desc_cn: "国家级或超国家级监管机构。",
+    desc_en: "National, local, or supranational regulatory authorities that issue laws, rules, type-approval requirements, permits, and policy guidance.",
+    desc_cn: "发布法律法规、型式认证要求、运营许可和政策指南的国家、地方或超国家监管机构。",
   },
   assessment: {
-    emoji: "⭐",
+    code: "NCAP",
     key_en: "Assessment & Rating Bodies",
     key_cn: "测评与评级机构",
-    desc_en: "Consumer-facing safety assessment programs that shape market expectations.",
-    desc_cn: "面向消费者的安全测评项目，影响市场预期。",
+    desc_en:
+      "Consumer-facing assessment and rating programs, including NCAP-family protocols and regional intelligent-vehicle evaluation systems.",
+    desc_cn:
+      "面向消费者和行业的测评评级体系，包括各国 NCAP 及智能网联汽车测试评价规程。",
   },
   demonstration: {
-    emoji: "🚗",
+    code: "PILOT",
     key_en: "Pilot & Demonstration Zones",
     key_cn: "试点与示范区",
     desc_en: "Local government demonstration zones that issue operating permits.",

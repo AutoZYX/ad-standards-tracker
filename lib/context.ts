@@ -40,7 +40,7 @@ Summary CN: ${summaryCn || "(no Chinese)"}${impact ? `\nImpact: ${impact}` : ""}
     .join("\n");
 
   const srcCatList = Object.entries(SOURCE_CATEGORY_META)
-    .map(([k, m]) => `${m.emoji} ${k}: ${m.key_en} (${m.key_cn}) — ${m.desc_en}`)
+    .map(([k, m]) => `${m.code} ${k}: ${m.key_en} (${m.key_cn}) — ${m.desc_en}`)
     .join("\n");
 
   return `You are "Ask AD Standards" — an AI assistant specializing in automated driving regulations, standards, consultation drafts, and interpretations.
