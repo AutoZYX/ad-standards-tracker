@@ -91,8 +91,8 @@ export default function AskPage() {
           <p className="text-[var(--muted)] text-sm">{t("ask.desc")}</p>
           <p className="mt-2 text-xs text-[var(--muted)] leading-relaxed">
             {lang === "zh"
-              ? "请勿输入客户项目、未公开事故、商业秘密或个人信息。问题会发送给 Claude 处理，回答仅基于本站数据库。"
-              : "Do not submit client projects, non-public incidents, trade secrets, or personal data. Questions are sent to Claude and answers are grounded only in this database."}
+              ? "请勿输入客户项目、未公开事故、商业秘密或个人信息。问题会发送给 DeepSeek 处理，回答仅基于本站数据库。"
+              : "Do not submit client projects, non-public incidents, trade secrets, or personal data. Questions are sent to DeepSeek and answers are grounded only in this database."}
           </p>
         </div>
 

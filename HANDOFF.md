@@ -14,7 +14,7 @@
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 123 个页面
 - 线上冒烟: `/standards/STD-UNECE-2026-001`、`/standards/STD-BJHAD-2022-001`、`/standards/STD-SH-2022-001` 均返回 200；删除的旧记录返回 404
-- Ask API: 可用；Anthropic 余额不足时自动降级到本地数据库检索，并返回服务端 citation
+- Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation
 
 ## 数据状态
 
@@ -70,7 +70,7 @@ pnpm build
 | `lib/filter.ts` | 标准库客户端过滤逻辑 | 客户端安全 |
 | `components/standards-filters.tsx` | 标准库筛选 UI，支持 query 参数初始化 | 客户端 |
 | `components/dashboard-content.tsx` | 首页统计、Data Health、最近更新 | 客户端 |
-| `app/api/ask/route.ts` | Claude 问答、服务端 citation、本地检索兜底 | 服务端 |
+| `app/api/ask/route.ts` | DeepSeek 问答、服务端 citation、本地检索兜底 | 服务端 |
 | `tools/validate-data.mjs` | YAML schema 和枚举校验 | CLI |
 | `tools/check-urls.mjs` | 链接健康检查 | CLI |
 | `tools/backfill-trust-fields.mjs` | 历史记录 trust 字段回填 | CLI |
@@ -85,7 +85,7 @@ pnpm build
 
 ## 当前边界
 
-1. Anthropic API 余额不足是外部账户状态；当前 `/api/ask` 已有本地检索兜底并返回 citation。
+1. Ask 已使用 DeepSeek V4 Pro，生产环境变量为 `DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL=deepseek-v4-pro`、`DEEPSEEK_REASONING_EFFORT=max`。
 2. MIIT 报批稿和 KNCAP 2026 保留为 Evidence C，是因为公开稳定原始链接尚不可得；项目内已明确警示其不能作为正式标准或正式规程引用。
 3. 订阅接口仍是轻量 stub；不影响标准库准确性。
 

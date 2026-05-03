@@ -229,8 +229,8 @@ const translations = {
   // Ask AD Standards
   "ask.title": { en: "Ask AD Standards", zh: "智能问答" },
   "ask.desc": {
-    en: "Ask questions about standards, regulations, consultation drafts, and interpretations. Powered by Claude with the full AD Standards Tracker database as context.",
-    zh: "针对已收录的标准、法规、征求意见稿与解读提问。基于 Claude，以完整数据库为上下文。",
+    en: "Ask questions about standards, regulations, consultation drafts, and interpretations. Powered by DeepSeek with the full AD Standards Tracker database as context.",
+    zh: "针对已收录的标准、法规、征求意见稿与解读提问。基于 DeepSeek，以完整数据库为上下文。",
   },
   "ask.try": { en: "Try one of these questions:", zh: "试试这些问题：" },
   "ask.placeholder": { en: "Ask about AD standards...", zh: "输入你的问题..." },

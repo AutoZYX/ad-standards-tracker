@@ -12,7 +12,6 @@
     "check:urls": "node tools/check-urls.mjs"
   },
   "dependencies": {
-    "@anthropic-ai/sdk": "^0.89.0",
     "js-yaml": "^4.1.1",
     "next": "16.2.3",
     "react": "19.2.4",

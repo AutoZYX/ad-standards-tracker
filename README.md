@@ -29,7 +29,7 @@ AD compliance and safety intelligence is fragmented across national regulators, 
 - **Standard Detail** — 单条记录全部字段 + 外链到原文
 - **Source & Legal Effect** — 高优先级条目标注法律效力、来源类型、证据等级、核验日期、链接状态
 - **Sources** — 30+ 个数据源清单（UNECE, ISO, SAC/TC114, NHTSA, SAE, IEEE, ASAM, EC, Euro NCAP, METI 等）
-- **Ask AD Standards** — Claude-powered natural-language Q&A over the structured database
+- **Ask AD Standards** — DeepSeek-powered natural-language Q&A over the structured database
 - **Subscribe** — 邮件订阅（按角色分层：OEM / Tier 1 / 监管 / 学术 / 媒体）
 - **Bilingual** — EN/中文 双语界面和内容字段
 

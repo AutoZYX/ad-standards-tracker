@@ -1,4 +1,3 @@
-import Anthropic from "@anthropic-ai/sdk";
 import { buildSystemContext } from "@/lib/context";
 import { getAllStandards } from "@/lib/data";
 import type { StandardRecord } from "@/lib/types";
@@ -9,6 +8,11 @@ export const runtime = "nodejs";
 const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT = 20; // requests per window per IP
 const WINDOW_MS = 60 * 60 * 1000; // 1 hour
+const DEEPSEEK_API_URL =
+  process.env.DEEPSEEK_API_URL ?? "https://api.deepseek.com/chat/completions";
+const DEEPSEEK_MODEL = process.env.DEEPSEEK_MODEL ?? "deepseek-v4-pro";
+const DEEPSEEK_REASONING_EFFORT =
+  process.env.DEEPSEEK_REASONING_EFFORT ?? "max";
 
 function checkRateLimit(ip: string): boolean {
   const now = Date.now();
@@ -33,6 +37,15 @@ interface Citation {
   legal_force?: StandardRecord["legal_force"];
   evidence_level?: StandardRecord["evidence_level"];
   source_status?: StandardRecord["source_status"];
+}
+
+interface DeepSeekChatResponse {
+  choices?: Array<{
+    finish_reason?: string;
+    message?: {
+      content?: string | null;
+    };
+  }>;
 }
 
 function toCitation(record: StandardRecord): Citation {
@@ -155,12 +168,16 @@ function localFallback(question: string, errorMessage: string): {
   const citations = scored.map(({ record }) => toCitation(record));
   const zh = hasChinese(question);
   const providerNote = zh
-    ? "Claude 服务暂时不可用，下面先返回本地数据库检索结果。"
-    : "Claude is temporarily unavailable, so this response falls back to deterministic database search.";
-  const cause = errorMessage.includes("credit balance")
+    ? "DeepSeek 服务暂时不可用，下面先返回本地数据库检索结果。"
+    : "DeepSeek is temporarily unavailable, so this response falls back to deterministic database search.";
+  const cause = /balance|quota|insufficient|credit/i.test(errorMessage)
     ? zh
-      ? "原因：Anthropic API 余额不足。"
-      : "Reason: Anthropic API credit balance is too low."
+      ? "原因：DeepSeek API 余额或配额不足。"
+      : "Reason: DeepSeek API balance or quota is insufficient."
+    : errorMessage.includes("DEEPSEEK_API_KEY")
+    ? zh
+      ? "原因：DeepSeek API Key 未配置。"
+      : "Reason: DEEPSEEK_API_KEY is not configured."
     : zh
       ? "原因：上游 AI 服务暂时失败。"
       : "Reason: upstream AI service failed.";
@@ -189,14 +206,6 @@ function localFallback(question: string, errorMessage: string): {
 }
 
 export async function POST(request: NextRequest) {
-  const apiKey = process.env.ANTHROPIC_API_KEY;
-  if (!apiKey) {
-    return NextResponse.json(
-      { error: "ANTHROPIC_API_KEY not configured" },
-      { status: 500 }
-    );
-  }
-
   const ip =
     request.headers.get("x-forwarded-for")?.split(",")[0] || "unknown";
   if (!checkRateLimit(ip)) {
@@ -215,26 +224,53 @@ export async function POST(request: NextRequest) {
     );
   }
 
+  const apiKey = process.env.DEEPSEEK_API_KEY;
+  if (!apiKey) {
+    const fallback = localFallback(question, "DEEPSEEK_API_KEY not configured");
+    return NextResponse.json({ ...fallback, fallback: true });
+  }
+
   if (!cachedContext) {
     cachedContext = buildSystemContext();
   }
 
-  const client = new Anthropic({ apiKey });
-
   try {
-    const message = await client.messages.create({
-      model: "claude-sonnet-4-5-20250929",
-      max_tokens: 1500,
-      system: cachedContext,
-      messages: [{ role: "user", content: question }],
+    const response = await fetch(DEEPSEEK_API_URL, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+        authorization: `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        model: DEEPSEEK_MODEL,
+        max_tokens: 8000,
+        reasoning_effort: DEEPSEEK_REASONING_EFFORT,
+        thinking: {
+          type: "enabled",
+        },
+        messages: [
+          { role: "system", content: cachedContext },
+          { role: "user", content: question },
+        ],
+      }),
     });
 
-    const text =
-      message.content[0].type === "text" ? message.content[0].text : "";
+    const payloadText = await response.text();
+    if (!response.ok) {
+      throw new Error(`DeepSeek API error ${response.status}: ${payloadText.slice(0, 500)}`);
+    }
+
+    const payload = JSON.parse(payloadText) as DeepSeekChatResponse;
+    const choice = payload.choices?.[0];
+    const text = choice?.message?.content?.trim() ?? "";
+    if (!text) {
+      throw new Error("DeepSeek API returned an empty answer");
+    }
+
     return NextResponse.json({ answer: text, citations: extractCitations(text) });
   } catch (err: unknown) {
     const message = err instanceof Error ? err.message : String(err);
-    console.error("Claude API error:", message);
+    console.error("DeepSeek API error:", message);
     const fallback = localFallback(question, message);
     return NextResponse.json({ ...fallback, fallback: true });
   }
