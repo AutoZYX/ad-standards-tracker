@@ -8,12 +8,12 @@
 
 ## 当前生产状态
 
-- 最新提交: dcb766c Verify remaining weak evidence records
-- 最新生产部署: dpl_F8kb2pNAtFFSHLPCf5Wf128uPgj7
-- Vercel 临时地址: https://ad-standards-tracker-l92sgr9am-auto-zyx.vercel.app
+- 最新应用提交: 358999b Switch ask API to DeepSeek
+- 最新生产部署: dpl_D9u8Aw9h51TsHw6TNKape5QUJHEy
+- Vercel 临时地址: https://ad-standards-tracker-e3umvwvxm-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 123 个页面
-- 线上冒烟: `/standards/STD-UNECE-2026-001`、`/standards/STD-BJHAD-2022-001`、`/standards/STD-SH-2022-001` 均返回 200；删除的旧记录返回 404
+- 线上冒烟: `/standards/STD-UNECE-2026-001`、`/standards/STD-BJHAD-2022-001`、`/standards/STD-SH-2022-001` 均返回 200；删除的旧记录返回 404；`/api/ask` 返回 DeepSeek 非兜底答案并带服务端 citation
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation
 
 ## 数据状态
