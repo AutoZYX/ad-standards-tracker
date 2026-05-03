@@ -9,16 +9,26 @@ title_en: Draft GB/T — Intelligent Connected Vehicles — Teleoperation Techni
 title_cn: 智能网联汽车 远程操作技术要求（征求意见稿）
 url: http://www.catarc.org.cn/
 automation_level:
-- L4
+  - L4
 topics:
-- teleoperation
-- operations
-summary_en: Draft national standard for teleoperation of ICVs. Specifies latency targets (<200ms), video quality (4K, HDR),
-  operator training, fallback procedures. Aligns with UNECE GRVA work and IEEE P3128.
+  - teleoperation
+  - operations
+summary_en: >-
+  Draft national standard for teleoperation of ICVs. Specifies latency targets (<200ms), video
+  quality (4K, HDR), operator training, fallback procedures. Aligns with UNECE GRVA work and IEEE
+  P3128.
 summary_cn: 智能网联汽车远程操作国标征求意见稿，规定延迟目标（<200ms）、视频质量（4K、HDR）、操作员培训、回退流程。与 UNECE GRVA 工作和 IEEE P3128 对齐。
-impact_note: Essential for commercial Robotaxi in China. Affects Apollo Go, Pony.ai, WeRide operational playbooks.
+impact_note: >-
+  Essential for commercial Robotaxi in China. Affects Apollo Go, Pony.ai, WeRide operational
+  playbooks.
 related_standards:
-- IEEE P3128
-- ISO 4448
+  - IEEE P3128
+  - ISO 4448
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: consultation
+legal_force: informational
+source_type: official_news
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: verified

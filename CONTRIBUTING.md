@@ -14,6 +14,8 @@ pnpm check:urls
 pnpm lint
 ```
 
+Maintainers can run `pnpm backfill:trust` after importing legacy records, then manually review any records marked `blocked`, `unverified`, `secondary`, or `evidence_level: C`.
+
 For a focused URL check on the records you changed:
 
 ```bash

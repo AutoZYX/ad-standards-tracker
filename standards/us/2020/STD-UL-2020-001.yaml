@@ -9,20 +9,28 @@ title_en: UL 4600 — Standard for Safety for the Evaluation of Autonomous Produ
 title_cn: UL 4600 自动驾驶产品安全评估标准
 url: https://ulse.org/ul-standards-engagement/autonomous-vehicles
 automation_level:
-- L4
-- L5
+  - L4
+  - L5
 topics:
-- functional_safety
-- sotif
-- operations
-summary_en: The first safety case standard explicitly designed for fully autonomous
-  products. Goal-based rather than prescriptive. Addresses fully autonomous operation
-  without human driver as primary use case. First published 2020; revised periodically.
+  - functional_safety
+  - sotif
+  - operations
+summary_en: >-
+  The first safety case standard explicitly designed for fully autonomous products. Goal-based
+  rather than prescriptive. Addresses fully autonomous operation without human driver as primary use
+  case. First published 2020; revised periodically.
 summary_cn: 首个明确面向全自动驾驶产品的安全案例（Safety Case）标准。目标导向而非规定式。以无人驾驶操作为主要用例。2020 年首发，定期修订。
-impact_note: Referenced by Nuro, Motional, Aurora safety cases. Complements ISO 26262
-  / 21448 rather than replacing them.
+impact_note: >-
+  Referenced by Nuro, Motional, Aurora safety cases. Complements ISO 26262 / 21448 rather than
+  replacing them.
 related_standards:
-- ISO 26262
-- ISO 21448
-- ISO 34502
+  - ISO 26262
+  - ISO 21448
+  - ISO 34502
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: voluntary
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

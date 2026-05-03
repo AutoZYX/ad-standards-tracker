@@ -1,19 +1,45 @@
-id: "STD-UNECE-2021-001"
-date: "2021-01-22"
-org: "UNECE WP.29"
-org_full: "UN Economic Commission for Europe - World Forum for Harmonization of Vehicle Regulations"
-jurisdiction: "international"
-type: "regulation"
-status: "in_force"
-title_en: "UN Regulation No. 155 — Cybersecurity and Cybersecurity Management System"
-title_cn: "UN-R155 汽车网络安全与网络安全管理体系"
-url: "https://unece.org/transport/documents/2021/03/standards/un-regulation-no-155-cyber-security-and-cyber-security"
-effective_date: "2022-07-01"
-automation_level: ["L2", "L3", "L4"]
-topics: ["cybersecurity", "type_approval"]
-summary_en: "Establishes mandatory Cybersecurity Management System (CSMS) requirements for type approval of vehicles sold in contracting parties. OEMs must demonstrate cybersecurity processes throughout the vehicle lifecycle (development, production, post-production). Mandatory in EU since July 2022 (new types) and July 2024 (all new vehicles)."
-summary_cn: "对缔约方市场销售的车辆强制要求建立网络安全管理体系（CSMS）。车企须证明在开发、生产、交付后全生命周期的网络安全流程。欧盟 2022 年 7 月对新车型强制，2024 年 7 月扩展到所有新销售车辆。"
-impact_note: "This is the foundation of global automotive cybersecurity regulation. Non-compliance blocks EU market access. Precondition for UN-R156 (software updates) and UN-R157 (ALKS) compliance."
-related_standards: ["ISO/SAE 21434", "UN-R156", "UN-R157"]
-contributor: "ROAM Core Team"
-last_updated: "2026-04-16"
+id: STD-UNECE-2021-001
+date: '2021-01-22'
+org: UNECE WP.29
+org_full: UN Economic Commission for Europe - World Forum for Harmonization of Vehicle Regulations
+jurisdiction: international
+type: regulation
+status: in_force
+title_en: UN Regulation No. 155 — Cybersecurity and Cybersecurity Management System
+title_cn: UN-R155 汽车网络安全与网络安全管理体系
+url: >-
+  https://unece.org/transport/documents/2021/03/standards/un-regulation-no-155-cyber-security-and-cyber-security
+effective_date: '2022-07-01'
+automation_level:
+  - L2
+  - L3
+  - L4
+topics:
+  - cybersecurity
+  - type_approval
+summary_en: >-
+  Establishes mandatory Cybersecurity Management System (CSMS) requirements for type approval of
+  vehicles sold in contracting parties. OEMs must demonstrate cybersecurity processes throughout the
+  vehicle lifecycle (development, production, post-production). Mandatory in EU since July 2022 (new
+  types) and July 2024 (all new vehicles).
+summary_cn: >-
+  对缔约方市场销售的车辆强制要求建立网络安全管理体系（CSMS）。车企须证明在开发、生产、交付后全生命周期的网络安全流程。欧盟 2022 年 7 月对新车型强制，2024 年 7
+  月扩展到所有新销售车辆。
+impact_note: >-
+  This is the foundation of global automotive cybersecurity regulation. Non-compliance blocks EU
+  market access. Precondition for UN-R156 (software updates) and UN-R157 (ALKS) compliance.
+related_standards:
+  - ISO/SAE 21434
+  - UN-R156
+  - UN-R157
+contributor: ROAM Core Team
+last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Automated URL checks are blocked or time out for this source; keep the record with a blocked
+  status until manual browser verification is refreshed.

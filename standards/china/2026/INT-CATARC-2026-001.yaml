@@ -9,19 +9,25 @@ title_en: Interpretation — C-NCAP 2027 Appendix Q AEB Extension Scenarios
 title_cn: 2027 版 C-NCAP 征求意见稿附录 Q AEB 拓展场景解析
 url: https://www.catarc.tech/xwzxDetail/34a685e123ff4846a1655577577d24b4
 automation_level:
-- L1
-- L2
+  - L1
+  - L2
 topics:
-- testing
-- perception
-- sotif
-summary_en: Official CATARC interpretation of the 9 AEB extension scenarios in C-NCAP
-  2027 Appendix Q. Explains test rationale, target objects (agricultural three-wheeler,
-  shared bicycles, crouching children), and nighttime VRU scenarios.
-summary_cn: 中汽研科技对 C-NCAP 2027 附录 Q 的 9 项 AEB 拓展场景的官方解读。解释测试动机、目标物（农用三轮车、共享单车、蹲姿儿童）和夜间
-  VRU 场景。
+  - testing
+  - perception
+  - sotif
+summary_en: >-
+  Official CATARC interpretation of the 9 AEB extension scenarios in C-NCAP 2027 Appendix Q.
+  Explains test rationale, target objects (agricultural three-wheeler, shared bicycles, crouching
+  children), and nighttime VRU scenarios.
+summary_cn: 中汽研科技对 C-NCAP 2027 附录 Q 的 9 项 AEB 拓展场景的官方解读。解释测试动机、目标物（农用三轮车、共享单车、蹲姿儿童）和夜间 VRU 场景。
 impact_note: 由 C-NCAP 归口单位中汽研撰写，解读权威性强。OEM 产品规划与场景库建设的直接参考。
 related_standards:
-- C-NCAP 2027 (draft)
-- GB AEB
+  - C-NCAP 2027 (draft)
+  - GB AEB
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: best_practice
+source_type: interpretation
+evidence_level: C
+verified_at: '2026-05-03'
+source_status: verified

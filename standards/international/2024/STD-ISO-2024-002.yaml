@@ -4,24 +4,35 @@ org: ISO
 jurisdiction: international
 type: standard
 status: published
-title_en: ISO 34504:2024 — Road vehicles — Test scenarios for automated driving systems
-  — Scenario categorization
+title_en: >-
+  ISO 34504:2024 — Road vehicles — Test scenarios for automated driving systems — Scenario
+  categorization
 title_cn: ISO 34504:2024 道路车辆 自动驾驶系统测试场景 — 场景分类
 url: https://www.iso.org/standard/78953.html
 automation_level:
-- L3
-- L4
+  - L3
+  - L4
 topics:
-- testing
-- sotif
-summary_en: Provides hierarchical categorization scheme for ADS test scenarios. Defines
-  functional, logical, concrete scenario abstraction layers. Enables interoperability
-  of scenario libraries across OEMs and test providers.
+  - testing
+  - sotif
+summary_en: >-
+  Provides hierarchical categorization scheme for ADS test scenarios. Defines functional, logical,
+  concrete scenario abstraction layers. Enables interoperability of scenario libraries across OEMs
+  and test providers.
 summary_cn: 为 ADS 测试场景提供分层分类方案。定义功能场景、逻辑场景、具体场景三层抽象。支持 OEM 和测试服务商之间的场景库互操作。
 impact_note: 中国驭研科技（张玉新联合创始）的航测自然驾驶数据场景提取直接依据之一。行业实际应用中的事实参考。
 related_standards:
-- ISO 34502
-- ISO 34503
-- PEGASUS
-- SAKURA project
+  - ISO 34502
+  - ISO 34503
+  - PEGASUS
+  - SAKURA project
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official catalog page is used for metadata; full standard text may require purchase or
+  subscription.

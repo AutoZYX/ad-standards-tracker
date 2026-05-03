@@ -10,16 +10,26 @@ title_cn: Cruise 召回 23E-0062 因事故后处置行为缺陷召回全部 Robo
 url: https://www.nhtsa.gov/recalls
 effective_date: '2023-11-08'
 automation_level:
-- L4
+  - L4
 topics:
-- operations
-- functional_safety
-summary_en: Federal recall of 950 Cruise Robotaxis following the October 2023 pedestrian dragging incident in San Francisco.
-  Firmware update changes post-collision behavior to avoid secondary harm. Coupled with CA DMV suspension.
+  - operations
+  - functional_safety
+summary_en: >-
+  Federal recall of 950 Cruise Robotaxis following the October 2023 pedestrian dragging incident in
+  San Francisco. Firmware update changes post-collision behavior to avoid secondary harm. Coupled
+  with CA DMV suspension.
 summary_cn: 2023 年 10 月旧金山行人拖拽事件后，对 950 辆 Cruise Robotaxi 的联邦召回。固件升级改变事故后行为以避免二次伤害。同步触发加州 DMV 的运营许可吊销。
-impact_note: Landmark federal enforcement. Ended Cruise's mainstream Robotaxi business. ROAM-2023-001 incident directly linked.
+impact_note: >-
+  Landmark federal enforcement. Ended Cruise's mainstream Robotaxi business. ROAM-2023-001 incident
+  directly linked.
 related_standards:
-- NHTSA SGO
-- CA DMV OL316
+  - NHTSA SGO
+  - CA DMV OL316
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

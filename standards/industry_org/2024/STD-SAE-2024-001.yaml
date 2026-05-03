@@ -7,20 +7,34 @@ type: standard
 status: published
 title_en: SAE J3247_202403 — Automated Driving System Test Facility Safety Practices
 title_cn: SAE J3247_202403 自动驾驶系统测试场地安全实践
-url: https://saemobilus.sae.org/standards/j3247_202403-automated-driving-system-test-facility-safety-practices
+url: >-
+  https://saemobilus.sae.org/standards/j3247_202403-automated-driving-system-test-facility-safety-practices
 automation_level:
-- L3
-- L4
-- L5
+  - L3
+  - L4
+  - L5
 topics:
-- testing
-- functional_safety
-summary_en: SAE Recommended Practice providing safety practices for facilities conducting ADS and ADS-operated vehicle testing. Covers test facility hazards, risk identification, and safety procedures for proving-ground style ADS testing.
+  - testing
+  - functional_safety
+summary_en: >-
+  SAE Recommended Practice providing safety practices for facilities conducting ADS and ADS-operated
+  vehicle testing. Covers test facility hazards, risk identification, and safety procedures for
+  proving-ground style ADS testing.
 summary_cn: SAE 推荐实践，面向开展 ADS 及 ADS 车辆测试的测试场地，给出测试场风险识别、危险控制与安全实践要求。
-impact_note: Directly relevant to closed-course ADS validation and to scenario-driven proving-ground operations.
+impact_note: >-
+  Directly relevant to closed-course ADS validation and to scenario-driven proving-ground
+  operations.
 related_standards:
-- SAE J3018
-- ISO 22133
-- ISO 34505
+  - SAE J3018
+  - ISO 22133
+  - ISO 34505
 last_updated: '2026-05-02'
-
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official catalog page is used for metadata; full standard text may require purchase or
+  subscription.

@@ -1,0 +1,39 @@
+id: STD-MoT-2020-001
+date: '2020-12-20'
+org: MoT
+org_full: 中华人民共和国交通运输部
+jurisdiction: china
+type: policy
+status: in_force
+title_en: >-
+  Guiding Opinion on Promoting the Development and Application of Automated Driving Technology in
+  Road Transport
+title_cn: 交通运输部关于促进道路交通自动驾驶技术发展和应用的指导意见
+url: https://xxgk.mot.gov.cn/jigou/kjs/202012/t20201230_3510291.html
+effective_date: '2020-12-20'
+automation_level:
+  - L3
+  - L4
+topics:
+  - operations
+  - testing
+summary_en: >-
+  MoT guidance on road testing and demonstration applications for ICVs. Covers Robotaxi commercial
+  trials, autonomous bus operations, autonomous freight pilots. Defines safety supervisor
+  requirements.
+summary_cn: 交通运输部关于促进道路交通自动驾驶安全发展的指导意见，涵盖 Robotaxi 商业化试点、自动驾驶公交运营、自动驾驶货运试点，定义安全员要求。
+impact_note: Foundation for Apollo Go and Pony.ai commercial operations in Wuhan, Beijing, Guangzhou.
+related_standards:
+  - GB/T 44373
+  - MoT [2018] 145
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: guidance
+source_type: official_news
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Official MoT page is browser-accessible and was manually verified on 2026-05-03, but automated
+  URL checks time out from this environment.

@@ -13,7 +13,8 @@ legal_force: guidance
 source_type: official
 evidence_level: A
 verified_at: '2026-05-02'
-source_status: verified
+source_status: blocked
+source_note: Official UNECE reference page is retained, but automated URL checks return HTTP 403 from this environment.
 automation_level:
 - L3
 - L4

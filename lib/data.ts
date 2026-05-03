@@ -55,15 +55,37 @@ export function getDashboardStats(): DashboardStats {
   const byJurisdiction: Record<string, number> = {};
   const byType: Record<string, number> = {};
   const byStatus: Record<string, number> = {};
+  const byLegalForce: Record<string, number> = {};
+  const byEvidenceLevel: Record<string, number> = {};
+  const bySourceStatus: Record<string, number> = {};
   const byYear: Record<string, number> = {};
   const byOrg: Record<string, number> = {};
   const topicCounts: Record<string, number> = {};
+  let trustComplete = 0;
 
   for (const s of standards) {
     byCategory[categorize(s)] += 1;
     byJurisdiction[s.jurisdiction] = (byJurisdiction[s.jurisdiction] || 0) + 1;
     byType[s.type] = (byType[s.type] || 0) + 1;
     byStatus[s.status] = (byStatus[s.status] || 0) + 1;
+    if (s.legal_force) {
+      byLegalForce[s.legal_force] = (byLegalForce[s.legal_force] || 0) + 1;
+    }
+    if (s.evidence_level) {
+      byEvidenceLevel[s.evidence_level] = (byEvidenceLevel[s.evidence_level] || 0) + 1;
+    }
+    if (s.source_status) {
+      bySourceStatus[s.source_status] = (bySourceStatus[s.source_status] || 0) + 1;
+    }
+    if (
+      s.legal_force &&
+      s.source_type &&
+      s.evidence_level &&
+      s.verified_at &&
+      s.source_status
+    ) {
+      trustComplete += 1;
+    }
     const year = s.date.substring(0, 4);
     byYear[year] = (byYear[year] || 0) + 1;
     byOrg[s.org] = (byOrg[s.org] || 0) + 1;
@@ -83,6 +105,10 @@ export function getDashboardStats(): DashboardStats {
     byJurisdiction,
     byType,
     byStatus,
+    byLegalForce,
+    byEvidenceLevel,
+    bySourceStatus,
+    trustComplete,
     byYear,
     byOrg,
     topTopics,

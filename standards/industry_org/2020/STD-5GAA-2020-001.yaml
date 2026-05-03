@@ -7,22 +7,27 @@ type: white_paper
 status: published
 title_en: 5GAA C-V2X Use Cases and Service Level Requirements (White Paper)
 title_cn: 5GAA C-V2X 用例与服务等级要求（白皮书）
-url: https://5gaa.org/content/uploads/2020/12/5GAA_T-200111_TR_C-V2X_Use_Cases_and_Service_Level_Requirements_Vol_I-V2-clean.pdf
+url: https://5gaa.org/content/uploads/2025/12/c-v2x-use-cases-and-service-level-requirements-vol-i.pdf
 automation_level:
-- L2
-- L3
-- L4
+  - L2
+  - L3
+  - L4
 topics:
-- v2x
-- operations
-summary_en: Key 5GAA reference document defining C-V2X use cases (cooperative awareness,
-  intersection, VRU, platooning, cooperative maneuvers, teleoperation) with corresponding
+  - v2x
+  - operations
+summary_en: >-
+  Key 5GAA reference document defining C-V2X use cases (cooperative awareness, intersection, VRU,
+  platooning, cooperative maneuvers, teleoperation) with corresponding
   latency/reliability/throughput requirements. Input to 3GPP C-V2X specs.
-summary_cn: 5GAA 核心参考文档，定义 C-V2X 用例（协作感知、交叉口、VRU、编队、协作策略、远程操控）及对应延迟/可靠性/吞吐量要求。3GPP
-  C-V2X 规范的输入。
-impact_note: Teleoperation 章节直接对应中国国标与 IEEE 远程操控标准制定的技术参考。Volume II/III 后续扩展覆盖 5G
-  NR C-V2X。
+summary_cn: 5GAA 核心参考文档，定义 C-V2X 用例（协作感知、交叉口、VRU、编队、协作策略、远程操控）及对应延迟/可靠性/吞吐量要求。3GPP C-V2X 规范的输入。
+impact_note: Teleoperation 章节直接对应中国国标与 IEEE 远程操控标准制定的技术参考。Volume II/III 后续扩展覆盖 5G NR C-V2X。
 related_standards:
-- 3GPP TS 22.186
-- IEEE 1609
+  - 3GPP TS 22.186
+  - IEEE 1609
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: best_practice
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

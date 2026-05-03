@@ -5,21 +5,36 @@ org_full: International Organization for Standardization TC22/SC33
 jurisdiction: international
 type: consultation
 status: consultation
-title_en: ISO/DIS 25135 — Road vehicles — Heavy commercial vehicles and buses — Vehicle motion control interface for automated driving
+title_en: >-
+  ISO/DIS 25135 — Road vehicles — Heavy commercial vehicles and buses — Vehicle motion control
+  interface for automated driving
 title_cn: ISO/DIS 25135 道路车辆 — 重型商用车与客车自动驾驶车辆运动控制接口
 url: https://www.iso.org/standard/89099.html
 automation_level:
-- L4
-- L5
+  - L4
+  - L5
 topics:
-- functional_safety
-- testing
-summary_en: Draft International Standard in DIS stage. Specifies a standardized vehicle motion control interface for ADS to request desired motion from heavy commercial vehicles, vehicle combinations, buses, and articulated buses.
+  - functional_safety
+  - testing
+summary_en: >-
+  Draft International Standard in DIS stage. Specifies a standardized vehicle motion control
+  interface for ADS to request desired motion from heavy commercial vehicles, vehicle combinations,
+  buses, and articulated buses.
 summary_cn: DIS 阶段国际标准草案，规定自动驾驶系统向重型商用车、挂车组合、客车及铰接客车请求期望运动的标准化车辆运动控制接口。
-impact_note: Relevant to L4 freight and bus platforms because it formalizes the interface boundary between ADS and redundant vehicle motion control.
+impact_note: >-
+  Relevant to L4 freight and bus platforms because it formalizes the interface boundary between ADS
+  and redundant vehicle motion control.
 related_standards:
-- ISO 22133
-- ISO 26262
-- UN-R157
+  - ISO 22133
+  - ISO 26262
+  - UN-R157
 last_updated: '2026-05-02'
-
+document_stage: consultation
+legal_force: informational
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official catalog page is used for metadata; full standard text may require purchase or
+  subscription.

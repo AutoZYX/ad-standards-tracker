@@ -138,6 +138,10 @@ export interface DashboardStats {
   byJurisdiction: Record<string, number>;
   byType: Record<string, number>;
   byStatus: Record<string, number>;
+  byLegalForce: Record<string, number>;
+  byEvidenceLevel: Record<string, number>;
+  bySourceStatus: Record<string, number>;
+  trustComplete: number;
   byYear: Record<string, number>;
   byOrg: Record<string, number>;
   topTopics: { topic: string; count: number }[];

@@ -8,21 +8,28 @@ title_en: Mobility Digital Transformation (DX) Strategy Updated — 2025 Revisio
 title_cn: 《出行数字化转型（DX）战略》2025 年更新版
 url: https://www.meti.go.jp/english/press/2025/0609_001.html
 automation_level:
-- L3
-- L4
+  - L3
+  - L4
 topics:
-- operations
-- ai_governance
-- v2x
-summary_en: METI's updated Mobility DX Strategy (first formulated May 2024, revised
-  June 2025). Targets 30% global Software-Defined Vehicle (SDV) market share by 2030
-  and 2035. Key initiatives — AI-powered automated driving development, public-private
-  SDV platforms, government procurement-led AD early deployment, SDV parts supply
-  chain monitoring, common SDV vehicle requirements.
-summary_cn: METI 更新版《出行 DX 战略》（2024 年 5 月首次发布，2025 年 6 月修订）。目标 2030 和 2035 年在全球 SDV
-  销量中占 30% 份额。核心举措：AI 驱动的自动驾驶技术、官民协同 SDV 平台、政府采购牵引的自动驾驶早期落地、SDV 零部件供应链监控、SDV 车辆共同要求。
+  - operations
+  - ai_governance
+  - v2x
+summary_en: >-
+  METI's updated Mobility DX Strategy (first formulated May 2024, revised June 2025). Targets 30%
+  global Software-Defined Vehicle (SDV) market share by 2030 and 2035. Key initiatives — AI-powered
+  automated driving development, public-private SDV platforms, government procurement-led AD early
+  deployment, SDV parts supply chain monitoring, common SDV vehicle requirements.
+summary_cn: >-
+  METI 更新版《出行 DX 战略》（2024 年 5 月首次发布，2025 年 6 月修订）。目标 2030 和 2035 年在全球 SDV 销量中占 30% 份额。核心举措：AI
+  驱动的自动驾驶技术、官民协同 SDV 平台、政府采购牵引的自动驾驶早期落地、SDV 零部件供应链监控、SDV 车辆共同要求。
 impact_note: 日本汽车产业对抗欧美中国 SDV 竞争的国家级战略。对 Toyota、Honda、Nissan 及供应商 Denso、Aisin 的 SDV/自动驾驶路线图形成政策牵引。
 related_standards:
-- Japan Road Transport Vehicle Act (L4)
-- UN-R157
+  - Japan Road Transport Vehicle Act (L4)
+  - UN-R157
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: guidance
+source_type: official_news
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: verified

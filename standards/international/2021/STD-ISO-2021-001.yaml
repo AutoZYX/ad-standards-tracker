@@ -1,19 +1,43 @@
-id: "STD-ISO-2021-001"
-date: "2021-08-31"
-org: "ISO"
-org_full: "ISO / SAE Joint Publication (TC22/SC32 + SAE Vehicle Cybersecurity Committee)"
-jurisdiction: "international"
-type: "standard"
-status: "published"
-title_en: "ISO/SAE 21434:2021 — Road vehicles — Cybersecurity engineering"
-title_cn: "ISO/SAE 21434:2021 道路车辆 网络安全工程"
-url: "https://www.iso.org/standard/70918.html"
-effective_date: "2021-08-31"
-automation_level: ["L0", "L1", "L2", "L3", "L4", "L5"]
-topics: ["cybersecurity"]
-summary_en: "Defines cybersecurity risk management process throughout the automotive lifecycle — from concept to decommissioning. Process-based (does not specify specific technologies). Paired with UN-R155 for type approval. Covers TARA (Threat Analysis and Risk Assessment)."
-summary_cn: "规定汽车全生命周期（从概念到退役）的网络安全风险管理流程，过程化（不规定具体技术）。与 UN-R155 配合用于型式认证，含 TARA（威胁分析与风险评估）。"
-impact_note: "Required for EU market access via UN-R155 compliance. De facto global standard for automotive cybersecurity processes."
-related_standards: ["UN-R155", "ISO 24089", "ISO 26262"]
-contributor: "ROAM Core Team"
-last_updated: "2026-04-16"
+id: STD-ISO-2021-001
+date: '2021-08-31'
+org: ISO
+org_full: ISO / SAE Joint Publication (TC22/SC32 + SAE Vehicle Cybersecurity Committee)
+jurisdiction: international
+type: standard
+status: published
+title_en: ISO/SAE 21434:2021 — Road vehicles — Cybersecurity engineering
+title_cn: ISO/SAE 21434:2021 道路车辆 网络安全工程
+url: https://www.iso.org/standard/70918.html
+effective_date: '2021-08-31'
+automation_level:
+  - L0
+  - L1
+  - L2
+  - L3
+  - L4
+  - L5
+topics:
+  - cybersecurity
+summary_en: >-
+  Defines cybersecurity risk management process throughout the automotive lifecycle — from concept
+  to decommissioning. Process-based (does not specify specific technologies). Paired with UN-R155
+  for type approval. Covers TARA (Threat Analysis and Risk Assessment).
+summary_cn: 规定汽车全生命周期（从概念到退役）的网络安全风险管理流程，过程化（不规定具体技术）。与 UN-R155 配合用于型式认证，含 TARA（威胁分析与风险评估）。
+impact_note: >-
+  Required for EU market access via UN-R155 compliance. De facto global standard for automotive
+  cybersecurity processes.
+related_standards:
+  - UN-R155
+  - ISO 24089
+  - ISO 26262
+contributor: ROAM Core Team
+last_updated: '2026-04-16'
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official catalog page is used for metadata; full standard text may require purchase or
+  subscription.

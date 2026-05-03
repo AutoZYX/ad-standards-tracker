@@ -10,15 +10,30 @@ title_cn: 北京市高级别自动驾驶示范区 3.0 方案 — 2025 年 L4 运
 url: https://www.bjcapedz.cn/
 effective_date: '2025-01-01'
 automation_level:
-- L4
+  - L4
 topics:
-- operations
-summary_en: Beijing's Yizhuang HAD Zone 3.0 expands from the original 60 km² core area to 600+ km² city-wide operation. Supports
-  Apollo Go, Pony.ai, WeRide, AutoX commercial Robotaxi services plus autonomous freight from Novauto, Xincheng, and others.
-summary_cn: 北京亦庄高级别自动驾驶示范区 3.0 方案，从原 60 平方公里核心区扩展到全市 600+ 平方公里。支持萝卜快跑、小马智行、文远知行、AutoX 商业 Robotaxi，以及新石器、小马智行自动驾驶货运。
-impact_note: Largest L4 operational domain in China by area. Shapes the regulatory model copied by Wuhan, Shenzhen, Shanghai.
+  - operations
+summary_en: >-
+  Beijing's Yizhuang HAD Zone 3.0 expands from the original 60 km² core area to 600+ km² city-wide
+  operation. Supports Apollo Go, Pony.ai, WeRide, AutoX commercial Robotaxi services plus autonomous
+  freight from Novauto, Xincheng, and others.
+summary_cn: >-
+  北京亦庄高级别自动驾驶示范区 3.0 方案，从原 60 平方公里核心区扩展到全市 600+ 平方公里。支持萝卜快跑、小马智行、文远知行、AutoX 商业
+  Robotaxi，以及新石器、小马智行自动驾驶货运。
+impact_note: >-
+  Largest L4 operational domain in China by area. Shapes the regulatory model copied by Wuhan,
+  Shenzhen, Shanghai.
 related_standards:
-- Shenzhen ICV Regulation
-- Wuhan ICV Pilot
+  - Shenzhen ICV Regulation
+  - Wuhan ICV Pilot
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: guidance
+source_type: secondary
+evidence_level: C
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Automated URL checks are blocked or time out for this source; keep the record with a blocked
+  status until manual browser verification is refreshed.

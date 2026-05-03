@@ -4,25 +4,36 @@ org: ISO
 jurisdiction: international
 type: standard
 status: published
-title_en: ISO 34502:2022 — Road vehicles — Test scenarios for automated driving systems
-  — Scenario-based safety evaluation framework
+title_en: >-
+  ISO 34502:2022 — Road vehicles — Test scenarios for automated driving systems — Scenario-based
+  safety evaluation framework
 title_cn: ISO 34502:2022 道路车辆 — 自动驾驶系统测试场景 — 基于场景的安全评估框架
 url: https://www.iso.org/standard/78951.html
 automation_level:
-- L3
-- L4
+  - L3
+  - L4
 topics:
-- testing
-- sotif
-- functional_safety
-summary_en: Defines a framework for scenario-based safety evaluation of automated
-  driving systems. Specifies risk acceptance criteria, scenario categorization, test
-  coverage methodology.
+  - testing
+  - sotif
+  - functional_safety
+summary_en: >-
+  Defines a framework for scenario-based safety evaluation of automated driving systems. Specifies
+  risk acceptance criteria, scenario categorization, test coverage methodology.
 summary_cn: 定义自动驾驶系统基于场景的安全评估框架。规定了风险接受准则、场景分类和测试覆盖方法论。
-impact_note: Key reference for scenario-driven safety validation; complements ISO
-  21448 and aligns with NATM (New Assessment/Test Method) at UNECE WP.29.
+impact_note: >-
+  Key reference for scenario-driven safety validation; complements ISO 21448 and aligns with NATM
+  (New Assessment/Test Method) at UNECE WP.29.
 related_standards:
-- ISO 21448
-- ISO 34503
-- ISO 34504
+  - ISO 21448
+  - ISO 34503
+  - ISO 34504
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official catalog page is used for metadata; full standard text may require purchase or
+  subscription.

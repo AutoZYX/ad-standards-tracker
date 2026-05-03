@@ -10,21 +10,29 @@ title_cn: C-NCAP 管理规则（2024 年版）
 url: https://www.c-ncap.org.cn/article-detail/1706952133057822722?type=2
 effective_date: '2024-07-01'
 automation_level:
-- L0
-- L1
-- L2
+  - L0
+  - L1
+  - L2
 topics:
-- testing
-- perception
-- hmi
-summary_en: Current C-NCAP edition (in force). Triennial revision from 2021. Expanded
-  active safety (AEB C2C/VRU, ELK curve, LSS), added cabin monitoring (DMS, OMS).
-  Foundation replaced by C-NCAP 2027 which shifts to scenario-driven paradigm.
-summary_cn: C-NCAP 现行版（2021 版三年更新）。扩展主动安全（车车/VRU AEB、弯道 ELK、车道支持系统），新增座舱监控（DMS、OMS）。被
-  C-NCAP 2027 迭代，2027 版转向场景驱动范式。
+  - testing
+  - perception
+  - hmi
+summary_en: >-
+  Current C-NCAP edition (in force). Triennial revision from 2021. Expanded active safety (AEB
+  C2C/VRU, ELK curve, LSS), added cabin monitoring (DMS, OMS). Foundation replaced by C-NCAP 2027
+  which shifts to scenario-driven paradigm.
+summary_cn: >-
+  C-NCAP 现行版（2021 版三年更新）。扩展主动安全（车车/VRU AEB、弯道 ELK、车道支持系统），新增座舱监控（DMS、OMS）。被 C-NCAP 2027 迭代，2027
+  版转向场景驱动范式。
 impact_note: 中国所有新车上市前的事实门槛之一。连接 GB 强标与更高阶场景测评的中间层。
 related_standards:
-- C-NCAP 2027 (draft)
-- GB AEB (upcoming mandatory)
-- Euro NCAP Protocol
+  - C-NCAP 2027 (draft)
+  - GB AEB (upcoming mandatory)
+  - Euro NCAP Protocol
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: rating_protocol
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

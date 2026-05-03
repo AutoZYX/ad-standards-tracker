@@ -4,26 +4,38 @@ org: UNECE WP.29
 jurisdiction: international
 type: regulation
 status: in_force
-title_en: UN Regulation No. 159 — Moving Off Information System (MOIS) for Detection
-  of Pedestrians and Cyclists
+title_en: >-
+  UN Regulation No. 159 — Moving Off Information System (MOIS) for Detection of Pedestrians and
+  Cyclists
 title_cn: UN-R159 起步信息系统（MOIS）— 检测前方行人和自行车
-url: https://unece.org/transport/documents/2021/12/standards/un-regulation-no-159-moving-information-system-mois
+url: >-
+  https://unece.org/transport/documents/2021/12/standards/un-regulation-no-159-moving-information-system-mois
 effective_date: '2024-07-07'
 automation_level:
-- L0
-- L1
-- L2
+  - L0
+  - L1
+  - L2
 topics:
-- functional_safety
-- perception
-- hmi
-summary_en: Mandates detection/warning system for pedestrians and cyclists in front
-  of commercial vehicles during low-speed starting. Addresses high fatality rate of
-  vulnerable road users in urban logistics operations.
+  - functional_safety
+  - perception
+  - hmi
+summary_en: >-
+  Mandates detection/warning system for pedestrians and cyclists in front of commercial vehicles
+  during low-speed starting. Addresses high fatality rate of vulnerable road users in urban
+  logistics operations.
 summary_cn: 强制商用车在低速起步时检测并警示前方行人和自行车。针对城市物流运营中弱势道路使用者（VRU）的高死亡率问题。
 impact_note: Urban-delivery-focused regulation. Complements C-NCAP 2027 VRU scenarios.
 related_standards:
-- UN-R151
-- UN-R152
-- Euro NCAP VRU
+  - UN-R151
+  - UN-R152
+  - Euro NCAP VRU
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Automated URL checks are blocked or time out for this source; keep the record with a blocked
+  status until manual browser verification is refreshed.

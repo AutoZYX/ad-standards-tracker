@@ -5,24 +5,31 @@ org_full: Zhihu (知乎) Industry Analyst Community
 jurisdiction: china
 type: interpretation
 status: published
-title_en: Analysis — MIIT Draft Standard on Combined Driving Assistance System Safety
-  Requirements (Zhihu)
+title_en: Analysis — MIIT Draft Standard on Combined Driving Assistance System Safety Requirements (Zhihu)
 title_cn: 《智能网联汽车 组合驾驶辅助系统安全要求》征求意见稿的解析（知乎）
 url: https://zhuanlan.zhihu.com/p/1953399316858271723
 automation_level:
-- L2
+  - L2
 topics:
-- functional_safety
-- hmi
-- sotif
-summary_en: Industry-side detailed analysis of MIIT's 2025-09 draft for combined driving
-  assistance safety requirements. Breaks down the three system classifications, HMI
-  requirements, driver state monitoring thresholds, and compliance challenges for
-  OEMs.
-summary_cn: 对工信部 2025-09 组合驾驶辅助安全要求征求意见稿的行业视角详细解读。拆解三类系统分类、HMI 要求、驾驶员状态监测阈值，以及 OEM
-  的合规挑战。
+  - functional_safety
+  - hmi
+  - sotif
+summary_en: >-
+  Industry-side detailed analysis of MIIT's 2025-09 draft for combined driving assistance safety
+  requirements. Breaks down the three system classifications, HMI requirements, driver state
+  monitoring thresholds, and compliance challenges for OEMs.
+summary_cn: 对工信部 2025-09 组合驾驶辅助安全要求征求意见稿的行业视角详细解读。拆解三类系统分类、HMI 要求、驾驶员状态监测阈值，以及 OEM 的合规挑战。
 impact_note: 独立第三方视角，便于理解监管意图与产品层面的影响。⚠️[知乎文章，非官方解读]
 related_standards:
-- MIIT 2025-09-17 征求意见稿
-- MIIT 2026-04-16 报批稿
+  - MIIT 2025-09-17 征求意见稿
+  - MIIT 2026-04-16 报批稿
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: best_practice
+source_type: interpretation
+evidence_level: C
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Automated URL checks are blocked or time out for this source; keep the record with a blocked
+  status until manual browser verification is refreshed.

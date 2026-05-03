@@ -194,6 +194,52 @@ export default function DashboardContent({ stats, recent }: Props) {
         </div>
       </div>
 
+      <div className="rounded-xl bg-[var(--card-bg)] border border-[var(--border)] p-5 mb-10">
+        <div className="flex items-start justify-between gap-4 mb-4">
+          <div>
+            <h3 className="text-sm font-semibold mb-1">{t("dash.data_health")}</h3>
+            <p className="text-xs text-[var(--muted)] leading-relaxed max-w-3xl">
+              {t("dash.health_note")}
+            </p>
+          </div>
+          <Link
+            href="/standards?sourceStatus=blocked"
+            className="text-xs text-[var(--accent)] hover:underline no-underline whitespace-nowrap"
+          >
+            {lang === "zh" ? "查看 blocked →" : "View blocked →"}
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <HealthBlock
+            title={t("dash.trust_complete")}
+            rows={[
+              {
+                label: `${stats.trustComplete}/${stats.total}`,
+                count: stats.trustComplete,
+                pct: stats.total ? (stats.trustComplete / stats.total) * 100 : 0,
+              },
+            ]}
+          />
+          <HealthBlock
+            title={t("dash.evidence_mix")}
+            rows={["A", "B", "C", "D"].map((level) => ({
+              label: `Evidence ${level}`,
+              count: stats.byEvidenceLevel[level] || 0,
+              pct: stats.total ? ((stats.byEvidenceLevel[level] || 0) / stats.total) * 100 : 0,
+            }))}
+          />
+          <HealthBlock
+            title={t("dash.source_health")}
+            rows={["verified", "paywalled", "blocked", "unverified", "broken"].map((status) => ({
+              label: t(`source_status.${status}` as never),
+              count: stats.bySourceStatus[status] || 0,
+              pct: stats.total ? ((stats.bySourceStatus[status] || 0) / stats.total) * 100 : 0,
+            }))}
+          />
+        </div>
+      </div>
+
       {/* Recent updates */}
       <div className="flex items-center justify-between mb-4">
         <h2 className="text-xl">{t("dash.recent_updates")}</h2>
@@ -218,6 +264,38 @@ function ValuePillar({ title, body }: { title: string; body: string }) {
     <div className="rounded-xl bg-[var(--card-bg)] border border-[var(--border)] p-5">
       <h2 className="text-base mb-2">{title}</h2>
       <p className="text-sm leading-relaxed text-[var(--muted)]">{body}</p>
+    </div>
+  );
+}
+
+function HealthBlock({
+  title,
+  rows,
+}: {
+  title: string;
+  rows: { label: string; count: number; pct: number }[];
+}) {
+  return (
+    <div>
+      <h4 className="text-xs font-semibold text-[var(--muted)] uppercase tracking-wider mb-3">
+        {title}
+      </h4>
+      <div className="space-y-2">
+        {rows.map((row) => (
+          <div key={row.label} className="text-xs">
+            <div className="flex items-center justify-between gap-3 mb-1">
+              <span className="text-[var(--muted)]">{row.label}</span>
+              <span>{row.count}</span>
+            </div>
+            <div className="h-2 rounded-full bg-[var(--badge-bg)] overflow-hidden">
+              <div
+                className="h-full rounded-full bg-[var(--accent)]"
+                style={{ width: `${Math.min(100, row.pct)}%`, opacity: 0.7 }}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

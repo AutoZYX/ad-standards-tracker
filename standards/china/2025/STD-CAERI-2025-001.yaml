@@ -10,15 +10,23 @@ title_cn: i-VISTA 2025 NCA（城市领航辅助驾驶）测评规程
 url: http://www.i-vista.org/
 effective_date: '2025-03-10'
 automation_level:
-- L2
+  - L2
 topics:
-- testing
-summary_en: First Chinese consumer assessment protocol specifically for urban NoA features. Tests 34 scenarios including unprotected
-  left turns, cyclist interaction, construction zones, emergency vehicles. Huawei HIMA, Xiaomi, NIO, Li Auto, XPeng graded.
+  - testing
+summary_en: >-
+  First Chinese consumer assessment protocol specifically for urban NoA features. Tests 34 scenarios
+  including unprotected left turns, cyclist interaction, construction zones, emergency vehicles.
+  Huawei HIMA, Xiaomi, NIO, Li Auto, XPeng graded.
 summary_cn: 中国首个专门针对城市 NoA（领航辅助驾驶）功能的消费者测评规程，测试 34 个场景：无保护左转、骑行者交互、施工区域、紧急车辆等。华为 HIMA、小米、蔚来、理想、小鹏均接受评级。
 impact_note: Tightly scrutinized by Chinese consumers and media. Shapes the L2+ market perception in China.
 related_standards:
-- C-NCAP 2024
-- Euro NCAP AD
+  - C-NCAP 2024
+  - Euro NCAP AD
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: rating_protocol
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

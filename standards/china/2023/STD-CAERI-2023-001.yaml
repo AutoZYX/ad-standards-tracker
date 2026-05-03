@@ -10,16 +10,25 @@ title_cn: i-VISTA 智能网联汽车测评体系 2023
 url: http://www.i-vista.org/
 effective_date: '2023-11-15'
 automation_level:
-- L2
-- L3
+  - L2
+  - L3
 topics:
-- testing
-summary_en: Chongqing-based consumer assessment scheme for ICVs. Tests AEB, ACC, LKA, TJP (traffic jam pilot), HWP (highway
-  pilot), parking assist. Annual public rankings influence Chinese consumer purchases.
+  - testing
+summary_en: >-
+  Chongqing-based consumer assessment scheme for ICVs. Tests AEB, ACC, LKA, TJP (traffic jam pilot),
+  HWP (highway pilot), parking assist. Annual public rankings influence Chinese consumer purchases.
 summary_cn: 重庆主办的智能网联汽车消费者测评体系，测试 AEB、ACC、LKA、TJP（交通拥堵辅助）、HWP（高速公路辅助）、自动泊车。年度公开排名影响中国消费者选车。
-impact_note: Considered the most rigorous Chinese public ICV assessment. Huawei HIMA, Tesla Model Y, Li Auto L9 all tested.
+impact_note: >-
+  Considered the most rigorous Chinese public ICV assessment. Huawei HIMA, Tesla Model Y, Li Auto L9
+  all tested.
 related_standards:
-- Euro NCAP
-- C-NCAP
+  - Euro NCAP
+  - C-NCAP
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: rating_protocol
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

@@ -10,14 +10,26 @@ title_cn: UNECE WP.29/GRVA 第 23 届会议议程（2025 年 9 月）
 url: https://unece.org/transport/events/wp29grva-23rd-session
 effective_date: '2025-09-22'
 automation_level:
-- L3
-- L4
+  - L3
+  - L4
 topics:
-- type_approval
-summary_en: Agenda for GRVA 23rd session covering UN-R157 amendments (urban environment expansion), new framework for ADS
-  validation, cybersecurity ongoing work. Hosts from Japan, Germany, US, China, Korea.
+  - type_approval
+summary_en: >-
+  Agenda for GRVA 23rd session covering UN-R157 amendments (urban environment expansion), new
+  framework for ADS validation, cybersecurity ongoing work. Hosts from Japan, Germany, US, China,
+  Korea.
 summary_cn: GRVA 第 23 届会议议程，议题包括 UN-R157 修订（城市环境扩展）、ADS 验证新框架、网络安全持续工作。主要参会国家：日本、德国、美国、中国、韩国。
-impact_note: Sets tone for global L4 regulation. Attendance increasingly important for Chinese OEMs pursuing international
-  market access.
+impact_note: >-
+  Sets tone for global L4 regulation. Attendance increasingly important for Chinese OEMs pursuing
+  international market access.
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: informational
+source_type: official_news
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Automated URL checks are blocked or time out for this source; keep the record with a blocked
+  status until manual browser verification is refreshed.

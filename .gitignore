@@ -44,3 +44,6 @@ next-env.d.ts
 /tools/crawler/.cache/
 /tools/crawler/snapshots/
 .env*.local
+
+# local recovery area for untracked duplicate/conflict files
+/.local-quarantine/

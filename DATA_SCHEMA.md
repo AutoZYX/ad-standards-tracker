@@ -30,10 +30,13 @@ Run:
 
 ```bash
 pnpm validate:data
+pnpm backfill:trust
 pnpm check:urls
 ```
 
-The validator fails on malformed YAML, duplicate IDs, bad dates, invalid enums, URL format problems, and path/date/jurisdiction mismatch. It warns when trust fields are still missing.
+The validator fails on malformed YAML, duplicate IDs, bad dates, invalid enums, URL format problems, path/date/jurisdiction mismatch, and invalid trust-field enums.
+
+`pnpm backfill:trust` is intentionally conservative: it fills missing trust fields from record type, source domain, and known blocked-source behavior. It should be treated as a maintenance aid, not a substitute for expert review.
 
 For focused URL checks on newly edited records:
 

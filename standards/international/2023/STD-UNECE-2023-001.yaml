@@ -8,21 +8,29 @@ title_en: UN Regulation No. 160 — Event Data Recorder (EDR)
 title_cn: UN-R160 事件数据记录仪（EDR）
 url: https://unece.org/transport/documents/2022/05/standards/un-regulation-no-160-event-data-recorders
 automation_level:
-- L0
-- L1
-- L2
-- L3
+  - L0
+  - L1
+  - L2
+  - L3
 topics:
-- data_recording
-- type_approval
-summary_en: Mandates event data recorder installation and defines minimum data elements
-  captured during collision events. Establishes data retention and retrieval standards
-  for accident reconstruction.
+  - data_recording
+  - type_approval
+summary_en: >-
+  Mandates event data recorder installation and defines minimum data elements captured during
+  collision events. Establishes data retention and retrieval standards for accident reconstruction.
 summary_cn: 强制安装事件数据记录仪并规定碰撞事件必须记录的最小数据元素集。为事故重建建立数据保留和取回标准。
-impact_note: Foundation for DSSAD (UN-R157's data recorder for ADS) and forthcoming
-  DSSAD harmonization work.
+impact_note: Foundation for DSSAD (UN-R157's data recorder for ADS) and forthcoming DSSAD harmonization work.
 related_standards:
-- UN-R157
-- GB 39732
-- ISO 21434
+  - UN-R157
+  - GB 39732
+  - ISO 21434
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Automated URL checks are blocked or time out for this source; keep the record with a blocked
+  status until manual browser verification is refreshed.

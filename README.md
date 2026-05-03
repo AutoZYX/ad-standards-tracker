@@ -74,6 +74,7 @@ summary_cn: "..."                  # 可选
 pnpm install
 pnpm dev                # http://localhost:3000
 pnpm validate:data      # YAML + schema validation
+pnpm backfill:trust     # Conservative trust-field backfill for legacy records
 pnpm check:urls         # URL health check; supports URL_CHECK_IDS=ID1,ID2
 pnpm build && pnpm start
 ```
@@ -99,6 +100,7 @@ ad-standards-tracker/
 │   ├── us/ eu/ uk/ japan/ korea/
 ├── tools/crawler/          # Python crawlers (TODO)
 ├── tools/check-urls.mjs    # link checker, supports focused ID checks
+├── tools/backfill-trust-fields.mjs # conservative trust-field backfill
 ├── DATA_SCHEMA.md          # Data schema and trust fields
 ├── SOURCE_POLICY.md        # Source and evidence policy
 ├── scripts/                # Data seeding utilities

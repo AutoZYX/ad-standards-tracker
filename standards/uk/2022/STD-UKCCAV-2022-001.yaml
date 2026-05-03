@@ -5,20 +5,27 @@ org_full: Centre for Connected and Autonomous Vehicles
 jurisdiction: uk
 type: white_paper
 status: published
-title_en: Connected & Automated Mobility 2025 — Realising the benefits of self-driving
-  vehicles in the UK
+title_en: Connected & Automated Mobility 2025 — Realising the benefits of self-driving vehicles in the UK
 title_cn: 网联与自动出行 2025 — 在英国实现自动驾驶车辆的收益
-url: https://www.gov.uk/government/publications/connected-and-automated-mobility-2025-realising-the-benefits-of-self-driving-vehicles
+url: >-
+  https://www.gov.uk/government/publications/connected-and-automated-mobility-2025-realising-the-benefits-of-self-driving-vehicles
 automation_level:
-- L3
-- L4
+  - L3
+  - L4
 topics:
-- operations
-- type_approval
-summary_en: UK government policy paper laying out the roadmap for commercial self-driving
-  vehicle deployment by 2025. Preceded the Automated Vehicles Act 2024.
+  - operations
+  - type_approval
+summary_en: >-
+  UK government policy paper laying out the roadmap for commercial self-driving vehicle deployment
+  by 2025. Preceded the Automated Vehicles Act 2024.
 summary_cn: 英国政府政策白皮书，规划 2025 年前自动驾驶车辆商业化部署的路线图。是 2024 年自动驾驶车辆法的前置文件。
 impact_note: Vision document; implementation now proceeding under AV Act 2024.
 related_standards:
-- UK Automated Vehicles Act 2024
+  - UK Automated Vehicles Act 2024
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: best_practice
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

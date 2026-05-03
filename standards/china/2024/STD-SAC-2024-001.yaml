@@ -10,22 +10,30 @@ title_cn: GB/T 44373-2024 智能网联汽车 术语和定义
 url: https://openstd.samr.gov.cn/bzgk/gb/newGbInfo?hcno=E5D49F73A1226AB06CE60E7BD47A2BDC
 effective_date: '2024-10-01'
 automation_level:
-- L0
-- L1
-- L2
-- L3
-- L4
-- L5
+  - L0
+  - L1
+  - L2
+  - L3
+  - L4
+  - L5
 topics:
-- type_approval
-summary_en: China's foundational national standard for ICV terminology. Defines automated driving levels (aligned with SAE
-  J3016), ADS, ADAS, remote operations, minimum risk maneuver, and other core terms used across all subsequent GB and GB/T
-  ICV standards.
+  - type_approval
+summary_en: >-
+  China's foundational national standard for ICV terminology. Defines automated driving levels
+  (aligned with SAE J3016), ADS, ADAS, remote operations, minimum risk maneuver, and other core
+  terms used across all subsequent GB and GB/T ICV standards.
 summary_cn: 中国智能网联汽车术语的基础性国家标准，定义自动驾驶等级（与 SAE J3016 对齐）、ADS、ADAS、远程运营、最小风险策略等后续所有 GB/GB/T 智能网联汽车标准所引用的核心术语。
-impact_note: All Chinese ICV standards reference this vocabulary. Sole source for regulatory automation-level classification
-  in China.
+impact_note: >-
+  All Chinese ICV standards reference this vocabulary. Sole source for regulatory automation-level
+  classification in China.
 related_standards:
-- SAE J3016
-- ISO 22737
+  - SAE J3016
+  - ISO 22737
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: voluntary
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

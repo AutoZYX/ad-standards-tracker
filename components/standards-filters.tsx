@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type {
   EvidenceLevel,
   LegalForce,
@@ -86,6 +86,24 @@ export default function StandardsFilters({ all }: { all: StandardRecord[] }) {
   const [sourceType, setSourceType] = useState("");
   const [evidenceLevel, setEvidenceLevel] = useState("");
   const [sourceStatus, setSourceStatus] = useState("");
+
+  useEffect(() => {
+    queueMicrotask(() => {
+      const params = new URLSearchParams(window.location.search);
+      setSearch(params.get("search") ?? "");
+      setJurisdiction(params.get("jurisdiction") ?? "");
+      setOrg(params.get("org") ?? "");
+      setType(params.get("type") ?? "");
+      setStatus(params.get("status") ?? "");
+      setYear(params.get("year") ?? "");
+      setTopic(params.get("topic") ?? "");
+      setLevel(params.get("level") ?? "");
+      setLegalForce(params.get("legalForce") ?? "");
+      setSourceType(params.get("sourceType") ?? "");
+      setEvidenceLevel(params.get("evidenceLevel") ?? "");
+      setSourceStatus(params.get("sourceStatus") ?? "");
+    });
+  }, []);
 
   // Precompute category for each record
   const withCategory = useMemo(

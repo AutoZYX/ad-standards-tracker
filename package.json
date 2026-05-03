@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "validate:data": "node tools/validate-data.mjs",
+    "backfill:trust": "node tools/backfill-trust-fields.mjs",
     "check:urls": "node tools/check-urls.mjs"
   },
   "dependencies": {

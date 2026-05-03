@@ -10,16 +10,27 @@ title_cn: UNECE GRVA 自动驾驶法规适应性工作组状态报告
 url: https://unece.org/sites/default/files/2025-09/GRVA-23-35e.pdf
 effective_date: '2024-09-20'
 automation_level:
-- L3
-- L4
+  - L3
+  - L4
 topics:
-- type_approval
-summary_en: 'GRVA working document reviewing gaps between current UN Regulations and future L4 urban operation needs. Identifies
-  priority areas: teleoperation, MRM handover, data reporting harmonization, validation methods.'
+  - type_approval
+summary_en: >-
+  GRVA working document reviewing gaps between current UN Regulations and future L4 urban operation
+  needs. Identifies priority areas: teleoperation, MRM handover, data reporting harmonization,
+  validation methods.
 summary_cn: GRVA 工作组文件，审视当前联合国法规与未来 L4 城市运营需求的差距，识别优先领域：远程操作、MRM 交接、数据上报协调、验证方法。
 impact_note: Frames the 2025-2027 UN-R evolution roadmap. Informs both US and Chinese national regulators.
 related_standards:
-- UN-R157
-- ISO 34502
+  - UN-R157
+  - ISO 34502
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: informational
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Automated URL checks are blocked or time out for this source; keep the record with a blocked
+  status until manual browser verification is refreshed.

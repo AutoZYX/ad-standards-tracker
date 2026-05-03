@@ -37,6 +37,14 @@ const translations = {
   "dash.by_jurisdiction": { en: "By Jurisdiction", zh: "按管辖区" },
   "dash.by_type": { en: "By Type", zh: "按类型" },
   "dash.by_topic": { en: "Top Topics", zh: "热门主题" },
+  "dash.data_health": { en: "Data Health", zh: "数据健康" },
+  "dash.trust_complete": { en: "Trust fields complete", zh: "可信度字段完整" },
+  "dash.evidence_mix": { en: "Evidence mix", zh: "证据等级分布" },
+  "dash.source_health": { en: "Source health", zh: "链接状态分布" },
+  "dash.health_note": {
+    en: "Blocked means official sources are retained but automated checks are blocked or time out; use the original URL and source note for manual verification.",
+    zh: "Blocked 表示保留官方来源，但自动化检查被阻断或超时；请结合原文链接与 source_note 做人工核验。",
+  },
 
   // Standards list
   "std.title": { en: "Standards Library", zh: "标准库" },

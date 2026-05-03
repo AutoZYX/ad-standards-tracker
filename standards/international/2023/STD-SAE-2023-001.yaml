@@ -10,15 +10,27 @@ title_cn: SAE J3018 原型自动驾驶系统道路测试的安全相关指南
 url: https://www.sae.org/standards/content/j3018/
 effective_date: '2023-05-22'
 automation_level:
-- L3
-- L4
+  - L3
+  - L4
 topics:
-- testing
-summary_en: Recommended practice for safety of prototype ADS during on-road testing. Safety driver qualification, test vehicle
-  requirements, incident reporting, ODD management.
+  - testing
+summary_en: >-
+  Recommended practice for safety of prototype ADS during on-road testing. Safety driver
+  qualification, test vehicle requirements, incident reporting, ODD management.
 summary_cn: 原型自动驾驶系统道路测试的安全建议实践，涵盖安全员资质、测试车辆要求、事件报告、ODD 管理。
-impact_note: Broadly followed by US/CA/AZ testing programs. Chinese national demonstration zones align on similar principles.
+impact_note: >-
+  Broadly followed by US/CA/AZ testing programs. Chinese national demonstration zones align on
+  similar principles.
 related_standards:
-- SAE J3206
+  - SAE J3206
 contributor: AD Standards Tracker Seed / Zhang Yuxin
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official catalog page is used for metadata; full standard text may require purchase or
+  subscription.

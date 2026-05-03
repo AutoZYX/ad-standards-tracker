@@ -5,27 +5,35 @@ org_full: AUTOSAR Development Partnership
 jurisdiction: industry_org
 type: standard
 status: in_force
-title_en: AUTOSAR Adaptive Platform — POSIX-based SOA for High-Performance Computing
-  ECUs
+title_en: AUTOSAR Adaptive Platform — POSIX-based SOA for High-Performance Computing ECUs
 title_cn: AUTOSAR Adaptive Platform — 面向高性能计算 ECU 的 POSIX SOA 架构
 url: https://www.autosar.org/standards/adaptive-platform
 automation_level:
-- L3
-- L4
-- L5
+  - L3
+  - L4
+  - L5
 topics:
-- functional_safety
-- cybersecurity
-summary_en: AUTOSAR's solution for high-performance ECUs supporting L3+ automated
-  driving. Built on POSIX OS (typically Linux/PikeOS), Service-Oriented Architecture
-  (SOA), dynamic binding. Classic Platform handles real-time ECUs (engine, brake),
-  Adaptive handles compute-intensive functions (perception, planning).
-summary_cn: AUTOSAR 面向 L3+ 自动驾驶高性能 ECU 的解决方案。基于 POSIX 操作系统（通常 Linux/PikeOS）、面向服务架构（SOA）、动态绑定。Classic
-  平台处理实时 ECU（发动机、制动），Adaptive 处理计算密集型功能（感知、规划）。
-impact_note: 中国主机厂（蔚来、小鹏、理想、比亚迪）几乎均在 Adaptive Platform 基础上搭建自研中央计算平台。与 ISO 26262 功能安全、ISO/SAE
-  21434 cybersecurity 要求协同。
+  - functional_safety
+  - cybersecurity
+summary_en: >-
+  AUTOSAR's solution for high-performance ECUs supporting L3+ automated driving. Built on POSIX OS
+  (typically Linux/PikeOS), Service-Oriented Architecture (SOA), dynamic binding. Classic Platform
+  handles real-time ECUs (engine, brake), Adaptive handles compute-intensive functions (perception,
+  planning).
+summary_cn: >-
+  AUTOSAR 面向 L3+ 自动驾驶高性能 ECU 的解决方案。基于 POSIX 操作系统（通常 Linux/PikeOS）、面向服务架构（SOA）、动态绑定。Classic 平台处理实时
+  ECU（发动机、制动），Adaptive 处理计算密集型功能（感知、规划）。
+impact_note: >-
+  中国主机厂（蔚来、小鹏、理想、比亚迪）几乎均在 Adaptive Platform 基础上搭建自研中央计算平台。与 ISO 26262 功能安全、ISO/SAE 21434
+  cybersecurity 要求协同。
 related_standards:
-- ISO 26262
-- ISO/SAE 21434
-- AUTOSAR Classic
+  - ISO 26262
+  - ISO/SAE 21434
+  - AUTOSAR Classic
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: voluntary
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

@@ -1,0 +1,40 @@
+id: STD-MIIT-2021-001
+date: '2021-08-12'
+org: MIIT
+org_full: 中华人民共和国工业和信息化部
+jurisdiction: china
+type: policy
+status: in_force
+title_en: >-
+  Opinion on Strengthening the Access Management of Intelligent Connected Vehicle Manufacturers and
+  Products
+title_cn: 关于加强智能网联汽车生产企业及产品准入管理的意见（工信部通装〔2021〕103号）
+url: https://www.miit.gov.cn/zwgk/zcwj/wjfb/yj/art/2021/art_bf9a399907d94b8c9ac9f79f2045fe14.html
+effective_date: '2021-08-12'
+automation_level:
+  - L2
+  - L3
+  - L4
+topics:
+  - type_approval
+  - cybersecurity
+  - data_recording
+summary_en: >-
+  MIIT policy strengthening ICV access management. Requires manufacturers to manage data security,
+  cybersecurity, software updates, functional safety, SOTIF, product quality, and production
+  consistency.
+summary_cn: 工信部加强智能网联汽车生产企业及产品准入管理的政策文件，要求企业加强汽车数据安全、网络安全、软件升级、功能安全和预期功能安全管理，保证产品质量和生产一致性。
+impact_note: >-
+  Foundational regulation cited by every subsequent GB/T ICV standard. Precedent for 2026 Safety
+  Events Data Interaction draft.
+related_standards:
+  - GB 44497
+  - GB/T 44373
+contributor: AD Standards Tracker Seed / Zhang Yuxin
+last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: guidance
+source_type: official_news
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: verified

@@ -4,24 +4,30 @@ org: Euro NCAP
 jurisdiction: eu
 type: policy
 status: in_force
-title_en: Euro NCAP 2026 Assisted Driving Grading Protocol — Enhanced Driver Monitoring
-  and Take-over
+title_en: Euro NCAP 2026 Assisted Driving Grading Protocol — Enhanced Driver Monitoring and Take-over
 title_cn: Euro NCAP 2026 辅助驾驶测评规程 — 强化驾驶员监控与接管
 url: https://www.euroncap.com/en/ratings-rewards/assisted-driving-grading/
 automation_level:
-- L1
-- L2
+  - L1
+  - L2
 topics:
-- hmi
-- testing
-- sotif
-summary_en: Annual update of Euro NCAP's Assisted Driving Grading (ADG). Increases
-  weight of Driver Monitoring Systems (DMS), adds corner-case scenarios for take-over
-  request timing, penalizes systems that fail to disengage on persistent hand-off-wheel.
+  - hmi
+  - testing
+  - sotif
+summary_en: >-
+  Annual update of Euro NCAP's Assisted Driving Grading (ADG). Increases weight of Driver Monitoring
+  Systems (DMS), adds corner-case scenarios for take-over request timing, penalizes systems that
+  fail to disengage on persistent hand-off-wheel.
 summary_cn: Euro NCAP 辅助驾驶测评（ADG）年度更新。加大驾驶员监控系统（DMS）权重，新增接管请求时机的边角案例场景，惩罚在持续脱手条件下未禁用的系统。
 impact_note: 与中国 MIIT 组合驾驶辅助强标方向一致（均强调驾驶员状态监测+滥用防护）。ADG 已成为欧洲 OEM 产品规划的关键指标。
 related_standards:
-- MIIT 组合驾驶辅助强标
-- C-NCAP 2027
-- UN-R157
+  - MIIT 组合驾驶辅助强标
+  - C-NCAP 2027
+  - UN-R157
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: rating_protocol
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

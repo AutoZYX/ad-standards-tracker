@@ -9,16 +9,22 @@ title_en: Notice on Standardized Management of Autonomous Driving Taxi Operation
 title_cn: 关于规范自动驾驶出租汽车运营管理的通知
 url: https://www.mot.gov.cn/
 automation_level:
-- L4
+  - L4
 topics:
-- operations
-- teleoperation
-summary_en: MoT directive standardizing Robotaxi operations nationwide. Requires operator
-  licensing, safety officer/teleoperator ratios, incident reporting to MoT Emergency
-  Management Platform.
+  - operations
+  - teleoperation
+summary_en: >-
+  MoT directive standardizing Robotaxi operations nationwide. Requires operator licensing, safety
+  officer/teleoperator ratios, incident reporting to MoT Emergency Management Platform.
 summary_cn: 交通运输部规范全国 Robotaxi 运营的通知。要求运营资质、安全员/远程操控员配比、向交通运输部应急管理平台上报事件。
 impact_note: ⚠️[请核实：通知文号与发布日期]。结束了各地 Robotaxi 运营标准各自为政的局面。
 related_standards:
-- Shenzhen ICV Regulations
-- Shanghai Pudong Regulations
+  - Shenzhen ICV Regulations
+  - Shanghai Pudong Regulations
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: guidance
+source_type: official_news
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: verified

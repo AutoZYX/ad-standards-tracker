@@ -1,19 +1,43 @@
-id: "STD-UNECE-2021-002"
-date: "2021-01-22"
-org: "UNECE WP.29"
-org_full: "UN Economic Commission for Europe - World Forum for Harmonization of Vehicle Regulations"
-jurisdiction: "international"
-type: "regulation"
-status: "in_force"
-title_en: "UN Regulation No. 156 — Software Update and Software Update Management System"
-title_cn: "UN-R156 软件升级与软件升级管理体系"
-url: "https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update"
-effective_date: "2022-07-01"
-automation_level: ["L2", "L3", "L4"]
-topics: ["ota", "cybersecurity", "type_approval"]
-summary_en: "Mandates a certified Software Update Management System (SUMS) for vehicle type approval, covering OTA updates. Requires OEMs to document update impacts on homologated functions, ensure update integrity, and provide user notification."
-summary_cn: "要求型式认证车辆建立软件升级管理体系（SUMS），覆盖 OTA 升级。车企须记录升级对认证功能的影响、确保升级完整性、向用户提供通知。"
-impact_note: "Combined with UN-R155, this defines how OEMs can legally push OTA updates. Pony.ai's Beijing 2025-05 fire incident (rare ADAS vehicle fire) would fall under incident reporting requirements tied to this framework."
-related_standards: ["UN-R155", "ISO 24089"]
-contributor: "ROAM Core Team"
-last_updated: "2026-04-16"
+id: STD-UNECE-2021-002
+date: '2021-01-22'
+org: UNECE WP.29
+org_full: UN Economic Commission for Europe - World Forum for Harmonization of Vehicle Regulations
+jurisdiction: international
+type: regulation
+status: in_force
+title_en: UN Regulation No. 156 — Software Update and Software Update Management System
+title_cn: UN-R156 软件升级与软件升级管理体系
+url: >-
+  https://unece.org/transport/documents/2021/03/standards/un-regulation-no-156-software-update-and-software-update
+effective_date: '2022-07-01'
+automation_level:
+  - L2
+  - L3
+  - L4
+topics:
+  - ota
+  - cybersecurity
+  - type_approval
+summary_en: >-
+  Mandates a certified Software Update Management System (SUMS) for vehicle type approval, covering
+  OTA updates. Requires OEMs to document update impacts on homologated functions, ensure update
+  integrity, and provide user notification.
+summary_cn: 要求型式认证车辆建立软件升级管理体系（SUMS），覆盖 OTA 升级。车企须记录升级对认证功能的影响、确保升级完整性、向用户提供通知。
+impact_note: >-
+  Combined with UN-R155, this defines how OEMs can legally push OTA updates. Pony.ai's Beijing
+  2025-05 fire incident (rare ADAS vehicle fire) would fall under incident reporting requirements
+  tied to this framework.
+related_standards:
+  - UN-R155
+  - ISO 24089
+contributor: ROAM Core Team
+last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: binding
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: blocked
+source_note: >-
+  Automated URL checks are blocked or time out for this source; keep the record with a blocked
+  status until manual browser verification is refreshed.

@@ -5,24 +5,34 @@ org_full: ISO TC22/SC33 Road Vehicles
 jurisdiction: international
 type: standard
 status: published
-title_en: ISO 34505:2025 — Road vehicles — Test scenarios for automated driving systems
-  — Scenario evaluation and test case generation
+title_en: >-
+  ISO 34505:2025 — Road vehicles — Test scenarios for automated driving systems — Scenario
+  evaluation and test case generation
 title_cn: ISO 34505:2025 道路车辆 自动驾驶系统测试场景 — 场景评估与测试用例生成
 url: https://www.iso.org/standard/78954.html
 automation_level:
-- L3
-- L4
+  - L3
+  - L4
 topics:
-- testing
-- sotif
-summary_en: Latest addition to the ISO 34502/34503/34504 scenario series. Specifies
-  methodology for evaluating scenarios and generating concrete test cases from logical
-  scenarios. Enables test case derivation from ODD taxonomy (34503) and scenario categorization
-  (34504).
+  - testing
+  - sotif
+summary_en: >-
+  Latest addition to the ISO 34502/34503/34504 scenario series. Specifies methodology for evaluating
+  scenarios and generating concrete test cases from logical scenarios. Enables test case derivation
+  from ODD taxonomy (34503) and scenario categorization (34504).
 summary_cn: ISO 34502/34503/34504 场景系列最新成员。规定场景评估方法论与从逻辑场景生成具体测试用例的方法。支持从 ODD 分类（34503）和场景分类（34504）派生测试用例。
 impact_note: ⚠️[请核实：34505:2025 具体发布日期]。补齐 ISO 场景驱动测试工具箱的最后一块拼图。与驭研科技航测数据的场景提取工作流对接。
 related_standards:
-- ISO 34502
-- ISO 34503
-- ISO 34504
+  - ISO 34502
+  - ISO 34503
+  - ISO 34504
 last_updated: '2026-04-16'
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official catalog page is used for metadata; full standard text may require purchase or
+  subscription.

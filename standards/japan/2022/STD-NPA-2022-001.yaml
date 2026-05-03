@@ -1,0 +1,32 @@
+id: STD-NPA-2022-001
+date: '2022-04-27'
+org: NPA Japan
+org_full: National Police Agency, Japan
+jurisdiction: japan
+type: regulation
+status: in_force
+title_en: Road Traffic Act — Specified Automated Operation System for Level 4 Services
+title_cn: 日本《道路交通法》特定自动运行许可制度 — L4 服务框架
+url: https://www.npa.go.jp/english/bureau/traffic/selfdriving.html
+effective_date: '2023-04-01'
+automation_level:
+  - L4
+topics:
+  - type_approval
+  - operations
+summary_en: >-
+  Japan's amended Road Traffic Act introduced the Specified Automated Operation framework for
+  Level 4 driverless mobility services. Operators need approval from the Public Safety Commission
+  for the intended route, ODD, safety management, and remote monitoring arrangements.
+summary_cn: 日本修订《道路交通法》，建立面向 L4 无人化出行服务的“特定自动运行”制度。运营方需要围绕路线、ODD、安全管理和远程监控安排获得公安委员会许可。
+impact_note: Enabled Japan's first formal L4 deployments (bus lines, last-mile shuttles).
+related_standards:
+  - UN-R157
+  - MLIT Road Transport Vehicle Act
+last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: binding
+source_type: official_news
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

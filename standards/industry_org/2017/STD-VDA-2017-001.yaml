@@ -7,25 +7,33 @@ type: standard
 status: in_force
 title_en: VDA ISA / TISAX — Trusted Information Security Assessment Exchange
 title_cn: VDA ISA / TISAX — 可信信息安全评估交换
-url: https://www.vda.de/en/topics/environment-and-climate/digitalisation-and-cybersecurity/tisax
+url: https://portal.enx.com/en-US/TISAX/downloads/
 automation_level:
-- L0
-- L1
-- L2
-- L3
-- L4
-- L5
+  - L0
+  - L1
+  - L2
+  - L3
+  - L4
+  - L5
 topics:
-- cybersecurity
-- privacy
-summary_en: De-facto info-security assessment standard for automotive supply chain.
-  Based on ISO/IEC 27001 but tailored for automotive needs (prototype protection,
-  data handling for connected vehicles). Managed by ENX Association.
+  - cybersecurity
+  - privacy
+summary_en: >-
+  De-facto info-security assessment standard for automotive supply chain. Based on ISO/IEC 27001 but
+  tailored for automotive needs (prototype protection, data handling for connected vehicles).
+  Managed by ENX Association.
 summary_cn: 汽车供应链信息安全事实评估标准。基于 ISO/IEC 27001 但针对汽车行业定制（原型保护、网联车辆数据处理）。由 ENX 协会管理。
-impact_note: 大多数 OEM 要求 Tier 1/2 供应商达到 TISAX 认证。与 ISO/SAE 21434 cybersecurity engineering
+impact_note: >-
+  大多数 OEM 要求 Tier 1/2 供应商达到 TISAX 认证。与 ISO/SAE 21434 cybersecurity engineering
   互为补充（一个是过程认证，一个是工程过程）。
 related_standards:
-- ISO/IEC 27001
-- ISO/SAE 21434
-- UN-R155
+  - ISO/IEC 27001
+  - ISO/SAE 21434
+  - UN-R155
 last_updated: '2026-04-16'
+document_stage: in_force
+legal_force: voluntary
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified

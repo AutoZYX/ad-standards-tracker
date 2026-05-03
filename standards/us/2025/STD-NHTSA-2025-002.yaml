@@ -4,26 +4,32 @@ org: NHTSA
 jurisdiction: us
 type: consultation
 status: consultation
-title_en: FMVSS 150 Rulemaking — Vehicle-to-Everything (V2X) Communications Advanced
-  Notice of Proposed Rulemaking
+title_en: >-
+  FMVSS 150 Rulemaking — Vehicle-to-Everything (V2X) Communications Advanced Notice of Proposed
+  Rulemaking
 title_cn: FMVSS 150 制规 — 车联网（V2X）通信拟议规则预告
 url: https://www.federalregister.gov/agencies/national-highway-traffic-safety-administration
 automation_level:
-- L2
-- L3
-- L4
+  - L2
+  - L3
+  - L4
 topics:
-- v2x
-- cybersecurity
-- type_approval
-summary_en: ANPRM evaluating mandatory V2X communication for new light vehicles in
-  the U.S. Addresses C-V2X adoption path after DSRC spectrum reallocation. Part of
-  National V2X Deployment Plan 2024.
-summary_cn: 美国评估对新乘用车强制装配 V2X 通信的拟议规则预告。在 DSRC 频谱重分配后确定 C-V2X 采纳路径。是 2024 年国家 V2X
-  部署计划的一部分。
+  - v2x
+  - cybersecurity
+  - type_approval
+summary_en: >-
+  ANPRM evaluating mandatory V2X communication for new light vehicles in the U.S. Addresses C-V2X
+  adoption path after DSRC spectrum reallocation. Part of National V2X Deployment Plan 2024.
+summary_cn: 美国评估对新乘用车强制装配 V2X 通信的拟议规则预告。在 DSRC 频谱重分配后确定 C-V2X 采纳路径。是 2024 年国家 V2X 部署计划的一部分。
 impact_note: ⚠️[请核实：ANPRM 发布具体日期]。V2X 强制化是美国 ITS 政策的长期走向，但推进缓慢。
 related_standards:
-- SAE J2945
-- SAE J3161
-- National V2X Deployment Plan
+  - SAE J2945
+  - SAE J3161
+  - National V2X Deployment Plan
 last_updated: '2026-04-16'
+document_stage: consultation
+legal_force: informational
+source_type: official
+evidence_level: A
+verified_at: '2026-05-03'
+source_status: verified
