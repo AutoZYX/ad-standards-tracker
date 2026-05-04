@@ -1,19 +1,19 @@
 # AD Standards Tracker — 技术交接
 
-最后更新: 2026-05-03
-状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据源分类重整、剩余弱证据记录核实、专题地图重整和数据准确性审计
+最后更新: 2026-05-04
+状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据准确性审计，并开始把标准详情页升级为带工程 know-how 的安全知识库
 仓库: https://github.com/AutoZYX-Labs/ad-standards-tracker
 生产站: https://standards.autozyx.com
 本地路径: /Users/zyx/Desktop/WorkToDo/ad-standards-tracker/
 
 ## 当前生产状态
 
-- 最新应用提交: 0b176e9 Audit standards data accuracy
-- 最新生产部署: dpl_9h1ypYXTWhqajk1Kzf3Q5cF81XTg
-- Vercel 临时地址: https://ad-standards-tracker-cny29sp5g-auto-zyx.vercel.app
+- 最新应用提交: bc20b6d Enrich standards with expert knowledge fields
+- 最新生产部署: dpl_AHbtgKgpvGunVBPXeFm3qHTFVVrm
+- Vercel 临时地址: https://ad-standards-tracker-8e4np297v-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 105 个页面
-- 线上冒烟: `/standards/STD-SAC-2025-001` 返回 404；`/maps` 和 `/standards` 不再包含“远程操作技术要求”；正式域名已 alias 到新部署
+- 线上冒烟: ISO/DIS 25135、ISO 34502、C-NCAP 2027、UL 4600 第三版详情页均出现新知识字段；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
@@ -24,7 +24,21 @@
 - evidence_level 分布: A 56，B 35，C 2，D 0
 - source_status 分布: verified 55，paywalled 20，blocked 18，broken 0，unverified 0
 - legal_force 分布: guidance 16，voluntary 27，binding 26，rating_protocol 6，informational 12，best_practice 6
+- 已扩充 know-how 字段记录: 14/93
 - URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 93 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
+
+## 2026-05-04 已完成
+
+- 将 `StandardRecord` 增加可选知识字段：`scope_en/cn`、`exclusions_en/cn`、`engineering_use_en/cn`、`expert_note_en/cn`。
+- 详情页新增“覆盖范围 / 标准边界”“不覆盖内容 / 注意边界”“工程使用方式”“专家判断”四个栏目。
+- Ask AD Standards 的系统上下文和本地兜底检索已读取上述知识字段，回答不再只依赖摘要和 impact_note。
+- README、DATA_SCHEMA、关于页已写入新的三层知识机制：证据层、边界层、工程层。
+- 先扩充 14 条高优先级记录：ISO 26262、ISO 21448、ISO 34502、ISO/PAS 8800、ISO 22133、ISO/DIS 25135、SAE J3016、IEEE 2846、IEEE 3321、UN-R157、UL 4600 第三版、C-NCAP 2027、MIIT L2 组合驾驶辅助报批稿、MIIT ADS 安全要求征求意见稿。
+- 修正 ISO 34502 日期和目录位置：官方 ISO 目录显示发布日期为 2022-11-02，记录已从 `standards/international/2023/` 移至 `standards/international/2022/`。
+- 修正 UL 4600 当前主记录：第三版官方商品页标题为 `UL 4600 Edition 3 — Standard for Evaluation of Autonomous Products`，记录已改用官方商品页并标注 2023-03-17 发布及 ANSI approved；2020 第一版记录标为被 `STD-UL-2023-001` 替代。
+- `tools/validate-data.mjs` 增加知识字段类型校验，避免 YAML 冒号等格式问题把列表项解析成对象。
+- 本地验证通过：`pnpm validate:data`、`pnpm lint`、`pnpm build`、12 条重点 URL 定向检查。
+- 生产部署完成：`dpl_AHbtgKgpvGunVBPXeFm3qHTFVVrm`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-03 已完成
 
