@@ -13,20 +13,20 @@
 - Vercel 临时地址: https://ad-standards-tracker-5jnoehu7z-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 99 个页面
-- 线上冒烟: 首页显示 56/87 专业解读进度；专题地图、深圳条例、SAE J3237、关于页均出现新内容；默认语言已改为中文；正式域名已 alias 到新部署
+- 线上冒烟: 首页显示 56/86 专业解读进度；专题地图、深圳条例、SAE J3237、关于页均出现新内容；默认语言已改为中文；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
 
-- 总记录数: 87
-- 唯一 ID: 87
-- trust 字段完整度: 87/87
-- evidence_level 分布: A 51，B 34，C 2，D 0
-- source_status 分布: verified 53，paywalled 17，blocked 17，broken 0，unverified 0
-- legal_force 分布: guidance 16，voluntary 24，binding 23，rating_protocol 5，informational 12，best_practice 7
-- 已扩充 know-how 字段记录: 56/87
+- 总记录数: 86
+- 唯一 ID: 86
+- trust 字段完整度: 86/86
+- evidence_level 分布: A 51，B 34，C 1，D 0
+- source_status 分布: verified 52，paywalled 17，blocked 17，broken 0，unverified 0
+- legal_force 分布: guidance 16，voluntary 24，binding 23，rating_protocol 5，informational 11，best_practice 7
+- 已扩充 know-how 字段记录: 56/86
 - 正式标准/法规 know-how 缺口: 0
-- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 87 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
+- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 86 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
 
 ## 2026-05-04 已完成
 
@@ -70,6 +70,8 @@
 - README、关于页、crawler 文档、Ask 系统上下文同步清理旧 TODO/WIP/请核实 表述；关于页数据源分类改为国家/国际标准制定组织与行业标准组织两层。
 - 第六批验证通过：`pnpm validate:data` 87 records、`pnpm lint`、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 87 URLs、`pnpm build` 99 pages。
 - 第六批生产部署完成：`dpl_3tFBioNQsHbiDHJtokuAjYCspBnU`，已 alias 到 https://standards.autozyx.com。
+- 继续清理 Evidence C：删除 KNCAP 2026 车型投票二级动态 `INT-KNCAP-2026-001`，因为它不是正式 KNCAP 测评规程，也没有稳定官方技术源；当前仅保留 1 条 Evidence C，即用户明确要求跟踪的 MIIT 组合驾驶辅助报批稿动态。
+- 删除 KNCAP 2026 后验证通过：`pnpm validate:data` 86 records、`pnpm lint`、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 86 URLs、`pnpm build` 98 pages。
 
 ## 2026-05-03 已完成
 
@@ -86,7 +88,7 @@
 - 清理 Euro NCAP 弱证据重复记录，将 2024 Vision 2030 合并为 `INT-ENCAP-2024-001`，删除两个基于泛化 press index 的 2025 重复记录。
 - 将 SAE J3329 和 CATARC C-NCAP 附录 Q 解读从 Evidence C 升为 Evidence B，并补充说明其证据边界。
 - 核实剩余 Evidence C 记录：UNECE ADS GTR 已替换为 UNECE 官方 wiki PDF 并升为 A；北京/上海示范区记录已替换为新华社、北京市发改委、上海市政府官方源并升为 A/B；知乎解读已删除。
-- 当前仅保留 2 条 Evidence C：MIIT 组合驾驶辅助报批稿和 KNCAP 2026 动态。两者均经 2026-05-03 复核仍未找到稳定主管部门原文链接，已在 `source_note` 明确标注不可当作正式 GB 或正式 KNCAP 规程。
+- 当前仅保留 1 条 Evidence C：MIIT 组合驾驶辅助报批稿。该记录是用户明确要求跟踪的高影响征求意见动态，仍已在 `source_note` 明确标注不可当作正式 GB 引用。
 - 把本地残留的重复/冲突未跟踪文件移入 `.local-quarantine/2026-05-03-untracked/`，并通过 `.gitignore` 排除，避免污染 YAML 数据加载。
 - 更新 README、DATA_SCHEMA、CONTRIBUTING，补充 trust 字段治理和回填脚本说明。
 - 新增 `STD-ISO-2024-003`，按 ISO 官方目录记录为 ISO/PAS 8800:2024，而不是 ISO/SAE 8800。
@@ -108,10 +110,10 @@ pnpm build
 
 当前结果:
 
-- `pnpm validate:data`: 通过，87 records，87 unique ids
+- `pnpm validate:data`: 通过，86 records，86 unique ids
 - `pnpm lint`: 通过
-- `pnpm check:urls`: 通过，87 URLs
-- `pnpm build`: 通过，99 pages
+- `pnpm check:urls`: 通过，86 URLs
+- `pnpm build`: 通过，98 pages
 
 ## 关键架构
 
@@ -133,12 +135,12 @@ pnpm build
 2. 客户端需要类型时，从 `lib/types.ts` import；客户端需要过滤逻辑时，从 `lib/filter.ts` import。
 3. `source_status: blocked` 不等于坏链。它表示官方源可人工访问，但自动化检查被反爬、地理区域或 TLS 策略挡住。
 4. `.local-quarantine/` 是本地隔离区，保存未跟踪重复文件，不要提交，也不要在不了解内容时删除。
-5. Evidence C 不等于待办。当前 2 条 Evidence C 是经核实后刻意保留的二级源动态，不进入正式标准/法规/测评规程证据链。
+5. Evidence C 不等于待办。当前 1 条 Evidence C 是经核实后刻意保留的高影响征求意见动态，不进入正式标准/法规/测评规程证据链。
 
 ## 当前边界
 
 1. Ask 已使用 DeepSeek V4 Pro，生产环境变量为 `DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL=deepseek-v4-pro`、`DEEPSEEK_REASONING_EFFORT=max`。
-2. MIIT 报批稿和 KNCAP 2026 保留为 Evidence C，是因为公开稳定原始链接尚不可得；项目内已明确警示其不能作为正式标准或正式规程引用。
+2. MIIT 组合驾驶辅助报批稿保留为 Evidence C，是因为公开稳定工信部/国标委原始链接尚不可得；项目内已明确警示其不能作为正式 GB 引用。
 3. 订阅接口仍是轻量 stub；不影响标准库准确性。
 
 ## 恢复工作流
