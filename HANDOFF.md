@@ -8,12 +8,12 @@
 
 ## 当前生产状态
 
-- 最新应用提交: bc20b6d Enrich standards with expert knowledge fields
-- 最新生产部署: dpl_AHbtgKgpvGunVBPXeFm3qHTFVVrm
-- Vercel 临时地址: https://ad-standards-tracker-8e4np297v-auto-zyx.vercel.app
+- 最新应用提交: 651e3ea Enrich cybersecurity software and scenario standards
+- 最新生产部署: dpl_7GPpp8AXbGRNLL4DDNCbZ9mMi65Z
+- Vercel 临时地址: https://ad-standards-tracker-kw4rc2koz-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 105 个页面
-- 线上冒烟: ISO/DIS 25135、ISO 34502、C-NCAP 2027、UL 4600 第三版详情页均出现新知识字段；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
+- 线上冒烟: 首页显示 28/93 专业解读进度；ISO 34503、ASAM OpenSCENARIO DSL、GB 44497 详情页均出现新知识字段；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
@@ -24,7 +24,7 @@
 - evidence_level 分布: A 56，B 35，C 2，D 0
 - source_status 分布: verified 55，paywalled 20，blocked 18，broken 0，unverified 0
 - legal_force 分布: guidance 16，voluntary 27，binding 26，rating_protocol 6，informational 12，best_practice 6
-- 已扩充 know-how 字段记录: 14/93
+- 已扩充 know-how 字段记录: 28/93
 - URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 93 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
 
 ## 2026-05-04 已完成
@@ -39,6 +39,12 @@
 - `tools/validate-data.mjs` 增加知识字段类型校验，避免 YAML 冒号等格式问题把列表项解析成对象。
 - 本地验证通过：`pnpm validate:data`、`pnpm lint`、`pnpm build`、12 条重点 URL 定向检查。
 - 生产部署完成：`dpl_AHbtgKgpvGunVBPXeFm3qHTFVVrm`，已 alias 到 https://standards.autozyx.com。
+- 第二批扩充 14 条高影响记录：ISO/SAE 21434、UN-R155、UN-R156、ISO 24089、GB 39732、GB/T 44373、GB 44497、ISO 34503、ISO 34504、ISO 34505、ASAM OpenDRIVE、ASAM OSI、ASAM OpenSCENARIO DSL、ASAM OpenSCENARIO XML。
+- 首页 Data Health 新增“专业解读已扩充 / Knowledge fields enriched”指标，当前为 28/93，用来公开暴露知识库深度，而不是只展示记录数量。
+- 修正 ISO 24089 官方发布日期为 2023-02-08；修正 ISO 34503、ISO 34504、ISO 34505 的官方标题、发布日期和 source_note。
+- 场景测试工具链条目已补充 ASAM 静态道路、运行接口、逻辑场景、具体场景四层边界说明；网络安全、软件更新、数据记录相关条目已补充工程证据链解释。
+- 第二批本地验证通过：`pnpm validate:data`、`pnpm lint`、`pnpm build`、14 条重点 URL 定向检查。
+- 第二批生产部署完成：`dpl_7GPpp8AXbGRNLL4DDNCbZ9mMi65Z`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-03 已完成
 
