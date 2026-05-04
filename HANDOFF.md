@@ -8,12 +8,12 @@
 
 ## 当前生产状态
 
-- 最新应用提交: 651e3ea Enrich cybersecurity software and scenario standards
-- 最新生产部署: dpl_7GPpp8AXbGRNLL4DDNCbZ9mMi65Z
-- Vercel 临时地址: https://ad-standards-tracker-kw4rc2koz-auto-zyx.vercel.app
+- 最新应用提交: abe0ce1 Enrich type approval and assessment protocol records
+- 最新生产部署: dpl_4CtGZVwHQAcjTHH9L41xGpgniCEt
+- Vercel 临时地址: https://ad-standards-tracker-gvhzcajvk-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 105 个页面
-- 线上冒烟: 首页显示 28/93 专业解读进度；ISO 34503、ASAM OpenSCENARIO DSL、GB 44497 详情页均出现新知识字段；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
+- 线上冒烟: 首页显示 36/93 专业解读进度；EU 2022/1426、Euro NCAP 2026-2028、JNCAP 官方动态详情页均出现新知识字段；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
@@ -22,9 +22,9 @@
 - 唯一 ID: 93
 - trust 字段完整度: 93/93
 - evidence_level 分布: A 56，B 35，C 2，D 0
-- source_status 分布: verified 55，paywalled 20，blocked 18，broken 0，unverified 0
-- legal_force 分布: guidance 16，voluntary 27，binding 26，rating_protocol 6，informational 12，best_practice 6
-- 已扩充 know-how 字段记录: 28/93
+- source_status 分布: verified 54，paywalled 18，blocked 21，broken 0，unverified 0
+- legal_force 分布: guidance 16，voluntary 27，binding 26，rating_protocol 5，informational 13，best_practice 6
+- 已扩充 know-how 字段记录: 36/93
 - URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 93 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
 
 ## 2026-05-04 已完成
@@ -45,6 +45,12 @@
 - 场景测试工具链条目已补充 ASAM 静态道路、运行接口、逻辑场景、具体场景四层边界说明；网络安全、软件更新、数据记录相关条目已补充工程证据链解释。
 - 第二批本地验证通过：`pnpm validate:data`、`pnpm lint`、`pnpm build`、14 条重点 URL 定向检查。
 - 第二批生产部署完成：`dpl_7GPpp8AXbGRNLL4DDNCbZ9mMi65Z`，已 alias 到 https://standards.autozyx.com。
+- 第三批扩充 8 条高影响记录：EU 2022/1426、EU 2026/481、UK Automated Vehicles Act 2024、FMVSS 127、NHTSA 第三次修订 SGO 2021-01、Euro NCAP 2026-2028 protocols、C-ICAP 1.1、JNCAP FY2025 官方动态。
+- 将 JNCAP FY2025 记录从“测评规程/标准”边界改为 official update/informational，明确不能当作完整 JNCAP 技术规程引用。
+- 修正 Euro NCAP 2026 记录，改为官方 2026-2028 protocols 页面和更准确的“安全驾驶、驾驶员参与、车辆辅助”测评框架，不再使用未经证实的 DMS 权重/接管细节描述。
+- 核实 C-ICAP 页面标题为 `C-ICAP(1.1版)管理规则`，并补充附录 A/B/C 的工程边界。
+- 全量 URL 检查重新通过：`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 返回 93 URLs passed；IEEE 2846、IEEE 3321、NHTSA SGO PDF 的自动化受阻状态已改为 `blocked`，避免把反爬/Cloudflare/Akamai 误判成坏链。
+- 第三批生产部署完成：`dpl_4CtGZVwHQAcjTHH9L41xGpgniCEt`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-03 已完成
 
