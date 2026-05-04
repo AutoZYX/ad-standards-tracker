@@ -20,15 +20,50 @@ summary_en: >-
   simulation. Enables plug-and-play integration of perception simulators from different vendors.
   Originated as BMW OSI, transferred to ASAM in 2019.
 summary_cn: 基于 Protobuf 的仿真内接口标准，连接传感器模型、环境模型和高度自动驾驶功能。支持不同厂商感知仿真器的即插即用集成。起源于宝马 OSI，2019 年移交 ASAM。
+scope_en:
+  - Defines an interface for exchanging object, sensor, environmental, and ground-truth information in simulation.
+  - Uses protobuf-based data structures to connect sensor models, environment models, traffic simulation, and automated-driving functions.
+  - Supports vendor-independent integration of perception, sensor, and simulation components.
+  - Complements OpenDRIVE and OpenSCENARIO by providing runtime interface data rather than road-network or scenario-file structure.
+scope_cn:
+  - 定义仿真中交换对象、传感器、环境和真值信息的接口。
+  - 通过 protobuf 数据结构连接传感器模型、环境模型、交通仿真和自动驾驶功能。
+  - 支持感知、传感器和仿真组件的跨供应商集成。
+  - 与 OpenDRIVE 和 OpenSCENARIO 配套，提供运行时接口数据，而不是路网或场景文件结构。
+exclusions_en:
+  - Does not define the scenario itself or the static road network.
+  - Does not guarantee sensor-model fidelity or perception-model validity.
+  - Does not replace validation of the simulation toolchain.
+exclusions_cn:
+  - 不定义场景本身或静态路网。
+  - 不保证传感器模型保真度或感知模型有效性。
+  - 不替代对仿真工具链的验证。
+engineering_use_en:
+  - Use it to specify interfaces between simulation environment, sensor models, perception stack, and ADS functions in X-in-the-loop workflows.
+  - Validate coordinate frames, object semantics, timing, latency, and ground-truth assumptions before using simulation results as evidence.
+  - Combine it with OpenDRIVE and OpenSCENARIO so static map, dynamic behavior, and runtime interface assumptions remain traceable.
+  - Treat mismatches between simulated sensor truth and real sensor behavior as SOTIF-relevant evidence gaps.
+engineering_use_cn:
+  - 在 X-in-the-loop 工作流中，用它规定仿真环境、传感器模型、感知栈和 ADS 功能之间的接口。
+  - 在把仿真结果作为证据前，验证坐标系、对象语义、时间同步、延迟和真值假设。
+  - 与 OpenDRIVE 和 OpenSCENARIO 结合，保持静态地图、动态行为和运行时接口假设可追踪。
+  - 将仿真传感器真值与真实传感器行为之间的不一致视为 SOTIF 相关证据缺口。
+expert_note_en: >-
+  OSI is an interface standard, but its safety value is in traceability. If the simulated world,
+  sensor interface, and ADS input assumptions are inconsistent, scenario results cannot support a
+  serious safety claim.
+expert_note_cn: >-
+  OSI 是接口标准，但它的安全价值在于追踪性。如果仿真世界、传感器接口和 ADS 输入假设不一致，场景结果就无法支撑严肃的安全声明。
 impact_note: PEGASUS 项目的关键基础设施之一。与 OpenSCENARIO/OpenDRIVE 形成开放仿真生态。
 related_standards:
   - ASAM OpenSCENARIO
   - ASAM OpenDRIVE
   - PEGASUS
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: voluntary
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official ASAM standard page verified on 2026-05-04.

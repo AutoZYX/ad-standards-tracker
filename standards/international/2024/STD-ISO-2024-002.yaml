@@ -1,5 +1,5 @@
 id: STD-ISO-2024-002
-date: '2024-09-11'
+date: '2024-02-09'
 org: ISO
 jurisdiction: international
 type: standard
@@ -20,19 +20,53 @@ summary_en: >-
   concrete scenario abstraction layers. Enables interoperability of scenario libraries across OEMs
   and test providers.
 summary_cn: 为 ADS 测试场景提供分层分类方案。定义功能场景、逻辑场景、具体场景三层抽象。支持 OEM 和测试服务商之间的场景库互操作。
+scope_en:
+  - Defines a categorization approach for ADS test scenarios.
+  - Provides abstraction levels and scenario-structuring concepts used to organize functional, logical, and concrete scenario material.
+  - Supports scenario-library exchange, comparison, and reuse across OEMs, suppliers, tool vendors, and test providers.
+  - Complements ISO 34503 ODD specification and ISO 34505 scenario evaluation / test-case generation.
+scope_cn:
+  - 定义 ADS 测试场景的分类方法。
+  - 提供组织功能场景、逻辑场景和具体场景材料所需的抽象层级和场景结构概念。
+  - 支撑 OEM、供应商、工具厂商和测试服务商之间的场景库交换、比较和复用。
+  - 与 ISO 34503 ODD 规范和 ISO 34505 场景评价/测试用例生成配套。
+exclusions_en:
+  - Does not decide which scenario set is sufficient for a safety argument.
+  - Does not prescribe one file format or simulation tool.
+  - Does not replace empirical data collection or SOTIF unknown-scenario discovery.
+exclusions_cn:
+  - 不决定哪一组场景足以支撑安全论证。
+  - 不规定唯一文件格式或仿真工具。
+  - 不替代真实数据采集或 SOTIF 未知场景发现。
+engineering_use_en:
+  - Use it to normalize scenario libraries before calculating coverage, comparing suppliers, or translating scenarios into simulation and proving-ground tests.
+  - Separate functional, logical, and concrete scenarios so data-derived ranges and concrete test cases are not mixed in one layer.
+  - Map real-world trajectory data into logical scenario parameters before generating concrete tests.
+  - Use it with ISO 34502 to explain why selected scenarios are relevant to the safety argument, not just technically executable.
+engineering_use_cn:
+  - 在计算覆盖度、比较供应商或把场景转化为仿真/试验场测试前，用它统一场景库结构。
+  - 区分功能场景、逻辑场景和具体场景，避免把数据参数范围和具体测试用例混在同一层。
+  - 将真实轨迹数据先映射为逻辑场景参数，再生成具体测试。
+  - 与 ISO 34502 结合，说明所选场景为什么与安全论证相关，而不只是技术上能执行。
+expert_note_en: >-
+  ISO 34504 is the vocabulary that stops scenario libraries from becoming a pile of unrelated test
+  cases. It is especially important when naturalistic data, simulation, and proving-ground tests
+  need to speak the same language.
+expert_note_cn: >-
+  ISO 34504 的作用，是防止场景库变成一堆互不相关的测试用例。当天然驾驶数据、仿真和试验场测试需要同一种语言时，它尤其关键。
 impact_note: 中国驭研科技（张玉新联合创始）的航测自然驾驶数据场景提取直接依据之一。行业实际应用中的事实参考。
 related_standards:
   - ISO 34502
   - ISO 34503
   - PEGASUS
   - SAKURA project
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: published
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
-  subscription.
+  Official ISO catalog page verified on 2026-05-04. The page identifies ISO 34504:2024 as published
+  on 2024-02-09; full standard text may require purchase or subscription.

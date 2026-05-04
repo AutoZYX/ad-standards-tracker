@@ -23,21 +23,58 @@ summary_en: >-
   to decommissioning. Process-based (does not specify specific technologies). Paired with UN-R155
   for type approval. Covers TARA (Threat Analysis and Risk Assessment).
 summary_cn: 规定汽车全生命周期（从概念到退役）的网络安全风险管理流程，过程化（不规定具体技术）。与 UN-R155 配合用于型式认证，含 TARA（威胁分析与风险评估）。
+scope_en:
+  - Covers cybersecurity risk management for road-vehicle E/E systems across concept, development, production, operation, maintenance, and decommissioning.
+  - Applies to OEMs, suppliers, and other organizations involved in vehicle E/E systems, software, hardware, and communication interfaces.
+  - Provides the process foundation for item definition, cybersecurity goals, threat analysis and risk assessment, verification, validation, incident response, and lifecycle monitoring.
+  - Supports alignment between cybersecurity engineering work products and regulatory CSMS expectations such as UN-R155.
+scope_cn:
+  - 覆盖道路车辆 E/E 系统从概念、开发、生产、运行、维护到退役的网络安全风险管理。
+  - 适用于参与车辆 E/E 系统、软件、硬件和通信接口设计开发维护的 OEM、供应商和相关组织。
+  - 提供项目定义、网络安全目标、威胁分析与风险评估、验证确认、事件响应和生命周期监测的过程基础。
+  - 支撑网络安全工程工作产品与 UN-R155 等 CSMS 法规要求之间的对齐。
+exclusions_en:
+  - Does not prescribe specific cybersecurity technologies, tools, cryptographic algorithms, or product architectures.
+  - Is not itself a type-approval regulation; it provides engineering process evidence that can support regulatory compliance.
+  - Does not replace functional safety or SOTIF analysis when cybersecurity threats create safety-relevant consequences.
+exclusions_cn:
+  - 不规定具体网络安全技术、工具、密码算法或产品架构。
+  - 它本身不是准入法规，而是为法规合规提供工程过程证据。
+  - 当网络安全威胁转化为安全相关后果时，不能替代功能安全或 SOTIF 分析。
+engineering_use_en:
+  - Use it to structure cybersecurity cases for connected ADAS/ADS, especially TARA, cybersecurity goals, claims, controls, verification evidence, and post-production monitoring.
+  - Link cybersecurity goals to safety goals when attacks can change vehicle behavior, degrade perception, manipulate OTA updates, or affect remote-operation interfaces.
+  - Map each work product to UN-R155 CSMS audit expectations and to ISO 24089 / UN-R156 when software updates are involved.
+  - Require supplier evidence in the same vocabulary so OEM-level cybersecurity arguments do not collapse at interface boundaries.
+engineering_use_cn:
+  - 用它组织联网 ADAS/ADS 的网络安全案例，尤其是 TARA、网络安全目标、声明、控制措施、验证证据和量产后监测。
+  - 当攻击可能改变车辆行为、降低感知能力、篡改 OTA 或影响远程运营接口时，应把网络安全目标与安全目标衔接。
+  - 将工作产品映射到 UN-R155 CSMS 审核要求；涉及软件更新时同时映射 ISO 24089 / UN-R156。
+  - 要求供应商使用同一套证据语言，避免 OEM 级网络安全论证在接口处断裂。
+expert_note_en: >-
+  ISO/SAE 21434 is not a checklist for penetration testing. Its value is the lifecycle argument:
+  which threats matter, who owns the risk, what evidence proves the controls, and how the claim is
+  maintained after production.
+expert_note_cn: >-
+  ISO/SAE 21434 不是渗透测试清单。它真正有价值的是生命周期论证：哪些威胁重要、谁拥有风险、什么证据证明控制措施有效，以及量产后如何持续维持这个声明。
 impact_note: >-
   Required for EU market access via UN-R155 compliance. De facto global standard for automotive
   cybersecurity processes.
 related_standards:
   - UN-R155
+  - UN-R156
   - ISO 24089
   - ISO 26262
+  - ISO 21448
 contributor: ROAM Core Team
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: published
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
-  subscription.
+  Official ISO catalog page verified on 2026-05-04. The public page identifies ISO/SAE 21434:2021
+  as Edition 1, published on 2021-08-31, and notes it is to be revised; full standard text may
+  require purchase or subscription.

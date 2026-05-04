@@ -12,8 +12,9 @@ document_stage: published
 legal_force: voluntary
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official ASAM publication page verified on 2026-05-04.
 version: 1.4.0
 automation_level:
 - L1
@@ -27,9 +28,42 @@ topics:
 - sotif
 summary_en: Current ASAM OpenSCENARIO XML branch for concrete dynamic scenario description, used by simulation and test tools for ADAS/AD validation.
 summary_cn: 当前 ASAM OpenSCENARIO XML 分支，用于具体动态场景描述，是 ADAS/AD 仿真和测试工具链的重要格式。
+scope_en:
+- Defines XML-based representation of concrete dynamic driving scenarios.
+- Describes actors, maneuvers, actions, triggers, conditions, and simulation execution flow for ADAS/AD validation tools.
+- Serves as a widely supported exchange format for executable or near-executable dynamic scenarios.
+- Runs in parallel with the DSL branch, which is better suited to abstract and parameterized scenario authoring.
+scope_cn:
+- 定义基于 XML 的具体动态驾驶场景表示。
+- 描述参与者、机动、动作、触发条件、判断条件和仿真执行流程，用于 ADAS/AD 验证工具。
+- 是可执行或接近可执行动态场景的广泛支持交换格式。
+- 与 DSL 分支并行发展；DSL 更适合抽象和参数化场景编写。
+exclusions_en:
+- Does not define static road networks; use OpenDRIVE for that layer.
+- Does not by itself provide scenario sufficiency, ODD relevance, or safety acceptance criteria.
+- Does not guarantee equivalent behavior across tools unless tool conformance and interpretation are checked.
+exclusions_cn:
+- 不定义静态路网；静态层应使用 OpenDRIVE。
+- 不提供场景充分性、ODD 相关性或安全接受准则。
+- 如果不检查工具符合性和解释差异，不能保证跨工具行为等价。
+engineering_use_en:
+- Use it for concrete scenario exchange, regression test suites, and tool-chain interoperability checks.
+- Keep each XML scenario linked to the logical scenario, ODD attributes, parameter source, and safety claim it supports.
+- Validate tool interpretation of triggers, timing, actor behavior, and coordinate systems before treating results as evidence.
+- Use the DSL branch when scenario families or parameter-space generation are more important than one concrete file.
+engineering_use_cn:
+- 用它进行具体场景交换、回归测试集建设和工具链互操作检查。
+- 将每个 XML 场景追踪到其对应逻辑场景、ODD 属性、参数来源和安全声明。
+- 在把结果作为证据前，验证工具对触发条件、时间、参与者行为和坐标系的解释。
+- 当重点是场景族或参数空间生成，而不是单个具体文件时，应使用 DSL 分支。
+expert_note_en: >-
+  OpenSCENARIO XML is the workhorse format for concrete scenarios. Its weakness is also obvious:
+  executable does not mean relevant, and relevant does not mean sufficient for safety.
+expert_note_cn: >-
+  OpenSCENARIO XML 是具体场景的主力格式。但它的弱点也很明显：可执行不等于相关，相关也不等于足以支撑安全。
 impact_note: Should be tracked separately from OpenSCENARIO DSL because ASAM now develops the XML and DSL branches in parallel for different scenario authoring needs.
 related_standards:
 - ASAM OpenSCENARIO DSL
 - ASAM OpenDRIVE
 - ISO 34502
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

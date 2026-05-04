@@ -22,15 +22,50 @@ summary_en: >-
   DSSAD requirements but adapted to Chinese regulatory context. Specifies event triggers, minimum
   data elements, retention, authentication, and read-out protocols.
 summary_cn: DSSAD（自动驾驶数据存储系统）强制性国标。参考 UNECE R157 DSSAD 要求但适配中国监管语境。规定事件触发、最小数据元素、保存时间、认证及读取协议。
+scope_en:
+  - Defines mandatory technical requirements for Data Storage Systems for Automated Driving in intelligent connected vehicles.
+  - Applies to L3/L4 automated-driving data recording needed for responsibility attribution, event reconstruction, and regulatory inspection.
+  - Covers triggering, minimum data elements, retention, authentication, integrity protection, and read-out requirements.
+  - Serves as China's DSSAD counterpart to the data-recording logic used in UN-R157 and adjacent UNECE work.
+scope_cn:
+  - 规定智能网联汽车自动驾驶数据存储系统（DSSAD）的强制性技术要求。
+  - 适用于 L3/L4 自动驾驶责任认定、事件复现和监管检查所需的数据记录。
+  - 覆盖触发条件、最小数据元素、保存、认证、完整性保护和读取要求。
+  - 是中国语境下对应 UN-R157 及相关 UNECE 数据记录逻辑的 DSSAD 强标。
+exclusions_en:
+  - It is not a general crash EDR standard; GB 39732 covers conventional motor-vehicle EDR.
+  - It does not by itself define the full ADS safety case or type-approval process.
+  - It should not be treated as only a storage device requirement; its evidence value depends on integration with ADS state, HMI, fallback, and event timelines.
+exclusions_cn:
+  - 它不是通用碰撞 EDR 标准；GB 39732 覆盖传统汽车事件数据记录系统。
+  - 它本身不定义完整 ADS 安全案例或准入流程。
+  - 不应只把它理解为存储设备要求；其证据价值取决于与 ADS 状态、HMI、fallback 和事件时间线的集成。
+engineering_use_en:
+  - Use it as a mandatory evidence-design baseline for any China L3/L4 product approval plan.
+  - Ensure recorded states can distinguish manual driving, automated driving, transition demand, fallback, minimum-risk maneuver, and driver/user actions.
+  - Align DSSAD signals with HMI logs, cybersecurity logs, OTA version records, EDR records, and operational incident workflows.
+  - Design read-out and authentication processes early; if evidence cannot be trusted after an incident, the safety case loses credibility.
+engineering_use_cn:
+  - 将其作为中国 L3/L4 产品准入计划中的强制证据设计基线。
+  - 确保记录状态能够区分人工驾驶、自动驾驶、接管请求、fallback、最小风险机动和驾驶员/用户动作。
+  - 将 DSSAD 信号与 HMI 日志、网络安全日志、OTA 版本记录、EDR 记录和运行事件流程对齐。
+  - 提前设计读取和认证流程；如果事故后证据不可信，安全案例就失去可信度。
+expert_note_en: >-
+  GB 44497 is not just a recorder requirement. It is the evidence backbone for Chinese L3/L4
+  responsibility attribution, incident reconstruction, and regulatory confidence.
+expert_note_cn: >-
+  GB 44497 不只是记录仪要求。它是中国 L3/L4 责任认定、事件复现和监管信任的证据骨架。
 impact_note: L3/L4 车辆在中国获得准入的必要条件。2026-01-01 对新准入车型强制实施。
 related_standards:
   - UN-R157
   - UN-R160
   - GB 39732
-last_updated: '2026-04-16'
+  - ISO 21448
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official SAMR/SAC national standards page verified on 2026-05-04.

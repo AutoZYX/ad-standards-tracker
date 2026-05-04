@@ -23,17 +23,53 @@ summary_en: >-
   (aligned with SAE J3016), ADS, ADAS, remote operations, minimum risk maneuver, and other core
   terms used across all subsequent GB and GB/T ICV standards.
 summary_cn: 中国智能网联汽车术语的基础性国家标准，定义自动驾驶等级（与 SAE J3016 对齐）、ADS、ADAS、远程运营、最小风险策略等后续所有 GB/GB/T 智能网联汽车标准所引用的核心术语。
+scope_en:
+  - Defines core terms for intelligent connected vehicles in China, including automated-driving levels, ADS, ADAS, remote operation, and minimum-risk concepts.
+  - Provides the vocabulary used by subsequent GB and GB/T intelligent-connected-vehicle standards.
+  - Aligns China's automation-level terminology with the SAE J3016 family while using Chinese regulatory language.
+  - Supports consistent communication among regulators, OEMs, suppliers, test bodies, and researchers.
+scope_cn:
+  - 定义中国智能网联汽车核心术语，包括自动驾驶等级、ADS、ADAS、远程运营和最小风险相关概念。
+  - 为后续 GB/GB/T 智能网联汽车标准提供术语基础。
+  - 在中国监管语言体系下与 SAE J3016 分级体系对齐。
+  - 支撑监管方、OEM、供应商、测试机构和研究者之间的一致沟通。
+exclusions_en:
+  - It is a terminology standard, not a safety requirement, performance test, or type-approval rule.
+  - Level definitions should not be used as proof that a product is safe or legally approved.
+  - It does not resolve all translation ambiguity between Chinese regulatory terms and international terms.
+exclusions_cn:
+  - 它是术语标准，不是安全要求、性能测试或准入规则。
+  - 自动驾驶等级定义不能被用作产品安全或已获准入的证明。
+  - 它不能消除中国监管术语与国际术语之间的全部翻译歧义。
+engineering_use_en:
+  - Use it as the Chinese terminology baseline when drafting GB compliance matrices, safety cases, public-facing product language, and technical translations.
+  - Check product naming and HMI wording against its distinction between ADAS, ADS, automated-driving levels, and remote-operation concepts.
+  - Pair it with SAE J3016 when explaining China/international terminology differences to global teams.
+  - Treat it as the first record to cite when a Chinese standard uses a level, ADS, ADAS, MRM, or remote-operation term.
+engineering_use_cn:
+  - 在编写 GB 合规矩阵、安全案例、对外产品语言和技术翻译时，把它作为中文术语基线。
+  - 用它检查产品命名和 HMI 文案是否混淆 ADAS、ADS、自动驾驶等级和远程运营概念。
+  - 向国际团队解释中外术语差异时，应与 SAE J3016 配合使用。
+  - 当中国标准使用等级、ADS、ADAS、MRM 或远程运营术语时，应优先引用该记录。
+expert_note_en: >-
+  GB/T 44373 is not technically exciting, but it is governance-critical. Many Chinese ADAS/ADS
+  disputes begin as terminology disputes, especially around L2, ADS, remote operation, and minimum
+  risk.
+expert_note_cn: >-
+  GB/T 44373 技术上不刺激，但治理上很关键。中国很多 ADAS/ADS 争议最早都是术语争议，尤其围绕 L2、ADS、远程运营和最小风险策略。
 impact_note: >-
   All Chinese ICV standards reference this vocabulary. Sole source for regulatory automation-level
   classification in China.
 related_standards:
   - SAE J3016
   - ISO 22737
+  - GB 44497-2024
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: voluntary
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official SAMR/SAC national standards page verified on 2026-05-04.

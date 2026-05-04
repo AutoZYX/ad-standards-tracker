@@ -1,5 +1,5 @@
 id: STD-ISO-2025-001
-date: '2025-03-24'
+date: '2025-06-12'
 org: ISO
 org_full: ISO TC22/SC33 Road Vehicles
 jurisdiction: international
@@ -21,18 +21,52 @@ summary_en: >-
   scenarios and generating concrete test cases from logical scenarios. Enables test case derivation
   from ODD taxonomy (34503) and scenario categorization (34504).
 summary_cn: ISO 34502/34503/34504 场景系列最新成员。规定场景评估方法论与从逻辑场景生成具体测试用例的方法。支持从 ODD 分类（34503）和场景分类（34504）派生测试用例。
-impact_note: ⚠️[请核实：34505:2025 具体发布日期]。补齐 ISO 场景驱动测试工具箱的最后一块拼图。与驭研科技航测数据的场景提取工作流对接。
+scope_en:
+  - Provides methodology for evaluating scenarios and generating concrete test cases from scenario material.
+  - Connects ODD specification, scenario categorization, and test-case derivation in the ISO 3450x scenario-testing series.
+  - Supports movement from logical scenario parameter spaces toward concrete executable tests.
+  - Helps structure how scenario relevance, coverage, and test selection are justified.
+scope_cn:
+  - 为场景评价以及从场景材料生成具体测试用例提供方法。
+  - 在 ISO 3450x 场景测试系列中连接 ODD 规范、场景分类和测试用例派生。
+  - 支撑从逻辑场景参数空间走向具体可执行测试。
+  - 帮助组织场景相关性、覆盖度和测试选择的论证。
+exclusions_en:
+  - Does not provide a universal pass/fail criterion for ADS safety.
+  - Does not make generated tests representative unless the underlying ODD, scenario library, and data distribution are valid.
+  - Does not replace real-world data, simulation validation, or operational monitoring.
+exclusions_cn:
+  - 不提供通用 ADS 安全通过/失败准则。
+  - 如果底层 ODD、场景库和数据分布不成立，生成测试并不会自动具有代表性。
+  - 不替代真实世界数据、仿真验证或运行监测。
+engineering_use_en:
+  - Use it to justify how logical scenarios become concrete tests in simulation, proving-ground, or replay-based validation.
+  - Link parameter ranges to naturalistic driving data, incident data, expert judgment, and ODD constraints.
+  - Track why each generated test case exists and which safety claim it supports.
+  - Use it with ISO 34502 to ensure test generation serves a safety-evaluation argument, not just test-count growth.
+engineering_use_cn:
+  - 用它说明逻辑场景如何转化为仿真、试验场或回放验证中的具体测试。
+  - 将参数范围连接到自然驾驶数据、事故数据、专家判断和 ODD 约束。
+  - 追踪每个生成测试用例存在的原因，以及它支撑哪一条安全声明。
+  - 与 ISO 34502 结合，确保测试生成服务于安全评价论证，而不是单纯增加测试数量。
+expert_note_en: >-
+  ISO 34505 is where scenario testing becomes evidence engineering. The key question is not how many
+  tests can be generated, but whether the generated tests are traceable to ODD, risk, and safety
+  claims.
+expert_note_cn: >-
+  ISO 34505 是场景测试进入证据工程的地方。关键问题不是能生成多少测试，而是这些测试能否追踪到 ODD、风险和安全声明。
+impact_note: 补齐 ISO 场景驱动测试工具箱的最后一块拼图。与驭研科技航测数据的场景提取、参数化和测试用例生成工作流直接对接。
 related_standards:
   - ISO 34502
   - ISO 34503
   - ISO 34504
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: published
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
-  subscription.
+  Official ISO catalog page verified on 2026-05-04. The page identifies ISO 34505:2025 as published
+  on 2025-06-12; full standard text may require purchase or subscription.

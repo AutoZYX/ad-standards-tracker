@@ -25,6 +25,40 @@ summary_en: >-
 summary_cn: >-
   对缔约方市场销售的车辆强制要求建立网络安全管理体系（CSMS）。车企须证明在开发、生产、交付后全生命周期的网络安全流程。欧盟 2022 年 7 月对新车型强制，2024 年 7
   月扩展到所有新销售车辆。
+scope_en:
+  - Establishes type-approval requirements for vehicle cybersecurity and the manufacturer's Cybersecurity Management System.
+  - Requires manufacturers to identify, assess, and manage cybersecurity risks across development, production, and post-production.
+  - Covers vehicle-type cybersecurity measures, organizational processes, monitoring, response, and evidence for approval authorities.
+  - Functions as the regulatory counterpart to ISO/SAE 21434 process work products.
+scope_cn:
+  - 为车辆网络安全和制造商网络安全管理体系（CSMS）建立型式批准要求。
+  - 要求制造商在开发、生产和量产后阶段识别、评估和管理网络安全风险。
+  - 覆盖车型级网络安全措施、组织流程、监测响应以及面向批准机构的证据。
+  - 是 ISO/SAE 21434 过程工作产品的法规侧对应物。
+exclusions_en:
+  - Does not prescribe one technical cybersecurity architecture for all vehicles.
+  - Does not replace software-update approval obligations under UN-R156.
+  - Does not make ISO/SAE 21434 legally binding by itself, although ISO/SAE 21434 is commonly used to generate supporting evidence.
+exclusions_cn:
+  - 不为所有车辆规定唯一网络安全技术架构。
+  - 不替代 UN-R156 下的软件升级批准义务。
+  - 它本身不直接让 ISO/SAE 21434 变成强制标准，但 ISO/SAE 21434 通常用于生成支撑证据。
+engineering_use_en:
+  - Use it as the approval-facing cybersecurity checklist for EU and UNECE contracting-party market entry.
+  - Maintain traceability from CSMS processes to vehicle-type evidence, including TARA, cybersecurity controls, monitoring, incident response, and supplier evidence.
+  - Cross-check any OTA, remote operation, V2X, cloud service, or AI-data pipeline against cybersecurity risk and post-production monitoring obligations.
+  - Treat cybersecurity issues that can affect vehicle behavior as safety-relevant and connect them to ISO 26262, ISO 21448, and safety-case evidence.
+engineering_use_cn:
+  - 将其作为进入欧盟及 UNECE 缔约方市场的网络安全准入检查框架。
+  - 保持 CSMS 流程到车型证据的追踪，包括 TARA、网络安全控制、监测、事件响应和供应商证据。
+  - 对 OTA、远程运营、V2X、云服务或 AI 数据链路，逐项检查网络安全风险和量产后监测义务。
+  - 凡是可能影响车辆行为的网络安全问题，都应视为安全相关，并连接到 ISO 26262、ISO 21448 和安全案例证据。
+expert_note_en: >-
+  UN-R155 changed cybersecurity from a technical discipline into an approval gate. For ADS/ADAS,
+  the weak point is usually not a missing control, but missing traceability from threat assumptions
+  to vehicle behavior and post-production monitoring.
+expert_note_cn: >-
+  UN-R155 把网络安全从技术专业变成了准入门槛。对 ADS/ADAS 来说，薄弱点通常不是少了某个控制措施，而是威胁假设、车辆行为和量产后监测之间缺少追踪。
 impact_note: >-
   This is the foundation of global automotive cybersecurity regulation. Non-compliance blocks EU
   market access. Precondition for UN-R156 (software updates) and UN-R157 (ALKS) compliance.
@@ -32,14 +66,15 @@ related_standards:
   - ISO/SAE 21434
   - UN-R156
   - UN-R157
+  - ISO 24089
 contributor: ROAM Core Team
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: blocked
 source_note: >-
-  Automated URL checks are blocked or time out for this source; keep the record with a blocked
-  status until manual browser verification is refreshed.
+  Official UNECE page retained. Automated URL checks are blocked or time out for this source; keep
+  blocked status unless manual browser verification is refreshed.

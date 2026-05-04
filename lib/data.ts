@@ -62,6 +62,7 @@ export function getDashboardStats(): DashboardStats {
   const byOrg: Record<string, number> = {};
   const topicCounts: Record<string, number> = {};
   let trustComplete = 0;
+  let knowledgeComplete = 0;
 
   for (const s of standards) {
     byCategory[categorize(s)] += 1;
@@ -86,6 +87,18 @@ export function getDashboardStats(): DashboardStats {
     ) {
       trustComplete += 1;
     }
+    if (
+      s.scope_en?.length ||
+      s.scope_cn?.length ||
+      s.exclusions_en?.length ||
+      s.exclusions_cn?.length ||
+      s.engineering_use_en?.length ||
+      s.engineering_use_cn?.length ||
+      s.expert_note_en ||
+      s.expert_note_cn
+    ) {
+      knowledgeComplete += 1;
+    }
     const year = s.date.substring(0, 4);
     byYear[year] = (byYear[year] || 0) + 1;
     byOrg[s.org] = (byOrg[s.org] || 0) + 1;
@@ -109,6 +122,7 @@ export function getDashboardStats(): DashboardStats {
     byEvidenceLevel,
     bySourceStatus,
     trustComplete,
+    knowledgeComplete,
     byYear,
     byOrg,
     topTopics,

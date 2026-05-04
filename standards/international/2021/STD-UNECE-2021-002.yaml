@@ -23,6 +23,40 @@ summary_en: >-
   OTA updates. Requires OEMs to document update impacts on homologated functions, ensure update
   integrity, and provide user notification.
 summary_cn: 要求型式认证车辆建立软件升级管理体系（SUMS），覆盖 OTA 升级。车企须记录升级对认证功能的影响、确保升级完整性、向用户提供通知。
+scope_en:
+  - Establishes approval requirements for a manufacturer's Software Update Management System and for software update processes affecting vehicle types.
+  - Covers software identification, update integrity, safe execution, user information, documentation, and assessment of impacts on approved vehicle functions.
+  - Applies to OTA and non-OTA software updates when they can affect type-approved systems or regulatory compliance.
+  - Works together with UN-R155 because software updates are both an engineering-change process and a cybersecurity exposure.
+scope_cn:
+  - 为制造商软件升级管理体系（SUMS）及影响车型的软件升级过程建立批准要求。
+  - 覆盖软件识别、升级完整性、安全执行、用户告知、文件记录，以及对已批准车辆功能影响的评估。
+  - 当 OTA 或非 OTA 软件升级可能影响型式批准系统或法规合规时，均应纳入。
+  - 与 UN-R155 配套，因为软件升级既是工程变更过程，也是网络安全暴露面。
+exclusions_en:
+  - Does not define detailed software engineering methods; ISO 24089 is the technical engineering companion.
+  - Does not authorize an OEM to change regulated functionality without assessing approval impact.
+  - Does not replace cybersecurity management obligations under UN-R155.
+exclusions_cn:
+  - 不定义详细软件工程方法；ISO 24089 是对应的技术工程配套标准。
+  - 不意味着 OEM 可以不评估准入影响就修改受监管功能。
+  - 不替代 UN-R155 下的网络安全管理义务。
+engineering_use_en:
+  - Use it as the approval gate for OTA governance, release management, update traceability, and regulatory impact assessment.
+  - For ADS/ADAS, require every software campaign to classify whether perception, planning, HMI, fallback, data recording, or ODD behavior changes.
+  - Connect release notes, safety impact analysis, cybersecurity impact analysis, user notification, rollback strategy, and post-release monitoring into one evidence chain.
+  - Pair it with ISO 24089 for engineering implementation and ISO/SAE 21434 for cybersecurity risk controls.
+engineering_use_cn:
+  - 将其作为 OTA 治理、版本发布管理、升级追踪和法规影响评估的准入门槛。
+  - 对 ADS/ADAS，每次软件升级都应分类判断是否改变感知、规划、HMI、fallback、数据记录或 ODD 行为。
+  - 将发布说明、安全影响分析、网络安全影响分析、用户告知、回滚策略和发布后监测连接成一条证据链。
+  - 与 ISO 24089 配合处理工程实现，与 ISO/SAE 21434 配合处理网络安全风险控制。
+expert_note_en: >-
+  UN-R156 is where software-defined vehicle ambition meets homologation discipline. The hard part is
+  not pushing an OTA package; it is proving that the update did not silently change the approved
+  safety, cybersecurity, or user-interaction assumptions.
+expert_note_cn: >-
+  UN-R156 是软件定义汽车愿景碰到准入纪律的地方。难点不是把 OTA 包推下去，而是证明升级没有悄悄改变已批准的安全、网络安全或用户交互假设。
 impact_note: >-
   Combined with UN-R155, this defines how OEMs can legally push OTA updates. Pony.ai's Beijing
   2025-05 fire incident (rare ADAS vehicle fire) would fall under incident reporting requirements
@@ -30,14 +64,15 @@ impact_note: >-
 related_standards:
   - UN-R155
   - ISO 24089
+  - ISO/SAE 21434
 contributor: ROAM Core Team
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: blocked
 source_note: >-
-  Automated URL checks are blocked or time out for this source; keep the record with a blocked
-  status until manual browser verification is refreshed.
+  Official UNECE page retained. Automated URL checks are blocked or time out for this source; keep
+  blocked status unless manual browser verification is refreshed.

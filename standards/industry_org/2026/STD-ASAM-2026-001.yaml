@@ -12,8 +12,9 @@ document_stage: published
 legal_force: voluntary
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official ASAM standard page verified on 2026-05-04.
 version: 2.2.0
 automation_level:
 - L1
@@ -27,10 +28,44 @@ topics:
 - sotif
 summary_en: Current ASAM OpenSCENARIO DSL release. Defines a domain-specific language and domain model for describing dynamic scenarios in simulation, X-in-the-loop, and proving-ground workflows.
 summary_cn: 当前 ASAM OpenSCENARIO DSL 版本，定义用于仿真、X-in-the-loop 和试验场工作流的动态场景描述领域专用语言和领域模型。
+scope_en:
+- Defines a domain-specific language and domain model for describing ADAS/AD scenarios.
+- Supports more abstract, parameterized, and reusable scenario authoring than traditional concrete XML-only descriptions.
+- Targets simulation, X-in-the-loop, and proving-ground workflows where logical scenarios and test generation matter.
+- Aligns naturally with ISO 34505-style movement from logical scenarios toward generated concrete tests.
+scope_cn:
+- 定义用于描述 ADAS/AD 场景的领域专用语言和领域模型。
+- 相比传统具体 XML 描述，更支持抽象化、参数化和可复用的场景编写。
+- 面向仿真、X-in-the-loop 和试验场工作流，尤其适合逻辑场景和测试生成。
+- 与 ISO 34505 从逻辑场景走向具体测试生成的思路天然衔接。
+exclusions_en:
+- Does not replace OpenSCENARIO XML where concrete, tool-compatible dynamic scenario files are required.
+- Does not decide scenario relevance, ODD coverage, or safety sufficiency by itself.
+- Does not remove the need to validate generated concrete scenarios in the target toolchain.
+exclusions_cn:
+- 当需要具体、工具兼容的动态场景文件时，它不替代 OpenSCENARIO XML。
+- 本身不判断场景相关性、ODD 覆盖度或安全充分性。
+- 不取消在目标工具链中验证生成具体场景的必要性。
+engineering_use_en:
+- Use it to author reusable logical scenario families before generating large concrete test sets.
+- Keep parameter definitions traceable to ODD, naturalistic data, incident data, and safety claims.
+- Pair it with OpenDRIVE for static road context and OSI for runtime interface assumptions.
+- Treat generated scenario volume as secondary; auditability of parameter space and safety rationale is primary.
+engineering_use_cn:
+- 在生成大规模具体测试集之前，用它编写可复用的逻辑场景族。
+- 将参数定义追踪到 ODD、自然驾驶数据、事故数据和安全声明。
+- 与 OpenDRIVE 配合提供静态道路上下文，与 OSI 配合处理运行时接口假设。
+- 生成场景数量是次要的；参数空间和安全理由的可审计性才是核心。
+expert_note_en: >-
+  OpenSCENARIO DSL is useful when a project stops asking for one scenario file and starts asking for
+  a scenario generation argument. That is exactly where safety validation becomes evidence
+  engineering.
+expert_note_cn: >-
+  当项目不再只要一个场景文件，而是需要解释“为什么这样生成场景”时，OpenSCENARIO DSL 才真正有用。这正是安全验证进入证据工程的地方。
 impact_note: Important for large-scale logical scenario generation and aligns strongly with ISO 34502/34503/34505 scenario-driven safety assurance.
 related_standards:
 - ASAM OpenDRIVE
 - ASAM OSI
 - ISO 34502
 - ISO 34505
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

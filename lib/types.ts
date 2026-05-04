@@ -150,6 +150,7 @@ export interface DashboardStats {
   byEvidenceLevel: Record<string, number>;
   bySourceStatus: Record<string, number>;
   trustComplete: number;
+  knowledgeComplete: number;
   byYear: Record<string, number>;
   byOrg: Record<string, number>;
   topTopics: { topic: string; count: number }[];

@@ -1,13 +1,13 @@
 id: STD-ISO-2023-003
-date: '2023-07-06'
+date: '2023-08-08'
 org: ISO
 jurisdiction: international
 type: standard
 status: in_force
 title_en: >-
-  ISO 34503:2023 — Road vehicles — Test scenarios for automated driving systems — Taxonomy for
-  operational design domain
-title_cn: ISO 34503:2023 道路车辆 自动驾驶系统测试场景 — 运行设计域（ODD）分类
+  ISO 34503:2023 — Road vehicles — Test scenarios for automated driving systems — Specification
+  for operational design domain
+title_cn: ISO 34503:2023 道路车辆 自动驾驶系统测试场景 — 运行设计域（ODD）规范
 url: https://www.iso.org/standard/78952.html
 automation_level:
   - L3
@@ -21,19 +21,52 @@ summary_en: >-
   vocabulary for OEM-regulator-supplier ODD exchange. Pairs with ISO 34502 (evaluation framework)
   and ISO 34504 (scenario categorization).
 summary_cn: 定义运行设计域（ODD）描述的分层分类体系。为 OEM、监管方、供应商之间的 ODD 交换提供通用词汇。与 ISO 34502（评估框架）和 ISO 34504（场景分类）配套。
+scope_en:
+  - Provides a specification approach and vocabulary for describing an ADS Operational Design Domain.
+  - Organizes ODD attributes so road type, environment, traffic, infrastructure, objects, weather, and other conditions can be described consistently.
+  - Supports exchange of ODD definitions among OEMs, suppliers, regulators, test labs, and scenario-database owners.
+  - Complements ISO 34502 and ISO 34504 by connecting scenario evaluation to the ADS operating boundary.
+scope_cn:
+  - 为描述 ADS 运行设计域（ODD）提供规范方法和词汇。
+  - 组织道路类型、环境、交通、基础设施、对象、天气等 ODD 属性，使运行边界能够被一致描述。
+  - 支撑 OEM、供应商、监管方、测试机构和场景库建设方之间交换 ODD 定义。
+  - 与 ISO 34502 和 ISO 34504 配套，把场景评价连接到 ADS 运行边界。
+exclusions_en:
+  - Does not prove that an ODD is safe; it specifies how to describe the ODD.
+  - Does not generate test cases by itself.
+  - Does not replace safety analysis, SOTIF, or regulatory approval of the ADS.
+exclusions_cn:
+  - 不证明某个 ODD 是安全的；它规定如何描述 ODD。
+  - 本身不生成测试用例。
+  - 不替代安全分析、SOTIF 或 ADS 准入批准。
+engineering_use_en:
+  - Use it at the start of SOTIF and safety-case work so every scenario, hazard, and residual-risk claim is tied to a clear ODD boundary.
+  - Convert product ODD claims into structured attributes before building scenario catalogues or test coverage metrics.
+  - Use ODD attribute gaps to find blind spots in simulation, closed-course testing, public-road testing, and field monitoring.
+  - For Chinese projects, map local mixed-traffic, VRU, weather, and infrastructure features into the ISO 34503 vocabulary before comparing with international evidence.
+engineering_use_cn:
+  - 在 SOTIF 和安全案例工作开始时使用，确保每个场景、危害和残余风险声明都绑定清晰 ODD 边界。
+  - 在建立场景库或测试覆盖指标前，先把产品 ODD 声明转化为结构化属性。
+  - 通过 ODD 属性缺口识别仿真、封闭场地、公开道路测试和运行监测中的盲区。
+  - 对中国项目，应先把混合交通、弱势交通参与者、天气和基础设施特点映射到 ISO 34503 词汇，再与国际证据比较。
+expert_note_en: >-
+  ISO 34503 is where vague ODD language becomes engineering evidence. If the ODD is not structured,
+  scenario coverage becomes impossible to audit.
+expert_note_cn: >-
+  ISO 34503 的价值，是把含糊的 ODD 说法变成工程证据。如果 ODD 没有结构化，场景覆盖度就无法审计。
 impact_note: SOTIF validation 的核心依赖 — ODD 是 SOTIF 分析的起点。ISO 34503 + 34502 + 34504 构成 ISO 场景驱动测试三件套。
 related_standards:
   - ISO 34502
   - ISO 34504
   - ISO 21448
   - SAE J3164
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
-  subscription.
+  Official ISO catalog page verified on 2026-05-04. The page identifies ISO 34503:2023 as published
+  on 2023-08-08; full standard text may require purchase or subscription.

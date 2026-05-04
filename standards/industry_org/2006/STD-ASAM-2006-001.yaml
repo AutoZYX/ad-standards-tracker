@@ -11,8 +11,9 @@ document_stage: in_force
 legal_force: voluntary
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official ASAM standard page verified on 2026-05-04.
 version: 1.8.1
 automation_level:
 - L1
@@ -27,9 +28,44 @@ summary_en: XML-based format for logical description of road networks. Includes 
   geometry, lane topology, signals, objects. Underpins virtually all AD simulation
   tools and HD map conversion pipelines. Originally released 2006, continuously evolving.
 summary_cn: 基于 XML 的逻辑路网描述格式。涵盖道路几何、车道拓扑、信号、对象等。几乎所有 AD 仿真工具和 HD 地图转换流水线的基础。2006 年首发，持续演进。
+scope_en:
+- Defines a standardized XML-based format for static road-network description.
+- Covers road geometry, lanes, road markings, signals, objects, and topology needed by simulation and traffic environments.
+- Supports synthetic roads, converted map data, and road data derived from real-world surveying or scans.
+- Provides the static environment layer used with dynamic scenario standards such as ASAM OpenSCENARIO.
+scope_cn:
+- 定义基于 XML 的静态路网描述标准格式。
+- 覆盖仿真和交通环境所需的道路几何、车道、道路标线、信号、对象和拓扑关系。
+- 支持合成道路、地图数据转换，以及由真实道路测绘或扫描转换得到的道路数据。
+- 为 ASAM OpenSCENARIO 等动态场景标准提供静态环境层。
+exclusions_en:
+- Does not describe dynamic maneuvers, actor behavior, triggers, or test pass/fail criteria.
+- Does not by itself guarantee that a converted HD map is geometrically or semantically valid.
+- Does not replace ODD definition or scenario relevance analysis.
+exclusions_cn:
+- 不描述动态机动、参与者行为、触发条件或测试通过/失败准则。
+- 不保证转换后的 HD 地图在几何或语义上一定有效。
+- 不替代 ODD 定义或场景相关性分析。
+engineering_use_en:
+- Use it as the static map layer when building simulation, replay, and proving-ground digital twins for ADAS/AD validation.
+- Check lane topology, junction connections, reference lines, signals, and object semantics before using scenarios as safety evidence.
+- Pair it with OpenSCENARIO XML/DSL for dynamic behavior and OSI for simulation interfaces.
+- For data-driven scenario extraction, treat map conversion quality as part of the evidence chain, not a tooling detail.
+engineering_use_cn:
+- 在构建 ADAS/AD 验证所需仿真、回放和试验场数字孪生时，将其作为静态地图层。
+- 在把场景作为安全证据前，检查车道拓扑、路口连接、参考线、信号和对象语义。
+- 与 OpenSCENARIO XML/DSL 配合描述动态行为，与 OSI 配合处理仿真接口。
+- 对数据驱动场景提取，应把地图转换质量视为证据链一部分，而不是工具细节。
+expert_note_en: >-
+  OpenDRIVE is not a safety standard, but bad OpenDRIVE data can destroy a safety argument. Scenario
+  validation depends on the static world being correct before dynamic behavior is even discussed.
+expert_note_cn: >-
+  OpenDRIVE 不是安全标准，但错误的 OpenDRIVE 数据会摧毁安全论证。场景验证在讨论动态行为之前，首先要求静态世界是正确的。
 impact_note: 与 OpenSCENARIO 配合构成场景仿真的静态 + 动态两大支柱。ASAM 官网显示当前版本为 1.8.1，发布日期 2024-11-21。
 related_standards:
 - ASAM OpenSCENARIO
 - ASAM OpenCRG
+- ASAM OSI
+- ISO 34503
 - NDS (Navigation Data Standard)
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

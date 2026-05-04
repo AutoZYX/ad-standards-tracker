@@ -39,6 +39,7 @@ const translations = {
   "dash.by_topic": { en: "Top Topics", zh: "热门主题" },
   "dash.data_health": { en: "Data Health", zh: "数据健康" },
   "dash.trust_complete": { en: "Trust fields complete", zh: "可信度字段完整" },
+  "dash.knowledge_complete": { en: "Knowledge fields enriched", zh: "专业解读已扩充" },
   "dash.evidence_mix": { en: "Evidence mix", zh: "证据等级分布" },
   "dash.source_health": { en: "Source health", zh: "链接状态分布" },
   "dash.health_note": {

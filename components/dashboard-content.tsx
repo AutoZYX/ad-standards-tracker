@@ -210,7 +210,7 @@ export default function DashboardContent({ stats, recent }: Props) {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
           <HealthBlock
             title={t("dash.trust_complete")}
             rows={[
@@ -218,6 +218,16 @@ export default function DashboardContent({ stats, recent }: Props) {
                 label: `${stats.trustComplete}/${stats.total}`,
                 count: stats.trustComplete,
                 pct: stats.total ? (stats.trustComplete / stats.total) * 100 : 0,
+              },
+            ]}
+          />
+          <HealthBlock
+            title={t("dash.knowledge_complete")}
+            rows={[
+              {
+                label: `${stats.knowledgeComplete}/${stats.total}`,
+                count: stats.knowledgeComplete,
+                pct: stats.total ? (stats.knowledgeComplete / stats.total) * 100 : 0,
               },
             ]}
           />

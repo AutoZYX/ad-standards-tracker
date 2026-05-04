@@ -21,16 +21,50 @@ summary_en: >-
   pre-crash + 5-second post-crash retention. Mandatory for all M1-class passenger cars since
   2022-01-01.
 summary_cn: 中国 EDR 强制性国标。规定最小数据元素、触发条件、碰撞前 15 秒 + 碰撞后 5 秒数据保存。2022-01-01 起对所有 M1 类乘用车强制。
+scope_en:
+  - Defines mandatory requirements for motor-vehicle event data recorders in China.
+  - Covers crash-event triggering, required data elements, pre-crash and post-crash recording windows, storage, and read-out.
+  - Applies as a baseline evidence mechanism for crash reconstruction in passenger vehicles.
+  - Provides the conventional EDR layer that later complements ADS-specific DSSAD requirements.
+scope_cn:
+  - 规定中国汽车事件数据记录系统的强制性要求。
+  - 覆盖碰撞事件触发、必要数据元素、碰撞前后记录窗口、存储和读取。
+  - 是乘用车碰撞事件复现的基础证据机制。
+  - 提供传统 EDR 层，后续与 ADS 专项 DSSAD 要求形成互补。
+exclusions_en:
+  - Does not define ADS state recording or automated-driving responsibility attribution by itself.
+  - Does not replace DSSAD requirements for L3/L4 automated driving.
+  - Does not solve evidence interpretation; recorded data still need event reconstruction and context analysis.
+exclusions_cn:
+  - 本身不定义 ADS 状态记录或自动驾驶责任归属。
+  - 不替代 L3/L4 自动驾驶的 DSSAD 要求。
+  - 不直接解决证据解读问题；记录数据仍需要事件复现和上下文分析。
+engineering_use_en:
+  - Use it as the crash-data baseline when investigating ADAS or ADS-related traffic events in China.
+  - Align EDR timestamps with camera, perception, HMI, DSSAD, OTA version, and operation logs where available.
+  - For L2/L2+ incidents, combine EDR evidence with DMS/HMI logs to analyze driver monitoring and misuse claims.
+  - For L3/L4 incidents, treat EDR and DSSAD as complementary evidence layers rather than substitutes.
+engineering_use_cn:
+  - 在分析中国 ADAS 或 ADS 相关交通事件时，把它作为碰撞数据基线。
+  - 尽可能将 EDR 时间戳与摄像头、感知、HMI、DSSAD、OTA 版本和运营日志对齐。
+  - 对 L2/L2+ 事件，应结合 EDR 与 DMS/HMI 日志分析驾驶员监测和误用问题。
+  - 对 L3/L4 事件，应把 EDR 和 DSSAD 视为互补证据层，而不是彼此替代。
+expert_note_en: >-
+  GB 39732 is basic, but not low value. In ADAS/ADS incidents, ordinary crash data often becomes the
+  anchor that allows higher-level logs to be time-aligned and trusted.
+expert_note_cn: >-
+  GB 39732 很基础，但价值不低。ADAS/ADS 事故中，普通碰撞数据往往是把高层日志对齐并建立可信度的锚点。
 impact_note: >-
   Precursor to GB 44497 (DSSAD). EDR data becoming key evidence in AD-related accident
   investigations.
 related_standards:
   - UN-R160
   - GB 44497-2024
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official SAMR/SAC national standards page verified on 2026-05-04.

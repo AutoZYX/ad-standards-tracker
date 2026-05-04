@@ -1,5 +1,5 @@
 id: STD-ISO-2023-002
-date: '2023-02-15'
+date: '2023-02-08'
 org: ISO
 jurisdiction: international
 type: standard
@@ -23,20 +23,56 @@ summary_en: >-
   lifecycle. Complements UN-R156 (SUMS). Covers update campaign design, integrity/authenticity
   verification, rollback, user interaction.
 summary_cn: 规定车辆软件更新系统在产品生命周期内的工程要求。与 UN-R156（SUMS）配套。涵盖更新活动设计、完整性/真实性校验、回滚、用户交互。
+scope_en:
+  - Provides engineering requirements for vehicle software updates throughout the lifecycle.
+  - Covers update package preparation, compatibility, integrity, authenticity, execution, recovery, record keeping, and user interaction.
+  - Applies to software update engineering across conventional E/E systems and software-defined ADAS/ADS platforms.
+  - Complements UN-R156 by translating approval-level SUMS expectations into engineering work products.
+scope_cn:
+  - 为车辆软件升级在全生命周期内的工程活动提供要求。
+  - 覆盖升级包准备、兼容性、完整性、真实性、执行、恢复、记录和用户交互。
+  - 适用于传统 E/E 系统，也适用于软件定义 ADAS/ADS 平台的软件升级工程。
+  - 与 UN-R156 配套，把 SUMS 准入层要求转化为工程工作产品。
+exclusions_en:
+  - Does not by itself grant regulatory approval for software updates.
+  - Does not replace cybersecurity engineering, although update authenticity and integrity are tightly connected to ISO/SAE 21434.
+  - Does not decide whether a changed function needs re-approval; that must be assessed under applicable regulation.
+exclusions_cn:
+  - 它本身不授予软件升级的法规批准。
+  - 不替代网络安全工程，尽管升级真实性和完整性与 ISO/SAE 21434 紧密相关。
+  - 不决定功能变更是否需要重新批准；该问题必须依据适用法规评估。
+engineering_use_en:
+  - "Use it to design the engineering workflow behind an OTA/SUMS process: release planning, dependency analysis, verification, deployment, rollback, and post-release monitoring."
+  - For ADS/ADAS updates, require explicit classification of safety-impacting changes to perception, planning, control, HMI, data recording, ODD, or fallback behavior.
+  - Link each update to safety analysis, cybersecurity analysis, test evidence, user communication, and field monitoring.
+  - Treat rollback and recovery as safety functions when an update can affect vehicle behavior.
+engineering_use_cn:
+  - "用它设计 OTA/SUMS 背后的工程流程：发布计划、依赖分析、验证、部署、回滚和发布后监测。"
+  - 对 ADS/ADAS 升级，应明确分类是否影响感知、规划、控制、HMI、数据记录、ODD 或 fallback 行为。
+  - 将每次升级连接到安全分析、网络安全分析、测试证据、用户沟通和现场监测。
+  - 当升级可能影响车辆行为时，应把回滚与恢复视为安全相关功能。
+expert_note_en: >-
+  ISO 24089 is the engineering half of software-update compliance. UN-R156 asks whether the
+  organization can govern updates; ISO 24089 asks whether the engineering workflow can execute them
+  without breaking approved assumptions.
+expert_note_cn: >-
+  ISO 24089 是软件升级合规的工程半边。UN-R156 问组织能不能管住升级；ISO 24089 问工程流程能不能在不破坏已批准假设的前提下执行升级。
 impact_note: >-
   Technical backbone enabling UN-R156 / China MIIT OTA rules compliance. Foundational for Robotaxi
   fleet software management.
 related_standards:
   - UN-R156
+  - UN-R155
   - ISO/SAE 21434
+  - ISO 26262
   - MIIT OTA Regulation
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
-  subscription.
+  Official ISO catalog page verified on 2026-05-04. The public page identifies ISO 24089:2023 as
+  published on 2023-02-08; full standard text may require purchase or subscription.
