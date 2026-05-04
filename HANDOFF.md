@@ -8,12 +8,12 @@
 
 ## 当前生产状态
 
-- 最新应用提交: 52b8d31 Tighten standards data quality and validation
-- 最新生产部署: dpl_3tFBioNQsHbiDHJtokuAjYCspBnU
-- Vercel 临时地址: https://ad-standards-tracker-5jnoehu7z-auto-zyx.vercel.app
+- 最新应用提交: 16d804a Remove weak KNCAP secondary update
+- 最新生产部署: dpl_5kmsBzpPfABRtPkZkahBzx5MSdFD
+- Vercel 临时地址: https://ad-standards-tracker-nd1dsywjq-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 99 个页面
-- 线上冒烟: 首页显示 56/86 专业解读进度；专题地图、深圳条例、SAE J3237、关于页均出现新内容；默认语言已改为中文；正式域名已 alias 到新部署
+- 线上冒烟: 首页显示 56/86 专业解读进度；专题地图、深圳条例、SAE J3237、MIIT 组合驾驶辅助报批稿、关于页均出现新内容；旧 KNCAP 2026 二级动态页返回 404；默认语言已改为中文；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
@@ -72,6 +72,7 @@
 - 第六批生产部署完成：`dpl_3tFBioNQsHbiDHJtokuAjYCspBnU`，已 alias 到 https://standards.autozyx.com。
 - 继续清理 Evidence C：删除 KNCAP 2026 车型投票二级动态 `INT-KNCAP-2026-001`，因为它不是正式 KNCAP 测评规程，也没有稳定官方技术源；当前仅保留 1 条 Evidence C，即用户明确要求跟踪的 MIIT 组合驾驶辅助报批稿动态。
 - 删除 KNCAP 2026 后验证通过：`pnpm validate:data` 86 records、`pnpm lint`、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 86 URLs、`pnpm build` 98 pages。
+- 删除 KNCAP 2026 后生产部署完成：`dpl_5kmsBzpPfABRtPkZkahBzx5MSdFD`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-03 已完成
 
