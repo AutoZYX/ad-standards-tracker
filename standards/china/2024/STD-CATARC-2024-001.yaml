@@ -24,15 +24,46 @@ summary_en: >-
 summary_cn: >-
   C-NCAP 现行版（2021 版三年更新）。扩展主动安全（车车/VRU AEB、弯道 ELK、车道支持系统），新增座舱监控（DMS、OMS）。被 C-NCAP 2027 迭代，2027
   版转向场景驱动范式。
+scope_en:
+  - Provides the current C-NCAP management rules and rating framework for the 2024 cycle.
+  - Covers crash safety, active safety, and increasingly relevant ADAS-related assessment items such as AEB, lane support, and occupant/cabin monitoring.
+  - Functions as a Chinese consumer-rating protocol, not a mandatory type-approval regulation.
+  - Serves as the baseline that C-NCAP 2027 builds upon with more scenario-driven intelligent-vehicle testing.
+scope_cn:
+  - 提供 C-NCAP 2024 周期的现行管理规则和评分框架。
+  - 覆盖碰撞安全、主动安全，以及 AEB、车道支持、乘员/座舱监测等与 ADAS 越来越相关的评价项目。
+  - 其性质是中国消费者测评规程，不是强制型式认证法规。
+  - 是 C-NCAP 2027 进一步走向场景驱动智能汽车测评的基线。
+exclusions_en:
+  - It does not replace MIIT mandatory GB requirements or vehicle type-approval rules.
+  - It is broader than ADAS alone; do not treat the whole protocol as an automated-driving standard.
+  - It should not be cited as C-NCAP 2027; the 2027 rules are a separate later-cycle update.
+exclusions_cn:
+  - 它不替代工信部强制性 GB 要求或整车型式认证规则。
+  - 它不只是 ADAS；不要把整个规程当成自动驾驶标准。
+  - 不应把它当作 C-NCAP 2027 引用；2027 版是后续独立周期更新。
+engineering_use_en:
+  - Use it as the China consumer-rating baseline for active safety and early ADAS product targets.
+  - Keep C-NCAP score targets separate from legal compliance targets, then map overlaps with GB and MIIT requirements.
+  - Translate AEB, lane support, and monitoring items into scenario libraries, sensor/HMI requirements, and validation evidence.
+  - Use the gap between 2024 and 2027 rules to plan migration from feature tests toward richer scenario-driven assessment.
+engineering_use_cn:
+  - 将其作为中国主动安全和早期 ADAS 产品目标的消费者测评基线。
+  - 将 C-NCAP 评分目标与法律合规目标分开，再映射与 GB、工信部要求的重叠部分。
+  - 把 AEB、车道支持和监测项目转化为场景库、传感器/HMI 要求和验证证据。
+  - 利用 2024 与 2027 规则之间的差异，规划从功能测试向更丰富场景驱动测评的迁移。
+expert_note_en: "C-NCAP 2024 is best read as a bridge: it still belongs to traditional NCAP, but it already shows the pressure that leads to C-NCAP 2027's intelligent-driving scenario expansion."
+expert_note_cn: "C-NCAP 2024 最适合被理解为桥梁：它仍属于传统 NCAP，但已经显露出推动 2027 版智能驾驶场景扩展的压力。"
 impact_note: 中国所有新车上市前的事实门槛之一。连接 GB 强标与更高阶场景测评的中间层。
 related_standards:
   - C-NCAP 2027 (draft)
   - GB AEB (upcoming mandatory)
   - Euro NCAP Protocol
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: rating_protocol
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official C-NCAP article page verified on 2026-05-04.

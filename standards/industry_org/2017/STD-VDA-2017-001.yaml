@@ -23,17 +23,47 @@ summary_en: >-
   tailored for automotive needs (prototype protection, data handling for connected vehicles).
   Managed by ENX Association.
 summary_cn: 汽车供应链信息安全事实评估标准。基于 ISO/IEC 27001 但针对汽车行业定制（原型保护、网联车辆数据处理）。由 ENX 协会管理。
+scope_en:
+  - Provides the VDA Information Security Assessment basis used in the TISAX assessment and exchange model.
+  - Targets automotive supply-chain information security, including protection needs around prototypes, connected-vehicle data, and supplier collaboration.
+  - Operates as an assessment and trust-exchange mechanism rather than a vehicle cybersecurity engineering process.
+  - Complements ISO/IEC 27001 and ISO/SAE 21434 in supplier qualification and data-handling governance.
+scope_cn:
+  - 提供用于 TISAX 评估与交换模式的 VDA 信息安全评估基础。
+  - 面向汽车供应链信息安全，包括原型保护、网联车辆数据和供应商协同中的保护需求。
+  - 它是评估和信任交换机制，而不是整车网络安全工程流程。
+  - 在供应商准入和数据处理治理中与 ISO/IEC 27001、ISO/SAE 21434 互补。
+exclusions_en:
+  - It is not an ADS safety standard and does not validate automated-driving behavior.
+  - It does not replace ISO/SAE 21434 cybersecurity engineering, threat analysis, or product security lifecycle work.
+  - A TISAX label is not proof that a specific vehicle function is cybersecure.
+exclusions_cn:
+  - 它不是 ADS 安全标准，不验证自动驾驶行为。
+  - 它不替代 ISO/SAE 21434 网络安全工程、威胁分析或产品安全生命周期工作。
+  - TISAX 标签不等于证明某个具体车辆功能是安全的。
+engineering_use_en:
+  - Use it for supplier information-security qualification and controlled exchange of assessment results.
+  - Keep organisational information-security evidence separate from product cybersecurity evidence, then map interfaces between them.
+  - For ADAS/ADS suppliers, connect TISAX controls to data handling, prototype protection, development environments, and operational-data access.
+  - Pair it with ISO/SAE 21434 and UN-R155 when building a full CSMS and supplier-security evidence chain.
+engineering_use_cn:
+  - 用它做供应商信息安全资质评估和评估结果受控交换。
+  - 将组织信息安全证据与产品网络安全证据分开，再映射二者接口。
+  - 对 ADAS/ADS 供应商，将 TISAX 控制连接到数据处理、原型保护、开发环境和运行数据访问。
+  - 建立完整 CSMS 和供应商安全证据链时，应与 ISO/SAE 21434、UN-R155 配套。
+expert_note_en: TISAX is often overclaimed in AD projects. It helps answer "can this partner handle sensitive information?" It does not answer "is this ADS function safe or cybersecure?"
+expert_note_cn: TISAX 在自动驾驶项目里常被过度引用。它回答的是“这个合作方能否处理敏感信息”，不是“这个 ADS 功能是否安全或网络安全”。
 impact_note: >-
-  大多数 OEM 要求 Tier 1/2 供应商达到 TISAX 认证。与 ISO/SAE 21434 cybersecurity engineering
-  互为补充（一个是过程认证，一个是工程过程）。
+  Important supply-chain trust mechanism for automotive information security; should be paired with product cybersecurity standards rather than treated as a substitute.
 related_standards:
   - ISO/IEC 27001
   - ISO/SAE 21434
   - UN-R155
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: voluntary
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official ENX/TISAX downloads page verified on 2026-05-04.

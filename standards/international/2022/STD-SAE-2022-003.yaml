@@ -21,20 +21,49 @@ summary_en: >-
   concepts including Remote Assistance (RA), where a remote human operator provides guidance to an
   ADS-DV without direct vehicle control. Foundation for industry-wide ADS architecture discussion.
 summary_cn: 为道路 ADS 提供参考功能架构的推荐性实践。定义了包括远程辅助（RA）在内的概念 — 远程操作员为 ADS-DV 提供指引但不直接控车。是行业级 ADS 架构讨论的基础文件。
+scope_en:
+  - Defines terms related to ADS reference functional architecture for on-road automated driving.
+  - Clarifies concepts such as remote assistance where a remote human provides guidance without directly controlling the ADS-dedicated vehicle.
+  - Supports common language for ADS architecture, operational support, fallback, and remote-support discussions.
+  - Helps separate remote assistance, remote driving, remote operation, and fleet operations.
+scope_cn:
+  - 定义道路自动驾驶 ADS 参考功能架构相关术语。
+  - 澄清远程辅助等概念，即远程人员为 ADS 专用车辆提供指导但不直接控车。
+  - 为 ADS 架构、运营支持、fallback 和远程支持讨论提供共同语言。
+  - 帮助区分远程辅助、远程驾驶、远程操作和车队运营。
+exclusions_en:
+  - It is a terminology and reference-architecture practice, not a regulation.
+  - It does not specify remote-control performance, communication latency, or operational authorisation requirements.
+  - It should not be used as proof that a remote operations concept is safe.
+exclusions_cn:
+  - 它是术语和参考架构推荐实践，不是法规。
+  - 它不规定远程控制性能、通信延迟或运营授权要求。
+  - 不应把它当作远程运营概念安全的证明。
+engineering_use_en:
+  - Use it to standardise language before designing remote assistance, fleet support, or ADS operations concepts.
+  - In safety cases, explicitly state whether a remote human is giving guidance, authorising a manoeuvre, supervising, or directly controlling motion.
+  - Keep communication latency, authority boundary, responsibility, and fallback assumptions separate for each remote-support concept.
+  - Pair it with ROAM incident taxonomy work where remote assistance or remote operation is a causal factor.
+engineering_use_cn:
+  - 在设计远程辅助、车队支持或 ADS 运营概念前，用它统一语言。
+  - 在安全案例中明确远程人员是在给建议、授权机动、监督，还是直接控制车辆运动。
+  - 对每类远程支持概念，分别管理通信延迟、权限边界、责任和 fallback 假设。
+  - 在 ROAM 事件分类中出现远程辅助或远程操作因子时，可与其配套使用。
+expert_note_en: The practical value of SAE J3131 is boundary discipline. Many "remote operation" debates are confused because assistance, supervision, and direct control are mixed together.
+expert_note_cn: SAE J3131 的实际价值是边界纪律。很多“远程运营”争议之所以混乱，是因为远程辅助、监督和直接控制被混在一起。
 impact_note: >-
-  Remote Assistance 概念的权威定义，与 Robotaxi 行业的远程操控实践（Waymo、Cruise、Zoox、百度 Apollo 等）直接相关。与 ROAM
-  事故数据库中"remote ops causal factor"分类高度契合。
+  Useful terminology base for remote assistance and ADS reference architecture; directly relevant to ROAM-style remote-operations incident taxonomy.
 related_standards:
   - ISO 5083
   - SAE J3237
   - SAE J3016
   - UN-R157
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: published
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
   Official catalog page is used for metadata; full standard text may require purchase or

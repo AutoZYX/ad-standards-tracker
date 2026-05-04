@@ -18,18 +18,47 @@ summary_en: >-
   Recommended practice for safety of prototype ADS during on-road testing. Safety driver
   qualification, test vehicle requirements, incident reporting, ODD management.
 summary_cn: 原型自动驾驶系统道路测试的安全建议实践，涵盖安全员资质、测试车辆要求、事件报告、ODD 管理。
+scope_en:
+  - Provides safety-relevant guidance for on-road testing of prototype ADS-equipped vehicles.
+  - Covers operational readiness topics such as test-driver or fallback-driver qualification, test-vehicle preparation, ODD controls, incident handling, and organisational procedures.
+  - Focuses on pre-deployment public-road testing rather than commercial driverless operation.
+  - Helps structure a test-safety management system for prototype ADS programmes.
+scope_cn:
+  - 为原型 ADS 车辆公开道路测试提供安全相关指南。
+  - 覆盖测试驾驶员或 fallback 驾驶员资质、测试车辆准备、ODD 控制、事件处理和组织流程等运行准备主题。
+  - 关注部署前公开道路测试，而不是商业无人化运营。
+  - 帮助原型 ADS 项目建立测试安全管理体系。
+exclusions_en:
+  - It is not a legal permit and does not replace state, national, or local road-test requirements.
+  - It does not certify ADS safety for commercial deployment.
+  - It should not be confused with closed-course facility safety guidance such as SAE J3247.
+exclusions_cn:
+  - 它不是法律许可，不替代州、国家或地方道路测试要求。
+  - 它不认证 ADS 可商业部署。
+  - 不应将其与 SAE J3247 这类封闭场地安全指南混淆。
+engineering_use_en:
+  - Use it to build public-road prototype test procedures before expanding ODD or removing fallback controls.
+  - Define test readiness, driver qualification, route approval, weather/environment limits, event escalation, and stop-test criteria.
+  - Connect test incident reporting to SOTIF unknown-scenario discovery and safety-case updates.
+  - Keep evidence that every public-road test was inside the approved ODD and operational envelope.
+engineering_use_cn:
+  - 在扩展 ODD 或移除 fallback 控制前，用它建立公开道路原型测试流程。
+  - 定义测试准备、驾驶员资质、路线批准、天气/环境边界、事件升级和停止测试准则。
+  - 将测试事件报告连接到 SOTIF 未知场景发现和安全案例更新。
+  - 保留每次公开道路测试都在批准 ODD 和运行包线内的证据。
+expert_note_en: SAE J3018 is not about proving the ADS is finished. It is about making sure the act of learning on public roads does not create unmanaged risk.
+expert_note_cn: SAE J3018 不是为了证明 ADS 已经完成，而是为了确保在公开道路上学习的过程本身不制造失控风险。
 impact_note: >-
-  Broadly followed by US/CA/AZ testing programs. Chinese national demonstration zones align on
-  similar principles.
+  Useful baseline for prototype ADS road-test governance and for comparing US-style testing guidance with Chinese demonstration-zone rules.
 related_standards:
   - SAE J3206
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: published
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
   Official catalog page is used for metadata; full standard text may require purchase or

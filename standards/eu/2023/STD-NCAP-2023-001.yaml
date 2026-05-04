@@ -18,19 +18,49 @@ summary_en: >-
   Assessment protocol rating L2 ADAS systems on driver engagement, assistance competence, and safety
   backup. First major scheme to publish consumer-facing ratings of partial automation. Tesla
   Autopilot, Mercedes ABC, BMW DAP all tested.
-summary_cn: 对 L2 辅助驾驶系统的消费者评分方案，从驾驶员参与、辅助能力、安全兜底三维度打分。首个主要公开 L2 评分的测评体系。特斯拉 Autopilot、奔驰 ABC、宝马 DAP 均已测评。
+summary_cn: 对 L2 辅助驾驶系统的消费者评分方案，从驾驶员参与、辅助能力、安全兜底三维度打分。是公开发布部分自动化消费者评级的代表性体系。
+scope_en:
+  - Provides Euro NCAP's assisted-driving consumer rating framework for SAE Level 2 systems.
+  - Evaluates assisted-driving balance across driver engagement, vehicle assistance, and safety backup.
+  - Targets partial automation misuse and overtrust risk, not only lane-keeping or adaptive-cruise performance.
+  - Sits beside legal frameworks such as UN-R79 and national ADAS rules, but is a market rating protocol.
+scope_cn:
+  - 提供 Euro NCAP 面向 SAE L2 系统的辅助驾驶消费者评级框架。
+  - 从驾驶员参与、车辆辅助和安全兜底三个维度评价辅助驾驶平衡性。
+  - 关注部分自动化的误用和过度信任风险，而不只是车道保持或自适应巡航性能。
+  - 与 UN-R79 和各国 ADAS 法规并行，但其本质是市场测评规程。
+exclusions_en:
+  - It is not type approval and does not authorise the system for road use.
+  - It does not apply to L3/L4 ADS where the fallback and responsibility model changes.
+  - It should not be used as the only evidence for SOTIF, misuse-control, or driver-monitoring safety claims.
+exclusions_cn:
+  - 它不是型式认证，不授权系统上路。
+  - 它不适用于 fallback 和责任模型发生变化的 L3/L4 ADS。
+  - 不应把它作为 SOTIF、误用控制或驾驶员监控安全声明的唯一证据。
+engineering_use_en:
+  - Use it to turn L2 product claims into testable requirements for driver engagement, assistance competence, and backup behaviour.
+  - Separate consumer-rating targets from legal compliance and internal safety release criteria.
+  - Map each rating item to HMI, DMS/OMS, perception, control, and fallback evidence.
+  - For China and EU comparison, align this record with C-NCAP 2024/2027, C-ICAP, and MIIT combined driving assistance requirements.
+engineering_use_cn:
+  - 用它把 L2 产品宣传转化为驾驶员参与、辅助能力和兜底行为的可测试要求。
+  - 将消费者评分目标与法律合规和内部安全发布准则分开。
+  - 将每个评分项映射到 HMI、DMS/OMS、感知、控制和 fallback 证据。
+  - 做中欧比较时，将其与 C-NCAP 2024/2027、C-ICAP 和工信部组合驾驶辅助要求对齐。
+expert_note_en: Euro NCAP's Assisted Driving protocol is important because it refuses to reward strong automation without strong driver engagement. That is the central L2 safety tradeoff.
+expert_note_cn: Euro NCAP 辅助驾驶规程的重要性在于，它不奖励“很强的自动化能力但很弱的驾驶员参与”。这正是 L2 安全的核心矛盾。
 impact_note: >-
-  Strong market impact. Chinese OEMs entering EU must pass Euro NCAP. China's C-NCAP and i-VISTA use
-  similar methodology.
+  Strong market impact for L2 feature design and misuse-control expectations; should be compared with C-NCAP, C-ICAP, and i-VISTA rather than treated as law.
 related_standards:
   - C-NCAP
   - i-VISTA
   - UN-R79
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: rating_protocol
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official Euro NCAP assisted-driving protocol page verified on 2026-05-04.

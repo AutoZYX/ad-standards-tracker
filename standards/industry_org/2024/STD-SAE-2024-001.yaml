@@ -21,6 +21,36 @@ summary_en: >-
   vehicle testing. Covers test facility hazards, risk identification, and safety procedures for
   proving-ground style ADS testing.
 summary_cn: SAE 推荐实践，面向开展 ADS 及 ADS 车辆测试的测试场地，给出测试场风险识别、危险控制与安全实践要求。
+scope_en:
+  - Provides recommended safety practices for facilities that conduct ADS or ADS-operated vehicle testing.
+  - Focuses on proving-ground and controlled-facility hazards, risk identification, operational controls, and facility safety procedures.
+  - Supports scenario-based testing where multiple actors, targets, equipment, and personnel may interact with ADS test vehicles.
+  - Complements ISO 22133 and ISO 34505 by addressing facility safety around test execution.
+scope_cn:
+  - 为开展 ADS 或 ADS 车辆测试的场地提供安全实践建议。
+  - 关注试验场和受控场地危险、风险识别、运营控制和场地安全流程。
+  - 支撑多参与者、目标物、设备和人员与 ADS 测试车辆交互的场景测试。
+  - 与 ISO 22133、ISO 34505 互补，关注测试执行周边的场地安全。
+exclusions_en:
+  - It is not an ADS performance standard or type-approval regulation.
+  - It does not define the complete scenario catalogue to be tested.
+  - It does not replace facility-specific risk assessment, emergency response planning, or local safety procedures.
+exclusions_cn:
+  - 它不是 ADS 性能标准或型式认证法规。
+  - 它不定义完整待测试场景库。
+  - 它不替代场地特定风险评估、应急响应计划或本地安全流程。
+engineering_use_en:
+  - Use it before executing closed-course ADS tests, especially high-speed, multi-actor, or failure-injection scenarios.
+  - Build safety gates for test readiness, personnel zones, target control, abort authority, communications, and emergency response.
+  - Keep facility hazards separate from ADS hazards, then manage the interface between them.
+  - Record facility controls as part of the V&V evidence package because unsafe test execution can invalidate test results.
+engineering_use_cn:
+  - 在执行封闭场地 ADS 测试前使用，尤其是高速、多参与者或故障注入场景。
+  - 建立测试准备、人员区域、目标物控制、终止权限、通信和应急响应安全门。
+  - 将场地危险与 ADS 危险分开，再管理二者接口。
+  - 将场地控制纳入验证确认证据包，因为不安全的测试执行会使测试结果失去可信度。
+expert_note_en: SAE J3247 reminds teams that a dangerous test is not good evidence. For ADS validation, facility safety is part of evidence quality.
+expert_note_cn: SAE J3247 提醒团队，危险的测试不是好证据。对 ADS 验证来说，场地安全本身就是证据质量的一部分。
 impact_note: >-
   Directly relevant to closed-course ADS validation and to scenario-driven proving-ground
   operations.
@@ -28,12 +58,12 @@ related_standards:
   - SAE J3018
   - ISO 22133
   - ISO 34505
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'
 document_stage: published
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
   Official catalog page is used for metadata; full standard text may require purchase or

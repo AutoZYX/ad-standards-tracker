@@ -23,18 +23,48 @@ summary_en: >-
   ASAM OpenDRIVE (static road network) to enable scenario-based ADAS/AD simulation. De-facto global
   standard for scenario exchange.
 summary_cn: 首个行业级驾驶场景动态内容描述标准。与 OpenDRIVE（静态路网）配合，支撑基于场景的 ADAS/AD 仿真。事实上的全球场景交换标准。
+scope_en:
+  - Defines XML-based dynamic scenario descriptions for driving simulation and test automation.
+  - Covers actors, actions, maneuvers, triggers, conditions, and scenario flow for concrete executable scenarios.
+  - Works with OpenDRIVE for static road networks and related ASAM standards for simulation toolchain integration.
+  - Remains important for concrete scenario exchange even as OpenSCENARIO DSL supports more abstract scenario generation.
+scope_cn:
+  - 定义基于 XML 的驾驶仿真和测试自动化动态场景描述。
+  - 覆盖参与者、动作、机动、触发条件、条件判断和具体可执行场景流程。
+  - 与 OpenDRIVE 静态道路网络以及相关 ASAM 标准配合，用于仿真工具链集成。
+  - 即使 OpenSCENARIO DSL 更适合抽象场景生成，它仍然对具体场景交换很重要。
+exclusions_en:
+  - It does not define ODD taxonomy or scenario relevance by itself.
+  - It does not prove scenario coverage or safety sufficiency.
+  - It should not be used as a substitute for logical scenario generation when parameter-space reasoning is required.
+exclusions_cn:
+  - 它本身不定义 ODD 分类或场景相关性。
+  - 它不证明场景覆盖或安全充分性。
+  - 当需要参数空间推理时，不应把它替代逻辑场景生成方法。
+engineering_use_en:
+  - Use it for concrete executable scenarios that must be exchanged across simulation tools.
+  - Keep generated XML scenarios traceable to ODD, logical scenario families, parameter choices, and expected safety claims.
+  - Pair it with OpenDRIVE for road geometry and with OSI when runtime interfaces must be controlled.
+  - Treat OpenSCENARIO XML as the execution artifact; keep the safety rationale in a higher-level scenario model or test plan.
+engineering_use_cn:
+  - 用它表达需要跨仿真工具交换的具体可执行场景。
+  - 将生成的 XML 场景追踪到 ODD、逻辑场景族、参数选择和预期安全声明。
+  - 与 OpenDRIVE 配合表达道路几何，与 OSI 配合控制运行时接口。
+  - 将 OpenSCENARIO XML 视为执行产物；安全理由应保留在更高层场景模型或测试计划中。
+expert_note_en: OpenSCENARIO XML is a file format for evidence execution, not the evidence argument itself. The audit trail must explain why those concrete files were generated.
+expert_note_cn: OpenSCENARIO XML 是证据执行文件格式，不是证据论证本身。审计链必须解释为什么生成这些具体文件。
 impact_note: >-
-  用于 CARLA、VTD、Prescan、LGSVL 等主流仿真器。OpenSCENARIO 2.0 已进入 DSL 架构，更适合大规模逻辑场景生成。与 ISO 34503 ODD 分类和 ISO
-  34502 场景框架协同。
+  Concrete scenario exchange layer in the ASAM scenario toolchain. Use alongside OpenSCENARIO DSL, OpenDRIVE, OSI, ISO 34502, and ISO 34505.
 related_standards:
   - ASAM OpenDRIVE
   - ASAM OpenCRG
   - ISO 34502
   - ISO 34503
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: voluntary
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official ASAM OpenSCENARIO page verified on 2026-05-04.

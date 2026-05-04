@@ -23,17 +23,47 @@ summary_en: >-
 summary_cn: >-
   AUTOSAR 面向 L3+ 自动驾驶高性能 ECU 的解决方案。基于 POSIX 操作系统（通常 Linux/PikeOS）、面向服务架构（SOA）、动态绑定。Classic 平台处理实时
   ECU（发动机、制动），Adaptive 处理计算密集型功能（感知、规划）。
+scope_en:
+  - Defines AUTOSAR's platform approach for high-performance, service-oriented automotive software.
+  - Supports compute-intensive applications such as perception, planning, connectivity, update handling, diagnostics, and vehicle-central computing.
+  - Complements AUTOSAR Classic rather than replacing deeply embedded real-time ECU software.
+  - Provides software-architecture infrastructure relevant to L2+ ADAS and L3/L4 ADS development.
+scope_cn:
+  - 定义 AUTOSAR 面向高性能、服务化汽车软件的平台方案。
+  - 支撑感知、规划、连接、更新处理、诊断和整车中央计算等计算密集型应用。
+  - 与 AUTOSAR Classic 互补，而不是替代深嵌入式实时 ECU 软件。
+  - 为 L2+ ADAS 和 L3/L4 ADS 开发提供相关软件架构基础设施。
+exclusions_en:
+  - It is not a safety standard like ISO 26262 and does not by itself prove functional safety.
+  - It is not a cybersecurity engineering standard like ISO/SAE 21434.
+  - It does not define ADS behavior, ODD, scenarios, or type-approval evidence.
+exclusions_cn:
+  - 它不是 ISO 26262 这样的安全标准，本身不证明功能安全。
+  - 它不是 ISO/SAE 21434 这样的网络安全工程标准。
+  - 它不定义 ADS 行为、ODD、场景或准入证据。
+engineering_use_en:
+  - Use it to structure the runtime and service architecture of central-compute ADAS/ADS platforms.
+  - Keep safety mechanisms, cybersecurity controls, update mechanisms, and diagnostic services traceable to ISO 26262 and ISO/SAE 21434 work products.
+  - Separate architecture compliance from safety release evidence; an AUTOSAR-based implementation still needs item-specific safety analysis.
+  - Pay attention to dynamic service discovery, timing, fault containment, and degradation because they affect safety even when the platform is not a safety standard.
+engineering_use_cn:
+  - 用它组织中央计算 ADAS/ADS 平台的运行时和服务架构。
+  - 将安全机制、网络安全控制、更新机制和诊断服务追踪到 ISO 26262 与 ISO/SAE 21434 工作产品。
+  - 区分架构合规与安全发布证据；基于 AUTOSAR 的实现仍需具体 item 安全分析。
+  - 关注动态服务发现、时序、故障隔离和降级，因为它们即便不属于平台标准本身，也会影响安全。
+expert_note_en: AUTOSAR Adaptive is infrastructure, not a safety argument. Its value for AD safety depends on how teams bind the architecture to timing, degradation, diagnostics, and safety mechanisms.
+expert_note_cn: AUTOSAR Adaptive 是基础设施，不是安全论证。它对自动驾驶安全的价值，取决于团队如何把架构与时序、降级、诊断和安全机制绑定起来。
 impact_note: >-
-  中国主机厂（蔚来、小鹏、理想、比亚迪）几乎均在 Adaptive Platform 基础上搭建自研中央计算平台。与 ISO 26262 功能安全、ISO/SAE 21434
-  cybersecurity 要求协同。
+  Important software architecture layer for central-compute ADAS/ADS platforms; must be used together with ISO 26262 and ISO/SAE 21434 rather than treated as safety proof.
 related_standards:
   - ISO 26262
   - ISO/SAE 21434
   - AUTOSAR Classic
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: voluntary
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official AUTOSAR Adaptive Platform page verified on 2026-05-04.
