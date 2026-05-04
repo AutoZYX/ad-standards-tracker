@@ -8,24 +8,24 @@
 
 ## 当前生产状态
 
-- 最新应用提交: abe0ce1 Enrich type approval and assessment protocol records
-- 最新生产部署: dpl_4CtGZVwHQAcjTHH9L41xGpgniCEt
-- Vercel 临时地址: https://ad-standards-tracker-gvhzcajvk-auto-zyx.vercel.app
+- 最新应用提交: dffa3ec Consolidate AI Act and enrich L4 governance records
+- 最新生产部署: dpl_iS7XcgeCKWRHdnUV2X33No1rj2Ti
+- Vercel 临时地址: https://ad-standards-tracker-7oayewjah-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 105 个页面
-- 线上冒烟: 首页显示 36/93 专业解读进度；EU 2022/1426、Euro NCAP 2026-2028、JNCAP 官方动态详情页均出现新知识字段；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
+- 线上冒烟: 首页显示 44/92 专业解读进度；AI Act 正本、德国 AFGBV、UN-R152 详情页均出现新知识字段；旧 AI Act 重复页 `STD-EC-2024-001` 返回 404；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
 
-- 总记录数: 93
-- 唯一 ID: 93
-- trust 字段完整度: 93/93
+- 总记录数: 92
+- 唯一 ID: 92
+- trust 字段完整度: 92/92
 - evidence_level 分布: A 56，B 35，C 2，D 0
-- source_status 分布: verified 54，paywalled 18，blocked 21，broken 0，unverified 0
-- legal_force 分布: guidance 16，voluntary 27，binding 26，rating_protocol 5，informational 13，best_practice 6
-- 已扩充 know-how 字段记录: 36/93
-- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 93 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
+- source_status 分布: verified 53，paywalled 18，blocked 21，broken 0，unverified 0
+- legal_force 分布: guidance 16，voluntary 27，binding 25，rating_protocol 5，informational 13，best_practice 6
+- 已扩充 know-how 字段记录: 44/92
+- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 92 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
 
 ## 2026-05-04 已完成
 
@@ -51,6 +51,11 @@
 - 核实 C-ICAP 页面标题为 `C-ICAP(1.1版)管理规则`，并补充附录 A/B/C 的工程边界。
 - 全量 URL 检查重新通过：`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 返回 93 URLs passed；IEEE 2846、IEEE 3321、NHTSA SGO PDF 的自动化受阻状态已改为 `blocked`，避免把反爬/Cloudflare/Akamai 误判成坏链。
 - 第三批生产部署完成：`dpl_4CtGZVwHQAcjTHH9L41xGpgniCEt`，已 alias 到 https://standards.autozyx.com。
+- 第四批删除 EU AI Act 重复记录 `STD-EC-2024-001`，将汽车 AI 影响沉淀到正本 `STD-EC-2024-002`，避免一部法规在标准库中出现两次。
+- 第四批扩充 8 条记录：EU AI Act 正本、德国 StVG L4 法、德国 AFGBV、日本 NPA 特定自动运行、NHTSA ADS 专用车辆乘员保护、UN-R152、UN-R159、UN-R160。
+- 修正 UN-R152 摘要中 car-to-cyclist 缩写混用问题，避免将 cyclist 场景也写成 C2C。
+- 第四批验证通过：`pnpm validate:data` 92 records、`pnpm lint`、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 92 URLs、`pnpm build` 104 pages。
+- 第四批生产部署完成：`dpl_iS7XcgeCKWRHdnUV2X33No1rj2Ti`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-03 已完成
 
@@ -89,10 +94,10 @@ pnpm build
 
 当前结果:
 
-- `pnpm validate:data`: 通过，93 records，93 unique ids
+- `pnpm validate:data`: 通过，92 records，92 unique ids
 - `pnpm lint`: 通过
-- `pnpm check:urls`: 通过，93 URLs
-- `pnpm build`: 通过，105 pages
+- `pnpm check:urls`: 通过，92 URLs
+- `pnpm build`: 通过，104 pages
 
 ## 关键架构
 
