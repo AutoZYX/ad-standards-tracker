@@ -8,12 +8,12 @@
 
 ## 当前生产状态
 
-- 最新应用提交: dffa3ec Consolidate AI Act and enrich L4 governance records
-- 最新生产部署: dpl_iS7XcgeCKWRHdnUV2X33No1rj2Ti
-- Vercel 临时地址: https://ad-standards-tracker-7oayewjah-auto-zyx.vercel.app
+- 最新应用提交: d37dd70 Enrich assessment and testing implementation standards
+- 最新生产部署: dpl_Bntg1GKDgPSYpf27Viqu25j7vpKx
+- Vercel 临时地址: https://ad-standards-tracker-6psjdcw30-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 105 个页面
-- 线上冒烟: 首页显示 44/92 专业解读进度；AI Act 正本、德国 AFGBV、UN-R152 详情页均出现新知识字段；旧 AI Act 重复页 `STD-EC-2024-001` 返回 404；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
+- 线上冒烟: 首页显示 52/92 专业解读进度；C-NCAP 2024、AUTOSAR Adaptive、SAE J3131 详情页均出现新知识字段；旧 AI Act 重复页 `STD-EC-2024-001` 返回 404；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
@@ -24,7 +24,7 @@
 - evidence_level 分布: A 56，B 35，C 2，D 0
 - source_status 分布: verified 53，paywalled 18，blocked 21，broken 0，unverified 0
 - legal_force 分布: guidance 16，voluntary 27，binding 25，rating_protocol 5，informational 13，best_practice 6
-- 已扩充 know-how 字段记录: 44/92
+- 已扩充 know-how 字段记录: 52/92
 - URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 92 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
 
 ## 2026-05-04 已完成
@@ -56,6 +56,10 @@
 - 修正 UN-R152 摘要中 car-to-cyclist 缩写混用问题，避免将 cyclist 场景也写成 C2C。
 - 第四批验证通过：`pnpm validate:data` 92 records、`pnpm lint`、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 92 URLs、`pnpm build` 104 pages。
 - 第四批生产部署完成：`dpl_iS7XcgeCKWRHdnUV2X33No1rj2Ti`，已 alias 到 https://standards.autozyx.com。
+- 第五批扩充 8 条工程实施层记录：C-NCAP 2024、Euro NCAP Assisted Driving v1.2、ASAM OpenSCENARIO 1.0、AUTOSAR Adaptive Platform、VDA ISA/TISAX、SAE J3247、SAE J3018、SAE J3131。
+- 第五批清理了若干容易过度引用的表述：AUTOSAR Adaptive 不再暗示特定中国 OEM 使用情况；Euro NCAP ADG 不再列具体车型品牌作为论据；VDA/TISAX 明确为供应链信息安全评估，不是 ADS 产品安全证明。
+- 第五批验证通过：`pnpm validate:data` 92 records、`pnpm lint`、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 92 URLs、`pnpm build` 104 pages。
+- 第五批生产部署完成：`dpl_Bntg1GKDgPSYpf27Viqu25j7vpKx`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-03 已完成
 
