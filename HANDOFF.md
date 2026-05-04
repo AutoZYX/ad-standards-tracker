@@ -1,31 +1,32 @@
 # AD Standards Tracker — 技术交接
 
 最后更新: 2026-05-04
-状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据准确性审计，并开始把标准详情页升级为带工程 know-how 的安全知识库
+状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据准确性审计；正式标准/法规类记录已全部补齐工程 know-how 字段
 仓库: https://github.com/AutoZYX-Labs/ad-standards-tracker
 生产站: https://standards.autozyx.com
 本地路径: /Users/zyx/Desktop/WorkToDo/ad-standards-tracker/
 
 ## 当前生产状态
 
-- 最新应用提交: d37dd70 Enrich assessment and testing implementation standards
-- 最新生产部署: dpl_Bntg1GKDgPSYpf27Viqu25j7vpKx
-- Vercel 临时地址: https://ad-standards-tracker-6psjdcw30-auto-zyx.vercel.app
+- 最新应用提交: 52b8d31 Tighten standards data quality and validation
+- 最新生产部署: dpl_3tFBioNQsHbiDHJtokuAjYCspBnU
+- Vercel 临时地址: https://ad-standards-tracker-5jnoehu7z-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
-- 本地生产构建: 通过，Next.js 生成 105 个页面
-- 线上冒烟: 首页显示 52/92 专业解读进度；C-NCAP 2024、AUTOSAR Adaptive、SAE J3131 详情页均出现新知识字段；旧 AI Act 重复页 `STD-EC-2024-001` 返回 404；`/standards/STD-SAC-2025-001` 返回 404；正式域名已 alias 到新部署
+- 本地生产构建: 通过，Next.js 生成 99 个页面
+- 线上冒烟: 首页显示 56/87 专业解读进度；专题地图、深圳条例、SAE J3237、关于页均出现新内容；默认语言已改为中文；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
 
-- 总记录数: 92
-- 唯一 ID: 92
-- trust 字段完整度: 92/92
-- evidence_level 分布: A 56，B 35，C 2，D 0
-- source_status 分布: verified 53，paywalled 18，blocked 21，broken 0，unverified 0
-- legal_force 分布: guidance 16，voluntary 27，binding 25，rating_protocol 5，informational 13，best_practice 6
-- 已扩充 know-how 字段记录: 52/92
-- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 92 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
+- 总记录数: 87
+- 唯一 ID: 87
+- trust 字段完整度: 87/87
+- evidence_level 分布: A 51，B 34，C 2，D 0
+- source_status 分布: verified 53，paywalled 17，blocked 17，broken 0，unverified 0
+- legal_force 分布: guidance 16，voluntary 24，binding 23，rating_protocol 5，informational 12，best_practice 7
+- 已扩充 know-how 字段记录: 56/87
+- 正式标准/法规 know-how 缺口: 0
+- URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 87 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
 
 ## 2026-05-04 已完成
 
@@ -60,6 +61,15 @@
 - 第五批清理了若干容易过度引用的表述：AUTOSAR Adaptive 不再暗示特定中国 OEM 使用情况；Euro NCAP ADG 不再列具体车型品牌作为论据；VDA/TISAX 明确为供应链信息安全评估，不是 ADS 产品安全证明。
 - 第五批验证通过：`pnpm validate:data` 92 records、`pnpm lint`、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 92 URLs、`pnpm build` 104 pages。
 - 第五批生产部署完成：`dpl_Bntg1GKDgPSYpf27Viqu25j7vpKx`，已 alias 到 https://standards.autozyx.com。
+- 第六批质量收敛删除 5 条重复/过期/源头不够硬的正式库记录：旧 UN-R156 种子、旧 SAE J3018、重复 UN-R157 修订记录、KATS ISO 21448 采标记录、UL 4600 第一版；当前保留可核验主记录。
+- 第六批删除全部历史 `scripts/seed-*.py`，避免旧 MVP seed 脚本中的 `请核实`、旧 ID 或不可靠条目被误跑回标准库。
+- 第六批补齐剩余正式标准/法规 know-how 字段：深圳经济特区智能网联汽车管理条例、SAE J3237、韩国自动驾驶汽车商业化促进法、韩国 L4 性能认证与适合性批准制度。
+- 修正 SAE J3237：从 WIP 改为已发布 SAE J3237 官方 catalog，发布日期/实施日期为 2025-01-08；标题改为 Dynamic Driving Task Assessment Metrics。
+- 修正深圳条例链接状态：官方深圳政府公报正文可访问，`tools/check-urls.mjs` 增加 curl fallback，以处理 Node fetch 的 TLS/反爬误报。
+- 默认语言从英文改为中文，符合面向国内公众号/Blog 推广的第一屏预期；右上角仍可切换 EN。
+- README、关于页、crawler 文档、Ask 系统上下文同步清理旧 TODO/WIP/请核实 表述；关于页数据源分类改为国家/国际标准制定组织与行业标准组织两层。
+- 第六批验证通过：`pnpm validate:data` 87 records、`pnpm lint`、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 87 URLs、`pnpm build` 99 pages。
+- 第六批生产部署完成：`dpl_3tFBioNQsHbiDHJtokuAjYCspBnU`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-03 已完成
 
@@ -98,10 +108,10 @@ pnpm build
 
 当前结果:
 
-- `pnpm validate:data`: 通过，92 records，92 unique ids
+- `pnpm validate:data`: 通过，87 records，87 unique ids
 - `pnpm lint`: 通过
-- `pnpm check:urls`: 通过，92 URLs
-- `pnpm build`: 通过，104 pages
+- `pnpm check:urls`: 通过，87 URLs
+- `pnpm build`: 通过，99 pages
 
 ## 关键架构
 
