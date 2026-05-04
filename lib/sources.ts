@@ -215,7 +215,7 @@ export const SOURCES: SourceInfo[] = [
     category: "industry_org",
     language: "EN",
     description_en:
-      "Industry-led safety science organization. Publishes UL 4600 — Standard for Safety for the Evaluation of Autonomous Products. First goal-based safety case standard designed for fully autonomous operation.",
+      "Industry-led safety science organization. Publishes UL 4600 — Standard for Evaluation of Autonomous Products. First goal-based safety case standard designed for fully autonomous operation.",
     description_cn:
       "行业主导的安全科学组织。发布 UL 4600《自动驾驶产品安全评估标准》，首个面向完全无人驾驶场景的目标导向式安全案例标准。",
     crawl_difficulty: "easy",

@@ -33,10 +33,45 @@ summary_en: 'Report-for-Approval draft of the mandatory GB standard for L2 combi
   2025-09-17 to 2025-11-15.'
 summary_cn: L2 组合驾驶辅助强制性国标报批稿。第二轮公开征求意见期：2026-04-16 至 2026-04-22。覆盖基础单车道、基础多车道、导航组合驾驶辅助三类系统，规定使用说明、驾驶员培训、驾驶员状态监测、脱手脱眼多次后系统自动禁用等要求。拟
   2027-01-01 对所有新申请准入的车型强制实施。首轮征求意见稿于 2025-09-17 至 2025-11-15 期间公开。
+scope_en:
+- Covers a report-for-approval draft of a future mandatory GB for L2 combined driving assistance safety requirements.
+- Distinguishes basic single-lane, basic multi-lane, and navigation combined driving assistance systems.
+- Public reporting says it covers usage instructions, driver training, driver monitoring, misuse prevention, and automatic disabling after repeated hand/eye disengagement events.
+- Targets new type approvals from the proposed implementation date, but remains non-binding until final GB publication.
+scope_cn:
+- 覆盖 L2 组合驾驶辅助系统安全要求强制性国家标准报批稿。
+- 区分基础单车道、基础多车道、导航组合驾驶辅助三类系统。
+- 公开报道显示其覆盖使用说明、驾驶员培训、驾驶员监测、误用防控，以及多次脱手/脱眼后的系统自动禁用。
+- 拟面向新申请准入车型实施，但在最终 GB 发布前仍不具强制效力。
+exclusions_en:
+- It is not an L3/L4 ADS standard and should not be grouped with driverless ADS approval requirements.
+- Because the current tracker source is Xinhua rather than a stable MIIT/SAC primary link, technical details must be re-checked when the official draft or final GB is available.
+- It does not replace C-NCAP rating protocols; one is an approval baseline, the other is a market assessment protocol.
+exclusions_cn:
+- 它不是 L3/L4 自动驾驶系统标准，不应与无人驾驶 ADS 准入要求混在一起。
+- 当前记录保留的是新华社二级来源，不是稳定的工信部/国标委原始链接；技术细节需在官方稿或最终 GB 可用时复核。
+- 它不替代 C-NCAP 测评规程；前者是准入底线，后者是市场评价。
+engineering_use_en:
+- Treat it as the highest-priority China L2/L2+ misuse-control watch item until the final mandatory GB is published.
+- Product teams should pre-check DMS, hands-on/eyes-on logic, escalation strategy, system disablement, user training, and manual language against the draft direction.
+- Use it to separate L2 assistance safety claims from L3 ADS claims in product naming, marketing, HMI, and safety documentation.
+- Keep a source-quality caveat because evidence is currently C; do not quote fine-grained requirements as final legal text.
+engineering_use_cn:
+- 在最终强制性 GB 发布前，将其作为中国 L2/L2+ 误用控制最高优先级跟踪项。
+- 产品团队应提前检查 DMS、脱手/脱眼逻辑、升级提醒策略、系统禁用、用户培训和说明书措辞。
+- 用它区分 L2 辅助驾驶安全声明与 L3 ADS 安全声明，尤其是在产品命名、营销、HMI 和安全文档中。
+- 保留来源质量提示：当前证据等级为 C，不应把细粒度要求当作最终法律文本引用。
+expert_note_en: >-
+  This draft is strategically important because it attacks the main L2/L2+ risk in China: foreseeable
+  misuse created by over-trust, weak monitoring, and marketing ambiguity. It belongs with L2
+  assistance and misuse control, not with L3/L4 ADS standards.
+expert_note_cn: >-
+  这份报批稿重要，是因为它直接指向中国 L2/L2+ 的核心风险：过度信任、监测不足和宣传边界不清带来的可预见误用。它应归入 L2 辅助驾驶与误用控制，而不是 L3/L4 ADS 标准。
 impact_note: 报批稿阶段尚未成为正式强制性国家标准，但若按建议日期实施，将对所有 L2 组合驾驶辅助/NOA 产品产生直接准入影响，尤其是 DMS、误用防护和系统禁用机制。
 related_standards:
 - GB 44497-2024
+- C-NCAP 2027
 - UN-R152
 - UN-R157
 - MIIT 首轮征求意见稿 2025-09-17
-last_updated: '2026-05-03'
+last_updated: '2026-05-04'

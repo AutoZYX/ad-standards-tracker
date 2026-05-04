@@ -13,7 +13,7 @@ document_stage: published
 legal_force: rating_protocol
 source_type: official_news
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
 source_note: Official C-NCAP release page is used. The tracker should add the stable PDF/direct document URL when C-NCAP publishes or exposes it.
 automation_level:
@@ -26,10 +26,44 @@ topics:
 - hmi
 summary_en: C-NCAP's seventh major revision since 2006, formally released in April 2026 for the 2027 edition. The protocol strengthens active safety, advanced driver-assistance, EV battery safety, nighttime/complex scenario testing, and Chinese anthropometric crash-dummy/tooling localization.
 summary_cn: C-NCAP 自 2006 年以来第七次重大升级，于 2026 年 4 月正式发布 2027 版。新版强化主动安全、高级辅助驾驶、新能源电安全、夜间/复杂场景测评，并引入中国体征假人和本土化碰撞工具链。
+scope_en:
+- Defines the 2027 C-NCAP management and assessment framework for new-vehicle safety ratings in China.
+- Strengthens active safety and ADAS assessment with more scenario-driven and complex-condition tests, including nighttime and higher-difficulty cases described in the official release.
+- Updates EV safety and occupant-protection assessment while adding localized Chinese dummy/tooling elements.
+- Acts as a consumer-information and market-rating protocol rather than a mandatory type-approval regulation.
+scope_cn:
+- 定义中国新车安全评价的 2027 版 C-NCAP 管理与测评框架。
+- 强化主动安全和 ADAS 测评，引入更场景化、更复杂条件的测试，包括官方发布中提到的夜间和复杂场景。
+- 更新新能源电安全和乘员保护测评，并加入中国体征假人和本土化工具链。
+- 属于消费者信息和市场评价规程，不是强制准入法规。
+exclusions_en:
+- Does not replace GB mandatory standards or MIIT/SAMR type-approval requirements.
+- It is not limited to automated-driving safety; crashworthiness, EV safety, and occupant protection remain major parts of the protocol.
+- Public release metadata should not be treated as a substitute for the final protocol document when detailed scoring items are needed.
+exclusions_cn:
+- 不替代 GB 强制性标准或工信部/市场监管总局准入要求。
+- 它不只关注自动驾驶安全，碰撞安全、新能源安全和乘员保护仍是重要组成。
+- 需要细化评分项时，不能把发布新闻替代为最终规程文本。
+engineering_use_en:
+- Use it as the market-facing ADAS safety target for China programs, especially for AEB, vulnerable road user, night, complex-scenario, and driver-assistance scoring strategy.
+- Map C-NCAP 2027 scenarios to ISO 34502-style scenario libraries so product teams can connect rating targets with safety validation evidence.
+- Use its expected score-pressure effect to identify which current L2/ADAS functions need test-data expansion, perception robustness work, or HMI improvements before 2027.
+- "Keep legal-force separation clear: C-NCAP creates market pressure, while mandatory GB standards create approval constraints."
+engineering_use_cn:
+- 将其作为中国项目面向市场的 ADAS 安全目标，重点关注 AEB、弱势交通参与者、夜间、复杂场景和辅助驾驶评分策略。
+- 将 C-NCAP 2027 场景映射到 ISO 34502 式场景库，使评级目标与安全验证证据衔接起来。
+- 利用其可能带来的分数压力，提前识别现有 L2/ADAS 功能在 2027 前需要补充测试数据、感知鲁棒性或 HMI 改进的部分。
+- "明确区分效力：C-NCAP 形成市场压力，GB 强标形成准入约束。"
+expert_note_en: >-
+  C-NCAP 2027 is important because NCAP changes product priorities faster than regulation in many
+  ADAS programs. It turns scenario difficulty into market-visible pressure, which is often more
+  immediate than legal compulsion.
+expert_note_cn: >-
+  C-NCAP 2027 重要，是因为很多 ADAS 项目中 NCAP 比法规更快改变产品优先级。它把场景难度转化为市场可见压力，这种压力往往比法律强制更快到来。
 impact_note: Compared with the 2024 protocol, CATARC expects vehicle scores to drop materially under the 2027 rules. This is a market-facing assessment ceiling rather than a regulatory floor, and it will strongly influence OEM ADAS/EV safety product planning.
 related_standards:
 - C-NCAP 2024
 - ISO 34502
 - MIIT GB AEB (upcoming)
 - MIIT 组合驾驶辅助强标
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

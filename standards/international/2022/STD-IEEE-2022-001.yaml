@@ -13,9 +13,9 @@ document_stage: in_force
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-02'
+verified_at: '2026-05-03'
 source_status: paywalled
-source_note: Official IEEE SA catalog page is used for metadata; full text is available via IEEE channels.
+source_note: Official IEEE SA catalog page verified on 2026-05-03; full text is available via IEEE channels.
 automation_level:
 - L3
 - L4
@@ -25,6 +25,40 @@ topics:
 summary_en: Defines minimum set of reasonable assumptions and foreseeable scenarios that safety-related models in ADS shall
   consider. Framework for car-following, adjacent vehicles, intersections, occlusion scenarios with pedestrians and bicyclists.
 summary_cn: 规定自动驾驶系统的安全相关模型应考虑的最小合理假设与可预见场景集。框架覆盖跟车、邻车、交叉口、行人与骑行者的遮挡场景。
+scope_en:
+- Defines a minimum set of reasonable assumptions and foreseeable scenarios for safety-related models that are part of an ADS.
+- Applies to road vehicles and to ADS behavioral-safety modeling rather than to general vehicle-control or type-approval requirements.
+- Covers assumptions about other road users and scenario contexts that must be considered when building safety-related models.
+- Provides the base assumptions later operationalized by IEEE 3321-2024.
+scope_cn:
+- 为 ADS 中安全相关模型规定最低限度的合理假设与可预见场景。
+- 适用于道路车辆和 ADS 行为安全建模，而不是通用车辆控制或准入要求。
+- 覆盖建模时必须考虑的其他道路使用者行为假设和场景上下文。
+- 是 IEEE 3321-2024 后续应用指南的基础。
+exclusions_en:
+- It is not a complete ADS safety case and does not by itself demonstrate deployment readiness.
+- It does not replace scenario-based V&V, SOTIF, functional safety, or regulatory approval.
+- It should not be reduced to RSS only, even though RSS strongly influenced the work.
+exclusions_cn:
+- 它不是完整 ADS 安全案例，不能单独证明具备部署条件。
+- 它不能替代场景验证、SOTIF、功能安全或法规准入。
+- 尽管 RSS 对其影响很大，但不应把它简单等同于 RSS。
+engineering_use_en:
+- Use it when defining behavioral safety model assumptions, especially assumptions about other road users in car-following, adjacent-lane, intersection, and occlusion scenarios.
+- Make each assumption traceable to ODD, scenario class, model input, model output, and validation evidence.
+- Use IEEE 3321 when selecting scenario-specific values and validating how assumptions are applied over time.
+- Combine it with ISO 21448 and ISO 34502 so behavior-model assumptions become part of the broader SOTIF and scenario evidence chain.
+engineering_use_cn:
+- 在定义行为安全模型假设时使用，尤其是跟车、相邻车道、交叉口、遮挡等场景中其他道路使用者的行为假设。
+- 将每个假设追踪到 ODD、场景类别、模型输入、模型输出和验证证据。
+- 用 IEEE 3321 进一步选择具体场景下的假设取值，并验证这些假设如何随场景演化而应用。
+- 与 ISO 21448 和 ISO 34502 结合，使行为模型假设进入更完整的 SOTIF 与场景证据链。
+expert_note_en: >-
+  IEEE 2846 is valuable because it forces ADS teams to write down behavior-model assumptions that
+  are often hidden inside planners or safety monitors. Hidden assumptions are almost impossible to
+  audit after an incident.
+expert_note_cn: >-
+  IEEE 2846 的价值在于迫使 ADS 团队把行为安全模型假设写出来，而不是藏在规划器或安全监控器里。事故之后最难审计的，往往就是这些隐含假设。
 impact_note: Developed by Intel/Mobileye (RSS model) and others. Widely referenced in ADS safety argumentation.
 related_standards:
 - ISO 34502
@@ -32,4 +66,4 @@ related_standards:
 - SAE J3237
 - IEEE 3321-2024
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-05-02'
+last_updated: '2026-05-03'

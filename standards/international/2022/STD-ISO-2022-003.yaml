@@ -32,10 +32,48 @@ summary_en: Final published version of SOTIF standard. Replaces the 2019 PAS. Ad
   not originate from E/E system failures — complementary to ISO 26262.
 summary_cn: SOTIF 标准正式版，替代 2019 版 PAS。针对功能不足和可合理预见的误用导致的危害——这些危害并非源自 E/E 系统失效，与 ISO
   26262 互补。
+scope_en:
+- Provides an argument framework and guidance for achieving and maintaining safety of the intended functionality across design, verification, validation, and operation.
+- Covers hazards caused by specification insufficiencies at vehicle level and specification or performance insufficiencies in E/E implementation.
+- Applies especially to functions that rely on situational awareness from complex sensors and algorithms, including emergency intervention and L1-L5 driving automation.
+- Includes reasonably foreseeable misuse and remote user or back-office interaction when those interactions can affect vehicle decision making and create hazards.
+scope_cn:
+- 提供实现并维持预期功能安全的论证框架和措施指导，覆盖设计、验证、确认和运行阶段。
+- 覆盖车辆级预期功能规范不足，以及 E/E 实现中的规范不足或性能不足导致的危害。
+- 尤其适用于依赖复杂传感器和算法形成态势感知的功能，包括紧急干预系统和 L1-L5 驾驶自动化功能。
+- 将可合理预见误用纳入范围；当远程用户或后台交互会影响车辆决策并带来安全危害时，也纳入范围。
+exclusions_en:
+- Does not cover faults already addressed by ISO 26262.
+- Does not cover cybersecurity threats, deliberate feature abuse, or hazards from technologies themselves unless they arise from the intended E/E functionality.
+- Is not intended for mature legacy functions with well-established and trusted V&V measures.
+exclusions_cn:
+- 不覆盖 ISO 26262 已处理的系统故障。
+- 不覆盖网络安全威胁、蓄意滥用，或技术本身直接造成的危害，除非这些危害来自 E/E 系统预期功能。
+- 不面向已有成熟且验证确认措施充分可信的传统功能。
+engineering_use_en:
+- Use it to build a SOTIF argument around known-safe, known-unsafe, unknown-safe, and unknown-unsafe scenario evidence rather than treating perception misses as generic defects.
+- Convert ODD, trigger conditions, sensor limitations, algorithm insufficiencies, and misuse assumptions into traceable verification and validation work products.
+- Pair it with field monitoring so residual-risk assumptions are revisited after deployment, not frozen at release.
+- For L2 and L3 systems, use it to separate foreseeable driver misuse from system performance insufficiency and from ISO 26262 malfunctioning behavior.
+engineering_use_cn:
+- 用它围绕已知安全、已知不安全、未知安全、未知不安全场景证据构建 SOTIF 论证，而不是把感知漏检笼统当成缺陷。
+- 将 ODD、触发条件、传感器局限、算法不足和误用假设转化为可追踪的验证确认工作产品。
+- 与运行监测衔接，让残余风险假设在部署后持续被复核，而不是在发布时冻结。
+- 对 L2 和 L3 系统，用它区分可预见驾驶员误用、系统性能不足和 ISO 26262 故障行为。
+expert_note_en: >-
+  The practical value of ISO 21448 is not the word "SOTIF" itself, but the discipline of turning
+  unclear perception, ODD, misuse, and scenario assumptions into evidence. A weak SOTIF case usually
+  fails at assumption traceability, not at terminology.
+expert_note_cn: >-
+  ISO 21448 的价值不在“SOTIF”这个名词，而在于把感知、ODD、误用和场景假设变成证据链。很多薄弱的 SOTIF 论证不是术语错了，而是假设不可追踪。
 impact_note: This is the globally referenced SOTIF standard. Required reading for
   any L3+ functional safety engineer.
 related_standards:
 - ISO 26262
+- ISO/PAS 8800
 - ISO 34502
 - ISO/SAE 21434
-last_updated: '2026-05-02'
+last_updated: '2026-05-03'
+source_note: >-
+  Official ISO catalog page verified on 2026-05-03. The page identifies ISO 21448:2022 as published
+  and to be revised; full standard text may require purchase or subscription.

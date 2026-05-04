@@ -126,6 +126,14 @@ export interface StandardRecord {
   topics?: Topic[];
   summary_en?: string;
   summary_cn?: string;
+  scope_en?: string[];
+  scope_cn?: string[];
+  exclusions_en?: string[];
+  exclusions_cn?: string[];
+  engineering_use_en?: string[];
+  engineering_use_cn?: string[];
+  expert_note_en?: string;
+  expert_note_cn?: string;
   impact_note?: string;
   related_standards?: string[];
   contributor?: string;

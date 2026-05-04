@@ -69,6 +69,11 @@ export default function AboutPage() {
           </li>
           <li>
             {zh
+              ? "高优先级条目进一步沉淀标准边界、常见误读、工程使用方式和专家判断，避免停留在链接汇总或机器摘要层面"
+              : "High-priority records further capture scope boundaries, common misreadings, engineering use, and expert notes instead of stopping at links or generic summaries."}
+          </li>
+          <li>
+            {zh
               ? "仅保留元数据与原文链接；不发布受版权保护的标准全文"
               : "Metadata and links only. No redistribution of copyrighted standard texts."}
           </li>

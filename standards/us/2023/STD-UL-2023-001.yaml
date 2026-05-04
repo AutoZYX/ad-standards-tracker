@@ -5,17 +5,18 @@ org_full: UL Standards & Engagement
 jurisdiction: us
 type: standard
 status: published
-title_en: UL 4600 Edition 3 — Standard for Safety for the Evaluation of Autonomous Products
-title_cn: UL 4600 第三版 自动驾驶产品安全评估标准
-url: https://ulse.org/focus-areas/travel-safety/autonomous-vehicles/
+title_en: UL 4600 Edition 3 — Standard for Evaluation of Autonomous Products
+title_cn: UL 4600 第三版 自动驾驶产品评估标准
+url: https://www.shopulstandards.com/ProductDetail.aspx?productid=UL4600
 effective_date: '2023-03-17'
 document_stage: published
 legal_force: best_practice
-source_type: official
+source_type: standards_store
 evidence_level: B
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
-source_note: Official UL Standards & Engagement topic page and UL Solutions Edition 3 update are used as public metadata; full standard text is controlled by UL.
+source_note: Official UL Standards product page verified on 2026-05-04. Public metadata lists UL 4600 Edition 3, published and ANSI approved on 2023-03-17; full standard text is controlled by UL.
+version: Edition 3
 automation_level:
 - L3
 - L4
@@ -27,11 +28,46 @@ topics:
 summary_en: 'Edition 3 updates: autonomous trucking coverage, refined Safety Performance Indicators (SPIs), new requirements
   for post-incident behavior. Goal-based and technology-agnostic standard by Prof. Phil Koopman (CMU) and colleagues.'
 summary_cn: 第三版更新：增加自动驾驶卡车覆盖范围、细化安全性能指标（SPI）、新增事故后行为要求。由 CMU 的 Philip Koopman 教授团队牵头制定，目标导向、技术无关。
+scope_en:
+- Provides a goal-based safety evaluation standard for autonomous products, especially products intended to operate without continuous human supervision.
+- Focuses on safety case structure, argumentation, evidence, lifecycle considerations, and operational safety rather than prescribing one technical solution.
+- Edition 3 public metadata identifies updates relevant to autonomous trucking, safety performance indicators, and post-incident behavior.
+- Applies best to L4/L5 products where the safety argument must cover the autonomous product and operational context as a system.
+scope_cn:
+- 为自主产品提供目标导向的安全评估标准，尤其适用于不依赖持续人类监督运行的产品。
+- 重点是安全案例结构、论证、证据、生命周期和运行安全，而不是规定某一种技术方案。
+- 第三版公开元数据表明其更新涉及自动驾驶卡车、安全性能指标和事故后行为等内容。
+- 最适合用于 L4/L5 产品，因为这类产品需要把自主产品和运行环境作为整体进行安全论证。
+exclusions_en:
+- It is not a type-approval regulation and does not by itself grant legal permission to deploy.
+- It does not replace ISO 26262, ISO 21448, ISO/SAE 21434, or scenario-based validation standards; it organizes how their evidence is argued.
+- It is not limited to automobiles, so automotive teams must map its goal-based structure back to vehicle-specific regulations and standards.
+exclusions_cn:
+- 它不是准入法规，不能单独授予部署许可。
+- 它不替代 ISO 26262、ISO 21448、ISO/SAE 21434 或场景化验证标准，而是组织这些证据如何形成论证。
+- 它并不限于汽车产品，因此汽车团队需要把其目标导向结构映射回车辆专属法规和标准。
+engineering_use_en:
+- Use it as the top-level safety-case scaffold for L4 robotaxi, autonomous trucking, low-speed shuttle, or driverless delivery programs.
+- Map each claim to evidence from functional safety, SOTIF, cybersecurity, ODD/scenario validation, human interaction, operations, maintenance, and incident response.
+- Treat safety performance indicators and post-incident behavior as live operational evidence, not just release-gate documentation.
+- Use it with ROAM-style operational event analysis to keep the safety case updated after deployment.
+engineering_use_cn:
+- 将它作为 L4 Robotaxi、自动驾驶卡车、低速接驳或无人配送项目的顶层安全案例框架。
+- 把每个安全声明映射到功能安全、SOTIF、网络安全、ODD/场景验证、人机交互、运营维护和事件响应证据。
+- 将安全性能指标和事故后行为视为持续运行证据，而不只是发布前文档。
+- 可与 ROAM 式运行事件分析结合，使安全案例在部署后持续更新。
+expert_note_en: >-
+  UL 4600 is useful precisely because it is not a checklist. It forces an autonomous-product team to
+  explain why its evidence is sufficient for its own ODD, operational model, and residual risks.
+expert_note_cn: >-
+  UL 4600 有用，恰恰因为它不是清单式标准。它要求自主产品团队解释：为什么这些证据足以支撑自己的 ODD、运营模式和残余风险。
 impact_note: Industry gold standard for autonomous product safety case. Heavily influenced ROAM's 3-layer architecture and
   KPI framework.
 related_standards:
 - ISO 21448
 - ISO 26262
+- ISO/PAS 8800
+- ISO 34502
 - SAE J3237
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

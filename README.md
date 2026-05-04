@@ -17,16 +17,26 @@ Companion project / 姊妹项目: [ROAM — Robotaxi Operations & Accident Monit
 
 AD 安全和合规信息散落在各国监管机构、标准委员会、行业组织的官网里，格式各异、更新频率不一。作为 OEM/Tier 1 合规负责人、监管方、学术研究者，每天手动扫站既低效又容易漏。
 
-AD Standards Tracker 用元数据 + 原始链接的方式（不分发全文，规避版权）把这些信息统一到一个可搜索、可订阅、机器可读的结构化数据集里。项目的核心不是“链接越多越好”，而是让每条高优先级记录能回答：来源是谁、是否一手、有没有约束力、何时核验过。
+AD Standards Tracker 用元数据 + 原始链接的方式（不分发全文，规避版权）把这些信息统一到一个可搜索、可订阅、机器可读的结构化数据集里。项目的核心不是“链接越多越好”，而是让每条高优先级记录能回答：来源是谁、是否一手、有没有约束力、何时核验过、标准边界是什么、工程上应该怎样使用。
 
 AD compliance and safety intelligence is fragmented across national regulators, SDOs, and industry bodies. This project aggregates metadata (not full text) into one searchable, subscribable, machine-readable dataset.
+
+## Knowledge mechanism / 知识机制
+
+The project is designed as a three-layer knowledge system, not a link directory:
+
+1. Evidence layer: original source URL, source type, evidence level, legal effect, link status, and verification date.
+2. Boundary layer: what the document covers, what it does not cover, and whether it is a final standard, draft, regulation, assessment protocol, notice, or interpretation.
+3. Engineering layer: how the record should be used in ADS/ADAS safety work, which adjacent standards matter, and what safety-case or verification question it helps answer.
+
+这意味着高优先级记录不只是“摘要”。它应该沉淀自动驾驶安全工作中真正有用的 know-how：责任边界、适用场景、容易误读的地方、与 ISO 26262 / ISO 21448 / ISO 34502 / UNECE 法规 / NCAP 规程之间的关系。
 
 ## What / 功能
 
 - **Dashboard** — 最近更新、按辖区/类型/主题的分布统计
 - **Standards Library** — 全库筛选（辖区、组织、类型、状态、年份、主题、SAE 级别）
 - **Evidence Maps** — 按 L2 及以下驾驶辅助、ADS 准入、场景测试、安全开发、安全论证、远程操作边界和 L4 运营治理组织证据链
-- **Standard Detail** — 单条记录全部字段 + 外链到原文
+- **Standard Detail** — 单条记录全部字段、标准边界、工程使用方式、专家判断 + 外链到原文
 - **Source & Legal Effect** — 高优先级条目标注法律效力、来源类型、证据等级、核验日期、链接状态
 - **Sources** — 30+ 个数据源清单（UNECE, ISO, SAC/TC114, NHTSA, SAE, IEEE, ASAM, EC, Euro NCAP, METI 等）
 - **Ask AD Standards** — DeepSeek-powered natural-language Q&A over the structured database
@@ -56,6 +66,20 @@ automation_level: ["L3", "L4"]
 topics: ["sotif", "cybersecurity"]
 summary_en: "..."
 summary_cn: "..."                  # 可选
+scope_en:
+  - "What the document covers"
+scope_cn:
+  - "标准覆盖范围"
+exclusions_en:
+  - "What the document does not cover"
+exclusions_cn:
+  - "不覆盖内容或容易误读的边界"
+engineering_use_en:
+  - "How safety, homologation, or validation teams should use this record"
+engineering_use_cn:
+  - "工程、安全论证或测试验证中的使用方式"
+expert_note_en: "Expert interpretation or caveat"
+expert_note_cn: "专家判断或注意事项"
 ```
 
 完整 schema 见 [`lib/types.ts`](lib/types.ts) 的 `StandardRecord` interface。数据来源与证据等级规则见 [`DATA_SCHEMA.md`](DATA_SCHEMA.md) 和 [`SOURCE_POLICY.md`](SOURCE_POLICY.md)。

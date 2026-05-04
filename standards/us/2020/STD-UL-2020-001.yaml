@@ -5,8 +5,8 @@ org_full: UL Standards & Engagement
 jurisdiction: us
 type: standard
 status: in_force
-title_en: UL 4600 — Standard for Safety for the Evaluation of Autonomous Products
-title_cn: UL 4600 自动驾驶产品安全评估标准
+title_en: UL 4600 First Edition — Standard for Safety for the Evaluation of Autonomous Products
+title_cn: UL 4600 第一版 自动驾驶产品安全评估标准
 url: https://ulse.org/ul-standards-engagement/autonomous-vehicles
 automation_level:
   - L4
@@ -27,7 +27,10 @@ related_standards:
   - ISO 26262
   - ISO 21448
   - ISO 34502
-last_updated: '2026-04-16'
+version: First edition
+superseded_by:
+  - STD-UL-2023-001
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: voluntary
 source_type: official

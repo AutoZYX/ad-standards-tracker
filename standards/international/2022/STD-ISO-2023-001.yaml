@@ -1,0 +1,76 @@
+id: STD-ISO-2023-001
+date: '2022-11-02'
+org: ISO
+jurisdiction: international
+type: standard
+status: published
+title_en: >-
+  ISO 34502:2022 — Road vehicles — Test scenarios for automated driving systems — Scenario-based
+  safety evaluation framework
+title_cn: ISO 34502:2022 道路车辆 — 自动驾驶系统测试场景 — 基于场景的安全评估框架
+url: https://www.iso.org/standard/78951.html
+automation_level:
+  - L3
+  - L4
+topics:
+  - testing
+  - sotif
+  - functional_safety
+summary_en: >-
+  Published ISO standard giving guidance for a scenario-based safety evaluation framework for ADS
+  during product development. The official scope is limited to ADS applications on limited-access
+  highways and should not be treated as a universal scenario-testing regulation.
+summary_cn: >-
+  已发布 ISO 标准，为产品开发阶段 ADS 基于场景的安全评估框架提供指导。官方适用范围限定在封闭出入口高速类场景，
+  不应被理解为所有自动驾驶场景测试的通用法规。
+scope_en:
+  - Provides a scenario-based safety evaluation process for ADS during product development.
+  - Uses scenarios as the organizing unit for safety evidence, including scenario identification, evaluation logic, and test planning.
+  - Applies to ADS within the official scope of limited-access highways.
+  - Forms part of the ISO 3450x scenario series together with ODD description, scenario categorization, and test-case derivation standards.
+scope_cn:
+  - 为产品开发阶段 ADS 的基于场景安全评估提供流程框架。
+  - 以场景作为安全证据组织单元，支撑场景识别、评价逻辑和测试计划。
+  - 官方适用范围为封闭出入口高速类 ADS 场景。
+  - 与 ODD 描述、场景分类和测试用例派生相关标准共同构成 ISO 3450x 场景系列。
+exclusions_en:
+  - Does not address misuse, HMI, or cybersecurity issues.
+  - Does not address non-safety topics such as comfort, energy efficiency, or traffic-flow efficiency.
+  - Does not replace SOTIF, functional safety, or regulatory approval requirements.
+exclusions_cn:
+  - 不处理误用、人机界面或网络安全问题。
+  - 不处理舒适性、能耗效率或交通流效率等非安全议题。
+  - 不能替代 SOTIF、功能安全或准入法规要求。
+engineering_use_en:
+  - Use it to turn ODD and hazard analysis into a traceable scenario catalogue and validation plan.
+  - Link it with ISO 21448 when deciding which scenarios are needed to support SOTIF residual-risk arguments.
+  - Link it with ISO 34503 and ISO 34504 to maintain consistent ODD and scenario terminology across OEM, supplier, regulator, and test-lab communication.
+  - Treat the limited-access-highway scope as a boundary condition when applying its ideas to urban L4 or robotaxi testing.
+engineering_use_cn:
+  - 用它把 ODD 和危害分析转化为可追踪的场景库和验证计划。
+  - 与 ISO 21448 结合，判断哪些场景证据能够支撑 SOTIF 残余风险论证。
+  - 与 ISO 34503 和 ISO 34504 结合，保持 OEM、供应商、监管方和测试机构之间的 ODD/场景术语一致。
+  - 将封闭出入口高速范围视为适用边界；迁移到城市 L4 或 Robotaxi 测试时不能照搬。
+expert_note_en: >-
+  ISO 34502 is best understood as the bridge between SOTIF thinking and scenario evidence. Its value
+  is not that it names scenarios, but that it makes scenario selection, coverage, and safety
+  argumentation auditable.
+expert_note_cn: >-
+  ISO 34502 最适合被理解为 SOTIF 思维与场景证据之间的桥。它的价值不在于“列场景”，而在于让场景选择、覆盖度和安全论证可审计。
+impact_note: >-
+  Key reference for scenario-driven safety validation; complements ISO 21448 and aligns with NATM
+  (New Assessment/Test Method) at UNECE WP.29.
+related_standards:
+  - ISO 21448
+  - ISO 34503
+  - ISO 34504
+last_updated: '2026-05-03'
+document_stage: published
+legal_force: voluntary
+source_type: official_catalog
+evidence_level: B
+verified_at: '2026-05-03'
+source_status: paywalled
+source_note: >-
+  Official ISO catalog page verified on 2026-05-03. The page identifies ISO 34502:2022 as published
+  on 2022-11-02; full standard text may require purchase or subscription.

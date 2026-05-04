@@ -12,9 +12,9 @@ document_stage: published
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: paywalled
-source_note: Official IEEE SA catalog page is accessible; full standard text requires purchase or subscription. IEEE page lists it as an active standard and describes its relationship to IEEE 2846-2022.
+source_note: Official IEEE SA catalog page verified on 2026-05-04; full standard text requires purchase or subscription. IEEE page lists it as an active standard and describes its relationship to IEEE 2846-2022.
 automation_level:
 - L3
 - L4
@@ -25,10 +25,42 @@ topics:
 - scenario_description
 summary_en: IEEE 3321-2024 provides recommended practice for applying the assumptions defined in IEEE 2846-2022 in safety-related models during ADS development, testing, and deployment.
 summary_cn: IEEE 3321-2024 针对 ADS 开发、测试和部署阶段的安全相关模型，给出如何应用 IEEE 2846-2022 中“其他道路使用者可合理预见行为”假设的推荐实践。
+scope_en:
+- Provides recommended practice for applying IEEE 2846 assumptions about reasonably foreseeable behavior of other road users in ADS safety-related models.
+- Focuses on using those assumptions during ADS development, testing, and deployment rather than only defining them abstractly.
+- Supports modeling decisions where pedestrians, bicyclists, adjacent vehicles, intersections, occlusions, and other road-user behaviors affect the ADS safety envelope.
+scope_cn:
+- 为在 ADS 安全相关模型中应用 IEEE 2846 关于其他道路使用者可合理预见行为的假设提供推荐实践。
+- 重点不是抽象定义假设，而是在 ADS 开发、测试和部署阶段使用这些假设。
+- 支撑行人、骑行者、相邻车辆、交叉口、遮挡和其他道路使用者行为影响 ADS 安全边界时的建模决策。
+exclusions_en:
+- It is a recommended practice, not a binding regulation or complete ADS approval method.
+- It does not replace the baseline assumptions in IEEE 2846; it helps apply them.
+- It should not be used as a shortcut around empirical validation, scenario testing, or post-deployment monitoring.
+exclusions_cn:
+- 它是推荐实践，不是强制法规或完整 ADS 准入方法。
+- 它不替代 IEEE 2846 中的基础假设，而是帮助应用这些假设。
+- 不能用它绕过实证验证、场景测试或部署后监测。
+engineering_use_en:
+- Use it to operationalize IEEE 2846 assumptions into model requirements, parameter choices, scenario acceptance criteria, and safety-case evidence.
+- In each scenario family, document which other-road-user behavior assumptions are used, why they are reasonable, and what evidence supports them.
+- Link assumption use to SOTIF unknown-scenario discovery, simulation coverage, closed-course tests, and field monitoring.
+- Use deviations from assumed behavior as triggers for residual-risk review or model update.
+engineering_use_cn:
+- 用它把 IEEE 2846 假设转化为模型需求、参数选择、场景接受准则和安全论证证据。
+- 在每类场景中记录采用了哪些其他道路使用者行为假设、为什么合理、有什么证据支撑。
+- 将假设应用与 SOTIF 未知场景发现、仿真覆盖、封闭场地测试和运行监测衔接起来。
+- 当实际行为偏离模型假设时，应触发残余风险复核或模型更新。
+expert_note_en: >-
+  IEEE 3321 matters because it moves safety-model assumptions from "we believe this is reasonable"
+  to "we can show where, how, and with what evidence this assumption is applied." That is the
+  difference between a model and an auditable safety argument.
+expert_note_cn: >-
+  IEEE 3321 的价值在于把安全模型假设从“我们觉得合理”推进到“我们能说明这个假设在哪里、怎样、凭什么证据被应用”。这就是模型和可审计安全论证之间的差别。
 impact_note: This is the missing companion to IEEE 2846 for safety-model application. It should be tracked with SOTIF, RSS-style safety models, scenario-based testing, and safety case evidence.
 related_standards:
 - STD-IEEE-2022-001
 - ISO 21448
 - ISO 34502
 - UL 4600
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

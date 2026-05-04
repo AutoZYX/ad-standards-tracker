@@ -23,10 +23,46 @@ summary_en: >-
   The canonical SAE Levels of Driving Automation (L0-L5) standard. The April 2021 revision clarifies
   the distinction between L2 and L3 and refines ODD terminology.
 summary_cn: SAE 驾驶自动化分级（L0-L5）权威标准。2021 年 4 月修订版厘清了 L2 与 L3 的分野，并细化了 ODD 相关术语。
+scope_en:
+  - Defines a taxonomy and core terms for on-road driving automation systems that perform part or all of the dynamic driving task on a sustained basis.
+  - Establishes the six SAE levels from no driving automation through full driving automation.
+  - Clarifies roles of the human driver, fallback-ready user, ADS, DDT, OEDR, fallback, minimal-risk condition, and ODD.
+  - Provides a common vocabulary used by regulators, standards bodies, OEMs, suppliers, media, and the public.
+scope_cn:
+  - 为道路车辆驾驶自动化系统定义分类和核心术语，适用于持续执行部分或全部动态驾驶任务的系统。
+  - 建立从无驾驶自动化到完全驾驶自动化的六级 SAE 分级。
+  - 明确人类驾驶员、接管准备用户、ADS、DDT、OEDR、接管/回退、最小风险状态和 ODD 等概念。
+  - 为监管机构、标准组织、OEM、供应商、媒体和公众提供共同语言。
+exclusions_en:
+  - It is a taxonomy and terminology document, not a safety-performance standard, type-approval regulation, or validation method.
+  - Momentary active-safety interventions such as ESC, AEB, or lane keeping assistance are not classified as driving automation levels when they do not perform sustained DDT.
+  - It does not prove that a system is safe, legal, or ready for deployment.
+exclusions_cn:
+  - 它是分类和术语文件，不是安全性能标准、准入法规或验证方法。
+  - ESC、AEB、车道保持辅助等瞬时主动安全干预，如果不持续执行动态驾驶任务，不应被当成驾驶自动化等级。
+  - 它不能证明某个系统安全、合法或已经具备部署条件。
+engineering_use_en:
+  - Use it to prevent product, regulatory, and media discussions from mixing L2 assistance, L3 conditional automation, and L4 driverless operation.
+  - For L2/L2+ products, check whether marketing language implies that the user no longer supervises the DDT; that would conflict with the taxonomy.
+  - For L3 safety cases, focus on fallback-ready user assumptions and request-to-intervene design rather than only naming the level.
+  - For L4 systems, use ODD and fallback definitions to separate technical capability from operational deployment boundaries.
+engineering_use_cn:
+  - 用它防止产品、监管和传播讨论混淆 L2 辅助驾驶、L3 有条件自动驾驶和 L4 无驾驶人运行。
+  - 对 L2/L2+ 产品，要检查宣传语是否暗示用户不再监督动态驾驶任务；如果是，就与该分类冲突。
+  - 对 L3 安全论证，重点不只是“叫 L3”，而是接管准备用户假设和接管请求设计。
+  - 对 L4 系统，用 ODD 和 fallback 定义区分技术能力与运营部署边界。
+expert_note_en: >-
+  SAE J3016 is the industry's shared dictionary, not its safety case. Many bad debates start when the
+  level label is treated as proof of capability; the useful questions are who performs the DDT, who
+  handles fallback, and within which ODD.
+expert_note_cn: >-
+  SAE J3016 是行业共同词典，不是安全案例。很多糟糕争论都始于把等级标签当成能力证明；真正有用的问题是：谁执行 DDT，谁负责 fallback，以及在哪个 ODD 内。
 impact_note: Universal reference for AD levels. Next revision under discussion at SAE ORAD.
 related_standards:
   - ISO 22736
-last_updated: '2026-04-16'
+  - ISO 21448
+  - UN-R157
+last_updated: '2026-05-03'
 document_stage: published
 legal_force: voluntary
 source_type: official_catalog
@@ -34,5 +70,5 @@ evidence_level: B
 verified_at: '2026-05-03'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
+  Official SAE catalog page verified on 2026-05-03; full standard text may require purchase or
   subscription.

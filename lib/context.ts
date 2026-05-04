@@ -2,6 +2,14 @@ import { getAllStandards } from "./data";
 import { categorize, CATEGORY_META } from "./categories";
 import { SOURCES, SOURCE_CATEGORY_META } from "./sources";
 
+function compactList(items: string[] | undefined, maxItems = 4, maxLen = 180): string {
+  if (!items?.length) return "";
+  return items
+    .slice(0, maxItems)
+    .map((item) => item.trim().slice(0, maxLen))
+    .join(" / ");
+}
+
 /**
  * Build a system-prompt context string for the Ask AD Standards feature.
  * Includes all records (compact per-line summary) + source registry.
@@ -19,6 +27,14 @@ export function buildSystemContext(): string {
       const summaryEn = r.summary_en?.trim().slice(0, 300) ?? "";
       const summaryCn = r.summary_cn?.trim().slice(0, 300) ?? "";
       const impact = r.impact_note?.trim().slice(0, 250) ?? "";
+      const scopeEn = compactList(r.scope_en);
+      const scopeCn = compactList(r.scope_cn);
+      const exclusionsEn = compactList(r.exclusions_en);
+      const exclusionsCn = compactList(r.exclusions_cn);
+      const engineeringUseEn = compactList(r.engineering_use_en);
+      const engineeringUseCn = compactList(r.engineering_use_cn);
+      const expertNoteEn = r.expert_note_en?.trim().slice(0, 300) ?? "";
+      const expertNoteCn = r.expert_note_cn?.trim().slice(0, 300) ?? "";
       const effective = r.effective_date ? ` | Effective: ${r.effective_date}` : "";
       const sourceNote = r.source_note?.trim().slice(0, 220) ?? "";
       return `[${r.id}] ${r.date} | ${r.org} | ${r.jurisdiction} | type=${r.type} status=${r.status} | stage=${r.document_stage ?? "unknown"} | legal=${r.legal_force ?? "unknown"} | source_type=${r.source_type ?? "unknown"} | evidence=${r.evidence_level ?? "unknown"} | source_status=${r.source_status ?? "unknown"} | verified_at=${r.verified_at ?? "unknown"} | category=${categorize(r)} | Levels: ${lvls} | Topics: ${topics}${effective}
@@ -26,7 +42,7 @@ Title EN: ${r.title_en}
 Title CN: ${r.title_cn ?? "(no Chinese)"}
 URL: ${r.url}
 Summary EN: ${summaryEn}
-Summary CN: ${summaryCn || "(no Chinese)"}${impact ? `\nImpact: ${impact}` : ""}${sourceNote ? `\nSource note: ${sourceNote}` : ""}${related}`;
+Summary CN: ${summaryCn || "(no Chinese)"}${scopeEn ? `\nScope EN: ${scopeEn}` : ""}${scopeCn ? `\nScope CN: ${scopeCn}` : ""}${exclusionsEn ? `\nExclusions EN: ${exclusionsEn}` : ""}${exclusionsCn ? `\nExclusions CN: ${exclusionsCn}` : ""}${engineeringUseEn ? `\nEngineering use EN: ${engineeringUseEn}` : ""}${engineeringUseCn ? `\nEngineering use CN: ${engineeringUseCn}` : ""}${expertNoteEn ? `\nExpert note EN: ${expertNoteEn}` : ""}${expertNoteCn ? `\nExpert note CN: ${expertNoteCn}` : ""}${impact ? `\nImpact: ${impact}` : ""}${sourceNote ? `\nSource note: ${sourceNote}` : ""}${related}`;
     })
     .join("\n\n");
 

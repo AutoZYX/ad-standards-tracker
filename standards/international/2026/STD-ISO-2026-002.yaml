@@ -17,18 +17,62 @@ topics:
   - functional_safety
   - testing
 summary_en: >-
-  Draft International Standard in DIS stage. Specifies a standardized vehicle motion control
-  interface for ADS to request desired motion from heavy commercial vehicles, vehicle combinations,
-  buses, and articulated buses.
-summary_cn: DIS 阶段国际标准草案，规定自动驾驶系统向重型商用车、挂车组合、客车及铰接客车请求期望运动的标准化车辆运动控制接口。
+  Draft International Standard at ISO enquiry stage for the interface between an ADS and vehicle
+  motion control on heavy commercial vehicle combinations, buses, and articulated buses. It focuses
+  on how the ADS requests desired motion and how the VMC reports request status and available
+  capabilities.
+summary_cn: >-
+  ISO 询问阶段国际标准草案，面向重型商用车组合、客车与铰接客车，定义 ADS 与车辆运动控制系统之间的运动请求接口。
+  重点不是通用自动驾驶功能，而是 ADS 如何提出期望运动请求，以及 VMC 如何反馈请求状态与可用能力。
+scope_en:
+  - Covers fully automated driving interfaces for heavy commercial vehicles, vehicle combinations, buses, and articulated buses that require a dedicated vehicle architecture with redundancy and vehicle safety.
+  - Applies to heavy vehicle categories aligned with ISO 3833 and ECE/EC classifications, including M3, N2, N3, O3, and O4 vehicles.
+  - Treats the ADS as responsible for the swept path of the vehicle and trailer units, while the VMC exposes status and capability information for the requested motion.
+  - Defines the interface concept in a reference coordinate system so desired motion can be requested consistently across vehicle-platform implementations.
+scope_cn:
+  - 覆盖需要专用车辆架构、冗余与车辆安全能力的全自动驾驶重型商用车、车辆组合、客车和铰接客车接口。
+  - 适用对象与 ISO 3833 及 ECE/EC 车辆分类相衔接，包括 M3、N2、N3、O3、O4 等重型车辆类别。
+  - 将车辆及挂车单元的扫掠路径责任放在 ADS 一侧，同时要求 VMC 向 ADS 暴露运动请求状态与车辆能力边界。
+  - 通过参考坐标系表达期望运动请求，降低不同重型车平台之间 ADS-VMC 接口适配的不确定性。
+exclusions_en:
+  - Does not cover active steered trailer axles.
+  - Should not be read as a passenger-car ADS interface, a remote operation standard, or a complete safety-case framework.
+  - Does not by itself replace functional safety, SOTIF, cybersecurity, or scenario-based validation standards.
+exclusions_cn:
+  - 不覆盖主动转向挂车轴。
+  - 不应被理解为乘用车 ADS 接口标准、远程操控标准，或完整安全论证框架。
+  - 不能替代功能安全、预期功能安全、网络安全或场景化验证标准。
+engineering_use_en:
+  - Use it to define the contract boundary between ADS trajectory/planning functions and a redundant VMC layer on L4 freight, bus, and articulated-vehicle platforms.
+  - Check that ADS-VMC handshakes cover request feasibility, status feedback, capability limits, degraded operation, and minimum-risk maneuvers.
+  - Pair it with ISO 26262, ISO 21448, ISO/PAS 8800, ISO 34502, and ISO 22133 when building safety cases and verification plans for heavy-vehicle ADS.
+  - Treat trailer sweep, articulation behavior, and platform capability feedback as first-class validation targets rather than low-level control details.
+engineering_use_cn:
+  - 可用于定义 L4 干线物流、客车和铰接车辆平台上 ADS 规划/轨迹功能与冗余 VMC 层之间的责任接口。
+  - 核查 ADS-VMC 交互是否覆盖请求可行性、状态反馈、能力边界、降级运行和最小风险机动。
+  - 在重型车 ADS 安全论证和验证计划中，应与 ISO 26262、ISO 21448、ISO/PAS 8800、ISO 34502、ISO 22133 配合使用。
+  - 挂车扫掠轨迹、铰接行为和平台能力反馈不应被当成低层控制细节，而应成为验证对象。
+expert_note_en: >-
+  The key engineering shift is the allocation of responsibility: the ADS owns the intended path and
+  swept-path consequences, while VMC provides the executable motion interface and capability/status
+  feedback. For heavy-vehicle ADS, this boundary is often where architecture, safety case, and
+  verification plans fail if it is left implicit.
+expert_note_cn: >-
+  这条标准真正有价值的地方，是把重型车 ADS 的责任边界说清楚：ADS 负责期望路径及车辆组合扫掠后果，
+  VMC 负责可执行运动接口与能力/状态反馈。对重型车自动驾驶而言，架构、安全论证和验证计划最容易出问题的，往往正是这个边界被默认处理。
 impact_note: >-
   Relevant to L4 freight and bus platforms because it formalizes the interface boundary between ADS
-  and redundant vehicle motion control.
+  and redundant vehicle motion control, especially for articulated combinations whose swept path is
+  safety-critical.
 related_standards:
+  - ISO 3833
   - ISO 22133
   - ISO 26262
+  - ISO 21448
+  - ISO/PAS 8800
+  - ISO 34502
   - UN-R157
-last_updated: '2026-05-02'
+last_updated: '2026-05-03'
 document_stage: consultation
 legal_force: informational
 source_type: official_catalog
@@ -36,5 +80,5 @@ evidence_level: B
 verified_at: '2026-05-03'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
-  subscription.
+  Official ISO catalog page verified on 2026-05-03. The catalog identifies ISO/DIS 25135 as under
+  development at DIS registered stage 40.00; the full DIS text may require purchase or subscription.

@@ -9,6 +9,20 @@ export default function StandardDetail({ standard }: { standard: StandardRecord 
   const title = lang === "zh" && standard.title_cn ? standard.title_cn : standard.title_en;
   const altTitle = lang === "zh" ? standard.title_en : standard.title_cn;
   const summary = lang === "zh" && standard.summary_cn ? standard.summary_cn : standard.summary_en;
+  const scope =
+    lang === "zh" && standard.scope_cn?.length ? standard.scope_cn : standard.scope_en;
+  const exclusions =
+    lang === "zh" && standard.exclusions_cn?.length
+      ? standard.exclusions_cn
+      : standard.exclusions_en;
+  const engineeringUse =
+    lang === "zh" && standard.engineering_use_cn?.length
+      ? standard.engineering_use_cn
+      : standard.engineering_use_en;
+  const expertNote =
+    lang === "zh" && standard.expert_note_cn
+      ? standard.expert_note_cn
+      : standard.expert_note_en;
   const correctionUrl = `https://github.com/AutoZYX-Labs/ad-standards-tracker/issues/new?template=data-correction.yml&title=${encodeURIComponent(
     `Data correction: ${standard.id}`
   )}`;
@@ -186,6 +200,46 @@ export default function StandardDetail({ standard }: { standard: StandardRecord 
           <div className={section}>
             <p className={sectionTitle}>{t("detail.summary")}</p>
             <p className="text-sm leading-relaxed">{summary}</p>
+          </div>
+        )}
+
+        {scope && scope.length > 0 && (
+          <div className={section}>
+            <p className={sectionTitle}>{t("detail.scope")}</p>
+            <ul className="list-disc pl-5 space-y-1.5 text-sm leading-relaxed">
+              {scope.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {exclusions && exclusions.length > 0 && (
+          <div className={section}>
+            <p className={sectionTitle}>{t("detail.exclusions")}</p>
+            <ul className="list-disc pl-5 space-y-1.5 text-sm leading-relaxed text-[var(--muted)]">
+              {exclusions.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {engineeringUse && engineeringUse.length > 0 && (
+          <div className={section}>
+            <p className={sectionTitle}>{t("detail.engineering_use")}</p>
+            <ul className="list-disc pl-5 space-y-1.5 text-sm leading-relaxed">
+              {engineeringUse.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {expertNote && (
+          <div className={section}>
+            <p className={sectionTitle}>{t("detail.expert_note")}</p>
+            <p className="text-sm leading-relaxed">{expertNote}</p>
           </div>
         )}
 

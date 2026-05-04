@@ -24,14 +24,47 @@ summary_en: >-
 summary_cn: >-
   汽车 E/E 系统功能安全的基础标准。第二版（2018）将范围扩展至卡车/客车/摩托车，新增第 11 部分（半导体）和第 12 部分（摩托车）。通过 HARA 定义 ASIL A/B/C/D
   安全完整性等级。
+scope_en:
+  - Applies to safety-related E/E systems installed in series-production road vehicles, with the central concern being hazards caused by malfunctioning behavior.
+  - Provides the automotive functional-safety lifecycle and terminology used for concept, system, hardware, software, production, operation, service, and supporting safety processes.
+  - Establishes the engineering chain from HARA and ASIL classification to safety goals, safety requirements, safety analyses, verification, validation, and confirmation measures.
+  - Serves as the baseline process standard for demonstrating an organization's capability to develop safety-related automotive E/E systems.
+scope_cn:
+  - 适用于量产道路车辆中安全相关 E/E 系统，核心关注由系统失效或故障行为导致的危害。
+  - 提供汽车功能安全生命周期与术语体系，覆盖概念、系统、硬件、软件、生产、运行、服务及支撑流程。
+  - 建立从 HARA、ASIL 分类、安全目标、安全需求、安全分析到验证、确认和独立确认措施的工程链条。
+  - 是证明组织具备安全相关汽车 E/E 系统开发能力的基础过程标准。
+exclusions_en:
+  - Does not address hazards from intended-function limitations or performance insufficiencies; those are handled through SOTIF work such as ISO 21448.
+  - Does not address cybersecurity threats, except where security issues lead to safety concerns that must be managed through adjacent processes.
+  - Does not cover non-E/E hazards unless they are directly caused by malfunctioning behavior of safety-related E/E systems.
+exclusions_cn:
+  - 不处理预期功能局限或性能不足导致的危害；这类问题应通过 ISO 21448 等 SOTIF 工作处理。
+  - 不直接处理网络安全威胁，但网络安全问题转化为安全风险时，需要通过相邻流程衔接。
+  - 不覆盖非 E/E 危害，除非这些危害直接由安全相关 E/E 系统的故障行为引起。
+engineering_use_en:
+  - Use it as the mandatory internal language for HARA, ASIL decomposition, safety goal definition, safety requirements, and safety-case evidence.
+  - For ADS/ADAS, separate ISO 26262 malfunctioning-behavior arguments from SOTIF performance-insufficiency arguments before merging them into one safety case.
+  - Check interface hazards carefully when ML perception, actuation control, cloud update, or driver interaction functions are connected to safety-related E/E elements.
+engineering_use_cn:
+  - 在 HARA、ASIL 分解、安全目标、安全需求和安全论证证据中，把它作为组织内部的基础语言。
+  - 对 ADS/ADAS，应先区分 ISO 26262 的故障行为论证与 SOTIF 的性能不足论证，再汇总进整体安全案例。
+  - 当机器学习感知、执行控制、云端更新或人机交互功能连接到安全相关 E/E 元素时，要重点检查接口危害。
+expert_note_en: >-
+  ISO 26262 is necessary but not sufficient for automated driving safety. It gives the discipline for
+  malfunctioning behavior, but ADS safety also depends on intended-function limits, AI behavior,
+  scenario coverage, cybersecurity, and operational monitoring.
+expert_note_cn: >-
+  ISO 26262 是自动驾驶安全的必要条件，但远远不是充分条件。它解决故障行为的工程纪律；ADS 还必须处理预期功能局限、AI 行为、场景覆盖、网络安全和运行监测。
 impact_note: >-
   Universally referenced; prerequisite reading for any automotive safety engineer. Complements ISO
   21448 (SOTIF) and ISO/SAE 21434 (cybersecurity). 3rd edition in preparation at ISO TC22/SC32 WG8.
 related_standards:
   - ISO 21448
+  - ISO/PAS 8800
   - ISO/SAE 21434
   - ISO 5083
-last_updated: '2026-04-16'
+last_updated: '2026-05-03'
 document_stage: in_force
 legal_force: voluntary
 source_type: official_catalog
@@ -39,5 +72,5 @@ evidence_level: B
 verified_at: '2026-05-03'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
-  subscription.
+  Official ISO catalog page verified on 2026-05-03. The page identifies ISO 26262-1:2018 as
+  published but to be revised; full standard text may require purchase or subscription.

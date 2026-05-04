@@ -36,6 +36,40 @@ summary_en: >-
   with established automotive safety engineering practices.
 summary_cn: >-
   面向道路车辆“安全与人工智能”的公开可用规范，针对安全相关 E/E 系统中 AI 的使用给出开发和安全工程指导，并把 AI 特有问题与传统汽车安全开发流程衔接起来。
+scope_en:
+  - Applies to safety-related E/E systems in series-production road vehicles that use AI technology.
+  - Addresses undesired safety-related vehicle-level behavior caused by output insufficiencies, systematic errors, and random hardware errors of AI elements.
+  - Covers AI elements in the vehicle and external AI elements when they can directly or indirectly affect vehicle safety.
+  - Describes safety-related AI properties that can support a safety assurance claim for absence of unreasonable risk.
+scope_cn:
+  - 适用于量产道路车辆中使用 AI 技术的安全相关 E/E 系统。
+  - 处理 AI 元素输出不足、系统性错误和随机硬件错误导致的车辆级非期望安全相关行为。
+  - 覆盖车内 AI 元素，也覆盖会直接或间接影响车辆安全的外部 AI 元素。
+  - 描述可用于构建“无不合理风险”安全保证声明的 AI 安全相关属性。
+exclusions_en:
+  - Does not cover development of AI elements that are outside the vehicle, although such elements can be considered when they affect vehicle safety.
+  - Does not provide specific guidelines for AI-based software tools.
+  - Focuses mainly on machine-learning principles and does not prescribe detailed methods for a particular AI technique such as a specific neural-network architecture.
+exclusions_cn:
+  - 不覆盖车外 AI 元素本身的开发，但当其影响车辆安全时可作为接口和影响因素考虑。
+  - 不为使用 AI 方法的软件工具提供具体指南。
+  - 主要聚焦机器学习原则，不规定某一种具体 AI 技术或神经网络架构的详细方法。
+engineering_use_en:
+  - Use it to extend functional-safety and SOTIF work products with AI-specific evidence, including data assumptions, model limitations, output insufficiency, monitoring, and assurance claims.
+  - For ML perception and prediction, connect training/validation evidence to ODD, scenario coverage, robustness, and residual-risk arguments.
+  - Use it as an AI-safety companion to ISO 26262 and ISO 21448, not as a replacement for either.
+  - Treat external AI dependencies, such as map updates or cloud monitoring, as potential safety influences when they affect vehicle behavior.
+engineering_use_cn:
+  - 用它把功能安全和 SOTIF 工作产品扩展到 AI 专属证据，包括数据假设、模型局限、输出不足、监测和安全保证声明。
+  - 对机器学习感知和预测，应把训练/验证证据与 ODD、场景覆盖、鲁棒性和残余风险论证衔接起来。
+  - 将其作为 ISO 26262 与 ISO 21448 的 AI 安全配套标准，而不是替代任何一个。
+  - 当地图更新、云端监测等外部 AI 依赖影响车辆行为时，应把它们作为潜在安全影响因素处理。
+expert_note_en: >-
+  ISO/PAS 8800 starts to close the gap between classical automotive safety and AI-heavy ADS/ADAS
+  development. Its practical role is to make AI assumptions reviewable inside a safety case instead
+  of leaving them as data-science side notes.
+expert_note_cn: >-
+  ISO/PAS 8800 开始弥合传统汽车安全与 AI 密集型 ADS/ADAS 开发之间的缺口。它的实际作用，是让 AI 假设进入可评审的安全论证，而不是停留在数据科学团队的旁注里。
 impact_note: >-
   Use this record as the AI-safety companion to ISO 26262 and ISO 21448. It should be cited as
   ISO/PAS 8800:2024, not ISO/SAE 8800, based on the official ISO catalog.

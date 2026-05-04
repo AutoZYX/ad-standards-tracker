@@ -13,7 +13,7 @@ document_stage: consultation
 legal_force: informational
 source_type: official_news
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
 source_note: Official MIIT consultation notice with draft attachments. It is a draft mandatory GB and is not binding until formally approved and implemented.
 automation_level:
@@ -27,10 +27,47 @@ topics:
 - data_recording
 summary_en: MIIT public consultation on the draft mandatory GB for safety requirements of intelligent connected vehicle ADS, part of five mandatory national standards published for comment on 2026-02-12.
 summary_cn: 工信部于 2026 年 2 月 12 日公开征求《智能网联汽车 自动驾驶系统安全要求》等五项强制性国家标准意见，其中 ADS 安全要求面向 L3/L4 自动驾驶系统安全基线。
+scope_en:
+- Covers a draft mandatory national standard for safety requirements of intelligent connected vehicle Automated Driving Systems.
+- Targets higher-level ADS safety requirements for L3/L4-type functions in the Chinese type-approval context.
+- Public consultation is part of a broader February 2026 package of five draft mandatory national standards for intelligent connected vehicles.
+- Connects ADS system safety with HMI, safety management, functional safety, SOTIF, data recording, and approval evidence.
+scope_cn:
+- 覆盖《智能网联汽车 自动驾驶系统安全要求》强制性国家标准征求意见稿。
+- 面向中国准入语境下 L3/L4 类自动驾驶系统安全要求。
+- 该征求意见属于 2026 年 2 月五项智能网联汽车强制性国家标准草案公开征求意见的一部分。
+- 将 ADS 系统安全与 HMI、安全管理、功能安全、SOTIF、数据记录和准入证据衔接起来。
+exclusions_en:
+- It is still a consultation draft and is not legally binding until formally approved, numbered, and implemented.
+- It should not be confused with the L2 combined driving assistance mandatory GB pipeline.
+- It does not replace cybersecurity, software update, DSSAD, or product-access requirements that are governed by other GB or MIIT/SAMR instruments.
+exclusions_cn:
+- 目前仍是征求意见稿，只有正式批准、编号并实施后才具备强制效力。
+- 不应与 L2 组合驾驶辅助强标混淆。
+- 不替代网络安全、软件升级、DSSAD 或产品准入中由其他 GB 或工信部/市场监管总局文件规定的要求。
+engineering_use_en:
+- Treat it as the draft baseline for China's future L3/L4 ADS safety case and type-approval evidence package.
+- "Start mapping existing ADS safety work products to its expected themes: ODD definition, system limits, driver/user interaction, fallback/MRM, data storage, safety management, and validation evidence."
+- Cross-map it with UN-R157, the ADS GTR draft, ISO 26262, ISO 21448, ISO/PAS 8800, ISO 34502, and GB 44497.
+- Keep a change log between consultation, approval draft, and final GB so product teams do not freeze requirements too early.
+engineering_use_cn:
+- 将其视为中国未来 L3/L4 ADS 安全案例和准入证据包的草案基线。
+- "提前把现有 ADS 安全工作产品映射到其预期主题：ODD 定义、系统边界、用户交互、fallback/MRM、数据存储、安全管理和验证证据。"
+- 与 UN-R157、ADS GTR 草案、ISO 26262、ISO 21448、ISO/PAS 8800、ISO 34502、GB 44497 做交叉映射。
+- 在征求意见稿、报批稿和最终 GB 之间维护变更记录，避免产品团队过早冻结要求。
+expert_note_en: >-
+  This draft is a signal that China is moving from pilot policy toward a standards-based ADS
+  approval baseline. Its value today is not legal force, but early alignment of safety-case evidence
+  before final GB text locks in.
+expert_note_cn: >-
+  这份草案说明中国正在从试点政策走向基于标准的 ADS 准入安全基线。它现在的价值不是强制效力，而是在最终 GB 锁定前提前对齐安全论证证据。
 impact_note: This is the most important China ADS safety baseline draft for L3/L4 vehicle type approval and complements the L2 combined driving assistance mandatory GB pipeline.
 related_standards:
 - GB/T 40429
 - GB 44497-2024
+- ISO 26262
 - ISO 21448
+- ISO/PAS 8800
+- ISO 34502
 - UN-R157
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

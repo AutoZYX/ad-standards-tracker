@@ -24,14 +24,47 @@ summary_en: >-
   protocol for monitoring and controlling test objects used in active safety and
   automated/autonomous vehicle testing. Replaces ISO/TS 22133:2023.
 summary_cn: 已发布 ISO 标准，规定主动安全与自动/自主车辆测试中测试对象的监测、控制功能要求、规范和通信协议。替代 ISO/TS 22133:2023。
+scope_en:
+  - Specifies requirements, procedures, and message formats for controlling and monitoring test objects used in active-safety and automated/autonomous-vehicle testing.
+  - Defines functionality and messaging between a control centre and test objects so multi-vendor test-object environments can be operated interoperably.
+  - Supports proving-ground and physical scenario tests where controllable targets must execute repeatable, monitored trajectories.
+scope_cn:
+  - 规定主动安全与自动/自主车辆测试中测试对象监测和控制的要求、程序和消息格式。
+  - 定义控制中心与测试对象之间的功能和通信，使多供应商测试对象环境能够互操作。
+  - 支持试验场和物理场景测试中可控目标物的可重复轨迹执行与状态监测。
+exclusions_en:
+  - Does not specify the internal architecture of the test object.
+  - Does not specify the internal architecture of the control centre.
+  - Does not define how the vehicle-under-test safety evaluation itself shall be performed.
+exclusions_cn:
+  - 不规定测试对象内部架构。
+  - 不规定控制中心内部架构。
+  - 不定义被测车辆的安全评价方法本身。
+engineering_use_en:
+  - Use it when specifying proving-ground equipment interfaces, test-target control, and repeatability requirements for AEB, ADAS, and ADS scenario tests.
+  - Require vendors and labs to expose status, control, and monitoring information in a way that supports replay, traceability, and incident investigation.
+  - Pair it with ISO 34502/34503/34504/34505 so scenario definitions can be executed consistently on physical test equipment.
+  - For high-speed or multi-actor scenarios, treat test-object synchronization and fail-safe behavior as safety-critical test infrastructure.
+engineering_use_cn:
+  - 在规定试验场设备接口、测试目标控制和 AEB/ADAS/ADS 场景测试可重复性要求时使用。
+  - 要求供应商和实验室以支持回放、追踪和事件调查的方式暴露状态、控制和监测信息。
+  - 与 ISO 34502/34503/34504/34505 结合，使场景定义能够在物理测试设备上稳定执行。
+  - 对高速或多参与者场景，应将测试对象同步和失效安全行为视为安全关键测试基础设施。
+expert_note_en: >-
+  ISO 22133 is easy to underestimate because it is test-infrastructure oriented. For ADS validation,
+  however, unreliable or non-interoperable targets can invalidate the evidence chain just as much as
+  a weak scenario catalogue.
+expert_note_cn: >-
+  ISO 22133 容易被低估，因为它看起来像测试基础设施标准。但对 ADS 验证来说，不可靠或不可互操作的目标物会破坏证据链，问题不比场景库薄弱更小。
 impact_note: >-
   Important for proving-ground and scenario-based testing because it enables interoperable control
   of test targets from multiple vendors.
 related_standards:
   - ISO 34502
   - ISO 34503
+  - ISO 34504
   - ISO 34505
-last_updated: '2026-05-02'
+last_updated: '2026-05-03'
 document_stage: published
 legal_force: voluntary
 source_type: official_catalog
@@ -39,5 +72,6 @@ evidence_level: B
 verified_at: '2026-05-03'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
+  Official ISO catalog page verified on 2026-05-03. The page identifies ISO 22133:2026 as published
+  on 2026-01-27 and replacing ISO/TS 22133:2023; full standard text may require purchase or
   subscription.

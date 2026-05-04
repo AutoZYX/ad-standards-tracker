@@ -62,6 +62,15 @@ const required = ["id", "date", "org", "jurisdiction", "type", "status", "title_
 const isoDate = /^\d{4}-\d{2}-\d{2}$/;
 const idFormat = /^(STD|INT)-[A-Za-z0-9-]+-\d{4}-\d{3}$/;
 const urlFormat = /^https?:\/\//;
+const stringArrayFields = [
+  "scope_en",
+  "scope_cn",
+  "exclusions_en",
+  "exclusions_cn",
+  "engineering_use_en",
+  "engineering_use_cn",
+];
+const stringFields = ["expert_note_en", "expert_note_cn"];
 const genericSourceUrls = [
   /^https?:\/\/www\.miit\.gov\.cn\/?$/,
   /^https?:\/\/www\.mot\.gov\.cn\/?$/,
@@ -140,6 +149,19 @@ for (const file of files.sort()) {
     fail(`${rel}: verified_at must be YYYY-MM-DD`);
   }
   if (doc.url && !urlFormat.test(doc.url)) fail(`${rel}: url must start with http:// or https://`);
+  for (const field of stringArrayFields) {
+    if (
+      doc[field] !== undefined &&
+      (!Array.isArray(doc[field]) || doc[field].some((item) => typeof item !== "string"))
+    ) {
+      fail(`${rel}: ${field} must be an array of strings`);
+    }
+  }
+  for (const field of stringFields) {
+    if (doc[field] !== undefined && typeof doc[field] !== "string") {
+      fail(`${rel}: ${field} must be a string`);
+    }
+  }
   if (
     doc.url &&
     ["A", "B"].includes(doc.evidence_level) &&

@@ -24,6 +24,19 @@ The UI category is a navigation aid, not legal advice:
 
 `legal_force` is the authoritative field for whether an item is binding.
 
+## Knowledge Fields
+
+High-priority records should go beyond a short abstract. Do not copy full standard text or long official abstracts. Use verified, paraphrased, expert-reviewed notes:
+
+- `summary_en` / `summary_cn`: concise neutral description of the record
+- `scope_en` / `scope_cn`: array of what the document covers
+- `exclusions_en` / `exclusions_cn`: array of explicit non-scope items, caveats, or common misreadings
+- `engineering_use_en` / `engineering_use_cn`: array of how ADS/ADAS safety, validation, homologation, or policy teams should use the record
+- `expert_note_en` / `expert_note_cn`: short expert interpretation explaining why the record matters
+- `impact_note`: downstream effect on regulation, product safety, safety case, testing, or industry practice
+
+The intended value is a source-linked safety knowledge base: evidence first, then boundary clarification, then engineering interpretation.
+
 ## Validation
 
 Run:
