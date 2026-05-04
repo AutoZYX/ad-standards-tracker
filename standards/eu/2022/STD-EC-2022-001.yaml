@@ -13,8 +13,9 @@ document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official EUR-Lex record verified on 2026-05-04. The regulation lays down uniform procedures and technical specifications for ADS type-approval of fully automated vehicles under Regulation (EU) 2019/2144.
 automation_level:
 - L3
 - L4
@@ -24,11 +25,43 @@ topics:
 summary_en: First EU-level framework allowing type approval of L3/L4 ADS through 'innovative vehicle' pathway. Defines required
   documentation, testing, and reporting obligations.
 summary_cn: 欧盟首个允许 L3/L4 自动驾驶系统通过'创新车辆'路径进行型式认证的法规，定义所需文档、测试与报告义务。
-impact_note: Enabled Mercedes DRIVE PILOT (Germany) and upcoming EU L3 approvals for BMW, Volvo, NIO.
+scope_en:
+- Establishes EU procedures and technical specifications for type-approval of the ADS of fully automated vehicles.
+- Requires a manufacturer safety concept, safety management evidence, ODD description, verification and validation evidence, and information for authorities.
+- Connects ADS approval with cybersecurity, software updates, data recording, scenario-based testing, and in-service reporting.
+- Provides the EU approval route for ADS features that go beyond a single prescriptive UN regulation such as UN-R157.
+scope_cn:
+- 建立全自动车辆 ADS 型式认证的欧盟统一程序和技术规范。
+- 要求制造商提交安全概念、安全管理证据、ODD 描述、验证确认材料以及主管部门所需信息。
+- 将 ADS 准入与网络安全、软件更新、数据记录、场景测试和在用报告连接起来。
+- 为超出 UN-R157 等单一法规边界的 ADS 功能提供欧盟准入路径。
+exclusions_en:
+- It is not a consumer rating protocol and does not provide a simple NCAP-style score.
+- It does not replace national road-traffic rules or local operating permits where those are still required.
+- It does not by itself define every test scenario; it expects a safety argument supported by evidence.
+- It does not remove the manufacturer's responsibility for ADS safety during the approved system lifetime.
+exclusions_cn:
+- 它不是消费者测评规程，也不提供 NCAP 式简单评分。
+- 在仍需国家道路交通规则或地方运营许可的场景下，它不能替代这些要求。
+- 它本身不穷尽所有测试场景，而是要求用证据支撑安全论证。
+- 它不免除制造商在 ADS 获批后全生命周期内的安全责任。
+engineering_use_en:
+- Use it as the compliance backbone for any EU L3/L4 or fully automated vehicle approval plan.
+- Build a traceability matrix from ODD, hazardous scenarios, safety concept, V&V evidence, cybersecurity, software update, and data-recording evidence to each approval requirement.
+- Treat the authority review as a safety-case audit, not merely a test-report submission.
+- Pair it with ISO 21448, ISO 26262, ISO 34502/34503/34505, UN-R155, UN-R156, and DSSAD/EDR requirements.
+engineering_use_cn:
+- 将其作为欧盟 L3/L4 或全自动车辆准入计划的合规主线。
+- 建立从 ODD、危险场景、安全概念、验证确认、网络安全、软件更新和数据记录证据到每项准入要求的追踪矩阵。
+- 把主管部门审查理解为安全案例审计，而不是单纯提交测试报告。
+- 与 ISO 21448、ISO 26262、ISO 34502/34503/34505、UN-R155、UN-R156 以及 DSSAD/EDR 要求配套使用。
+expert_note_en: EU 2022/1426 is the point where ADS safety cases become type-approval evidence. For engineering teams, the hard part is not reading the articles; it is keeping every safety claim traceable to ODD, scenarios, logs, and post-approval obligations.
+expert_note_cn: EU 2022/1426 的关键价值，是把 ADS 安全案例变成准入证据。工程上真正困难的不是读条文，而是让每个安全声明都能追踪到 ODD、场景、日志和获批后的持续义务。
+impact_note: Foundational EU ADS type-approval framework. It is more useful as a safety-case and evidence-management checklist than as a narrow test catalogue.
 related_standards:
 - UN-R157
 - UN-R155
 - UN-R156
 - EU Regulation 2026/481
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

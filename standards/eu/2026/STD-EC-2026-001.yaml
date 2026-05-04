@@ -13,8 +13,9 @@ document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official EUR-Lex PDF verified on 2026-05-04. This amendment updates Implementing Regulation (EU) 2022/1426 and adds provisions relevant to automated valet parking and ADS approval documentation.
 automation_level:
 - L3
 - L4
@@ -24,9 +25,39 @@ topics:
 - functional_safety
 summary_en: 2026 amendment to the EU ADS type-approval framework. It adds automated valet parking provisions and updates definitions and safety-management-related requirements in Regulation (EU) 2022/1426.
 summary_cn: 欧盟自动驾驶系统型式认证框架的 2026 年修订，新增自动代客泊车相关要求，并更新 2022/1426 中的定义和安全管理相关要求。
+scope_en:
+- Amends the EU ADS type-approval framework created by Regulation (EU) 2022/1426.
+- Adds and updates requirements for automated valet parking and related approval documentation.
+- Refines definitions, approval evidence expectations, and the relationship between ADS functions and the safety management process.
+- Keeps the approval logic centred on a manufacturer safety case rather than a single fixed scenario list.
+scope_cn:
+- 修订由 (EU) 2022/1426 建立的欧盟 ADS 型式认证框架。
+- 新增和更新自动代客泊车及相关准入文件要求。
+- 细化定义、准入证据预期，以及 ADS 功能与安全管理过程之间的关系。
+- 继续以制造商安全案例为核心，而不是只依赖一份固定场景清单。
+exclusions_en:
+- It does not stand alone; read it together with the consolidated 2022/1426 framework.
+- It does not make automated valet parking automatically approvable without an ODD-specific safety case.
+- It does not replace local operating-site rules, infrastructure assumptions, or user instructions.
+exclusions_cn:
+- 它不能单独使用，应与 2022/1426 合并框架一起阅读。
+- 它不意味着自动代客泊车无需 ODD 特定安全案例即可获批。
+- 它不替代具体场地运营规则、基础设施假设或用户说明。
+engineering_use_en:
+- Treat it as a change-control update to the EU ADS approval evidence package.
+- For AVP functions, explicitly separate vehicle capability, parking-site assumptions, user handover, remote support, and minimum-risk behaviour.
+- Re-run the requirement traceability matrix from 2022/1426 after applying the amendment.
+- Check whether safety, cybersecurity, software update, and data-recording evidence still align after feature-scope expansion.
+engineering_use_cn:
+- 将其作为欧盟 ADS 准入证据包的变更控制更新。
+- 对 AVP 功能，应明确区分车辆能力、停车场地假设、用户交接、远程支持和最小风险行为。
+- 应用修订后，重新运行 2022/1426 的需求追踪矩阵。
+- 检查功能边界扩展后，安全、网络安全、软件更新和数据记录证据是否仍然一致。
+expert_note_en: The 2026 amendment matters because it pulls ADS approval toward low-speed but operationally complex domains such as automated valet parking. Low speed does not mean low assurance burden.
+expert_note_cn: 2026 修订的重要性在于，它把 ADS 准入推向自动代客泊车这类低速但运营复杂的领域。低速不等于低证明负担。
 impact_note: Important for ADS features beyond highway L3, especially automated valet parking and EU innovative-vehicle approval pathways.
 related_standards:
 - EU Regulation 2022/1426
 - UN-R157
 - ISO 21448
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

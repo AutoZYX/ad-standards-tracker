@@ -13,9 +13,9 @@ document_stage: in_force
 legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
-source_status: paywalled
-source_note: Official IEEE SA catalog page verified on 2026-05-03; full text is available via IEEE channels.
+verified_at: '2026-05-04'
+source_status: blocked
+source_note: Official IEEE SA catalog page manually verified on 2026-05-04; full standard text is available via IEEE channels. Automated checks are intermittently blocked or delayed by Cloudflare on this IEEE page, so this record is marked blocked rather than broken.
 automation_level:
 - L3
 - L4
@@ -66,4 +66,4 @@ related_standards:
 - SAE J3237
 - IEEE 3321-2024
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-05-03'
+last_updated: '2026-05-04'

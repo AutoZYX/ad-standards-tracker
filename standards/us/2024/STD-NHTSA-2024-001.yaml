@@ -22,9 +22,38 @@ summary_en: >-
   aggressive performance requirements (up to 62 mph in vehicle-to-vehicle, 45 mph pedestrian
   detection at night). Effective September 2029.
 summary_cn: 强制所有在美销售的新轻型车配备含行人检测功能的 AEB，性能要求严格（车对车最高 62 mph，夜间行人检测 45 mph）。2029 年 9 月生效。
+scope_en:
+  - Establishes FMVSS 127 requirements for automatic emergency braking and pedestrian automatic emergency braking on new light vehicles.
+  - Covers forward collision warning, AEB, and pedestrian AEB performance expectations under defined test conditions.
+  - Creates a binding US baseline for front-crash and pedestrian-crash avoidance that will affect ADAS sensor, perception, and braking architecture.
+  - Applies to L0-L2 active-safety functions, not only to vehicles marketed with assisted-driving packages.
+scope_cn:
+  - 建立美国新轻型车自动紧急制动和行人自动紧急制动的 FMVSS 127 要求。
+  - 覆盖前向碰撞预警、AEB、行人 AEB 在规定测试条件下的性能要求。
+  - 为前向碰撞和行人碰撞避免建立强制性美国基线，将影响 ADAS 传感器、感知和制动架构。
+  - 适用于 L0-L2 主动安全功能，不只适用于带辅助驾驶宣传的车型。
+exclusions_en:
+  - It is not an ADS or L3/L4 type-approval regulation.
+  - It does not cover lane centering, navigation assistance, driver monitoring, or full L2 misuse control.
+  - Passing FMVSS 127 does not prove overall ADAS or ADS safety; it addresses specific AEB/PAEB crash-imminent scenarios.
+exclusions_cn:
+  - 它不是 ADS 或 L3/L4 型式认证法规。
+  - 它不覆盖车道居中、领航辅助、驾驶员监控或完整 L2 误用控制。
+  - 通过 FMVSS 127 不等于证明整体 ADAS 或 ADS 安全；它覆盖的是特定 AEB/PAEB 临撞场景。
+engineering_use_en:
+  - Use it as a mandatory US active-safety baseline when designing perception, braking, and HMI requirements for L0-L2 systems.
+  - Keep a separate compliance matrix for FMVSS 127 because its binding requirements differ from NCAP scoring incentives.
+  - Validate not only true-positive braking performance, but also false-positive controls, diagnostic coverage, environmental limits, and customer explainability.
+  - For L2 systems, treat FMVSS 127 as a floor under higher-level misuse, driver monitoring, and scenario-coverage work.
+engineering_use_cn:
+  - 在设计 L0-L2 系统感知、制动和 HMI 要求时，将其作为美国强制主动安全基线。
+  - 为 FMVSS 127 单独建立合规矩阵，因为其强制要求不同于 NCAP 评分激励。
+  - 不只验证真阳性制动性能，也要验证误触发控制、诊断覆盖、环境边界和用户可解释性。
+  - 对 L2 系统，应把 FMVSS 127 视为误用控制、驾驶员监控和场景覆盖工作的下限。
+expert_note_en: FMVSS 127 is not an automated-driving regulation, but it will shape the perception and braking stack underneath many assisted-driving products. In safety evidence, AEB is the floor, not the ceiling.
+expert_note_cn: FMVSS 127 不是自动驾驶法规，但会塑造许多辅助驾驶产品底层的感知和制动栈。在安全证据里，AEB 是地板，不是天花板。
 impact_note: >-
-  Most aggressive AEB mandate globally. Affects all OEMs selling in US, including Chinese brands
-  entering US market.
+  Binding US AEB/PAEB rule with long lead time but large architecture impact. It should be tracked separately from voluntary NCAP incentives.
 related_standards:
   - Euro NCAP AEB
   - ISO 22733
@@ -34,5 +63,6 @@ document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official Federal Register final rule page verified on 2026-05-04.

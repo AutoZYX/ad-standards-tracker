@@ -5,16 +5,17 @@ org_full: China Intelligent Connected Automobile Assessment Programme
 jurisdiction: china
 type: standard
 status: in_force
-title_en: C-ICAP Management Rules (2024 Revision) — Intelligent Connected Vehicle Assessment Protocol
-title_cn: C-ICAP 管理规则（2024 修订版）— 智能网联汽车测评规程
+title_en: C-ICAP Management Rules (Version 1.1) — Intelligent Connected Vehicle Assessment Protocol
+title_cn: C-ICAP 管理规则（1.1 版）— 中国智能网联汽车技术规程
 url: https://www.c-ncap.org.cn/cncap-guicheng-detail?id=16
 effective_date: '2025-06-30'
 document_stage: in_force
 legal_force: rating_protocol
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official C-NCAP/C-ICAP page verified on 2026-05-04. The page title is C-ICAP 管理规则（1.1版） and links to the management rules and appendices for basic driving assistance, navigation driving assistance, parking assistance, and intelligent cockpit evaluation.
 automation_level:
 - L2
 - L3
@@ -25,9 +26,39 @@ topics:
 - operations
 summary_en: Chinese intelligent connected vehicle assessment protocol covering basic driving assistance, navigation assistance, parking assistance, and intelligent cockpit assessment dimensions.
 summary_cn: 中国智能网联汽车测评规程，覆盖基础行车辅助、领航行车辅助、泊车辅助和智慧座舱等评价维度。
+scope_en:
+- Provides C-ICAP's management rules and technical appendices for intelligent connected vehicle assessment.
+- Covers basic driving assistance, navigation driving assistance, basic parking assistance, memory parking assistance, and intelligent cockpit evaluation.
+- Functions as a Chinese consumer/industry assessment protocol for intelligent connected vehicle functions, separate from crash-safety C-NCAP rules.
+- Is directly relevant to L2/L2+ product planning because it turns function quality, HMI, and assistance performance into rating evidence.
+scope_cn:
+- 提供 C-ICAP 智能网联汽车评价的管理规则和技术附录。
+- 覆盖基础行车辅助、领航行车辅助、基础泊车辅助、记忆泊车辅助和智慧座舱评价。
+- 是面向智能网联汽车功能的中国消费者/行业测评规程，应与偏碰撞安全的 C-NCAP 规程分开理解。
+- 对 L2/L2+ 产品规划高度相关，因为它把功能质量、HMI 和辅助性能转化为评分证据。
+exclusions_en:
+- It is not a mandatory GB regulation and does not grant road-traffic approval.
+- It should not be treated as a complete SOTIF or functional-safety process.
+- It does not replace MIIT mandatory requirements for combined driving assistance when those apply.
+exclusions_cn:
+- 它不是强制性 GB 法规，也不授予道路交通准入。
+- 不应把它当作完整 SOTIF 或功能安全流程。
+- 在组合驾驶辅助强制要求适用时，它不能替代工信部强制性要求。
+engineering_use_en:
+- Use it to translate China-market intelligent-driving feature expectations into testable product requirements.
+- Keep C-ICAP rating targets separate from legal compliance, but use both in the same product-safety roadmap.
+- Map navigation assistance, parking assistance, HMI, and cockpit items to misuse-control, driver-state, and scenario-test evidence.
+- Compare it with C-NCAP 2027 and Euro NCAP 2026 to separate China-specific rating pressure from global ADAS trends.
+engineering_use_cn:
+- 用它把中国市场智能驾驶功能期待转化为可测试的产品需求。
+- 将 C-ICAP 评分目标与法律合规目标分开，但放入同一产品安全路线图管理。
+- 将领航辅助、泊车辅助、HMI 和座舱项目映射到误用控制、驾驶员状态和场景测试证据。
+- 与 C-NCAP 2027、Euro NCAP 2026 对照，区分中国本土评分压力和全球 ADAS 趋势。
+expert_note_en: C-ICAP should not be buried under generic "NCAP" labels. It is one of the few Chinese assessment systems focused directly on intelligent connected vehicle functions rather than crashworthiness alone.
+expert_note_cn: C-ICAP 不应被泛泛塞进“NCAP”标签下。它是少数直接面向智能网联功能、而不只是碰撞安全的中国测评体系之一。
 impact_note: Complements C-NCAP by focusing on intelligent connected vehicle functions and should be tracked separately from crash-safety NCAP protocols.
 related_standards:
 - C-NCAP 2027
 - GB/T 40429
 - MIIT L2 combined driving assistance mandatory GB
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

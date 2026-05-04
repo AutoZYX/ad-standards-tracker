@@ -13,8 +13,9 @@ document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official legislation.gov.uk enacted text verified on 2026-05-04.
 automation_level:
 - L3
 - L4
@@ -24,10 +25,39 @@ topics:
 summary_en: Creates Authorised Self-Driving Entity (ASDE) regime. Shifts liability from driver to ASDE for self-driving vehicles.
   Defines 'user-in-charge' and 'no-user-in-charge' scenarios and establishes safety regulator.
 summary_cn: 建立'授权自动驾驶实体（ASDE）'制度。在自动驾驶状态下将法律责任从驾驶员转移到 ASDE。定义'有责任用户'与'无责任用户'场景，并设立安全监管机构。
-impact_note: Most comprehensive legal framework for L4 operation outside China. Provides ADSE template adopted/studied by
-  Japan, Korea.
+scope_en:
+- Establishes the UK legal framework for authorising automated vehicles and automated-driving features.
+- Defines accountable roles including authorised self-driving entity, user-in-charge, and no-user-in-charge operation.
+- Creates duties around authorisation, in-use safety, information sharing, incident investigation, and misleading marketing.
+- Provides the legal layer that must sit above technical standards such as ISO 21448, ISO 26262, and scenario-based validation.
+scope_cn:
+- 建立英国自动驾驶车辆和自动驾驶功能授权的法律框架。
+- 定义授权自动驾驶实体、有责任用户、无责任用户运行等责任角色。
+- 建立准入、在用安全、信息共享、事件调查和误导性营销治理等义务。
+- 为 ISO 21448、ISO 26262 和场景验证等技术标准之上提供法律层。
+exclusions_en:
+- It is not a technical ADS test protocol and does not prescribe detailed scenario libraries.
+- It does not by itself authorise a vehicle; secondary legislation, regulator processes, and approval evidence remain necessary.
+- It does not remove the need for cybersecurity, software update, data-recording, and operational safety processes.
+exclusions_cn:
+- 它不是技术性 ADS 测试规程，不规定详细场景库。
+- 它本身不直接授权某款车辆；仍需二级法规、监管流程和准入证据。
+- 它不取消网络安全、软件更新、数据记录和运营安全流程的必要性。
+engineering_use_en:
+- Use it to map legal accountability before designing a UK ADS deployment or trial.
+- "Assign each safety claim to an accountable entity: manufacturer, ASDE, operator, user-in-charge, insurer, or regulator-facing role."
+- Build incident reporting and in-use monitoring around the legal duty model, not only around engineering convenience.
+- Translate technical evidence from ISO/SAE/UNECE work into the language of authorisation, user responsibility, and ongoing safety.
+engineering_use_cn:
+- 在设计英国 ADS 部署或试运营前，先用它映射法律责任。
+- "将每个安全声明对应到明确责任实体：制造商、ASDE、运营方、有责任用户、保险方或面向监管的角色。"
+- 围绕法律义务模型建立事件报告和在用监测，而不只是按工程便利性设计。
+- 将 ISO/SAE/UNECE 的技术证据转化为授权、用户责任和持续安全的监管语言。
+expert_note_en: The UK Act is valuable because it separates the question "can the vehicle drive itself?" from "who is legally accountable when it does?" That separation is essential for L4 deployment.
+expert_note_cn: 英国法案的价值在于把“车辆能不能自己开”和“车辆自己开时谁承担法律责任”拆开。这个拆分是 L4 落地的前提。
+impact_note: One of the clearest legal frameworks for assigning accountability in automated-vehicle operation. Its value is legal governance, not detailed test engineering.
 related_standards:
 - BSI PAS 1881
 - UN-R157
 contributor: AD Standards Tracker Seed / Zhang Yuxin
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

@@ -13,9 +13,9 @@ document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
-source_status: verified
-source_note: Official NHTSA PDF. NHTSA's SGO web page states the third amendment was issued on 2025-04-24 and became effective on 2025-06-16.
+verified_at: '2026-05-04'
+source_status: blocked
+source_note: Official NHTSA PDF retained as the source. Automated URL checks on 2026-05-04 returned a 403 response from NHTSA/Akamai, so this record is marked blocked rather than broken; NHTSA's SGO web page states the third amendment was issued on 2025-04-24 and became effective on 2025-06-16.
 automation_level:
 - L2
 - L3
@@ -27,9 +27,39 @@ topics:
 - type_approval
 summary_en: NHTSA's third amended SGO 2021-01 updates mandatory crash reporting for identified manufacturers and operators of ADS and SAE Level 2 ADAS vehicles. The amendment changes reporting fields and public data releases from 2025-06-16 onward.
 summary_cn: NHTSA 第三次修订 SGO 2021-01，对指定 ADS 和 SAE L2 ADAS 制造商、运营方的事故报告义务进行更新。2025-06-16 起，公开数据文件和字段按第三次修订要求执行。
+scope_en:
+- Requires identified manufacturers and operators to report specified crashes involving ADS or SAE Level 2 ADAS-equipped vehicles.
+- Defines event-reporting categories, timelines, data fields, updates, and public-release handling for the SGO dataset.
+- Covers both higher-automation ADS operations and L2 ADAS crash-reporting obligations.
+- Creates a federal real-world safety evidence stream that supports defect investigation, trend analysis, and public transparency.
+scope_cn:
+- 要求指定制造商和运营方报告涉及 ADS 或 SAE L2 ADAS 车辆的特定事故。
+- 定义事件报告类别、时限、字段、更新和 SGO 数据公开处理方式。
+- 同时覆盖高阶自动驾驶 ADS 运行和 L2 ADAS 事故报告义务。
+- 建立美国联邦真实世界安全证据流，支撑缺陷调查、趋势分析和公众透明。
+exclusions_en:
+- It is not an FMVSS performance standard and does not certify a system as safe.
+- A reported crash does not by itself prove system fault, and absence from the dataset does not prove absence of risk.
+- It does not replace EDR, DSSAD, police reports, insurance evidence, or company internal safety investigation.
+exclusions_cn:
+- 它不是 FMVSS 性能标准，不会认证某个系统是安全的。
+- 上报事故本身不等于证明系统有 fault，数据集中没有出现也不等于没有风险。
+- 它不替代 EDR、DSSAD、警方报告、保险证据或企业内部安全调查。
+engineering_use_en:
+- Build an internal incident-reporting pipeline that can map vehicle logs, ADS/L2 state, ODD, driver engagement, and crash facts to SGO fields.
+- Use the public SGO dataset for trend awareness, but do not treat raw counts as exposure-normalized safety rates.
+- For ROAM-style incident analysis, separate reporting trigger, operational domain, system state, and harm outcome.
+- Align SGO reporting with cybersecurity, software version, OTA, EDR/DSSAD, and product-safety escalation workflows.
+engineering_use_cn:
+- 建立内部事件报告管线，把车辆日志、ADS/L2 状态、ODD、驾驶员参与状态和事故事实映射到 SGO 字段。
+- 可用公开 SGO 数据观察趋势，但不要把原始数量当作暴露量归一化后的安全率。
+- 对 ROAM 式事件分析，应区分报告触发条件、运行域、系统状态和伤害结果。
+- 将 SGO 报告与网络安全、软件版本、OTA、EDR/DSSAD 和产品安全升级流程对齐。
+expert_note_en: SGO data is a transparency tool, not a denominator. Its engineering value is highest when it is used to improve incident taxonomy and evidence discipline rather than to rank companies by raw crash counts.
+expert_note_cn: SGO 数据是透明度工具，不是分母。它最大的工程价值不是用原始事故数给公司排名，而是倒逼事件分类和证据纪律。
 impact_note: This is the main US federal data-collection lever for real-world ADS/L2 ADAS safety events. It is directly relevant to crash transparency, defect investigation, and ROAM-style incident analytics.
 related_standards:
 - STD-NHTSA-2021-001
 - SAE J3016
 - 49 CFR Part 512
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

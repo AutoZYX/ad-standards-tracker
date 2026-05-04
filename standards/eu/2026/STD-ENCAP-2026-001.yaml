@@ -2,11 +2,11 @@ id: STD-ENCAP-2026-001
 date: '2026-01-20'
 org: Euro NCAP
 jurisdiction: eu
-type: policy
+type: standard
 status: in_force
-title_en: Euro NCAP 2026 Assisted Driving Grading Protocol — Enhanced Driver Monitoring and Take-over
-title_cn: Euro NCAP 2026 辅助驾驶测评规程 — 强化驾驶员监控与接管
-url: https://www.euroncap.com/en/ratings-rewards/assisted-driving-grading/
+title_en: Euro NCAP 2026-2028 Car Safety Protocols — Safe Driving, Driver Engagement, and Vehicle Assistance
+title_cn: Euro NCAP 2026-2028 汽车安全测评规程 — 安全驾驶、驾驶员参与和车辆辅助
+url: https://www.euroncap.com/protocols/
 automation_level:
   - L1
   - L2
@@ -15,19 +15,50 @@ topics:
   - testing
   - sotif
 summary_en: >-
-  Annual update of Euro NCAP's Assisted Driving Grading (ADG). Increases weight of Driver Monitoring
-  Systems (DMS), adds corner-case scenarios for take-over request timing, penalizes systems that
-  fail to disengage on persistent hand-off-wheel.
-summary_cn: Euro NCAP 辅助驾驶测评（ADG）年度更新。加大驾驶员监控系统（DMS）权重，新增接管请求时机的边角案例场景，惩罚在持续脱手条件下未禁用的系统。
-impact_note: 与中国 MIIT 组合驾驶辅助强标方向一致（均强调驾驶员状态监测+滥用防护）。ADG 已成为欧洲 OEM 产品规划的关键指标。
+  Euro NCAP official protocol hub for the 2026-2028 car safety rating cycle. It organizes the new
+  cycle around domains such as Safe Driving, Crash Avoidance, Crash Protection, Post-Crash Safety,
+  and general protocols, including driver engagement, vehicle assistance, and occupant monitoring.
+summary_cn: Euro NCAP 2026-2028 汽车安全评级周期的官方规程入口，围绕安全驾驶、碰撞避免、碰撞保护、碰撞后安全和通用规程组织，包含驾驶员参与、车辆辅助和乘员监测等内容。
+scope_en:
+  - Provides Euro NCAP's official protocol framework for the 2026-2028 car safety rating cycle.
+  - Covers consumer-rating requirements that influence ADAS design, especially safe driving, driver engagement, vehicle assistance, crash avoidance, and occupant monitoring.
+  - Sits alongside the separate Assisted Driving grading route, but is broader than L2 assisted-driving scoring alone.
+  - Functions as a market-shaping assessment protocol rather than a legal type-approval regulation.
+scope_cn:
+  - 提供 Euro NCAP 2026-2028 汽车安全评级周期的官方规程框架。
+  - 覆盖影响 ADAS 设计的消费者测评要求，尤其是安全驾驶、驾驶员参与、车辆辅助、碰撞避免和乘员监测。
+  - 与单独的辅助驾驶评级路径并行，但范围比 L2 辅助驾驶评分更宽。
+  - 其作用是市场导向的测评规程，而不是法律型式认证法规。
+exclusions_en:
+  - It is not binding type approval and does not authorise a vehicle for road use.
+  - It should not be cited as a UNECE or EU legal requirement.
+  - It does not replace ISO 21448, ISO 26262, or OEM safety-case work; it provides rating incentives and test expectations.
+exclusions_cn:
+  - 它不是强制型式认证，不授权车辆上路。
+  - 不应把它引用为 UNECE 或欧盟法律要求。
+  - 它不替代 ISO 21448、ISO 26262 或 OEM 安全案例工作，而是提供评分激励和测试预期。
+engineering_use_en:
+  - Use it when translating consumer-rating pressure into ADAS product requirements.
+  - Separate Euro NCAP scoring targets from legal compliance targets in the safety plan.
+  - Map driver engagement, vehicle assistance, and occupant monitoring requirements to misuse-control and HMI evidence.
+  - Compare it with C-NCAP, C-ICAP, JNCAP, and KNCAP to identify regional differences in ADAS prioritisation.
+engineering_use_cn:
+  - 在把消费者测评压力转化为 ADAS 产品需求时使用。
+  - 在安全计划中区分 Euro NCAP 评分目标和法律合规目标。
+  - 将驾驶员参与、车辆辅助和乘员监测要求映射到误用控制和 HMI 证据。
+  - 与 C-NCAP、C-ICAP、JNCAP、KNCAP 比较，识别各地区 ADAS 优先级差异。
+expert_note_en: Euro NCAP is not law, but it often moves product roadmaps faster than law. The engineering mistake is to treat rating protocols as either "only marketing" or "full compliance"; they are neither.
+expert_note_cn: Euro NCAP 不是法律，但它常常比法律更快改变产品路线图。工程上的误区，是把测评规程要么看成“只是营销”，要么看成“完整合规”；两者都不对。
+impact_note: "Aligns with the same industry direction as China's combined driving assistance mandatory GB: stronger attention to driver engagement, misuse control, and ADAS performance evidence."
 related_standards:
   - MIIT 组合驾驶辅助强标
   - C-NCAP 2027
   - UN-R157
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: rating_protocol
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official Euro NCAP protocols page verified on 2026-05-04. The page describes current, future, and historical testing, assessment, rating protocols, and policies.

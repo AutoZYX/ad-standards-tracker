@@ -3,18 +3,18 @@ date: '2026-04-01'
 org: MLIT / NASVA
 org_full: Ministry of Land, Infrastructure, Transport and Tourism and National Agency for Automotive Safety & Victims' Aid
 jurisdiction: japan
-type: standard
+type: policy
 status: published
 title_en: JNCAP FY2025 Automobile Assessment — Active Safety and Preventive Safety Evaluation Releases
 title_cn: JNCAP 2025 年度汽车安全性能评价 — 主动安全与预防安全结果发布
 url: https://www.mlit.go.jp/report/press/jidosha07_hh_000559.html
 document_stage: published
-legal_force: rating_protocol
+legal_force: informational
 source_type: official_news
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
-source_note: Official MLIT FY2025 assessment result release. Use the MLIT JNCAP assessment portal and roadmap for protocol follow-up.
+source_note: Official MLIT FY2025 assessment result release verified on 2026-05-04. This record is an official update about assessment results, not the full JNCAP technical protocol text.
 automation_level:
 - L1
 - L2
@@ -24,9 +24,39 @@ topics:
 - hmi
 summary_en: MLIT and NASVA publish FY2025 JNCAP assessment results, including preventive safety evaluations such as autonomous emergency braking, intersection scenarios, lane support, emergency assist, and pedal misapplication mitigation depending on vehicle equipment.
 summary_cn: 国土交通省和 NASVA 发布 2025 年度 JNCAP 评价结果，预防安全评价覆盖自动紧急制动、交叉路口场景、车道辅助、紧急时停车辅助和误踩踏板碰撞减轻等项目，具体取决于车型配置。
-impact_note: JNCAP is not a binding type-approval regulation, but it strongly shapes Japanese OEM active-safety roadmaps and provides useful NCAP comparison against Euro NCAP, C-NCAP, KNCAP, and US NCAP.
+scope_en:
+- Records an official MLIT/NASVA update on FY2025 JNCAP assessment results.
+- Indicates the active-safety and preventive-safety functions currently visible in Japanese public assessment releases.
+- Useful for tracking how Japanese NCAP attention is distributed across AEB, intersection support, lane support, emergency assist, and pedal misapplication mitigation.
+- Should be used as a latest-update evidence item rather than as the full technical protocol.
+scope_cn:
+- 记录国土交通省/NASVA 关于 2025 年度 JNCAP 评价结果的官方动态。
+- 反映日本公开测评结果中当前可见的主动安全和预防安全功能。
+- 可用于跟踪 JNCAP 对 AEB、交叉路口辅助、车道辅助、紧急辅助和误踩踏板碰撞减轻的关注分布。
+- 应作为最新动态证据使用，而不是完整技术规程原文。
+exclusions_en:
+- It is not the complete JNCAP test protocol and should not be cited as one.
+- It is not a binding type-approval regulation.
+- It does not provide a complete engineering scenario catalogue for each function.
+exclusions_cn:
+- 它不是完整 JNCAP 测试规程，不应被当作规程原文引用。
+- 它不是强制型式认证法规。
+- 它不提供每项功能的完整工程场景库。
+engineering_use_en:
+- Use it to monitor Japanese active-safety assessment priorities and compare them with Euro NCAP, C-NCAP, C-ICAP, and KNCAP.
+- When engineering evidence is needed, trace from this update to the current JNCAP assessment portal and underlying test procedures.
+- Treat the functions mentioned in result releases as market signals, not as sufficient safety requirements.
+- For SOTIF work, use the result categories to identify scenarios that Japanese assessment bodies are making more visible to consumers.
+engineering_use_cn:
+- 用它监测日本主动安全测评优先级，并与 Euro NCAP、C-NCAP、C-ICAP、KNCAP 对比。
+- 需要工程证据时，应从该动态追溯到 JNCAP 当前评价门户和底层测试规程。
+- 将结果发布中出现的功能视为市场信号，而不是充分安全需求。
+- 对 SOTIF 工作，可用结果类别识别日本测评机构正在向消费者强化展示的场景。
+expert_note_en: This record is intentionally classified as an official update, not as a standard. That distinction prevents the common mistake of treating NCAP result announcements as if they were protocol text.
+expert_note_cn: 这条记录应明确归为官方动态，而不是标准原文。这样可以避免一个常见错误：把 NCAP 结果公告当成测评规程文本。
+impact_note: Useful latest-update evidence for Japanese active-safety assessment priorities, but it must be traced to JNCAP protocol materials before being used in engineering requirement work.
 related_standards:
 - ISO 34502
 - STD-CATARC-2026-001
 - STD-ENCAP-2026-001
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

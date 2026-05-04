@@ -13,8 +13,8 @@ legal_force: voluntary
 source_type: official_catalog
 evidence_level: B
 verified_at: '2026-05-04'
-source_status: paywalled
-source_note: Official IEEE SA catalog page verified on 2026-05-04; full standard text requires purchase or subscription. IEEE page lists it as an active standard and describes its relationship to IEEE 2846-2022.
+source_status: blocked
+source_note: Official IEEE SA catalog page manually verified on 2026-05-04; full standard text requires purchase or subscription. Automated checks are intermittently blocked or delayed by Cloudflare on this IEEE page, so this record is marked blocked rather than broken. IEEE page lists it as an active standard and describes its relationship to IEEE 2846-2022.
 automation_level:
 - L3
 - L4
