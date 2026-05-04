@@ -13,8 +13,9 @@ document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official German federal law PDF verified on 2026-05-04.
 automation_level:
 - L4
 topics:
@@ -24,9 +25,39 @@ topics:
 - data_recording
 summary_en: German ordinance detailing approval and operation requirements for autonomous vehicles in defined operating areas, including KBA type approval, operating area approval, technical supervision, data storage, and IT security.
 summary_cn: 德国自动驾驶车辆批准与运营细则，规定限定运行区域内自动驾驶车辆的 KBA 批准、运行区域批准、技术监督、数据存储和 IT 安全要求。
+scope_en:
+- Operationalises Germany's 2021 autonomous-driving law through detailed approval and operation requirements.
+- Covers vehicle approval, operating-area approval, technical supervision, data storage, IT security, and operator obligations.
+- Provides a concrete model for L4 deployment in defined operating areas rather than open-ended general-road autonomy.
+- Bridges legal authorisation and engineering evidence for vehicle, operator, supervisor, and infrastructure assumptions.
+scope_cn:
+- 通过详细批准和运营要求落实德国 2021 年自动驾驶法律。
+- 覆盖车辆批准、运行区域批准、技术监督、数据存储、IT 安全和运营方义务。
+- 提供限定运行区域内 L4 部署的具体模型，而不是无边界通用道路自动驾驶。
+- 将法律授权与车辆、运营方、监督员和基础设施假设的工程证据连接起来。
+exclusions_en:
+- It does not by itself create EU-wide approval; it is a German national operation and approval framework.
+- It does not remove the need for type-approval, cybersecurity, software-update, or data-protection compliance under other regimes.
+- It is not a scenario catalogue; it requires the applicant to demonstrate safety for the defined operating area.
+exclusions_cn:
+- 它本身不创建欧盟范围内通用批准，而是德国国家层面的运营与批准框架。
+- 它不取消其他体系下的型式认证、网络安全、软件更新或数据保护合规要求。
+- 它不是场景目录，而是要求申请方证明限定运行区域内的安全性。
+engineering_use_en:
+- "Use it as the engineering checklist for Germany L4 operation: vehicle evidence, ODA evidence, supervisor procedures, data storage, IT security, and operating organisation."
+- Treat technical supervision as a safety function with requirements, training, logs, communication quality, and escalation paths.
+- Build data-storage and event-reconstruction capability into the system architecture before approval submission.
+- Map AFGBV requirements to ISO 21448, ISO 26262, ISO/SAE 21434, and EU 2022/1426 evidence.
+engineering_use_cn:
+- "将其作为德国 L4 运营工程清单：车辆证据、ODA 证据、监督员流程、数据存储、IT 安全和运营组织。"
+- 将技术监督视为安全功能，定义要求、培训、日志、通信质量和升级路径。
+- 在提交批准前，将数据存储和事件复现能力纳入系统架构。
+- 将 AFGBV 要求映射到 ISO 21448、ISO 26262、ISO/SAE 21434 和 EU 2022/1426 证据。
+expert_note_en: AFGBV is where Germany's L4 idea becomes operationally testable. It forces a project to prove not only that the vehicle works, but that the operating organisation can control and explain it.
+expert_note_cn: AFGBV 是德国 L4 理念进入可运营验证的地方。它要求项目不只证明车辆能跑，还要证明运营组织能控制、能解释。
 impact_note: Operationalizes Germany's 2021 L4 autonomous driving law and is a key reference for driverless operation governance in defined ODD/ODA areas.
 related_standards:
 - German Autonomous Driving Act 2021
 - EU Regulation 2022/1426
 - UN-R157
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

@@ -19,18 +19,48 @@ summary_en: >-
   Mandates event data recorder installation and defines minimum data elements captured during
   collision events. Establishes data retention and retrieval standards for accident reconstruction.
 summary_cn: 强制安装事件数据记录仪并规定碰撞事件必须记录的最小数据元素集。为事故重建建立数据保留和取回标准。
+scope_en:
+  - Establishes UNECE type-approval requirements for event data recorders in vehicles within its scope.
+  - Defines crash-event data recording, retrieval, survivability, and minimum data elements for accident reconstruction.
+  - Provides the conventional vehicle EDR baseline that interacts with ADS-specific DSSAD requirements.
+  - Supports post-crash investigation and regulatory evidence, especially when combined with ADS state and driver-interaction logs.
+scope_cn:
+  - 建立适用车辆事件数据记录仪的 UNECE 型式认证要求。
+  - 定义碰撞事件数据记录、读取、存活性和事故重建所需最小数据元素。
+  - 提供传统车辆 EDR 基线，并与 ADS 专用 DSSAD 要求相互衔接。
+  - 支撑碰撞后调查和监管证据，尤其是在与 ADS 状态和驾驶员交互日志结合时。
+exclusions_en:
+  - It is not a DSSAD regulation for automated-driving system state attribution.
+  - It does not by itself explain whether an ADS, driver, or operator caused an event.
+  - It does not replace cybersecurity, data integrity, or privacy governance around recorded data.
+exclusions_cn:
+  - 它不是用于自动驾驶系统状态归因的 DSSAD 法规。
+  - 它本身不能解释事件由 ADS、驾驶员还是运营方导致。
+  - 它不替代记录数据的网络安全、完整性或隐私治理。
+engineering_use_en:
+  - Use it as the conventional crash-data layer in a broader ADS evidence architecture.
+  - Align EDR signals with DSSAD, HMI, OTA/software version, cybersecurity logs, and incident-investigation procedures.
+  - Define data retrieval authority, chain of custody, and integrity protection before deployment.
+  - For China/EU comparisons, map UN-R160 to GB 39732 and ADS DSSAD requirements separately.
+engineering_use_cn:
+  - 将其作为更广泛 ADS 证据架构中的传统碰撞数据层。
+  - 将 EDR 信号与 DSSAD、HMI、OTA/软件版本、网络安全日志和事件调查流程对齐。
+  - 在部署前定义数据读取权限、证据链和完整性保护。
+  - 做中欧比较时，应分别映射 UN-R160、GB 39732 和 ADS DSSAD 要求。
+expert_note_en: EDR and DSSAD answer different questions. EDR reconstructs a crash event; DSSAD helps attribute automated-driving state and handover responsibility. A credible ADS evidence strategy needs both.
+expert_note_cn: EDR 和 DSSAD 回答的问题不同。EDR 复现碰撞事件，DSSAD 帮助归因自动驾驶状态和接管责任。可信 ADS 证据策略需要二者同时存在。
 impact_note: Foundation for DSSAD (UN-R157's data recorder for ADS) and forthcoming DSSAD harmonization work.
 related_standards:
   - UN-R157
   - GB 39732
   - ISO 21434
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: blocked
 source_note: >-
-  Automated URL checks are blocked or time out for this source; keep the record with a blocked
-  status until manual browser verification is refreshed.
+  Official UNECE page retained. Automated URL checks are blocked or time out for this source, so the
+  record is marked blocked rather than broken.

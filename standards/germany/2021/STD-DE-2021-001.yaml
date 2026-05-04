@@ -14,22 +14,49 @@ document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-02'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official Bundesgesetzblatt PDF verified on 2026-05-04.
 automation_level:
 - L4
 topics:
 - operations
 - type_approval
 - teleoperation
-summary_en: World's first national-level L4 regulation. Defines Technical Supervisor
-  role (not a driver but remote oversight), authorization for driverless operation
-  in Operational Design Areas (ODA), liability framework. Enables services like MOIA,
-  HOLON, Continental.
-summary_cn: 全球首部国家级 L4 法规。定义技术监督员（非驾驶员但承担远程监督）角色、运行设计区域（ODA）内无人驾驶授权、责任框架。支持 MOIA、HOLON、Continental
-  等服务。
-impact_note: UK Automated Vehicles Act 2024 和中国地方立法的参考对象。技术监督员概念是远程运营合规的原型。
+summary_en: German Road Traffic Act amendment creating a national legal basis for Level 4 autonomous vehicles in defined operating areas. Introduces the technical supervision role and separates driverless operation governance from conventional driver responsibility.
+summary_cn: 德国道路交通法修订，为限定运行区域内的 L4 自动驾驶车辆建立国家法律基础。引入技术监督角色，并将无人化运营治理与传统驾驶员责任区分开。
+scope_en:
+- Creates the statutory basis for L4 autonomous vehicle operation in defined operating areas in Germany.
+- Introduces the technical supervisor concept for remote oversight, activation/deactivation decisions, and operational governance.
+- Separates operating-area authorisation, vehicle technical requirements, and operational responsibilities.
+- Provides the primary law later operationalised by the AFGBV ordinance.
+scope_cn:
+- 为德国限定运行区域内 L4 自动驾驶车辆运行建立法律基础。
+- 引入技术监督员概念，用于远程监督、启停决策和运行治理。
+- 区分运行区域授权、车辆技术要求和运营责任。
+- 是后续 AFGBV 条例细化实施的上位法。
+exclusions_en:
+- It is not the detailed technical approval ordinance; use AFGBV for operational and approval details.
+- It does not create open-ended nationwide driverless operation without approved operating areas.
+- It does not replace EU type approval or UNECE requirements where those apply.
+exclusions_cn:
+- 它不是详细技术批准条例；运营和批准细节应看 AFGBV。
+- 它不允许脱离已批准运行区域的全国无限制无人化运行。
+- 在欧盟型式认证或 UNECE 要求适用时，它不能替代这些要求。
+engineering_use_en:
+- Use it to structure the legal-governance layer of a Germany L4 deployment before writing technical test plans.
+- Define the technical supervisor's authority, procedures, communication path, and fallback responsibilities early.
+- Keep ODA/ODD, operator, technical supervisor, owner, and manufacturer responsibilities explicitly separated in the safety case.
+- Pair it with AFGBV for concrete data storage, IT security, approval, and operational controls.
+engineering_use_cn:
+- 在编写技术测试计划前，先用它搭建德国 L4 部署的法律治理层。
+- 早期定义技术监督员的权限、流程、通信链路和 fallback 职责。
+- 在安全案例中明确区分 ODA/ODD、运营方、技术监督员、所有人和制造商责任。
+- 与 AFGBV 配套使用，落实数据存储、IT 安全、批准和运营控制。
+expert_note_en: Germany's contribution is the technical-supervision model. It shows that L4 governance is not "no human"; it is a different allocation of human responsibility.
+expert_note_cn: 德国方案的关键贡献是技术监督模型。它说明 L4 治理不是“没有人”，而是重新分配人的责任。
+impact_note: Important legal reference for L4 operation in defined areas and for remote-supervision governance models.
 related_standards:
 - EU Regulation 2022/1426
 - UN-R157
-last_updated: '2026-05-02'
+last_updated: '2026-05-04'

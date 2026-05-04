@@ -18,9 +18,39 @@ topics:
   - perception
 summary_en: >-
   Mandates AEB for passenger cars (M1) and light commercial vehicles (N1) in UNECE contracting
-  parties. Covers car-to-car (C2C), car-to-pedestrian (C2P), car-to-cyclist (C2C) scenarios. Speed
+  parties. Covers car-to-car (C2C), car-to-pedestrian (C2P), and car-to-cyclist scenarios. Speed
   range expanded through amendments.
 summary_cn: 强制 UNECE 缔约方的乘用车（M1）和轻型商用车（N1）装备 AEB。覆盖车对车（C2C）、车对行人（C2P）、车对自行车（C2C）场景。通过多轮修订扩展了速度范围。
+scope_en:
+  - Establishes UNECE approval requirements for Advanced Emergency Braking Systems on M1 and N1 vehicles.
+  - Covers defined forward-collision scenarios such as vehicle, pedestrian, and cyclist targets as amended over time.
+  - Provides a binding active-safety baseline for many UNECE contracting markets.
+  - Influences NCAP and national AEB requirements, but remains a type-approval regulation with defined test conditions.
+scope_cn:
+  - 建立 M1、N1 类车辆先进紧急制动系统的 UNECE 批准要求。
+  - 覆盖随修订演化的车辆、行人、自行车等前向碰撞目标场景。
+  - 为许多 UNECE 缔约市场提供强制主动安全基线。
+  - 会影响 NCAP 和各国 AEB 要求，但其本质仍是具有规定测试条件的型式认证法规。
+exclusions_en:
+  - It is not an ADS or assisted-driving regulation.
+  - It does not cover driver monitoring, lane centering, navigation assistance, or complete L2 misuse control.
+  - Passing UN-R152 does not demonstrate full perception safety or SOTIF coverage.
+exclusions_cn:
+  - 它不是 ADS 或辅助驾驶法规。
+  - 它不覆盖驾驶员监控、车道居中、领航辅助或完整 L2 误用控制。
+  - 通过 UN-R152 不等于证明完整感知安全或 SOTIF 覆盖。
+engineering_use_en:
+  - Use it as a binding AEB compliance baseline and keep it separate from consumer-rating targets such as Euro NCAP or C-NCAP.
+  - Maintain scenario-level traceability for target type, speed, overlap, lighting, environment, and system availability assumptions.
+  - Validate false positives, diagnostic coverage, degradation handling, and HMI warnings alongside required stopping/mitigation performance.
+  - For L2 products, treat AEBS compliance as the active-safety floor under broader misuse and driver-engagement controls.
+engineering_use_cn:
+  - 将其作为强制 AEB 合规基线，并与 Euro NCAP、C-NCAP 等消费者评分目标分开管理。
+  - 对目标类型、速度、重叠率、光照、环境和系统可用性假设保持场景级追踪。
+  - 除停车/减速性能外，同步验证误触发、诊断覆盖、降级处理和 HMI 警示。
+  - 对 L2 产品，应把 AEBS 合规视为更广泛误用控制和驾驶员参与控制之下的主动安全地板。
+expert_note_en: UN-R152 is not glamorous, but it is one of the strongest examples of active safety moving from NCAP incentive to binding regulation. That pattern is relevant to future L2 misuse-control rules.
+expert_note_cn: UN-R152 并不“炫”，但它是主动安全从 NCAP 激励走向强制法规的典型案例。这个路径对未来 L2 误用控制法规很有参考价值。
 impact_note: >-
   Foundational active safety regulation. Basis for C-NCAP AEB scenarios and forthcoming China GB AEB
   mandatory standard.
@@ -28,13 +58,13 @@ related_standards:
   - Euro NCAP AEB
   - C-NCAP 2024
   - China GB AEB (upcoming)
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: blocked
 source_note: >-
-  Automated URL checks are blocked or time out for this source; keep the record with a blocked
-  status until manual browser verification is refreshed.
+  Official UNECE page retained. Automated URL checks are blocked or time out for this source, so the
+  record is marked blocked rather than broken.

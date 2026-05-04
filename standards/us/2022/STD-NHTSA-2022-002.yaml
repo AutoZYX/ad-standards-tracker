@@ -21,17 +21,47 @@ summary_en: >-
   vehicles designed exclusively for ADS operation. Clarifies occupant protection test methods for
   novel seating arrangements.
 summary_cn: 对设计上仅供 ADS 操作的车辆，取消了必须配备传统人工控制装置（方向盘、踏板）的要求。厘清了新型座椅布局下的乘员保护测试方法。
+scope_en:
+  - Updates several FMVSS occupant-protection provisions for vehicles designed to be operated only by an ADS.
+  - Removes assumptions that manual driving controls such as steering wheels and pedals must be present in ADS-dedicated vehicles.
+  - Addresses how occupant protection requirements apply to vehicles with unconventional interiors or seating concepts.
+  - Serves as a US regulatory enabler for purpose-built ADS vehicles without traditional manual controls.
+scope_cn:
+  - 更新多项 FMVSS 乘员保护要求，使其适用于仅由 ADS 操作的车辆。
+  - 移除 ADS 专用车辆必须存在方向盘、踏板等人工驾驶控制装置的假设。
+  - 处理非常规内饰或座椅概念车辆如何适用乘员保护要求。
+  - 是美国面向无传统人工控制 ADS 专用车辆的重要监管使能文件。
+exclusions_en:
+  - It is not an ADS driving-performance or safety-case regulation.
+  - It does not approve a specific robotaxi design or remove other FMVSS obligations.
+  - It does not address the operational safety of the ADS stack, remote assistance, or fleet operations.
+exclusions_cn:
+  - 它不是 ADS 驾驶性能或安全案例法规。
+  - 它不批准某个具体 robotaxi 设计，也不取消其他 FMVSS 义务。
+  - 它不处理 ADS 技术栈、远程协助或车队运营的运行安全。
+engineering_use_en:
+  - Use it when separating crashworthiness/occupant-protection compliance from ADS behavioral safety evidence.
+  - For no-manual-control vehicles, maintain a dedicated compliance matrix for interior layout, seating, restraints, telltales, controls, and crash test assumptions.
+  - Ensure ADS-only vehicle concepts do not rely on exemptions where updated FMVSS language already provides a path.
+  - Pair it with NHTSA ADS exemption work and FMVSS 111/208/214/226 evidence as relevant.
+engineering_use_cn:
+  - 用它区分碰撞安全/乘员保护合规与 ADS 行为安全证据。
+  - 对无人工控制车辆，单独建立内饰布局、座椅、约束系统、指示、控制和碰撞试验假设的合规矩阵。
+  - 确保 ADS 专用车辆方案不要在 FMVSS 已更新提供路径的地方仍依赖豁免。
+  - 视情况与 NHTSA ADS 豁免工作以及 FMVSS 111/208/214/226 证据配套。
+expert_note_en: "This rule is easy to misread as an ADS approval. It is narrower: it modernises occupant-protection assumptions so ADS-dedicated vehicles can be evaluated without pretending they have a driver cockpit."
+expert_note_cn: "这条规则很容易被误读为 ADS 准入。它其实更窄：它现代化乘员保护假设，使 ADS 专用车辆不必假装自己有传统驾驶舱也能被评价。"
 impact_note: >-
-  Unlocks purpose-built Robotaxi designs (Zoox, Cruise Origin-style). A foundational regulatory
-  enabler.
+  Foundational US crashworthiness enabler for ADS-dedicated vehicles without traditional manual controls.
 related_standards:
   - FMVSS 111
   - FMVSS 208
   - UN-R157
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official Federal Register final rule page verified on 2026-05-04.

@@ -19,14 +19,45 @@ summary_en: >-
   Level 4 driverless mobility services. Operators need approval from the Public Safety Commission
   for the intended route, ODD, safety management, and remote monitoring arrangements.
 summary_cn: 日本修订《道路交通法》，建立面向 L4 无人化出行服务的“特定自动运行”制度。运营方需要围绕路线、ODD、安全管理和远程监控安排获得公安委员会许可。
-impact_note: Enabled Japan's first formal L4 deployments (bus lines, last-mile shuttles).
+scope_en:
+  - Establishes Japan's Specified Automated Operation framework under the Road Traffic Act for Level 4 driverless services.
+  - Requires approval from the Public Safety Commission for the intended route or area, operating conditions, safety management, and monitoring arrangements.
+  - Focuses on operational permission and traffic-safety governance rather than only vehicle technical design.
+  - Provides the legal basis for limited-area L4 mobility services in Japan.
+scope_cn:
+  - 在日本《道路交通法》下建立面向 L4 无人化服务的“特定自动运行”制度。
+  - 要求围绕预定路线或区域、运行条件、安全管理和监控安排取得公安委员会许可。
+  - 重点是运营许可和交通安全治理，而不仅是车辆技术设计。
+  - 为日本限定区域 L4 出行服务提供法律基础。
+exclusions_en:
+  - It is not the full vehicle technical standards framework; MLIT vehicle regulations and approvals still matter.
+  - It does not authorise arbitrary nationwide driverless operation outside the approved route or area.
+  - It does not replace the need for remote monitoring, operator procedures, emergency handling, and safety evidence.
+exclusions_cn:
+  - 它不是完整车辆技术标准框架；国土交通省车辆法规和批准仍然重要。
+  - 它不授权脱离批准路线或区域的全国任意无人化运行。
+  - 它不替代远程监控、运营方流程、应急处置和安全证据。
+engineering_use_en:
+  - Use it to separate Japan L4 work into vehicle approval, route/area permission, operator procedure, remote monitoring, and emergency response evidence.
+  - Define the route or area as an operational safety boundary, not merely a business service zone.
+  - Ensure remote monitoring procedures, fallback communication, and local stakeholder coordination are part of the safety case.
+  - Compare with Germany's technical supervisor model and the UK ASDE/user-in-charge model when designing governance.
+engineering_use_cn:
+  - 用它将日本 L4 工作拆分为车辆批准、路线/区域许可、运营方流程、远程监控和应急响应证据。
+  - 将路线或区域定义为运行安全边界，而不只是商业服务范围。
+  - 将远程监控流程、fallback 通信和本地利益相关方协同纳入安全案例。
+  - 设计治理模式时，可与德国技术监督员模型、英国 ASDE/有责任用户模型对比。
+expert_note_en: Japan's approach is route-and-operation centric. The safety case is not only about the vehicle stack; it is about whether a concrete service route can be supervised and controlled.
+expert_note_cn: 日本方案以路线和运营为中心。安全案例不只是车辆技术栈，而是某条具体服务路线能否被监督和控制。
+impact_note: Key Japanese legal layer for limited-area L4 services; use it as operational-permission evidence, not as a full vehicle technical standard.
 related_standards:
   - UN-R157
   - MLIT Road Transport Vehicle Act
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official_news
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official National Police Agency English page verified on 2026-05-04.

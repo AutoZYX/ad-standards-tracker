@@ -24,18 +24,48 @@ summary_en: >-
   during low-speed starting. Addresses high fatality rate of vulnerable road users in urban
   logistics operations.
 summary_cn: 强制商用车在低速起步时检测并警示前方行人和自行车。针对城市物流运营中弱势道路使用者（VRU）的高死亡率问题。
+scope_en:
+  - Establishes UNECE approval requirements for Moving Off Information Systems that detect pedestrians and cyclists in front of vehicles.
+  - Targets low-speed moving-off situations, especially for vehicles where direct visibility of vulnerable road users is limited.
+  - Requires detection and warning functionality rather than full automated braking or automated-driving control.
+  - Complements AEBS, blind-spot, VRU, and NCAP active-safety assessment work.
+scope_cn:
+  - 建立起步信息系统（MOIS）的 UNECE 批准要求，用于检测车辆前方行人和自行车。
+  - 面向低速起步场景，尤其是驾驶员对弱势交通参与者直接视野受限的车辆。
+  - 要求检测和警示功能，而不是完整自动制动或自动驾驶控制。
+  - 与 AEBS、盲区、VRU 和 NCAP 主动安全测评互补。
+exclusions_en:
+  - It is not an ADS or L2 driving-assistance regulation.
+  - It does not replace AEBS requirements such as UN-R152.
+  - It does not cover the full set of VRU scenarios used in NCAP or urban ADS validation.
+exclusions_cn:
+  - 它不是 ADS 或 L2 驾驶辅助法规。
+  - 它不替代 UN-R152 等 AEBS 要求。
+  - 它不覆盖 NCAP 或城市 ADS 验证中的全部 VRU 场景。
+engineering_use_en:
+  - Use it as a low-speed VRU detection and warning baseline for applicable vehicle categories.
+  - Treat sensor placement, warning timing, driver HMI, and false-positive management as the core engineering issues.
+  - Map MOIS requirements separately from AEB/AEBS and lane-support requirements in compliance matrices.
+  - For ADAS/ADS work, use it as a reminder that low-speed launch scenarios can be safety critical even without high automation.
+engineering_use_cn:
+  - 将其作为适用车型低速 VRU 检测和警示的基础法规。
+  - 把传感器布置、警示时机、驾驶员 HMI 和误报警管理作为核心工程问题。
+  - 在合规矩阵中将 MOIS 要求与 AEB/AEBS、车道辅助要求分开映射。
+  - 对 ADAS/ADS 工作，它提醒我们低速起步场景即使没有高阶自动化，也可能是安全关键场景。
+expert_note_en: UN-R159 is valuable because it brings "boring" low-speed VRU conflicts into regulation. Many severe urban safety problems happen before a vehicle is moving fast.
+expert_note_cn: UN-R159 的价值在于把“看似普通”的低速 VRU 冲突纳入法规。许多严重城市安全问题发生在车辆还没有高速行驶之前。
 impact_note: Urban-delivery-focused regulation. Complements C-NCAP 2027 VRU scenarios.
 related_standards:
   - UN-R151
   - UN-R152
   - Euro NCAP VRU
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: blocked
 source_note: >-
-  Automated URL checks are blocked or time out for this source; keep the record with a blocked
-  status until manual browser verification is refreshed.
+  Official UNECE page retained. Automated URL checks are blocked or time out for this source, so the
+  record is marked blocked rather than broken.

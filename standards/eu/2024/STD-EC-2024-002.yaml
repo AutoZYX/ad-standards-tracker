@@ -7,6 +7,7 @@ status: in_force
 title_en: Regulation (EU) 2024/1689 — Artificial Intelligence Act (AI Act)
 title_cn: 欧盟法规 (EU) 2024/1689 — 人工智能法案
 url: https://eur-lex.europa.eu/eli/reg/2024/1689/oj
+effective_date: '2024-08-01'
 automation_level:
   - L2
   - L3
@@ -20,17 +21,47 @@ summary_en: >-
   automated vehicles classified as high-risk AI systems subject to conformity assessment, data
   governance, human oversight requirements.
 summary_cn: 欧盟 AI 法案建立基于风险的 AI 系统监管框架。自动驾驶车辆的安全组件被归类为高风险 AI 系统，须通过符合性评估、数据治理、人为监督等要求。
+scope_en:
+  - Establishes the EU horizontal risk-based regulatory framework for AI systems.
+  - Captures AI systems that are safety components of products covered by EU harmonisation legislation, including relevant vehicle safety and type-approval regimes.
+  - Adds requirements around risk management, data governance, technical documentation, logging, transparency, human oversight, accuracy, robustness, and cybersecurity.
+  - For ADAS/ADS, sits above sector-specific vehicle safety regulations rather than replacing them.
+scope_cn:
+  - 建立欧盟横向、基于风险分级的 AI 系统监管框架。
+  - 覆盖属于欧盟协调立法产品安全组件的 AI 系统，其中包括相关车辆安全和型式认证体系。
+  - 增加风险管理、数据治理、技术文档、日志、透明度、人为监督、准确性、稳健性和网络安全要求。
+  - 对 ADAS/ADS 来说，它位于车辆行业专项安全法规之上，而不是替代这些法规。
+exclusions_en:
+  - It is not an automated-driving type-approval regulation and does not define ADS performance tests.
+  - It does not replace UN-R155, UN-R156, EU 2022/1426, ISO 21448, or ISO 26262.
+  - It should not be reduced to a "data governance" checklist; the safety impact depends on how AI is used in perception, planning, monitoring, and HMI.
+exclusions_cn:
+  - 它不是自动驾驶型式认证法规，也不定义 ADS 性能测试。
+  - 它不替代 UN-R155、UN-R156、EU 2022/1426、ISO 21448 或 ISO 26262。
+  - 不应把它简化为“数据治理”清单；其安全影响取决于 AI 在感知、规划、监控和 HMI 中的使用方式。
+engineering_use_en:
+  - "Use it to add AI governance evidence to the automotive safety case: intended purpose, data quality, model changes, logs, human oversight, and robustness limits."
+  - Separate AI Act obligations from vehicle type-approval obligations, then map overlaps to avoid duplicated documentation.
+  - For perception and planning ML components, keep traceability from training/validation data, ODD, scenario coverage, performance limits, and monitoring to safety claims.
+  - Treat post-market monitoring, software updates, cybersecurity, and incident reporting as connected obligations rather than separate compliance silos.
+engineering_use_cn:
+  - 用它为汽车安全案例增加 AI 治理证据：预期用途、数据质量、模型变更、日志、人为监督和稳健性边界。
+  - 将 AI Act 义务与车辆型式认证义务分开，再映射重叠部分，避免重复文档。
+  - 对感知和规划机器学习组件，应保持训练/验证数据、ODD、场景覆盖、性能边界和监控到安全声明的追踪。
+  - 将上市后监测、软件更新、网络安全和事件报告视为相互连接的义务，而不是孤立合规竖井。
+expert_note_en: "For ADAS and ADS, the AI Act is not a driving rule. Its value is forcing ML-heavy safety components to become auditable: what data, what intended purpose, what limits, what logs, and what post-market controls."
+expert_note_cn: "对 ADAS 和 ADS 来说，AI Act 不是驾驶规则。它的价值在于迫使机器学习占比高的安全组件可审计：什么数据、什么预期用途、什么边界、什么日志、什么上市后控制。"
 impact_note: >-
-  First comprehensive horizontal AI regulation globally. Phased implementation through 2027.
-  Significant compliance impact on AD perception and planning stacks.
+  Horizontal AI governance layer that should be mapped onto vehicle safety, cybersecurity, software update, and ADS type-approval evidence.
 related_standards:
   - UN-R157
   - ISO/IEC 42001
   - GDPR
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: verified
+source_note: Official EUR-Lex regulation text verified on 2026-05-04. Duplicate automotive-implications record was removed; automotive AI implications are now captured in this canonical AI Act record.
