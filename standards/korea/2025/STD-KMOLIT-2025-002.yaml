@@ -24,8 +24,41 @@ topics:
 - testing
 summary_en: Korea amended its autonomous vehicle commercialization framework to support performance certification and conformity approval for Level 4 autonomous vehicles. The enforcement rule became effective on 2025-06-02.
 summary_cn: 韩国修订自动驾驶汽车商业化促进与支持制度，引入面向 L4 自动驾驶汽车的性能认证与适合性批准框架。相关实施规则于 2025-06-02 生效。
+scope_en:
+- Provides the detailed legal implementation layer for Korea's L4 autonomous-vehicle performance certification and conformity approval path.
+- Connects vehicle-level performance certification with operating approval so that L4 services can move from pilot activity toward regulated deployment.
+- Sits under Korea's autonomous-vehicle commercialization law and should be read together with MOLIT administrative notices and subsequent technical criteria.
+- Focuses on Korea's domestic approval route rather than UNECE whole-vehicle type approval.
+scope_cn:
+- 为韩国 L4 自动驾驶汽车性能认证与适合性批准路径提供详细法律实施层。
+- 将车辆级性能认证与运行适合性批准连接起来，使 L4 服务从试点活动走向受监管部署。
+- 位于韩国自动驾驶汽车商业化法律体系之下，应与国土交通部行政公告及后续技术细则配套阅读。
+- 关注韩国国内批准路径，而不是 UNECE 整车型式批准。
+exclusions_en:
+- It is not a global L4 regulation and should not be used as evidence of approval outside Korea.
+- It does not replace safety engineering standards such as ISO 26262, ISO 21448, ISO 34502, or UL 4600.
+- Public law metadata does not expose the full engineering test method; teams still need the detailed MOLIT/KATRI implementation materials.
+exclusions_cn:
+- 它不是全球 L4 法规，不能作为韩国以外市场获批的证据。
+- 它不替代 ISO 26262、ISO 21448、ISO 34502、UL 4600 等安全工程标准。
+- 公开法规元数据并不完整暴露工程测试方法，企业仍需获取 MOLIT/KATRI 详细实施材料。
+engineering_use_en:
+- Use it as the Korea market-entry anchor for L4 services, especially when comparing approval duties with Germany's AFGBV and the UK AV Act implementation.
+- Build a compliance matrix separating vehicle performance evidence, operating-design evidence, remote operation/fallback, service operator responsibility, and post-deployment monitoring.
+- "Treat Korea's framework as a useful regulatory experiment: it fills the gap between pilot-zone permission and a future harmonized ADS regulation."
+engineering_use_cn:
+- 将其作为韩国 L4 服务市场进入的锚点，尤其适合与德国 AFGBV、英国 AV Act 实施路径对比。
+- 建立合规矩阵，区分车辆性能证据、运行设计证据、远程运行/fallback、服务运营者责任和部署后监测。
+- 可把韩国框架视作一个重要监管实验：它填补了试点区许可与未来统一 ADS 法规之间的空白。
+expert_note_en: >-
+  The important point is not that Korea has solved L4 approval. It is that Korea is separating
+  vehicle performance certification from service conformity, which is exactly where L4 governance
+  becomes different from conventional vehicle homologation.
+expert_note_cn: >-
+  重点不是韩国已经解决了 L4 准入，而是它开始区分车辆性能认证和服务适合性批准。这正是 L4 治理区别于传统车辆准入的地方。
 impact_note: Korea is creating a regulatory path for L4 services before a single global L4 type-approval standard exists. This makes it an important comparison point against China, the UK, Germany, and the US.
 related_standards:
 - STD-DE-2022-001
 - STD-UK-2024-001
-last_updated: '2026-05-02'
+- STD-KMOLIT-2020-001
+last_updated: '2026-05-04'

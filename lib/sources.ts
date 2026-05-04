@@ -185,9 +185,9 @@ export const SOURCES: SourceInfo[] = [
     category: "industry_org",
     language: "EN",
     description_en:
-      "SAE International — industry-led SDO (originally Society of Automotive Engineers, now global). Publishes globally-referenced standards: J3016 (driving automation levels), J3018 (on-road test safety), J3131 (ADS reference architecture incl. Remote Assistance), J3237 (driving assessment metrics, WIP).",
+      "SAE International — industry-led SDO (originally Society of Automotive Engineers, now global). Publishes globally-referenced standards: J3016 (driving automation levels), J3018 (on-road test safety), J3131 (ADS reference architecture incl. Remote Assistance), J3237 (dynamic driving task assessment metrics).",
     description_cn:
-      "SAE 国际（原美国汽车工程师学会，已改名为国际汽车工程师学会）— 行业主导的标准组织。发布全球性标准：J3016（驾驶自动化分级）、J3018（路测安全）、J3131（ADS 参考架构，含远程辅助定义）、J3237（驾驶评价指标，在研）。",
+      "SAE 国际（原美国汽车工程师学会，已改名为国际汽车工程师学会）— 行业主导的标准组织。发布全球性标准：J3016（驾驶自动化分级）、J3018（路测安全）、J3131（ADS 参考架构，含远程辅助定义）、J3237（动态驾驶任务评价指标）。",
     crawl_difficulty: "medium",
   },
   {

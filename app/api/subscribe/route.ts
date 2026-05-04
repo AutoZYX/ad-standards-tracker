@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
-// TODO (productize): replace metadata-only logging with Vercel KV / Upstash Redis
-// or a newsletter provider. Do not log full email addresses in runtime logs.
+// Current MVP stores no subscription database; it only records masked metadata in runtime logs.
+// Do not log full email addresses.
 
 function maskEmail(email: string): string {
   const [name, domain] = email.split("@");

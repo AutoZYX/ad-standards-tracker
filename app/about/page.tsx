@@ -54,8 +54,8 @@ export default function AboutPage() {
         <ul className="list-disc list-inside text-sm space-y-2 text-[var(--muted)]">
           <li>
             {zh
-              ? "多层级数据源：国际标准组织（UN/ISO/SAE/IEEE）、行业标准组织（ASAM/VDA/AUTOSAR/5GAA）、政府监管（MIIT/NHTSA/EC/MLIT/MOLIT）、测评机构（Euro NCAP/C-NCAP/i-VISTA）、示范区（北京/上海/深圳）"
-              : "Multi-tier sources: SDOs (UN/ISO/SAE/IEEE), industry orgs (ASAM/VDA/AUTOSAR/5GAA), government regulators (MIIT/NHTSA/EC/MLIT/MOLIT), assessment bodies (Euro NCAP/C-NCAP/i-VISTA), demonstration zones (Beijing/Shanghai/Shenzhen)."}
+              ? "多层级数据源：国家/国际标准制定组织（UN/ISO/SAC/TC114/KATS/VDA 等）、行业标准组织（SAE/IEEE/UL/ASAM/AUTOSAR/5GAA 等）、政府监管（MIIT/NHTSA/EC/MLIT/MOLIT）、测评机构（Euro NCAP/C-NCAP/i-VISTA）、示范区（北京/上海/深圳）"
+              : "Multi-tier sources: national/international SDOs (UN/ISO/SAC/TC114/KATS/VDA, etc.), industry standards organizations (SAE/IEEE/UL/ASAM/AUTOSAR/5GAA, etc.), government regulators (MIIT/NHTSA/EC/MLIT/MOLIT), assessment bodies (Euro NCAP/C-NCAP/i-VISTA), and demonstration zones (Beijing/Shanghai/Shenzhen)."}
           </li>
           <li>
             {zh

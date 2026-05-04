@@ -7,7 +7,8 @@ type: regulation
 status: in_force
 title_en: Act on the Promotion and Support for Commercialization of Autonomous Vehicles
 title_cn: 自动驾驶汽车商业化促进及支援法
-url: https://www.molit.go.kr/english/USR/BORD0201/m_28286/BRD.jsp
+url: https://law.go.kr/lsInfoP.do?lsiSeq=208588&urlMode=engLsInfoR&viewCls=engLsInfoR
+effective_date: '2020-05-01'
 automation_level:
   - L3
   - L4
@@ -19,16 +20,50 @@ summary_en: >-
   Autonomous Driving Pilot Cities, special districts for L4 testing, and MOLIT-led approval for
   pilot services.
 summary_cn: 韩国推进自动驾驶车辆商业化的基础性立法。确立自动驾驶试点城市、L4 测试特区，以及 MOLIT 主导的试点服务审批。
-impact_note: ⚠️[请核实：韩文法律名称翻译与发布日期]。韩国第一部 AV 专项法律，与日本类似，后续由 MOLIT 通过行政令细化。
+scope_en:
+  - Establishes Korea's legal basis for promoting and supporting autonomous-vehicle commercialization.
+  - Provides mechanisms for autonomous driving pilot cities, regulatory support, infrastructure, and administrative coordination led by MOLIT.
+  - Functions as the parent legal framework for later detailed rules on performance certification, conformity approval, and L4 service deployment.
+  - Applies to commercialization support and pilot deployment, not only to technical test methods.
+scope_cn:
+  - 建立韩国推动和支持自动驾驶汽车商业化的法律基础。
+  - 提供自动驾驶试点城市、监管支持、基础设施和国土交通部牵头行政协调等机制。
+  - 是后续性能认证、适合性批准和 L4 服务部署细则的上位法律框架。
+  - 适用于商业化支持和试点部署，而不只是技术测试方法。
+exclusions_en:
+  - It is not a detailed ADS technical standard and does not define scenario libraries or safety-performance thresholds.
+  - It does not replace UNECE vehicle regulations adopted by Korea or the KS/ISO technical standards ecosystem.
+  - It should not be confused with the later 2025 L4 certification/conformity approval enforcement rules.
+exclusions_cn:
+  - 它不是详细 ADS 技术标准，不定义场景库或安全性能阈值。
+  - 它不替代韩国采纳的 UNECE 车辆法规或 KS/ISO 技术标准体系。
+  - 不应与 2025 年后续 L4 性能认证/适合性批准实施细则混淆。
+engineering_use_en:
+  - "Use it to understand Korea's deployment path: pilot-city designation, administrative approval, commercialization support, and later L4 conformity rules."
+  - For comparative policy analysis, map it against Japan's specified automated operation system, Germany's L4 law/AFGBV, the UK AV Act, and China's city demonstration rules.
+  - For engineering teams, treat it as a market-entry governance framework; technical safety evidence still needs ISO 26262, ISO 21448, ISO 34502, UN-R155/R156/R157, and local certification rules.
+engineering_use_cn:
+  - 用它理解韩国部署路径：试点城市指定、行政批准、商业化支持和后续 L4 适合性规则。
+  - 做政策比较时，可与日本特定自动运行制度、德国 L4 法/AFGBV、英国 AV Act、中国城市示范区规则对照。
+  - 对工程团队，它是市场进入治理框架；技术安全证据仍需 ISO 26262、ISO 21448、ISO 34502、UN-R155/R156/R157 和本地认证规则支撑。
+expert_note_en: >-
+  Korea's AV commercialization act is a governance foundation, not an engineering checklist. Its
+  practical value is in showing how a country creates room for L4 pilots before global L4 type
+  approval is mature.
+expert_note_cn: >-
+  韩国这部法律是治理基础，不是工程清单。它的实际价值在于展示一个国家如何在全球 L4 型式准入成熟前，为 L4 试点创造制度空间。
+impact_note: Korea's parent AV law. It makes the later 2025 L4 certification framework understandable as an implementation layer rather than an isolated rule.
 related_standards:
   - UN-R157
-last_updated: '2026-04-16'
+  - STD-KMOLIT-2025-002
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: blocked
 source_note: >-
-  Automated URL checks are blocked or time out for this source; keep the record with a blocked
-  status until manual browser verification is refreshed.
+  Official Korean law portal English law page is used instead of a generic MOLIT notice list.
+  Automated URL checks may time out from this environment, so this record remains marked blocked for
+  automated checking.

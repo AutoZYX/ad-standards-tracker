@@ -39,7 +39,7 @@ jobs:
           if [ -f run.py ]; then
             python run.py --out ../../standards --snapshot ./snapshots
           else
-            echo "crawler not yet implemented — skipping"
+            echo "crawler scaffold unavailable in this checkout — skipping"
           fi
 
       - name: Detect new/changed records

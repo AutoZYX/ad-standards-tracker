@@ -1,5 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
+import { execFile } from "node:child_process";
+import { promisify } from "node:util";
 import yaml from "js-yaml";
 
 const root = process.cwd();
@@ -14,6 +16,7 @@ const idFilter = process.env.URL_CHECK_IDS
     )
   : null;
 const includeBlocked = process.env.URL_CHECK_INCLUDE_BLOCKED === "1";
+const execFileAsync = promisify(execFile);
 
 const files = [];
 function walk(dir) {
@@ -22,6 +25,49 @@ function walk(dir) {
     const stat = fs.statSync(file);
     if (stat.isDirectory()) walk(file);
     if (stat.isFile() && name.endsWith(".yaml")) files.push(file);
+  }
+}
+
+async function curlFallback(url) {
+  try {
+    const { stdout } = await execFileAsync(
+      "curl",
+      [
+        "-L",
+        "--max-time",
+        String(Math.max(1, Math.ceil(timeoutMs / 1000))),
+        "-A",
+        "AD-Standards-Tracker-LinkCheck/1.0",
+        "-sS",
+        "-o",
+        "/dev/null",
+        "-w",
+        "%{http_code} %{url_effective}",
+        url,
+      ],
+      { timeout: timeoutMs + 3000 }
+    );
+    const [statusText, ...finalParts] = stdout.trim().split(/\s+/);
+    const status = Number(statusText);
+    if (!status || Number.isNaN(status)) return null;
+    return {
+      ok: status < 400,
+      status: `${status} curl`,
+      finalUrl: finalParts.join(" ") || url,
+    };
+  } catch (err) {
+    const stdout = err.stdout?.toString?.().trim?.() ?? "";
+    const [statusText, ...finalParts] = stdout.split(/\s+/);
+    const status = Number(statusText);
+    if (!status || Number.isNaN(status)) {
+      return { ok: false, status: "ERR", finalUrl: url, error: err.message };
+    }
+    return {
+      ok: status < 400,
+      status: `${status} curl`,
+      finalUrl: finalParts.join(" ") || url,
+      error: err.message,
+    };
   }
 }
 
@@ -43,9 +89,11 @@ async function check(url) {
         headers: { "User-Agent": "AD-Standards-Tracker-LinkCheck/1.0" },
       });
     }
-    return { ok: res.status < 400, status: res.status, finalUrl: res.url };
+    const result = { ok: res.status < 400, status: res.status, finalUrl: res.url };
+    if (result.ok) return result;
+    return (await curlFallback(url)) ?? result;
   } catch (err) {
-    return { ok: false, status: "ERR", finalUrl: url, error: err.message };
+    return (await curlFallback(url)) ?? { ok: false, status: "ERR", finalUrl: url, error: err.message };
   } finally {
     clearTimeout(timer);
   }

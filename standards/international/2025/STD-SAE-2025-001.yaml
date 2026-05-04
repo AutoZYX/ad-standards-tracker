@@ -1,12 +1,13 @@
 id: STD-SAE-2025-001
-date: '2025-12-15'
+date: '2025-01-08'
 org: SAE International
 jurisdiction: international
 type: standard
-status: draft
-title_en: SAE J3237 (WIP) — Driving Assessment Metrics for Automated Driving Systems
-title_cn: SAE J3237（在研）自动驾驶系统驾驶评价指标
-url: https://standardsworks.sae.org/standards-committees/road-automated-driving-orad-committee/j3237
+status: published
+title_en: SAE J3237 — Dynamic Driving Task Assessment Metrics for Automated Driving Systems
+title_cn: SAE J3237 自动驾驶系统动态驾驶任务评价指标
+url: https://www.sae.org/standards/content/j3237/
+effective_date: '2025-01-08'
 automation_level:
   - L3
   - L4
@@ -15,23 +16,55 @@ topics:
   - sotif
   - functional_safety
 summary_en: >-
-  Recommended practice under development by SAE ORAD committee. Defines a set of safety-related
-  driving assessment (DA) metrics that quantify the driving performance of ADS-operated vehicles.
-  Intended for V&V activities and test methodology documentation.
-summary_cn: SAE ORAD 委员会在研的推荐性实践。定义一组安全相关驾驶评价（DA）指标，量化 ADS 车辆驾驶性能，用于验证与确认（V&V）活动及测试方法论。
-impact_note: ⚠️[请核实：J3237 具体发布时间表]。与 ISO 5083（安全架构）、SAE J3131（参考架构）配套，构成 ADS 安全设计-架构-度量三件套。
+  SAE recommended practice for Dynamic Driving Task Assessment metrics. It defines a metric
+  vocabulary for describing and comparing ADS driving performance during verification and validation,
+  test reporting, and safety-case evidence generation.
+summary_cn: SAE 推荐实践，定义动态驾驶任务评价指标体系，用于描述和比较 ADS 驾驶表现，支撑验证确认、测试报告和安全案例证据生成。
+scope_en:
+  - Defines assessment-metric terminology for the ADS dynamic driving task, rather than a single pass/fail approval test.
+  - Supports verification and validation reporting by giving teams a common way to describe ADS driving performance.
+  - Fits scenario-based testing, public-road testing analysis, simulation campaigns, and safety-case evidence packages.
+  - Complements architectural and test-process standards such as SAE J3131, SAE J3018, ISO 34502, and ISO 5083.
+scope_cn:
+  - 定义 ADS 动态驾驶任务评价指标术语，而不是一个单一通过/失败准入试验。
+  - 通过统一描述 ADS 驾驶表现的方法，支撑验证确认报告。
+  - 适用于场景化测试、公开道路测试分析、仿真测试活动和安全案例证据包。
+  - 与 SAE J3131、SAE J3018、ISO 34502、ISO 5083 等架构和测试过程标准配套。
+exclusions_en:
+  - It does not by itself decide whether an ADS is safe enough to deploy.
+  - It does not replace ODD definition, scenario selection, statistical confidence design, or regulatory approval.
+  - It should not be read as an NCAP scoring protocol; it is a metrics vocabulary for engineering evidence.
+exclusions_cn:
+  - 它本身不决定 ADS 是否足够安全可以部署。
+  - 它不替代 ODD 定义、场景选择、统计置信度设计或法规准入。
+  - 不应把它理解成 NCAP 评分规程；它是工程证据所需的指标术语体系。
+engineering_use_en:
+  - Use it to keep ADS performance metrics stable across simulation, proving-ground, shadow-mode, and public-road evidence.
+  - Build a trace from scenario taxonomy to metric selection, measurement method, acceptance rationale, and residual-risk argument.
+  - "Combine it with SOTIF unknown-scenario discovery: metrics should reveal not only average performance, but boundary degradation and uncomfortable-but-legal behavior."
+  - For DRIVE Research or ROAM-style work, treat it as the metric layer connecting raw trajectories, event mining, and safety-case claims.
+engineering_use_cn:
+  - 用它统一仿真、封闭场地、影子模式和公开道路证据中的 ADS 表现指标。
+  - 建立从场景分类到指标选择、测量方法、接受理由和残余风险论证的追踪链。
+  - 与 SOTIF 未知场景发现结合：指标不只看平均表现，还要暴露边界退化和“合法但不舒服”的行为。
+  - 对 DRIVEResearch 或 ROAM 类工作，可把它视为连接原始轨迹、事件挖掘和安全案例声明的指标层。
+expert_note_en: >-
+  J3237 is valuable only if the metrics are tied back to scenarios and risk claims. A table of
+  numbers without ODD, exposure, and failure-mode context is measurement, not safety evidence.
+expert_note_cn: >-
+  J3237 的价值取决于指标是否能回到场景和风险声明。脱离 ODD、暴露度和失效模式的一堆数字，只是测量结果，不是安全证据。
+impact_note: With ISO 34502 and SAE J3018, J3237 helps move ADS testing from mileage accumulation toward scenario- and metric-based evidence.
 related_standards:
   - SAE J3131
   - ISO 5083
   - ISO 34502
   - SAE J3018
-last_updated: '2026-04-16'
-document_stage: draft
-legal_force: informational
+last_updated: '2026-05-04'
+document_stage: published
+legal_force: best_practice
 source_type: official_catalog
 evidence_level: B
-verified_at: '2026-05-03'
+verified_at: '2026-05-04'
 source_status: paywalled
 source_note: >-
-  Official catalog page is used for metadata; full standard text may require purchase or
-  subscription.
+  Official SAE catalog page is used for metadata; full standard text may require purchase or subscription.

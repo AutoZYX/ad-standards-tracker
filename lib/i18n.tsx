@@ -263,13 +263,13 @@ interface I18nContextType {
 }
 
 const I18nContext = createContext<I18nContextType>({
-  lang: "en",
+  lang: "zh",
   setLang: () => {},
-  t: (key) => translations[key]?.en ?? key,
+  t: (key) => translations[key]?.zh ?? key,
 });
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>("en");
+  const [lang, setLangState] = useState<Lang>("zh");
 
   useEffect(() => {
     queueMicrotask(() => {

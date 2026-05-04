@@ -68,7 +68,7 @@ Summary CN: ${summaryCn || "(no Chinese)"}${scopeEn ? `\nScope EN: ${scopeEn}` :
 4. Point to original sources: Include the original URL next to each cited record. The API will also render a citation list from record IDs in your answer.
 5. Distinguish final vs draft: Explicitly distinguish in_force/published records from draft/consultation/pending/proposal records. Do not describe a consultation, notice, plan, or secondary report as a final standard.
 6. Respect evidence quality: Mention caveats for evidence=C/D, source_type=secondary, source_status=blocked/broken/unverified, or source notes saying evidence is incomplete.
-7. Respect warning markers: Records with ⚠️[请核实：...] or similar markers have fields that are not fully verified. If the answer depends on a marked field, state the caveat.
+7. Respect source caveats: If source_note says a source is blocked, paywalled, manually verified, incomplete, or otherwise caveated, mention that caveat when it affects the answer.
 8. Be concise: Prefer short paragraphs and bullets. Aim under 300 words unless the user asks for depth. For Chinese answers, stay under 700 Chinese characters unless the user explicitly asks for a deep analysis.
 9. Chinese Markdown hygiene: For Chinese answers, do not use markdown bold at all. Never output **. Use plain text section labels instead.
 

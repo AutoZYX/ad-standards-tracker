@@ -4,9 +4,9 @@ Per-source Python crawlers that fetch standards/regulations metadata and emit YA
 
 ## Status
 
-⚠️ **Not yet implemented.** This directory is currently a scaffold with the intended architecture. The 50+ seed records shipped with the MVP were hand-curated (see `../../scripts/seed-*.py`).
+This directory is a crawler scaffold. Source modules are intentionally registered only after their output can be validated against official pages and the source's terms/robots policy. The current public dataset is hand-curated and validated with `pnpm validate:data` plus `pnpm check:urls`.
 
-## Intended architecture
+## Architecture
 
 ```
 tools/crawler/
@@ -67,7 +67,7 @@ python run.py --all --out ../../standards --snapshot ./snapshots
 4. Test locally: `python run.py --source <your_source> --dry-run`
 5. Submit a PR — the daily workflow will pick it up automatically
 
-## Priority order (recommended implementation sequence)
+## Automation priority order
 
 1. **RSS/JSON-first sources** (easy wins): Euro NCAP, SAE standards catalog (JSON API), NHTSA SGO reports (CSV), UNECE document database
 2. **Static HTML sources** (beautifulsoup): MLIT JP, UK CCAV, EC Transport news

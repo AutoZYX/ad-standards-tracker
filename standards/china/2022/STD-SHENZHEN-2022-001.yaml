@@ -8,6 +8,7 @@ status: in_force
 title_en: Shenzhen Special Economic Zone Regulations on Intelligent Connected Vehicles Management
 title_cn: 深圳经济特区智能网联汽车管理条例
 url: https://www.sz.gov.cn/zfgb/2022/gb1250/content/post_9967816.html
+effective_date: '2022-08-01'
 automation_level:
   - L3
   - L4
@@ -20,17 +21,51 @@ summary_en: >-
   designated roads in Shenzhen SEZ. Establishes liability framework, data recording requirements,
   and commercial operation approval process.
 summary_cn: 中国首部综合性地方智能网联汽车条例，支持 L3/L4 车辆在深圳经济特区指定道路运营。建立责任框架、数据记录要求和商业化运营审批流程。
-impact_note: Landmark local legislation. Triggered similar frameworks in Beijing, Shanghai, Wuhan, Chongqing.
+scope_en:
+  - Applies to ICV road testing, demonstration applications, product access, registration, use management, infrastructure, cybersecurity/data protection, accident handling, and legal liability within Shenzhen SEZ.
+  - Defines conditional, highly, and fully automated driving categories in local legal language and allows fully driverless ICVs to operate only in areas or roads designated by public-security traffic authorities.
+  - Establishes local product catalog access, road-transport business permission, government supervision platform, external automated-driving indicator, and event-data recording obligations.
+  - Requires at least 90 seconds of pre-accident or pre-fault position, operating state, driving mode, and internal/external monitoring data, with a retention period of at least 30 days.
+scope_cn:
+  - 适用于深圳经济特区内智能网联汽车的道路测试、示范应用、准入登记、使用管理、基础设施、网络与数据安全、事故处理和法律责任。
+  - 以地方立法语言定义有条件自动驾驶、高度自动驾驶和完全自动驾驶，并规定无驾驶人的完全自动驾驶车辆只能在公安交管部门划定区域、路段行驶。
+  - 建立地方产品目录准入、道路运输经营许可、政府监管平台、自动驾驶模式外部指示灯、事件数据记录等义务。
+  - 要求车载设备记录事故或故障前至少 90 秒的位置、运行状态、驾驶模式、车内外监控视频等数据，保存期不少于 30 日。
+exclusions_en:
+  - It is a Shenzhen local regulation, not a national type-approval framework and not a GB/GB-T technical standard.
+  - It does not independently approve a vehicle model; national product catalog, local catalog, registration, and transport-operation permissions still apply.
+  - It does not define detailed ADS performance test methods; those must come from national standards, local implementation rules, or project-specific assessments.
+exclusions_cn:
+  - 它是深圳地方性法规，不是国家级整车型式准入框架，也不是 GB/GB/T 技术标准。
+  - 它不单独批准某一车型；国家产品目录、深圳地方产品目录、登记和道路运输经营许可仍然适用。
+  - 它不定义详细 ADS 性能测试方法；这些需要来自国家标准、地方实施细则或项目专项评价。
+engineering_use_en:
+  - "Use it as a benchmark for Chinese city-level L3/L4 operation governance: access path, responsibility allocation, data evidence, remote risk reduction, and supervision-platform connection."
+  - For Shenzhen pilots, map each operational scenario to allowed road sections, product catalog status, driver or driverless configuration, data retention, rescue service, insurance, and accident-liability process.
+  - Treat the 90-second data requirement as a minimum legal evidence baseline, then add richer ROAM/EDR/DSSAD event traces for safety learning.
+  - Compare it with Beijing and Shanghai demonstration rules to separate national compliance needs from local operating-permit needs.
+engineering_use_cn:
+  - 将其作为中国城市级 L3/L4 运营治理的标杆：准入路径、责任分配、数据证据、远程降险和监管平台接入。
+  - 对深圳试点，应把每类运营场景映射到开放路段、产品目录状态、有/无驾驶人配置、数据留存、救援服务、保险和事故责任流程。
+  - 将 90 秒数据记录要求视作最低法律证据基线，再叠加更丰富的 ROAM、EDR、DSSAD 运行事件轨迹用于安全学习。
+  - 与北京、上海示范区规则对比，区分全国性合规要求和地方运营许可要求。
+expert_note_en: >-
+  Shenzhen's ordinance matters because it turns "demo operation" into a local legal system. The
+  engineering implication is simple: the ODD is no longer just a safety-design boundary; it is also
+  a permit boundary, a data boundary, and a liability boundary.
+expert_note_cn: >-
+  深圳条例的重要性在于，它把“示范运营”变成了一套地方性法律制度。工程含义很直接：ODD 不再只是安全设计边界，也同时是许可边界、数据边界和责任边界。
+impact_note: Landmark local legislation and the clearest city-level example of how China can regulate L3/L4 ICV operation before a single national ADS deployment law exists.
 related_standards:
   - GB/T 40429
   - GB 44497
-last_updated: '2026-04-16'
+last_updated: '2026-05-04'
 document_stage: in_force
 legal_force: binding
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
-source_status: blocked
+verified_at: '2026-05-04'
+source_status: verified
 source_note: >-
-  Official Shenzhen government gazette page is browser-accessible and was manually verified on
-  2026-05-03, but automated URL checks time out from this environment.
+  Official Shenzhen government gazette page. The page states the regulation was adopted on
+  2022-06-23, announced on 2022-06-30, published on 2022-07-18, and effective from 2022-08-01.

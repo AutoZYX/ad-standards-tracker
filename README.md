@@ -90,7 +90,7 @@ expert_note_cn: "专家判断或注意事项"
 - **js-yaml** for data loading, **recharts** for dashboard charts
 - Static generation: 1 dynamic page per record via `generateStaticParams`
 - i18n: zero-dep context-based provider in `lib/i18n.tsx`
-- Data ingestion: **GitHub Actions** daily crawler → PR workflow
+- Data quality: schema validation, URL health checks, source/evidence policy, and a GitHub Actions crawler scaffold for future source-specific automation
 
 ## Quick start
 
@@ -122,12 +122,11 @@ ad-standards-tracker/
 │   ├── china/
 │   ├── international/
 │   ├── us/ eu/ uk/ japan/ korea/
-├── tools/crawler/          # Python crawlers (TODO)
+├── tools/crawler/          # crawler scaffold; source modules are added only when they can be verified
 ├── tools/check-urls.mjs    # link checker, supports focused ID checks
 ├── tools/backfill-trust-fields.mjs # conservative trust-field backfill
 ├── DATA_SCHEMA.md          # Data schema and trust fields
 ├── SOURCE_POLICY.md        # Source and evidence policy
-├── scripts/                # Data seeding utilities
 └── .github/workflows/
     └── daily-crawl.yml     # Daily crawl → PR workflow
 ```
@@ -137,7 +136,7 @@ ad-standards-tracker/
 PRs welcome. For new data sources, please include:
 1. A machine-readable entry in `lib/sources.ts`
 2. At least 3 sample records for the source
-3. A crawler module in `tools/crawler/<source>.py` if automation is possible
+3. A crawler module in `tools/crawler/<source>.py` if automation is reliable and legally appropriate
 4. Source quality fields for any safety-critical or legally relevant record
 
 For data corrections, edit the relevant YAML file and open a PR — no programming needed. Run `pnpm validate:data` before submitting. If a record uses a non-official link, set `source_type: secondary`, `evidence_level: C`, and explain the reason in `source_note`.
@@ -161,5 +160,6 @@ Data is aggregated as metadata with links to original sources. Full text of stan
 
 ## Author / 作者
 
-**Yuxin Zhang (张玉新)** — Assistant Professor, College of Automotive Engineering, Jilin University; Director, AD Safety Joint Lab
-Contact: [zhangyuxin@jlu.edu.cn](mailto:zhangyuxin@jlu.edu.cn) · [@AutoZyx](https://mp.weixin.qq.com/s/xxx) WeChat public account
+**Yuxin Zhang (张玉新)**
+Research: SOTIF, functional safety, and scenario-driven safety assessment for automated driving.
+Homepage: [autozyx.com](https://autozyx.com)
