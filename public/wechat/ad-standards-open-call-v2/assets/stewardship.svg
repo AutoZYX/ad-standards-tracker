@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#faf8f3"/>
+  <text x="80" y="92" font-family="Georgia, 'Noto Serif CJK SC', serif" font-size="48" font-weight="700" fill="#1f1b16">这个项目，可以被谁接住？</text>
+  <text x="82" y="138" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="24" fill="#6a6258">不是招一个“志愿者”，而是寻找长期维护的可能性</text>
+  <g transform="translate(70 210)">
+    <rect x="0" y="0" width="250" height="300" rx="18" fill="#fffdf8" stroke="#ded6c8" stroke-width="2"/>
+    <text x="32" y="64" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="32" font-weight="700" fill="#c85a3a">个人</text>
+    <text x="32" y="118" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">认领一个来源</text>
+    <text x="32" y="158" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">纠正一个标准</text>
+    <text x="32" y="198" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">补一段工程边界</text>
+  </g>
+  <g transform="translate(345 210)">
+    <rect x="0" y="0" width="250" height="300" rx="18" fill="#fffdf8" stroke="#ded6c8" stroke-width="2"/>
+    <text x="32" y="64" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="32" font-weight="700" fill="#2f6f6d">团队</text>
+    <text x="32" y="118" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">维护一个专题</text>
+    <text x="32" y="158" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">跟踪一个地区</text>
+    <text x="32" y="198" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">建立审核机制</text>
+  </g>
+  <g transform="translate(620 210)">
+    <rect x="0" y="0" width="250" height="300" rx="18" fill="#fffdf8" stroke="#ded6c8" stroke-width="2"/>
+    <text x="32" y="64" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="32" font-weight="700" fill="#1a56a0">组织</text>
+    <text x="32" y="118" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">承接行业共建</text>
+    <text x="32" y="158" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">开放数据流程</text>
+    <text x="32" y="198" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">持续发布版本</text>
+  </g>
+  <g transform="translate(895 210)">
+    <rect x="0" y="0" width="250" height="300" rx="18" fill="#fffdf8" stroke="#ded6c8" stroke-width="2"/>
+    <text x="32" y="64" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="32" font-weight="700" fill="#7a4a18">公司</text>
+    <text x="32" y="118" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">提供维护资源</text>
+    <text x="32" y="158" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">支持开源治理</text>
+    <text x="32" y="198" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="21" fill="#312c25">不封闭数据库</text>
+  </g>
+  <rect x="120" y="610" width="960" height="150" rx="22" fill="#1f1b16"/>
+  <text x="600" y="670" text-anchor="middle" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="34" font-weight="700" fill="#fffdf8">可以完全免费交接</text>
+  <text x="600" y="718" text-anchor="middle" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="24" fill="#ded6c8">仓库维护权 · 数据结构 · 核验流程 · 部署方式 · 路线图</text>
+  <text x="600" y="820" text-anchor="middle" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="26" font-weight="700" fill="#c85a3a">前提只有一个：继续开源、准确、行业共享。</text>
+</svg>

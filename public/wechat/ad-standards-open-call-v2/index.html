@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>我想把一个自动驾驶标准开源项目交出去</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f6f3ed;
+      color: #1f1b16;
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+    }
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      background: #fffdf8;
+      padding: 0 0 56px;
+    }
+    .content {
+      padding: 0 28px;
+    }
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+      margin: 24px 0;
+    }
+    h1 {
+      font-family: Georgia, "Songti SC", "SimSun", serif;
+      font-size: 32px;
+      line-height: 1.32;
+      margin: 28px 0 12px;
+      font-weight: 700;
+      color: #1f1b16;
+    }
+    h2 {
+      font-family: Georgia, "Songti SC", "SimSun", serif;
+      font-size: 24px;
+      line-height: 1.45;
+      margin: 42px 0 18px;
+      font-weight: 700;
+      color: #1f1b16;
+    }
+    p {
+      font-size: 17px;
+      line-height: 1.95;
+      margin: 16px 0;
+      color: #2e2923;
+    }
+    .meta {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #8a8175;
+      margin-bottom: 28px;
+    }
+    .quote {
+      margin: 28px 0;
+      padding: 18px 20px;
+      border-left: 4px solid #c85a3a;
+      background: #f7f1e8;
+      color: #1f1b16;
+      font-size: 18px;
+      line-height: 1.85;
+      font-weight: 600;
+    }
+    .callout {
+      margin: 30px 0;
+      padding: 22px 20px;
+      background: #1f1b16;
+      color: #fffdf8;
+      border-radius: 12px;
+    }
+    .callout p {
+      color: #fffdf8;
+      margin: 10px 0;
+    }
+    .small {
+      font-size: 14px;
+      color: #8a8175;
+      line-height: 1.8;
+    }
+    a {
+      color: #c85a3a;
+      word-break: break-all;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <img src="https://standards.autozyx.com/wechat/ad-standards-open-call-v2/assets/cover.png" alt="86 条记录之后，我想把这个标准库交出去" />
+    <div class="content">
+      <p class="meta">AD Standards Tracker · 自动驾驶安全标准开源项目 · 2026-05-09</p>
+
+      <h1>我想把一个自动驾驶标准开源项目交出去</h1>
+
+      <p>前几天，我点开自己做的一个自动驾驶标准库，忽然有点后背发凉。</p>
+
+      <p>不是因为项目崩了。</p>
+
+      <p>而是因为我意识到：标准这种东西，一旦有一条链接错了、一个状态写错了、一个草案被误当成正式标准，后果就不只是“不严谨”。</p>
+
+      <p>它可能会被别人放进报告。</p>
+
+      <p>放进 PPT。</p>
+
+      <p>甚至放进某个自动驾驶项目的 safety case 证据链。</p>
+
+      <p>说来惭愧，这个项目最开始只是我给自己做的一个备忘录。</p>
+
+      <p>后来越做越不像备忘录。</p>
+
+      <p>它现在叫 AD Standards Tracker，中文可以叫“自动驾驶标准追踪”。</p>
+
+      <p>网站在这里：</p>
+
+      <p><a href="https://standards.autozyx.com/">https://standards.autozyx.com/</a></p>
+
+      <p>GitHub 仓库在这里：</p>
+
+      <p><a href="https://github.com/AutoZYX-Labs/ad-standards-tracker">https://github.com/AutoZYX-Labs/ad-standards-tracker</a></p>
+
+      <div class="quote">这篇文章不是为了宣布一个“个人成果”。相反，我想公开承认：这个项目不适合继续只靠我一个人维护。</div>
+
+      <h2>自动驾驶标准，最麻烦的不是找不到</h2>
+
+      <p>做自动驾驶安全，绕不开一串熟悉的名字。</p>
+
+      <p>ISO 26262。</p>
+
+      <p>ISO 21448。</p>
+
+      <p>ISO 34502。</p>
+
+      <p>ISO/PAS 8800。</p>
+
+      <p>SAE J3016、IEEE 2846、UN-R157、UN-R155、UN-R156、UL 4600、ASAM OpenSCENARIO、中国 GB、C-NCAP、Euro NCAP、NHTSA。</p>
+
+      <p>这些名字，很多同行都听过。</p>
+
+      <p>真正麻烦的不是听没听过。</p>
+
+      <p>麻烦在于，你要判断它现在到底是什么状态。</p>
+
+      <p>是正式发布的标准，还是 DIS、CD、WD？</p>
+
+      <p>是法规准入要求，还是推荐性标准？</p>
+
+      <p>是测评规程，还是一次会议通知？</p>
+
+      <p>是原始链接，还是新闻稿转述？</p>
+
+      <p>是 L2 组合驾驶辅助要看的，还是 L3/L4 ADS 安全论证要看的？</p>
+
+      <p>它能不能作为工程证据使用？</p>
+
+      <p>如果不能，它最多能说明什么？</p>
+
+      <p>这些问题，比“列一个标准清单”难得多。</p>
+
+      <img src="https://standards.autozyx.com/wechat/ad-standards-open-call-v2/assets/evidence-map.png" alt="标准库不是链接收藏夹，而是安全证据地图" />
+
+      <h2>我不想再做一个链接收藏夹</h2>
+
+      <p>网上不缺自动驾驶标准清单。</p>
+
+      <p>有些清单很长，看起来很完整。</p>
+
+      <p>但你点开以后，经常会看到几类东西混在一起：</p>
+
+      <p>正式标准。</p>
+
+      <p>征求意见稿。</p>
+
+      <p>会议通知。</p>
+
+      <p>标准销售页。</p>
+
+      <p>新闻稿。</p>
+
+      <p>白皮书。</p>
+
+      <p>二手解读。</p>
+
+      <p>这些资料都可能有价值，但不能站在同一个层级上。</p>
+
+      <p>在标准和法规问题上，混杂本身就是风险。</p>
+
+      <p>所以 AD Standards Tracker 做的第一件事，不是把链接堆起来，而是把它们分层。</p>
+
+      <p>标准归标准。</p>
+
+      <p>法规归法规。</p>
+
+      <p>测评规程归测评规程。</p>
+
+      <p>最新动态和解读，单独放在补充层。</p>
+
+      <p>每条记录还会标注来源类型、证据等级、法律或行业效力、核验日期、链接状态、适用自动化等级和主题标签。</p>
+
+      <p>我后来发现，真正有用的不是摘要。</p>
+
+      <p>而是工程使用方式。</p>
+
+      <p>一份标准应该用于术语对齐，还是用于开发流程？</p>
+
+      <p>应该放在安全论证的顶层，还是只适合作为背景信息？</p>
+
+      <p>它和 ISO 26262、ISO 21448、UNECE 法规、NCAP 测评之间是什么关系？</p>
+
+      <div class="quote">标准库不是资料夹。它应该是一张安全责任的地图。</div>
+
+      <h2>做到 86 条以后，我反而更不放心</h2>
+
+      <p>截至这次整理，库里有 86 条记录。</p>
+
+      <p>每条记录都补了可信度字段。</p>
+
+      <p>每条记录也补了工程解读字段。</p>
+
+      <p>这意味着它不只是告诉你“这里有一个标准”。</p>
+
+      <p>它还会尽量告诉你：</p>
+
+      <p>这条信息来自哪里。</p>
+
+      <p>是不是一手来源。</p>
+
+      <p>有没有约束力。</p>
+
+      <p>当前链接是否可访问。</p>
+
+      <p>它覆盖什么。</p>
+
+      <p>它不覆盖什么。</p>
+
+      <p>工程上应该怎么用。</p>
+
+      <p>但也是做到这个程度以后，我更清楚地意识到一件事：</p>
+
+      <p>这个项目不能靠热情长期维护。</p>
+
+      <p>标准不是公众号选题。</p>
+
+      <p>今天写错了，明天道歉一下就过去。</p>
+
+      <p>标准库里一个错误状态、一个假链接、一个混乱分类，都可能误导后面真正做安全工作的人。</p>
+
+      <p>这也是我这篇文章想说的核心。</p>
+
+      <div class="quote">一个人可以把项目点火，但不应该一个人假装维护整张行业地图。</div>
+
+      <h2>我想把它交出去，而且可以免费</h2>
+
+      <p>我现在的时间确实不够。</p>
+
+      <p>教学、科研、企业安全工作、开源项目、写作，还有在英国带娃。</p>
+
+      <p>这不是卖惨。</p>
+
+      <p>只是一个很具体的维护风险。</p>
+
+      <p>ISO 会更新。</p>
+
+      <p>UNECE GRVA 会出新文件。</p>
+
+      <p>中国 GB 和工信部征求意见会继续变化。</p>
+
+      <p>Euro NCAP、C-NCAP、JNCAP 的规程也会迭代。</p>
+
+      <p>SAE、IEEE、UL、ASAM、AUTOSAR 这些行业组织的标准，也不能只看标题。</p>
+
+      <p>如果这个项目继续只靠我一个人，短期还能补，长期一定会掉质量。</p>
+
+      <p>标准类项目一旦掉质量，最可怕的不是更新慢。</p>
+
+      <p>最可怕的是有人相信了一个错误信息。</p>
+
+      <p>所以我愿意把它交出去。</p>
+
+      <p>如果有个人、团队、组织或公司愿意长期维护，我可以把这个开源项目完全免费交接出来。</p>
+
+      <p>可以交接的，不只是一个 GitHub 仓库。</p>
+
+      <p>也包括数据结构、字段说明、来源核验流程、部署方式、已知问题清单、后续路线图和维护方法。</p>
+
+      <img src="https://standards.autozyx.com/wechat/ad-standards-open-call-v2/assets/stewardship.png" alt="个人、团队、组织、公司都可以接住这个项目" />
+
+      <h2>谁适合接住它</h2>
+
+      <p>如果你是个人，可以从一个很小的方向开始。</p>
+
+      <p>只维护 ISO。</p>
+
+      <p>只看 SAE 和 IEEE。</p>
+
+      <p>只看 UNECE。</p>
+
+      <p>只看中国 GB 和 SAC/TC114。</p>
+
+      <p>只看 NCAP。</p>
+
+      <p>只补 SOTIF、功能安全、安全论证里的工程边界。</p>
+
+      <p>这已经很有价值。</p>
+
+      <p>如果你来自高校课题组、测试机构、标准化相关团队、行业组织、开源社区、车企、供应链企业或咨询机构，也可以讨论更系统的接管。</p>
+
+      <p>我这里说的接管，不是商业合作包装。</p>
+
+      <p>也不是把一个开源项目转成封闭数据库。</p>
+
+      <p>我只希望保留几个原则：</p>
+
+      <p>继续开源。</p>
+
+      <p>继续可追溯。</p>
+
+      <p>错误可以被公开纠正。</p>
+
+      <p>标准、法规、测评、解读必须分层。</p>
+
+      <p>不发布受版权保护的标准全文。</p>
+
+      <p>安全相关内容必须写清适用边界。</p>
+
+      <div class="quote">真正有价值的行业基础设施，不是谁署名，而是谁愿意长期认真维护。</div>
+
+      <h2>我希望它有一天不再属于我</h2>
+
+      <p>我理想中的 AD Standards Tracker，不是“张玉新的项目”。</p>
+
+      <p>它应该是一个行业共享的开放平台。</p>
+
+      <p>工程师可以用它查标准边界。</p>
+
+      <p>研究者可以用它梳理标准谱系。</p>
+
+      <p>测试机构可以用它追踪测评规程。</p>
+
+      <p>企业安全团队可以用它做 safety case 的证据地图。</p>
+
+      <p>监管和标准化相关人员，也可以看到行业真正关心的问题在哪里。</p>
+
+      <p>它不一定要很大。</p>
+
+      <p>但必须准确。</p>
+
+      <p>它可以更新慢一点。</p>
+
+      <p>但不能用假链接、错标准号、混乱分类去换速度。</p>
+
+      <p>如果未来某个组织、团队或公司愿意认真接手，我会很高兴。</p>
+
+      <p>如果只是几个同行分方向长期维护，我也很高兴。</p>
+
+      <p>这个项目不需要变成流量产品。</p>
+
+      <p>它只需要成为一个让行业少犯一点低级错误的公共工具。</p>
+
+      <h2>怎么参与</h2>
+
+      <p>项目网站：</p>
+
+      <p><a href="https://standards.autozyx.com/">https://standards.autozyx.com/</a></p>
+
+      <p>共同维护入口：</p>
+
+      <p><a href="https://standards.autozyx.com/contribute">https://standards.autozyx.com/contribute</a></p>
+
+      <p>GitHub 仓库：</p>
+
+      <p><a href="https://github.com/AutoZYX-Labs/ad-standards-tracker">https://github.com/AutoZYX-Labs/ad-standards-tracker</a></p>
+
+      <p>你可以开 Issue，提交纠错、补充数据源、认领维护方向。</p>
+
+      <p>也可以直接联系我，说明你的背景、想维护的范围，或者团队、组织、公司是否有接管意愿。</p>
+
+      <p>如果你只想指出一个错误，也欢迎。</p>
+
+      <p>标准类项目最需要的，往往不是宏大的愿景。</p>
+
+      <p>而是一个个具体错误被及时纠正。</p>
+
+      <div class="callout">
+        <p>我会继续维护一段时间。</p>
+        <p>但我真心希望，它最终不再依赖我。</p>
+        <p>一个人能做出来的东西，往往只是起点。</p>
+        <p>真正能留下来的，是被一群认真维护的人接住的东西。</p>
+      </div>
+
+      <p class="small">说明：这个工具在 AI 协助下开发和整理，仍可能存在不准确内容。标准、法规、测评规程等严肃信息，请以原始链接和官方文本为准。</p>
+    </div>
+  </article>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#fbfaf6"/>
+  <text x="80" y="92" font-family="Georgia, 'Noto Serif CJK SC', serif" font-size="48" font-weight="700" fill="#1f1b16">标准库的价值，不是“多收录几个链接”</text>
+  <text x="82" y="138" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="24" fill="#6a6258">它应该把一条标准信息放进可追溯的安全证据链里</text>
+  <g transform="translate(80 210)">
+    <rect x="0" y="0" width="300" height="430" rx="18" fill="#fffdf8" stroke="#ded6c8" stroke-width="2"/>
+    <circle cx="48" cy="54" r="24" fill="#c85a3a"/>
+    <text x="48" y="62" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">1</text>
+    <text x="88" y="61" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="28" font-weight="700" fill="#1f1b16">原始来源</text>
+    <text x="36" y="122" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">不是转述新闻</text>
+    <text x="36" y="164" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">不是 PPT 截图</text>
+    <text x="36" y="206" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">不是模糊首页</text>
+    <rect x="36" y="272" width="228" height="82" rx="12" fill="#f5eee5"/>
+    <text x="58" y="306" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="20" font-weight="700" fill="#1f1b16">要能回答：</text>
+    <text x="58" y="336" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="18" fill="#6a6258">这条信息从哪里来？</text>
+  </g>
+  <path d="M400 425 L430 425" stroke="#c85a3a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M430 425 L410 410 M430 425 L410 440" stroke="#c85a3a" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(450 210)">
+    <rect x="0" y="0" width="300" height="430" rx="18" fill="#fffdf8" stroke="#ded6c8" stroke-width="2"/>
+    <circle cx="48" cy="54" r="24" fill="#2f6f6d"/>
+    <text x="48" y="62" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">2</text>
+    <text x="88" y="61" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="28" font-weight="700" fill="#1f1b16">证据边界</text>
+    <text x="36" y="122" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">标准 / 法规</text>
+    <text x="36" y="164" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">测评规程 / 草案</text>
+    <text x="36" y="206" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">通知 / 解读</text>
+    <rect x="36" y="272" width="228" height="82" rx="12" fill="#eef4f2"/>
+    <text x="58" y="306" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="20" font-weight="700" fill="#1f1b16">要能回答：</text>
+    <text x="58" y="336" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="18" fill="#6a6258">它能约束谁？</text>
+  </g>
+  <path d="M770 425 L800 425" stroke="#c85a3a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M800 425 L780 410 M800 425 L780 440" stroke="#c85a3a" stroke-width="5" stroke-linecap="round"/>
+  <g transform="translate(820 210)">
+    <rect x="0" y="0" width="300" height="430" rx="18" fill="#fffdf8" stroke="#ded6c8" stroke-width="2"/>
+    <circle cx="48" cy="54" r="24" fill="#1a56a0"/>
+    <text x="48" y="62" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700" fill="#fff">3</text>
+    <text x="88" y="61" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="28" font-weight="700" fill="#1f1b16">工程使用</text>
+    <text x="36" y="122" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">安全论证</text>
+    <text x="36" y="164" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">准入合规</text>
+    <text x="36" y="206" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="22" fill="#312c25">测试评价</text>
+    <rect x="36" y="272" width="228" height="82" rx="12" fill="#e8f0fe"/>
+    <text x="58" y="306" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="20" font-weight="700" fill="#1f1b16">要能回答：</text>
+    <text x="58" y="336" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="18" fill="#6a6258">工程上怎么用？</text>
+  </g>
+  <rect x="120" y="720" width="960" height="86" rx="18" fill="#1f1b16"/>
+  <text x="600" y="774" text-anchor="middle" font-family="Arial, 'Noto Sans CJK SC', sans-serif" font-size="28" font-weight="700" fill="#fffdf8">标准工作最怕的不是信息少，而是把不确定的信息写得像确定。</text>
+</svg>
