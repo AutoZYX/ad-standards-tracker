@@ -1,19 +1,19 @@
 # AD Standards Tracker — 技术交接
 
-最后更新: 2026-05-04
-状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据准确性审计；正式标准/法规类记录已全部补齐工程 know-how 字段
+最后更新: 2026-05-09
+状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据准确性审计、全库工程 know-how 字段扩充；已新增共同维护者入口，准备配合公众号/Blog 公开招募标准工作经验伙伴
 仓库: https://github.com/AutoZYX-Labs/ad-standards-tracker
 生产站: https://standards.autozyx.com
 本地路径: /Users/zyx/Desktop/WorkToDo/ad-standards-tracker/
 
 ## 当前生产状态
 
-- 最新应用提交: 16d804a Remove weak KNCAP secondary update
-- 最新生产部署: dpl_5kmsBzpPfABRtPkZkahBzx5MSdFD
-- Vercel 临时地址: https://ad-standards-tracker-nd1dsywjq-auto-zyx.vercel.app
+- 最新应用提交: 0227fa7 Add contributor stewardship flow
+- 最新生产部署: dpl_Dnja59wKv1tJnFDuJ1mCmTW9otRZ
+- Vercel 临时地址: https://ad-standards-tracker-myp5bvhiv-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
-- 本地生产构建: 通过，Next.js 生成 99 个页面
-- 线上冒烟: 首页显示 56/86 专业解读进度；专题地图、深圳条例、SAE J3237、MIIT 组合驾驶辅助报批稿、关于页均出现新内容；旧 KNCAP 2026 二级动态页返回 404；默认语言已改为中文；正式域名已 alias 到新部署
+- 本地生产构建: 通过，Next.js 生成 98 个页面
+- 线上冒烟: 首页、共同维护页、关于页、MIIT ADS 安全要求记录、UNECE ADS GTR 记录、Ask 页面均返回预期内容；旧 `/subscribe` 路由兼容到共同维护页；旧 `/api/subscribe` 返回 404；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
@@ -22,11 +22,23 @@
 - 唯一 ID: 86
 - trust 字段完整度: 86/86
 - evidence_level 分布: A 51，B 34，C 1，D 0
-- source_status 分布: verified 52，paywalled 17，blocked 17，broken 0，unverified 0
+- source_status 分布: verified 51，paywalled 17，blocked 18，broken 0，unverified 0
 - legal_force 分布: guidance 16，voluntary 24，binding 23，rating_protocol 5，informational 11，best_practice 7
-- 已扩充 know-how 字段记录: 56/86
+- 已扩充 know-how 字段记录: 86/86
 - 正式标准/法规 know-how 缺口: 0
 - URL 检查: `URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 通过 86 条；被政府站或平台反爬挡住但人工核验过的链接按 `blocked` 跳过
+
+## 2026-05-09 已完成
+
+- 新增 `/contribute` 共同维护者入口，用于配合公众号/Blog 公开招募有标准法规、测评规程、功能安全、SOTIF、安全论证或 AD/ADAS 安全实践经验的伙伴。
+- 首页新增“寻找共同维护者，把它做成行业共享平台”入口；关于页新增共同维护者说明；导航栏和页脚新增“共同维护”，并保持 Ask AD Standards 在导航末尾。
+- 旧 `/subscribe` 路由改为兼容跳转式内容页，复用共同维护组件；删除不会真实持久化的 `/api/subscribe` stub；`RegisterGate` 改为只在本地浏览器保存邮箱，不再上传。
+- README 与 CONTRIBUTING 增加共同维护者招募、贡献轨道、可逐步接管的 source family / topic map / tooling workstream，避免用户只看到一次性投稿入口。
+- 修正 `STD-MIIT-2026-002`：原工信部新闻页命令行返回 404，已改用全国标准信息公共服务平台官方标准计划页，计划号 `20256778-Q-339`，并更新 source_note、summary、核验日期。
+- 修正 `STD-UNECE-2026-001`：从不稳定 UNECE wiki 附件切换到正式 WP.29/2026/139 文档服务器 PDF；日期更新为 2026-04-14；明确它是 ADS GTR formal WP.29 review proposal，不是最终 GTR adoption；因 UNECE 文件服务器对自动化访问返回 403/维护页，`source_status` 标为 `blocked`。
+- 全量验证通过：`pnpm validate:data` 86 records、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 86 URLs、`pnpm lint`、`pnpm build` 98 pages。
+- 本地生产服务冒烟通过：首页、共同维护、关于、旧订阅兼容、MIIT ADS、UNECE ADS GTR、Ask 页面均 OK；旧订阅 API 返回 404。
+- 生产部署完成：`dpl_Dnja59wKv1tJnFDuJ1mCmTW9otRZ`，已 alias 到 https://standards.autozyx.com；线上冒烟同样通过。
 
 ## 2026-05-04 已完成
 
@@ -142,7 +154,7 @@ pnpm build
 
 1. Ask 已使用 DeepSeek V4 Pro，生产环境变量为 `DEEPSEEK_API_KEY`、`DEEPSEEK_MODEL=deepseek-v4-pro`、`DEEPSEEK_REASONING_EFFORT=max`。
 2. MIIT 组合驾驶辅助报批稿保留为 Evidence C，是因为公开稳定工信部/国标委原始链接尚不可得；项目内已明确警示其不能作为正式 GB 引用。
-3. 订阅接口仍是轻量 stub；不影响标准库准确性。
+3. 旧订阅接口已删除；共同维护页使用 GitHub Issue 和 mailto 联系方式，Ask 登录门槛只做本机 localStorage 记忆，不上传邮箱。
 
 ## 恢复工作流
 
