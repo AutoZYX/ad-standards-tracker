@@ -16,7 +16,7 @@ export default function Nav() {
     { href: "/maps", label: t("nav.maps") },
     { href: "/sources", label: t("nav.sources") },
     { href: "/about", label: t("nav.about") },
-    { href: "/subscribe", label: t("nav.subscribe") },
+    { href: "/contribute", label: t("nav.contribute") },
     { href: "/ask", label: t("nav.ask") },
   ];
 
@@ -39,7 +39,7 @@ export default function Nav() {
         <div className="hidden md:flex items-center gap-1">
           {LINKS.map((l) => {
             const isActive = pathname === l.href || (l.href !== "/" && pathname.startsWith(l.href));
-            const isSub = l.href === "/subscribe";
+            const isSub = l.href === "/contribute";
 
             if (isSub) {
               return (
@@ -52,7 +52,7 @@ export default function Nav() {
                       : "bg-[var(--accent)]/10 text-[var(--accent)] border border-[var(--accent)]/30 hover:bg-[var(--accent)] hover:text-white"
                   }`}
                 >
-                  <span aria-hidden>✉</span>
+                  <span aria-hidden>↗</span>
                   {l.label}
                 </Link>
               );

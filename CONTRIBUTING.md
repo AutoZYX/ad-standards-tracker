@@ -1,6 +1,32 @@
 # Contributing
 
-AD Standards Tracker accepts data corrections, source updates, and new records.
+AD Standards Tracker accepts data corrections, source updates, new records, and engineering interpretations for safety-relevant standards.
+
+The project is looking for co-maintainers with standards, regulatory, assessment, functional safety, SOTIF, safety case, or AD/ADAS testing experience. The goal is to turn this from a personal open-source project into an industry-shared safety standards evidence map.
+
+## Contributor Tracks
+
+- Data reviewer: verify titles, dates, versions, legal effect, and original URLs.
+- Standards expert: improve scope, exclusions, engineering use, and expert notes.
+- Source maintainer: track ISO, SAE, IEEE, UL, UNECE, SAC/TC114, NCAP, and national regulators.
+- Tooling maintainer: improve schema validation, URL checks, crawler modules, and CI.
+- Website maintainer: improve navigation, bilingual content, accessibility, and Ask context.
+
+## Co-Maintainer Ownership
+
+Co-maintainers do not need to own the whole project. A useful ownership unit is one source family, one topic map, or one tooling area.
+
+Examples:
+
+- ISO / SAE / IEEE / UNECE source family
+- China GB / SAC/TC114 / MIIT source family
+- NCAP and assessment protocol source family
+- Functional safety, SOTIF, safety case, or scenario-testing topic map
+- URL checks, schema validation, crawler modules, or Ask context
+
+For safety-critical areas, open an issue first and state the evidence boundary before changing data.
+
+Safety-critical records should be reviewed conservatively. If a claim cannot be traced to a primary source or a clearly marked secondary source, do not add it.
 
 ## Data Corrections
 

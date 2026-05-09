@@ -23,16 +23,6 @@ export default function RegisterGate({ children }: { children: ReactNode }) {
     if (!trimmed || !trimmed.includes("@")) return;
     setLoading(true);
 
-    try {
-      await fetch("/api/subscribe", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: trimmed, role: "ask-user" }),
-      });
-    } catch {
-      // Continue even if API fails — don't block the user
-    }
-
     localStorage.setItem("ads-registered", trimmed);
     setRegistered(true);
     setLoading(false);

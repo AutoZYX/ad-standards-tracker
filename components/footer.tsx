@@ -14,6 +14,10 @@ export default function Footer() {
           &mdash; {t("footer.desc")}
         </p>
         <p className="mt-1">
+          <a href="/contribute" className="text-[var(--accent)] hover:underline">
+            {t("nav.contribute")}
+          </a>{" "}
+          &middot;{" "}
           <a
             href="https://github.com/AutoZYX-Labs/ad-standards-tracker"
             target="_blank"

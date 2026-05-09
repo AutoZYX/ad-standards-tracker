@@ -12,7 +12,7 @@ const translations = {
   "nav.sources": { en: "Sources", zh: "数据源" },
   "nav.ask": { en: "Ask AD Standards", zh: "智能问答" },
   "nav.about": { en: "About", zh: "关于" },
-  "nav.subscribe": { en: "Subscribe", zh: "订阅" },
+  "nav.contribute": { en: "Contribute", zh: "共同维护" },
 
   // Brand
   "brand.name_short": { en: "AD Standards", zh: "自动驾驶标准" },
@@ -117,22 +117,6 @@ const translations = {
   },
   "src.difficulty": { en: "Crawl Difficulty", zh: "抓取难度" },
   "src.language": { en: "Language", zh: "语言" },
-
-  // Subscribe
-  "sub.title": { en: "Subscribe to Updates", zh: "订阅更新" },
-  "sub.desc": {
-    en: "Weekly digest of AD standards developments. No spam, no selling emails, unsubscribe any time.",
-    zh: "每周精选自动驾驶标准动态摘要。不发送垃圾邮件，不出售邮箱，随时可退订。",
-  },
-  "sub.email": { en: "Email address", zh: "邮箱地址" },
-  "sub.role": { en: "Your role", zh: "你的角色" },
-  "sub.interests": { en: "Subscribe to (multi-select)", zh: "订阅内容（可多选）" },
-  "sub.submit": { en: "Subscribe", zh: "订阅" },
-  "sub.success": { en: "Subscribed successfully.", zh: "订阅成功。" },
-  "sub.privacy": {
-    en: "Free. Unsubscribe anytime. We never share your email.",
-    zh: "免费。随时可退订。我们不会将邮箱转给第三方。",
-  },
 
   // About
   "about.title": { en: "About AD Standards Tracker", zh: "关于自动驾驶标准追踪" },
@@ -248,10 +232,10 @@ const translations = {
 
   // Register-gate (used by shared component)
   "reg.title": { en: "Email required", zh: "需要填写邮箱" },
-  "reg.desc": { en: "Free; we need your email to prevent abuse.", zh: "免费使用，仅需邮箱以防滥用。" },
+  "reg.desc": { en: "Enter an email to remember access on this device. It is not uploaded.", zh: "输入邮箱仅用于在本机记住访问状态，不会上传。" },
   "reg.email": { en: "Email address", zh: "邮箱地址" },
   "reg.submit": { en: "Continue", zh: "继续" },
-  "reg.privacy": { en: "We never share your email.", zh: "我们不会将邮箱转给第三方。" },
+  "reg.privacy": { en: "Stored locally in this browser only.", zh: "仅保存在当前浏览器本地。" },
 } as const;
 
 type TranslationKey = keyof typeof translations;

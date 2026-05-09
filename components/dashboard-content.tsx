@@ -53,8 +53,8 @@ export default function DashboardContent({ stats, recent }: Props) {
           title={lang === "zh" ? "每条记录有证据链" : "Evidence-aware records"}
           body={
             lang === "zh"
-              ? "高优先级条目逐步标注法律效力、来源类型、证据等级、核验日期和链接状态。"
-              : "High-priority records are being annotated with legal effect, source type, evidence level, verification date, and link status."
+              ? "每条记录都标注法律效力、来源类型、证据等级、核验日期和链接状态。"
+              : "Every record is annotated with legal effect, source type, evidence level, verification date, and link status."
           }
         />
         <ValuePillar
@@ -66,6 +66,27 @@ export default function DashboardContent({ stats, recent }: Props) {
           }
         />
       </div>
+
+      <Link
+        href="/contribute"
+        className="block rounded-lg border border-[var(--accent)] bg-[var(--card-bg)] p-5 mb-8 hover:bg-[var(--accent)]/5 transition-colors no-underline"
+      >
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p className="font-semibold text-[var(--text)] mb-1">
+              {lang === "zh" ? "寻找共同维护者，把它做成行业共享平台" : "Looking for co-maintainers"}
+            </p>
+            <p className="text-sm leading-relaxed text-[var(--muted)]">
+              {lang === "zh"
+                ? "项目需要有标准、法规、测试评价或安全工程经验的伙伴参与核验、纠错、扩充和接力维护。"
+                : "The project needs contributors with standards, regulatory, assessment, or safety engineering experience to verify, correct, enrich, and maintain it."}
+            </p>
+          </div>
+          <span className="text-sm font-medium text-[var(--accent)] whitespace-nowrap">
+            {lang === "zh" ? "了解如何参与 →" : "How to contribute →"}
+          </span>
+        </div>
+      </Link>
 
       {/* Ask AD Standards hero CTA */}
       <Link

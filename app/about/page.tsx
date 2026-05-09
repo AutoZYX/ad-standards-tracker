@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 
 export default function AboutPage() {
@@ -49,6 +50,18 @@ export default function AboutPage() {
         </ul>
       </section>
 
+      <section className="mb-10 rounded-lg border border-[var(--accent)] bg-[var(--card-bg)] p-5">
+        <h2 className="text-xl mb-3">{zh ? "项目正在寻找共同维护者" : "Looking for Co-Maintainers"}</h2>
+        <p className="text-sm leading-relaxed text-[var(--muted)] mb-4">
+          {zh
+            ? "我个人时间有限，希望找到有标准、法规、测试评价、功能安全、SOTIF 或安全论证经验的伙伴，把这个项目接力做成面向 AD 安全标准的行业共享、开源开放平台。"
+            : "My personal time is limited. I am looking for contributors with standards, regulatory, assessment, functional safety, SOTIF, or safety-case experience to help turn this into an open industry platform for AD safety standards."}
+        </p>
+        <Link href="/contribute" className="text-sm font-medium text-[var(--accent)] no-underline hover:underline">
+          {zh ? "查看参与方式 →" : "See how to contribute →"}
+        </Link>
+      </section>
+
       <section className="mb-10">
         <h2 className="text-xl mb-3">{zh ? "工作方法" : "Methodology"}</h2>
         <ul className="list-disc list-inside text-sm space-y-2 text-[var(--muted)]">
@@ -64,13 +77,13 @@ export default function AboutPage() {
           </li>
           <li>
             {zh
-              ? "高优先级条目标注法律效力、来源类型、证据等级、核验日期和链接状态"
-              : "High-priority records include legal effect, source type, evidence level, verification date, and source status."}
+              ? "每条记录标注法律效力、来源类型、证据等级、核验日期和链接状态"
+              : "Every record includes legal effect, source type, evidence level, verification date, and source status."}
           </li>
           <li>
             {zh
-              ? "高优先级条目进一步沉淀标准边界、常见误读、工程使用方式和专家判断，避免停留在链接汇总或机器摘要层面"
-              : "High-priority records further capture scope boundaries, common misreadings, engineering use, and expert notes instead of stopping at links or generic summaries."}
+              ? "每条记录进一步沉淀标准边界、常见误读、工程使用方式和专家判断，避免停留在链接汇总或机器摘要层面"
+              : "Each record further captures scope boundaries, common misreadings, engineering use, and expert notes instead of stopping at links or generic summaries."}
           </li>
           <li>
             {zh

@@ -20,7 +20,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "AD Standards Tracker — 自动驾驶标准追踪",
   description:
-    "Tracking automated driving standards, regulations, assessment protocols, and latest updates across global sources.",
+    "Open safety evidence map for automated driving standards, regulations, assessment protocols, and latest updates.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="zh-CN">
       <body className={`${inter.variable} ${playfair.variable} min-h-screen flex flex-col`}>
         <I18nProvider>
           <Nav />

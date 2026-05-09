@@ -1,20 +1,20 @@
 id: STD-UNECE-2026-001
-date: '2026-01-23'
+date: '2026-04-14'
 org: UNECE WP.29
 org_full: UNECE Working Party on Automated/Autonomous and Connected Vehicles (GRVA)
 jurisdiction: international
 type: consultation
 status: draft
-title_en: Draft Global Technical Regulation on Automated Driving Systems adopted by GRVA
-title_cn: GRVA 通过自动驾驶系统全球技术法规（ADS GTR）草案
-url: "https://wiki.unece.org/download/attachments/364707901/UN%20GTR%20%28GID%20version%201%29.pdf?api=v2"
-document_stage: draft
+title_en: WP.29/2026/139 — Proposal for a new UN Global Technical Regulation on Automated Driving Systems
+title_cn: WP.29/2026/139 自动驾驶系统全球技术法规提案
+url: https://unece.org/sites/default/files/2026-04/ECE-TRANS-WP.29-2026-139e.pdf
+document_stage: proposal
 legal_force: informational
 source_type: official
 evidence_level: A
-verified_at: '2026-05-03'
-source_status: verified
-source_note: Official UNECE wiki attachment for the ADS GTR draft package. This is draft evidence, not final WP.29 adoption.
+verified_at: '2026-05-09'
+source_status: blocked
+source_note: Official UNECE WP.29 document-server PDF for WP.29/2026/139. UNECE file downloads may return 403 or maintenance pages to automated link checkers, so the record keeps the original source but marks access as blocked. This is a proposal under formal WP.29 review, not final GTR adoption.
 automation_level:
 - L3
 - L4
@@ -24,13 +24,13 @@ topics:
 - functional_safety
 - sotif
 - data_recording
-summary_en: UNECE GRVA adopted a draft Global Technical Regulation for Automated Driving Systems during its January 2026 session. The draft introduces a safety-case-based framework for ADS approval, including safety management, validation evidence, in-service monitoring, and DSSAD-related provisions.
-summary_cn: UNECE GRVA 在 2026 年 1 月会议上通过自动驾驶系统全球技术法规草案。草案建立基于安全论证的 ADS 准入框架，覆盖安全管理、验证证据、在用监测和 DSSAD 等要求。
-impact_note: Potentially the most important international ADS regulatory milestone after UN-R157. Formal WP.29 adoption is expected to shape L3/L4 type approval discussions globally.
+summary_en: Formal WP.29 review document for the proposed UN Global Technical Regulation on ADS. The proposal establishes harmonized ADS safety provisions for vehicle categories 1 and 2, including safety management, multi-pillar validation, safety case, post-deployment monitoring, and reporting.
+summary_cn: 面向 WP.29 正式审议的自动驾驶系统全球技术法规提案。该提案为 1 类和 2 类车辆的 ADS 建立全球协调安全要求，覆盖安全管理、多支柱验证、安全论证、部署后监测和报告。
+impact_note: Potentially the most important international ADS regulatory milestone after UN-R157. As of 2026-05-09 it is under formal WP.29 review, with adoption discussions expected to shape L3/L4 type approval globally.
 related_standards:
 - UN-R157
 - UN-R155
 - UN-R156
 - ISO 21448
 - ISO 34502
-last_updated: '2026-05-03'
+last_updated: '2026-05-09'

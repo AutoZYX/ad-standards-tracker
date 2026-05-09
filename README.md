@@ -17,9 +17,13 @@ Companion project / 姊妹项目: [ROAM — Robotaxi Operations & Accident Monit
 
 AD 安全和合规信息散落在各国监管机构、标准委员会、行业组织的官网里，格式各异、更新频率不一。作为 OEM/Tier 1 合规负责人、监管方、学术研究者，每天手动扫站既低效又容易漏。
 
-AD Standards Tracker 用元数据 + 原始链接的方式（不分发全文，规避版权）把这些信息统一到一个可搜索、可订阅、机器可读的结构化数据集里。项目的核心不是“链接越多越好”，而是让每条高优先级记录能回答：来源是谁、是否一手、有没有约束力、何时核验过、标准边界是什么、工程上应该怎样使用。
+AD Standards Tracker 用元数据 + 原始链接的方式（不分发全文，规避版权）把这些信息统一到一个可搜索、可追溯、机器可读的结构化数据集里。项目的核心不是“链接越多越好”，而是让每条关键记录能回答：来源是谁、是否一手、有没有约束力、何时核验过、标准边界是什么、工程上应该怎样使用。
 
-AD compliance and safety intelligence is fragmented across national regulators, SDOs, and industry bodies. This project aggregates metadata (not full text) into one searchable, subscribable, machine-readable dataset.
+This is also a call for co-maintainers. The project needs contributors with standards, regulatory, assessment, functional safety, SOTIF, safety case, or AD/ADAS testing experience. The goal is to make it an industry-shared, open platform for AD safety standards intelligence.
+
+这个项目正在寻找共同维护者。理想参与者包括有标准法规、测试评价、功能安全、SOTIF、安全论证或 AD/ADAS 安全实践经验的同行。目标是把它从个人项目推进为面向自动驾驶安全标准情报的行业共享、开源开放平台。
+
+AD compliance and safety intelligence is fragmented across national regulators, SDOs, and industry bodies. This project aggregates metadata (not full text) into one searchable, traceable, machine-readable dataset.
 
 ## Knowledge mechanism / 知识机制
 
@@ -29,7 +33,7 @@ The project is designed as a three-layer knowledge system, not a link directory:
 2. Boundary layer: what the document covers, what it does not cover, and whether it is a final standard, draft, regulation, assessment protocol, notice, or interpretation.
 3. Engineering layer: how the record should be used in ADS/ADAS safety work, which adjacent standards matter, and what safety-case or verification question it helps answer.
 
-这意味着高优先级记录不只是“摘要”。它应该沉淀自动驾驶安全工作中真正有用的 know-how：责任边界、适用场景、容易误读的地方、与 ISO 26262 / ISO 21448 / ISO 34502 / UNECE 法规 / NCAP 规程之间的关系。
+这意味着关键记录不只是“摘要”。它应该沉淀自动驾驶安全工作中真正有用的 know-how：责任边界、适用场景、容易误读的地方、与 ISO 26262 / ISO 21448 / ISO 34502 / UNECE 法规 / NCAP 规程之间的关系。
 
 ## What / 功能
 
@@ -37,10 +41,10 @@ The project is designed as a three-layer knowledge system, not a link directory:
 - **Standards Library** — 全库筛选（辖区、组织、类型、状态、年份、主题、SAE 级别）
 - **Evidence Maps** — 按 L2 及以下驾驶辅助、ADS 准入、场景测试、安全开发、安全论证、远程操作边界和 L4 运营治理组织证据链
 - **Standard Detail** — 单条记录全部字段、标准边界、工程使用方式、专家判断 + 外链到原文
-- **Source & Legal Effect** — 高优先级条目标注法律效力、来源类型、证据等级、核验日期、链接状态
+- **Source & Legal Effect** — 每条记录标注法律效力、来源类型、证据等级、核验日期、链接状态
 - **Sources** — 30+ 个数据源清单（UNECE, ISO, SAC/TC114, NHTSA, SAE, IEEE, ASAM, EC, Euro NCAP, METI 等）
 - **Ask AD Standards** — DeepSeek-powered natural-language Q&A over the structured database
-- **Subscribe** — 邮件订阅（按角色分层：OEM / Tier 1 / 监管 / 学术 / 媒体）
+- **Contribute** — 共同维护入口，面向有标准、法规、测评或安全工程经验的行业伙伴
 - **Bilingual** — EN/中文 双语界面和内容字段
 
 ## Data model / 数据模型
@@ -109,7 +113,7 @@ To add a new record, create a YAML file under `standards/<jurisdiction>/<year>/`
 
 ```
 ad-standards-tracker/
-├── app/                    # Next.js App Router pages
+├── app/                    # Next.js App Router pages, including /contribute
 ├── components/             # React components
 ├── lib/
 │   ├── types.ts            # All TS types (client-safe)
@@ -140,6 +144,14 @@ PRs welcome. For new data sources, please include:
 4. Source quality fields for any safety-critical or legally relevant record
 
 For data corrections, edit the relevant YAML file and open a PR — no programming needed. Run `pnpm validate:data` before submitting. If a record uses a non-official link, set `source_type: secondary`, `evidence_level: C`, and explain the reason in `source_note`.
+
+The most valuable contributions are:
+
+1. correcting titles, dates, versions, legal effect, and original source URLs;
+2. adding missing safety-relevant standards, regulations, and assessment protocols;
+3. improving scope, exclusions, engineering use, and expert notes for safety-critical records;
+4. maintaining source lists and URL health checks;
+5. improving the website and Ask AD Standards context.
 
 ## Citation / 引用
 

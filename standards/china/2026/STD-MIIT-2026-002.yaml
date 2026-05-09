@@ -7,15 +7,15 @@ type: consultation
 status: consultation
 title_en: Draft Mandatory GB — Safety Requirements for Intelligent Connected Vehicle Automated Driving Systems
 title_cn: 《智能网联汽车 自动驾驶系统安全要求》强制性国家标准征求意见稿
-url: https://www.miit.gov.cn/gzcy/yjzj/art/2026/art_6a0b136cf5be4a4c8aa50511870508dc.html
+url: https://std.samr.gov.cn/gb/search/gbDetailed?id=473DB2F0DC56BDA1E06397BE0A0AB1B7
 effective_date: '2027-07-01'
 document_stage: consultation
 legal_force: informational
-source_type: official_news
+source_type: official_catalog
 evidence_level: A
-verified_at: '2026-05-04'
+verified_at: '2026-05-09'
 source_status: verified
-source_note: Official MIIT consultation notice with draft attachments. It is a draft mandatory GB and is not binding until formally approved and implemented.
+source_note: Official National Public Service Platform for Standards Information plan page for 20256778-Q-339, with consultation draft and drafting-explanation links. It is a draft mandatory GB and is not binding until formally approved and implemented.
 automation_level:
 - L3
 - L4
@@ -25,17 +25,17 @@ topics:
 - sotif
 - hmi
 - data_recording
-summary_en: MIIT public consultation on the draft mandatory GB for safety requirements of intelligent connected vehicle ADS, part of five mandatory national standards published for comment on 2026-02-12.
-summary_cn: 工信部于 2026 年 2 月 12 日公开征求《智能网联汽车 自动驾驶系统安全要求》等五项强制性国家标准意见，其中 ADS 安全要求面向 L3/L4 自动驾驶系统安全基线。
+summary_en: Official SAMR standards-plan entry for the draft mandatory GB on intelligent connected vehicle ADS safety requirements, plan No. 20256778-Q-339, with consultation draft and drafting-explanation materials.
+summary_cn: 全国标准信息公共服务平台收录的《智能网联汽车 自动驾驶系统安全要求》强制性国家标准计划，计划号 20256778-Q-339，提供征求意见稿和编制说明入口，面向 L3/L4 自动驾驶系统安全基线。
 scope_en:
 - Covers a draft mandatory national standard for safety requirements of intelligent connected vehicle Automated Driving Systems.
 - Targets higher-level ADS safety requirements for L3/L4-type functions in the Chinese type-approval context.
-- Public consultation is part of a broader February 2026 package of five draft mandatory national standards for intelligent connected vehicles.
+- The official plan page identifies the project as a mandatory national standard plan, organized by MIIT and executed by SAC/TC114/SC34.
 - Connects ADS system safety with HMI, safety management, functional safety, SOTIF, data recording, and approval evidence.
 scope_cn:
 - 覆盖《智能网联汽车 自动驾驶系统安全要求》强制性国家标准征求意见稿。
 - 面向中国准入语境下 L3/L4 类自动驾驶系统安全要求。
-- 该征求意见属于 2026 年 2 月五项智能网联汽车强制性国家标准草案公开征求意见的一部分。
+- 官方计划页将其列为强制性国家标准计划，由工业和信息化部组织起草，全国汽车标准化技术委员会智能网联汽车分会执行。
 - 将 ADS 系统安全与 HMI、安全管理、功能安全、SOTIF、数据记录和准入证据衔接起来。
 exclusions_en:
 - It is still a consultation draft and is not legally binding until formally approved, numbered, and implemented.
