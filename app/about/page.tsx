@@ -51,11 +51,11 @@ export default function AboutPage() {
       </section>
 
       <section className="mb-10 rounded-lg border border-[var(--accent)] bg-[var(--card-bg)] p-5">
-        <h2 className="text-xl mb-3">{zh ? "项目正在寻找共同维护者" : "Looking for Co-Maintainers"}</h2>
+        <h2 className="text-xl mb-3">{zh ? "项目正在寻找共同维护者或接管方" : "Looking for Co-Maintainers or Stewards"}</h2>
         <p className="text-sm leading-relaxed text-[var(--muted)] mb-4">
           {zh
-            ? "我个人时间有限，希望找到有标准、法规、测试评价、功能安全、SOTIF 或安全论证经验的伙伴，把这个项目接力做成面向 AD 安全标准的行业共享、开源开放平台。"
-            : "My personal time is limited. I am looking for contributors with standards, regulatory, assessment, functional safety, SOTIF, or safety-case experience to help turn this into an open industry platform for AD safety standards."}
+            ? "我个人时间有限，希望找到有标准、法规、测试评价、功能安全、SOTIF 或安全论证经验的个人、团队、组织或公司，把这个项目接力做成面向 AD 安全标准的行业共享、开源开放平台。若有长期维护意愿，我可以完全免费交接项目资料、维护方法和必要权限。"
+            : "My personal time is limited. I am looking for individuals, teams, organizations, or companies with standards, regulatory, assessment, functional safety, SOTIF, or safety-case experience to help turn this into an open industry platform for AD safety standards. For long-term stewardship, I am willing to hand over project materials, maintenance methods, and necessary access for free."}
         </p>
         <Link href="/contribute" className="text-sm font-medium text-[var(--accent)] no-underline hover:underline">
           {zh ? "查看参与方式 →" : "See how to contribute →"}

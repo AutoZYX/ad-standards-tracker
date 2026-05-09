@@ -74,12 +74,12 @@ export default function DashboardContent({ stats, recent }: Props) {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="font-semibold text-[var(--text)] mb-1">
-              {lang === "zh" ? "寻找共同维护者，把它做成行业共享平台" : "Looking for co-maintainers"}
+              {lang === "zh" ? "寻找共同维护者或接管方，把它做成行业共享平台" : "Looking for co-maintainers or stewards"}
             </p>
             <p className="text-sm leading-relaxed text-[var(--muted)]">
               {lang === "zh"
-                ? "项目需要有标准、法规、测试评价或安全工程经验的伙伴参与核验、纠错、扩充和接力维护。"
-                : "The project needs contributors with standards, regulatory, assessment, or safety engineering experience to verify, correct, enrich, and maintain it."}
+                ? "个人、团队、组织或公司都可以参与。若有长期维护意愿，我可以完全免费交接项目资料、维护方法和必要权限。"
+                : "Individuals, teams, organizations, and companies are welcome. For long-term stewardship, I am willing to hand over project materials, maintenance methods, and necessary access for free."}
             </p>
           </div>
           <span className="text-sm font-medium text-[var(--accent)] whitespace-nowrap">

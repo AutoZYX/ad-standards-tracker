@@ -10,6 +10,7 @@ const ROLE_OPTIONS_ZH = [
   "测试评价 / NCAP / 场景库",
   "数据源与链接核验",
   "开源项目维护 / 前端 / 自动化",
+  "团队 / 组织 / 公司接管维护",
   "内容共创 / 公众号 / Blog",
 ];
 
@@ -19,6 +20,7 @@ const ROLE_OPTIONS_EN = [
   "Testing / NCAP / scenario libraries",
   "Source verification and data quality",
   "Open-source maintenance / frontend / automation",
+  "Team / organization / company stewardship",
   "Content collaboration / blog writing",
 ];
 
@@ -43,7 +45,9 @@ export default function ContributeContent() {
           `姓名/称呼：${name || ""}`,
           `可贡献方向：${selectedRole}`,
           "",
-          "相关标准/安全工作经验：",
+          "个人、团队、组织或公司背景：",
+          "",
+          "相关标准/安全工作经验，或接管维护设想：",
           note || "",
           "",
           "项目链接：https://standards.autozyx.com",
@@ -52,7 +56,9 @@ export default function ContributeContent() {
           `Name: ${name || ""}`,
           `Contribution area: ${selectedRole}`,
           "",
-          "Relevant standards/safety experience:",
+          "Individual, team, organization, or company background:",
+          "",
+          "Relevant standards/safety experience, or stewardship proposal:",
           note || "",
           "",
           "Project: https://standards.autozyx.com",
@@ -72,8 +78,8 @@ export default function ContributeContent() {
         </h1>
         <p className="text-[var(--muted)] leading-relaxed max-w-3xl">
           {zh
-            ? "这个项目希望成为面向自动驾驶安全标准、法规和测评规程的行业共享平台。个人时间有限，后续需要有标准工作经验、愿意认真核验原始来源的伙伴一起接力，把它从个人项目推进为可信的开源公共基础设施。"
-            : "This project aims to become a shared industry platform for automated-driving safety standards, regulations, and assessment protocols. It needs experienced contributors who can verify primary sources and help turn a personal project into reliable open infrastructure."}
+            ? "这个项目希望成为面向自动驾驶安全标准、法规和测评规程的行业共享平台。个人时间有限，后续既欢迎有标准工作经验的个人一起维护，也欢迎高校团队、行业组织、测试机构、企业或社区接管维护。我可以把项目资料、维护方法和必要权限完全免费交接出来，前提是继续保持开源、准确和行业共享。"
+            : "This project aims to become a shared industry platform for automated-driving safety standards, regulations, and assessment protocols. Individual contributors are welcome, and university teams, industry organizations, test houses, companies, or open communities are also welcome to take over stewardship. I am willing to hand over project materials, maintenance methods, and necessary access for free, provided the project remains open, accurate, and industry-shared."}
         </p>
       </section>
 
@@ -105,12 +111,17 @@ export default function ContributeContent() {
       </section>
 
       <section className="rounded-lg border border-[var(--border)] bg-[var(--card-bg)] p-5 mb-10">
-        <h2 className="text-xl mb-3">{zh ? "适合谁参与" : "Who This Is For"}</h2>
+        <h2 className="text-xl mb-3">{zh ? "适合谁参与或接管" : "Who This Is For"}</h2>
         <ul className="list-disc pl-5 text-sm leading-relaxed text-[var(--muted)] space-y-2">
           <li>
             {zh
               ? "做过标准、法规、认证、准入、测试评价、功能安全、SOTIF 或安全论证工作。"
               : "People with experience in standards, regulation, certification, type approval, assessment, functional safety, SOTIF, or safety cases."}
+          </li>
+          <li>
+            {zh
+              ? "高校课题组、标准化相关团队、测试评价机构、行业组织、开源社区、车企或供应链企业，都可以讨论整体接管或联合维护。"
+              : "University groups, standardization teams, test and assessment bodies, industry associations, open communities, OEMs, and suppliers can discuss full stewardship or joint maintenance."}
           </li>
           <li>
             {zh
@@ -123,6 +134,20 @@ export default function ContributeContent() {
               : "People who support open industry infrastructure: transparent data, transparent corrections, and transparent version history."}
           </li>
         </ul>
+      </section>
+
+      <section className="rounded-lg border border-[var(--accent)] bg-[var(--card-bg)] p-5 mb-10">
+        <h2 className="text-xl mb-3">{zh ? "可以免费交接出去" : "Free Stewardship Handover"}</h2>
+        <p className="text-sm leading-relaxed text-[var(--muted)] mb-4">
+          {zh
+            ? "如果有个人、团队、组织或公司愿意长期维护，我愿意完全免费交接这个开源项目。交接内容可以包括仓库维护权、数据结构说明、来源核验流程、部署方式、现有问题清单和后续路线图。"
+            : "If an individual, team, organization, or company is willing to maintain it long-term, I am willing to hand over the open-source project for free. The handover can include repository stewardship, data-structure documentation, source-verification workflow, deployment notes, known issues, and roadmap."}
+        </p>
+        <p className="text-sm leading-relaxed text-[var(--muted)]">
+          {zh
+            ? "我不希望它变成一个封闭商业数据库，也不希望它被用于包装不准确的标准解读。更理想的归宿，是由真正懂标准、懂安全、愿意做长期维护的人或机构，把它做成行业公共基础设施。"
+            : "I do not want it to become a closed commercial database or a wrapper around inaccurate interpretations. The ideal home is a maintainer or institution that understands standards, understands safety, and is willing to turn it into shared industry infrastructure."}
+        </p>
       </section>
 
       <section className="rounded-lg border border-[var(--border)] bg-[var(--card-bg)] p-5 mb-10">
@@ -192,7 +217,7 @@ export default function ContributeContent() {
             <textarea
               value={note}
               onChange={(event) => setNote(event.target.value)}
-              placeholder={zh ? "简单说明你的相关经验或想贡献的方向" : "Briefly describe your relevant experience or contribution area"}
+              placeholder={zh ? "简单说明你的相关经验、团队背景，或希望如何接管/共同维护" : "Briefly describe your experience, team background, or stewardship proposal"}
               rows={4}
               className="w-full rounded-md border border-[var(--border)] bg-[var(--bg)] px-3 py-2 text-sm"
             />

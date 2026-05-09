@@ -2,7 +2,7 @@
 
 AD Standards Tracker accepts data corrections, source updates, new records, and engineering interpretations for safety-relevant standards.
 
-The project is looking for co-maintainers with standards, regulatory, assessment, functional safety, SOTIF, safety case, or AD/ADAS testing experience. The goal is to turn this from a personal open-source project into an industry-shared safety standards evidence map.
+The project is looking for co-maintainers and long-term stewards with standards, regulatory, assessment, functional safety, SOTIF, safety case, or AD/ADAS testing experience. Individuals are welcome, and teams, organizations, test houses, industry associations, universities, OEMs, suppliers, or companies can also discuss full stewardship or joint maintenance. If there is a serious long-term maintenance plan, project materials, maintenance workflow, and necessary access can be handed over for free. The goal is to turn this from a personal open-source project into an industry-shared safety standards evidence map.
 
 ## Contributor Tracks
 
@@ -12,9 +12,9 @@ The project is looking for co-maintainers with standards, regulatory, assessment
 - Tooling maintainer: improve schema validation, URL checks, crawler modules, and CI.
 - Website maintainer: improve navigation, bilingual content, accessibility, and Ask context.
 
-## Co-Maintainer Ownership
+## Co-Maintainer / Stewardship Ownership
 
-Co-maintainers do not need to own the whole project. A useful ownership unit is one source family, one topic map, or one tooling area.
+Co-maintainers do not need to own the whole project. A useful ownership unit is one source family, one topic map, or one tooling area. Long-term stewards may also take over the full project if they can keep it open, evidence-based, and maintained.
 
 Examples:
 
@@ -23,6 +23,7 @@ Examples:
 - NCAP and assessment protocol source family
 - Functional safety, SOTIF, safety case, or scenario-testing topic map
 - URL checks, schema validation, crawler modules, or Ask context
+- Full project stewardship by a team, organization, or company
 
 For safety-critical areas, open an issue first and state the evidence boundary before changing data.
 
