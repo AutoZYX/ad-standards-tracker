@@ -8,12 +8,12 @@
 
 ## 当前生产状态
 
-- 最新应用提交: 0227fa7 Add contributor stewardship flow
-- 最新生产部署: dpl_Dnja59wKv1tJnFDuJ1mCmTW9otRZ
-- Vercel 临时地址: https://ad-standards-tracker-myp5bvhiv-auto-zyx.vercel.app
+- 最新应用提交: d191cc7 Broaden stewardship call and draft article
+- 最新生产部署: dpl_5apssTXxRSbJtS3VJcvdwqpe7UoZ
+- Vercel 临时地址: https://ad-standards-tracker-6olmqc8k7-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 98 个页面
-- 线上冒烟: 首页、共同维护页、关于页、MIIT ADS 安全要求记录、UNECE ADS GTR 记录、Ask 页面均返回预期内容；旧 `/subscribe` 路由兼容到共同维护页；旧 `/api/subscribe` 返回 404；正式域名已 alias 到新部署
+- 线上冒烟: 首页、共同维护页、关于页、MIIT ADS 安全要求记录、UNECE ADS GTR 记录、Ask 页面均返回预期内容；首页、共同维护页、关于页已展示“个人、团队、组织或公司可参与/接管，项目可完全免费交接”；旧 `/subscribe` 路由兼容到共同维护页；旧 `/api/subscribe` 返回 404；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
@@ -39,6 +39,10 @@
 - 全量验证通过：`pnpm validate:data` 86 records、`URL_CHECK_TIMEOUT_MS=12000 pnpm check:urls` 86 URLs、`pnpm lint`、`pnpm build` 98 pages。
 - 本地生产服务冒烟通过：首页、共同维护、关于、旧订阅兼容、MIIT ADS、UNECE ADS GTR、Ask 页面均 OK；旧订阅 API 返回 404。
 - 生产部署完成：`dpl_Dnja59wKv1tJnFDuJ1mCmTW9otRZ`，已 alias 到 https://standards.autozyx.com；线上冒烟同样通过。
+- 扩展共同维护口径：除个人共同维护者外，高校团队、测试机构、行业组织、开源社区、车企、供应链企业或其他公司也可以讨论整体接管或联合维护；项目资料、维护方法和必要权限可完全免费交接，前提是保持开源、准确和行业共享。
+- 新增公众号草稿：`docs/articles/2026-05-09-ad-standards-tracker-open-call.md`，标题候选包括“我想把一个标准库交出去”“86条自动驾驶标准之后”“自动驾驶标准，需要接力了”。
+- 新增口径已更新到首页、`/contribute`、关于页、README、CONTRIBUTING，并通过本地和线上冒烟检查。
+- 最新生产部署完成：`dpl_5apssTXxRSbJtS3VJcvdwqpe7UoZ`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-04 已完成
 
