@@ -1,19 +1,20 @@
 # AD Standards Tracker — 技术交接
 
 最后更新: 2026-05-09
-状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据准确性审计、全库工程 know-how 字段扩充；已新增共同维护者入口，准备配合公众号/Blog 公开招募标准工作经验伙伴
+状态: 已上线，已完成全库可信度字段补齐、URL 健康治理、数据准确性审计、全库工程 know-how 字段扩充；已新增共同维护者入口，并生成可直接复制到公众号后台的图文终稿
 仓库: https://github.com/AutoZYX-Labs/ad-standards-tracker
 生产站: https://standards.autozyx.com
 本地路径: /Users/zyx/Desktop/WorkToDo/ad-standards-tracker/
 
 ## 当前生产状态
 
-- 最新应用提交: d191cc7 Broaden stewardship call and draft article
-- 最新生产部署: dpl_5apssTXxRSbJtS3VJcvdwqpe7UoZ
-- Vercel 临时地址: https://ad-standards-tracker-6olmqc8k7-auto-zyx.vercel.app
+- 最新应用内容提交: 6e7617e Add polished WeChat HTML article
+- 最新生产部署: dpl_7KFSDqLsfXDe8giMuuT2sm1UGYYa
+- Vercel 临时地址: https://ad-standards-tracker-3z2xbjyhs-auto-zyx.vercel.app
 - 正式域名: https://standards.autozyx.com
 - 本地生产构建: 通过，Next.js 生成 98 个页面
-- 线上冒烟: 首页、共同维护页、关于页、MIIT ADS 安全要求记录、UNECE ADS GTR 记录、Ask 页面均返回预期内容；首页、共同维护页、关于页已展示“个人、团队、组织或公司可参与/接管，项目可完全免费交接”；旧 `/subscribe` 路由兼容到共同维护页；旧 `/api/subscribe` 返回 404；正式域名已 alias 到新部署
+- 公众号 HTML 终稿: https://standards.autozyx.com/wechat/ad-standards-open-call-v2/index.html
+- 线上冒烟: 首页、共同维护页、关于页、MIIT ADS 安全要求记录、UNECE ADS GTR 记录、Ask 页面均返回预期内容；公众号 HTML 终稿与 `cover.png`、`evidence-map.png`、`stewardship.png` 三张配图均从正式域名返回 200；首页、共同维护页、关于页已展示“个人、团队、组织或公司可参与/接管，项目可完全免费交接”；旧 `/subscribe` 路由兼容到共同维护页；旧 `/api/subscribe` 返回 404；正式域名已 alias 到新部署
 - Ask API: 已切换到 DeepSeek V4 Pro；DeepSeek 不可用时自动降级到本地数据库检索，并返回服务端 citation；服务端会清洗模型输出中的 `**`
 
 ## 数据状态
@@ -43,6 +44,10 @@
 - 新增公众号草稿：`docs/articles/2026-05-09-ad-standards-tracker-open-call.md`，标题候选包括“我想把一个标准库交出去”“86条自动驾驶标准之后”“自动驾驶标准，需要接力了”。
 - 新增口径已更新到首页、`/contribute`、关于页、README、CONTRIBUTING，并通过本地和线上冒烟检查。
 - 最新生产部署完成：`dpl_5apssTXxRSbJtS3VJcvdwqpe7UoZ`，已 alias 到 https://standards.autozyx.com。
+- 根据用户反馈重写公众号版本：新增 `public/wechat/ad-standards-open-call-v2/index.html`，改为故事开场和公开交接叙事，弱化 AI 味和琐碎说明，适合直接全选复制到公众号后台。
+- 新增 3 张手机端友好的高清 PNG 配图及 SVG 源文件：`cover`、`evidence-map`、`stewardship`，尺寸分别面向公众号封面和正文长图，避免前一版截图质量差、文字过密的问题。
+- 公众号终稿公开地址：https://standards.autozyx.com/wechat/ad-standards-open-call-v2/index.html
+- 公众号终稿验证通过：`pnpm lint`、`pnpm build`；本地与线上均确认 `index.html` 和 3 张 PNG 返回 200；最新生产部署为 `dpl_7KFSDqLsfXDe8giMuuT2sm1UGYYa`，已 alias 到 https://standards.autozyx.com。
 
 ## 2026-05-04 已完成
 
